@@ -1,0 +1,243 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Быстрое начало &mdash; kOS 1.2.0.0 документация</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/kos_theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="author" title="About these documents"
+              href="../about.html"/>
+        <link rel="copyright" title="Copyright" href="../copyright.html"/>
+    <link rel="top" title="kOS 1.2.0.0 documentation" href="../index.html"/>
+        <link rel="up" title="Tutorials" href="../tutorials.html"/>
+        <link rel="next" title="KOS and programming introduction" href="basictutorial.html"/>
+        <link rel="prev" title="Tutorials" href="../tutorials.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../contents.html" class="icon icon-home"> kOS
+          
+
+          
+            
+            <img src="../_static/kos_logo_small.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.2.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Домашняя</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contents.html">Содержание документации</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../downloads_links.html">Ссылки на загрузку</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../tutorials.html">Туториалы</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="quickstart.html">Быстрое начало</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="basictutorial.html">Basic Explanation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="designpatterns.html">Design Patterns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pidloops.html">PID Loops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exenode.html">Execute Node script</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display_bounds.html">Drawing VecDraws, and showing Bounds Boxes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gui.html">Making a tabbed GUI</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../library.html">Библиотека примеров</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general.html">Главная</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../language.html">Язык</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../math.html">Математика</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commands.html">Команды</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structures.html">Структура</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addons.html">Адданоны</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute.html">Помочь</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changes.html">Изменения</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about.html">Информация об kOS</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../contents.html">kOS</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../contents.html">Docs</a> &raquo;</li>
+      
+          <li><a href="../tutorials.html">Tutorials</a> &raquo;</li>
+      
+    <li>Project</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+ 
+<h3><a class="toc-backref" href="quickstart.html#id12">Проект: Посадка ступени Ракетоносителя</a><a class="headerlink" href="quickstart.html#step-2-make-the-start-of-the-script" title="Permalink to this headline">¶</a></h3>
+<p>Что же, это страница на которой будет сохраняться иногда скрипт. Надеюсь он будет действительно создаваться.</p>
+<div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="c1">//это всё шаблон и образец на будущее</span>
+<div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="c1">//hellolaunch</span>
+
+<span class="c1">//First, we&#39;ll clear the terminal screen to make it look nice</span>
+<span class="k">CLEARSCREEN</span><span class="p">.</span>
+
+<span class="c1">//This is our countdown loop, which cycles from 10 to 0</span>
+<span class="k">PRINT</span> <span class="s">&quot;Counting down:&quot;</span><span class="p">.</span>
+<span class="k">FROM</span> <span class="p">{</span><span class="k">local</span> <span class="nv">countdown</span> <span class="ow">is</span> <span class="mf">10</span><span class="p">.}</span> <span class="k">UNTIL</span> <span class="nv">countdown</span> <span class="o">=</span> <span class="mf">0</span> <span class="k">STEP</span> <span class="p">{</span><span class="k">SET</span> <span class="nv">countdown</span> <span class="ow">to</span> <span class="nv">countdown</span> <span class="o">-</span> <span class="mf">1</span><span class="p">.}</span> <span class="k">DO</span> <span class="p">{</span>
+    <span class="k">PRINT</span> <span class="s">&quot;...&quot;</span> <span class="o">+</span> <span class="nv">countdown</span><span class="p">.</span>
+    <span class="k">WAIT</span> <span class="mf">1</span><span class="p">.</span> <span class="c1">// pauses the script here for 1 second.</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Created script by Ettelstane and EfroOstrf.
+
+    </p>
+  </div>
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.2.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
