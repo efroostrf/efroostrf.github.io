@@ -108,7 +108,7 @@
 <li class="toctree-l3"><a class="reference internal" href="path.html">Path</a></li>
 <li class="toctree-l3"><a class="reference internal" href="volume.html">Volume</a></li>
 <li class="toctree-l3"><a class="reference internal" href="volumedirectory.html">VolumeDirectory</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">VolumeFile</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="volumefile.html">VolumeFile</a></li>
 <li class="toctree-l3"><a class="reference internal" href="volumeitem.html">VolumeItem</a></li>
 </ul>
 </li>
@@ -174,13 +174,13 @@
            <div itemprop="articleBody">
             
   <div class="section" id="volumefile">
-<span id="id1"></span><h1>VolumeFile<a class="headerlink" href="#volumefile" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1>VolumeFile<a class="headerlink" href="volumefile.html#volumefile" title="Permalink to this headline">¶</a></h1>
 <p>File name and size information. You can obtain a list of values of type VolumeFile using the <a class="reference internal" href="../../commands/list.html#list-command"><span>LIST FILES</span></a> command.</p>
 <dl class="structure">
 <dt id="structure:VOLUMEFILE">
-<em class="property">structure </em><code class="descname">VolumeFile</code><a class="headerlink" href="#structure:VOLUMEFILE" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">VolumeFile</code><a class="headerlink" href="volumefile.html#structure:VOLUMEFILE" title="Permalink to this definition">¶</a></dt>
 <dd><table border="1" class="docutils" id="id2">
-<caption><span class="caption-text">Members</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-text">Members</span><a class="headerlink" href="volumefile.html#id2" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="17%" />
 <col width="17%" />
@@ -195,21 +195,21 @@
 <tbody valign="top">
 <tr class="row-even"><td>All suffixes of <a class="reference internal" href="volumeitem.html#structure:VOLUMEITEM" title="VOLUMEITEM structure"><code class="xref ks ks-struct docutils literal"><span class="pre">VolumeItem</span></code></a></td>
 <td>&nbsp;</td>
-<td><a class="reference internal" href="#structure:VOLUMEFILE" title="VOLUMEFILE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">VolumeFile</span></code></a> objects are a type of <a class="reference internal" href="volumeitem.html#structure:VOLUMEITEM" title="VOLUMEITEM structure"><code class="xref ks ks-struct docutils literal"><span class="pre">VolumeItem</span></code></a></td>
+<td><a class="reference internal" href="volumefile.html#structure:VOLUMEFILE" title="VOLUMEFILE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">VolumeFile</span></code></a> objects are a type of <a class="reference internal" href="volumeitem.html#structure:VOLUMEITEM" title="VOLUMEITEM structure"><code class="xref ks ks-struct docutils literal"><span class="pre">VolumeItem</span></code></a></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#method:VOLUMEFILE:READALL" title="VOLUMEFILE:READALL method"><code class="xref ks ks-meth docutils literal"><span class="pre">READALL</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="volumefile.html#method:VOLUMEFILE:READALL" title="VOLUMEFILE:READALL method"><code class="xref ks ks-meth docutils literal"><span class="pre">READALL</span></code></a></td>
 <td><a class="reference internal" href="filecontent.html#structure:FILECONTENT" title="FILECONTENT structure"><code class="xref ks ks-struct docutils literal"><span class="pre">FileContent</span></code></a></td>
 <td>Reads file contents</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#method:VOLUMEFILE:WRITE" title="VOLUMEFILE:WRITE method"><code class="xref ks ks-meth docutils literal"><span class="pre">WRITE(String|FileContent)</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="volumefile.html#method:VOLUMEFILE:WRITE" title="VOLUMEFILE:WRITE method"><code class="xref ks ks-meth docutils literal"><span class="pre">WRITE(String|FileContent)</span></code></a></td>
 <td><a class="reference internal" href="../misc/boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>Writes the given string to the file</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#method:VOLUMEFILE:WRITELN" title="VOLUMEFILE:WRITELN method"><code class="xref ks ks-meth docutils literal"><span class="pre">WRITELN(string)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="volumefile.html#method:VOLUMEFILE:WRITELN" title="VOLUMEFILE:WRITELN method"><code class="xref ks ks-meth docutils literal"><span class="pre">WRITELN(string)</span></code></a></td>
 <td><a class="reference internal" href="../misc/boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>Writes the given string and a newline to the file</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#method:VOLUMEFILE:CLEAR" title="VOLUMEFILE:CLEAR method"><code class="xref ks ks-meth docutils literal"><span class="pre">CLEAR</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="volumefile.html#method:VOLUMEFILE:CLEAR" title="VOLUMEFILE:CLEAR method"><code class="xref ks ks-meth docutils literal"><span class="pre">CLEAR</span></code></a></td>
 <td>None</td>
 <td>Clears this file</td>
 </tr>
@@ -219,7 +219,7 @@
 
 <dl class="method">
 <dt id="method:VOLUMEFILE:READALL">
-VolumeFile:<code class="descname">READALL</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:VOLUMEFILE:READALL" title="Permalink to this definition">¶</a></dt>
+VolumeFile:<code class="descname">READALL</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="volumefile.html#method:VOLUMEFILE:READALL" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -233,7 +233,7 @@ VolumeFile:<code class="descname">READALL</code><span class="sig-paren">(</span>
 
 <dl class="method">
 <dt id="method:VOLUMEFILE:WRITE">
-VolumeFile:<code class="descname">WRITE</code><span class="sig-paren">(</span>String|FileContent<span class="sig-paren">)</span><a class="headerlink" href="#method:VOLUMEFILE:WRITE" title="Permalink to this definition">¶</a></dt>
+VolumeFile:<code class="descname">WRITE</code><span class="sig-paren">(</span>String|FileContent<span class="sig-paren">)</span><a class="headerlink" href="volumefile.html#method:VOLUMEFILE:WRITE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -247,7 +247,7 @@ VolumeFile:<code class="descname">WRITE</code><span class="sig-paren">(</span>St
 
 <dl class="method">
 <dt id="method:VOLUMEFILE:WRITELN">
-VolumeFile:<code class="descname">WRITELN</code><span class="sig-paren">(</span>string<span class="sig-paren">)</span><a class="headerlink" href="#method:VOLUMEFILE:WRITELN" title="Permalink to this definition">¶</a></dt>
+VolumeFile:<code class="descname">WRITELN</code><span class="sig-paren">(</span>string<span class="sig-paren">)</span><a class="headerlink" href="volumefile.html#method:VOLUMEFILE:WRITELN" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -261,7 +261,7 @@ VolumeFile:<code class="descname">WRITELN</code><span class="sig-paren">(</span>
 
 <dl class="method">
 <dt id="method:VOLUMEFILE:CLEAR">
-VolumeFile:<code class="descname">CLEAR</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:VOLUMEFILE:CLEAR" title="Permalink to this definition">¶</a></dt>
+VolumeFile:<code class="descname">CLEAR</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="volumefile.html#method:VOLUMEFILE:CLEAR" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

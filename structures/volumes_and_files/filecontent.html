@@ -104,7 +104,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../reflection.html">Generic Structure</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../collections.html">Collections</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../volumes_and_files.html">Volumes &amp; Files</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="">FileContent</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="filecontent.html">FileContent</a></li>
 <li class="toctree-l3"><a class="reference internal" href="path.html">Path</a></li>
 <li class="toctree-l3"><a class="reference internal" href="volume.html">Volume</a></li>
 <li class="toctree-l3"><a class="reference internal" href="volumedirectory.html">VolumeDirectory</a></li>
@@ -174,7 +174,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="filecontent">
-<span id="id1"></span><h1>FileContent<a class="headerlink" href="#filecontent" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1>FileContent<a class="headerlink" href="filecontent.html#filecontent" title="Permalink to this headline">¶</a></h1>
 <p>Represents the contents of a file. You can obtain an instance of this class using <a class="reference internal" href="volumefile.html#method:VOLUMEFILE:READALL" title="VOLUMEFILE:READALL method"><code class="xref ks ks-meth docutils literal"><span class="pre">VolumeFile:READALL</span></code></a>.</p>
 <p>Internally this class stores raw data (a byte array). It can be passed around as is, for example this will copy a file:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">SET</span> <span class="nv">CONTENTS</span> <span class="ow">TO</span> <span class="nv">OPEN</span><span class="p">(</span><span class="s">&quot;filename&quot;</span><span class="p">):</span><span class="nv">READALL</span><span class="p">.</span>
@@ -191,9 +191,9 @@
 <p>Instances of this class can be iterated over. In each iteration step a single line of the file will be read.</p>
 <dl class="structure">
 <dt id="structure:FILECONTENT">
-<em class="property">structure </em><code class="descname">FileContent</code><a class="headerlink" href="#structure:FILECONTENT" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">FileContent</code><a class="headerlink" href="filecontent.html#structure:FILECONTENT" title="Permalink to this definition">¶</a></dt>
 <dd><table border="1" class="docutils" id="id2">
-<caption><span class="caption-text">Members</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-text">Members</span><a class="headerlink" href="filecontent.html#id2" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="17%" />
 <col width="17%" />
@@ -206,23 +206,23 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="#attribute:FILECONTENT:LENGTH" title="FILECONTENT:LENGTH attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">LENGTH</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="filecontent.html#attribute:FILECONTENT:LENGTH" title="FILECONTENT:LENGTH attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">LENGTH</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#scalar"><span>scalar</span></a></td>
 <td>File length (in bytes)</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:FILECONTENT:EMPTY" title="FILECONTENT:EMPTY attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">EMPTY</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="filecontent.html#attribute:FILECONTENT:EMPTY" title="FILECONTENT:EMPTY attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">EMPTY</span></code></a></td>
 <td><a class="reference internal" href="../misc/boolean.html#boolean"><span>boolean</span></a></td>
 <td>True if the file is empty</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:FILECONTENT:TYPE" title="FILECONTENT:TYPE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TYPE</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="filecontent.html#attribute:FILECONTENT:TYPE" title="FILECONTENT:TYPE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TYPE</span></code></a></td>
 <td><a class="reference internal" href="../misc/string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">String</span></code></a></td>
 <td>Type of the content</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:FILECONTENT:STRING" title="FILECONTENT:STRING attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">STRING</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="filecontent.html#attribute:FILECONTENT:STRING" title="FILECONTENT:STRING attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">STRING</span></code></a></td>
 <td><a class="reference internal" href="../misc/string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">String</span></code></a></td>
 <td>Contents of the file decoded using UTF-8 encoding</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:FILECONTENT:ITERATOR" title="FILECONTENT:ITERATOR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ITERATOR</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="filecontent.html#attribute:FILECONTENT:ITERATOR" title="FILECONTENT:ITERATOR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ITERATOR</span></code></a></td>
 <td><a class="reference internal" href="../collections/iterator.html#structure:ITERATOR" title="ITERATOR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Iterator</span></code></a></td>
 <td>Iterates over the lines of a file</td>
 </tr>
@@ -236,7 +236,7 @@
 </div>
 <dl class="attribute">
 <dt id="attribute:FILECONTENT:LENGTH">
-FileContent:<code class="descname">LENGTH</code><a class="headerlink" href="#attribute:FILECONTENT:LENGTH" title="Permalink to this definition">¶</a></dt>
+FileContent:<code class="descname">LENGTH</code><a class="headerlink" href="filecontent.html#attribute:FILECONTENT:LENGTH" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -252,7 +252,7 @@ FileContent:<code class="descname">LENGTH</code><a class="headerlink" href="#att
 
 <dl class="attribute">
 <dt id="attribute:FILECONTENT:EMPTY">
-FileContent:<code class="descname">EMPTY</code><a class="headerlink" href="#attribute:FILECONTENT:EMPTY" title="Permalink to this definition">¶</a></dt>
+FileContent:<code class="descname">EMPTY</code><a class="headerlink" href="filecontent.html#attribute:FILECONTENT:EMPTY" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -268,7 +268,7 @@ FileContent:<code class="descname">EMPTY</code><a class="headerlink" href="#attr
 
 <dl class="attribute">
 <dt id="attribute:FILECONTENT:TYPE">
-FileContent:<code class="descname">TYPE</code><a class="headerlink" href="#attribute:FILECONTENT:TYPE" title="Permalink to this definition">¶</a></dt>
+FileContent:<code class="descname">TYPE</code><a class="headerlink" href="filecontent.html#attribute:FILECONTENT:TYPE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -294,7 +294,7 @@ FileContent:<code class="descname">TYPE</code><a class="headerlink" href="#attri
 
 <dl class="attribute">
 <dt id="attribute:FILECONTENT:STRING">
-FileContent:<code class="descname">STRING</code><a class="headerlink" href="#attribute:FILECONTENT:STRING" title="Permalink to this definition">¶</a></dt>
+FileContent:<code class="descname">STRING</code><a class="headerlink" href="filecontent.html#attribute:FILECONTENT:STRING" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -310,7 +310,7 @@ FileContent:<code class="descname">STRING</code><a class="headerlink" href="#att
 
 <dl class="attribute">
 <dt id="attribute:FILECONTENT:ITERATOR">
-FileContent:<code class="descname">ITERATOR</code><a class="headerlink" href="#attribute:FILECONTENT:ITERATOR" title="Permalink to this definition">¶</a></dt>
+FileContent:<code class="descname">ITERATOR</code><a class="headerlink" href="filecontent.html#attribute:FILECONTENT:ITERATOR" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

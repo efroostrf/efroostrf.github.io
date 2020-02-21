@@ -118,7 +118,7 @@
 <li class="toctree-l3"><a class="reference internal" href="kuniverse.html">KUniverse 4th wall methods</a></li>
 <li class="toctree-l3"><a class="reference internal" href="loaddistance.html">Vessel Load Distance</a></li>
 <li class="toctree-l3"><a class="reference internal" href="loaddistance.html#situation-load-distance">Situation Load Distance</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">Note</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="note.html">Note</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pidloop.html">PIDLoop</a></li>
 <li class="toctree-l3"><a class="reference internal" href="resource_transfer.html">Resource Transfer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="steeringmanager.html">SteeringManager</a></li>
@@ -188,17 +188,17 @@
            <div itemprop="articleBody">
             
   <div class="section" id="note">
-<h1>Note<a class="headerlink" href="#note" title="Permalink to this headline">¶</a></h1>
+<h1>Note<a class="headerlink" href="note.html#note" title="Permalink to this headline">¶</a></h1>
 <p>Notes are structures that get passed in to the
 <a class="reference internal" href="../../general/skid.html#skid"><span>SKID chip</span></a> to tell it what tone to play
 and for how long.</p>
-<p>All the suffixes of a <a class="reference internal" href="#structure:NOTE" title="NOTE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Note</span></code></a> are read-only,
+<p>All the suffixes of a <a class="reference internal" href="note.html#structure:NOTE" title="NOTE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Note</span></code></a> are read-only,
 and you&#8217;re only ever expected to set them by
 constructing a new Note using the built-in Note()
 function, or the built-in SlideNote() function:</p>
 <span class="target" id="id1"></span><dl class="function">
 <dt id="function:NOTE">
-<code class="descname">NOTE</code><span class="sig-paren">(</span>frequency, duration, keyDownLength, volume<span class="sig-paren">)</span><a class="headerlink" href="#function:NOTE" title="Permalink to this definition">¶</a></dt>
+<code class="descname">NOTE</code><span class="sig-paren">(</span>frequency, duration, keyDownLength, volume<span class="sig-paren">)</span><a class="headerlink" href="note.html#function:NOTE" title="Permalink to this definition">¶</a></dt>
 <dd><p>This global function creates a note object from the given values.</p>
 <p>where:</p>
 <dl class="docutils">
@@ -252,7 +252,7 @@ setting).</dd>
 
 <span class="target" id="slidenote"></span><dl class="function">
 <dt id="function:SLIDENOTE">
-<code class="descname">SLIDENOTE</code><span class="sig-paren">(</span>frequency, endFrequency, duration, keyDownLength, volume<span class="sig-paren">)</span><a class="headerlink" href="#function:SLIDENOTE" title="Permalink to this definition">¶</a></dt>
+<code class="descname">SLIDENOTE</code><span class="sig-paren">(</span>frequency, endFrequency, duration, keyDownLength, volume<span class="sig-paren">)</span><a class="headerlink" href="note.html#function:SLIDENOTE" title="Permalink to this definition">¶</a></dt>
 <dd><p>This global function creates a note object that makes a sliding note
 that changes linearly from the start frequency to the end frequency
 across the duration of the note.</p>
@@ -269,14 +269,14 @@ If it is a number, then it is the frequency in Hertz.
 If it is a string, then it&#8217;s using the letter notation
 <a class="reference internal" href="../../general/skid.html#skid-letter-frequency"><span>described here</span></a>.</dd>
 <dt><code class="docutils literal"><span class="pre">duration</span></code></dt>
-<dd><strong>Mandatory</strong>: Same as the duration for the <a class="reference internal" href="#function:NOTE" title="NOTE function"><code class="xref ks ks-func docutils literal"><span class="pre">NOTE()</span></code></a>
+<dd><strong>Mandatory</strong>: Same as the duration for the <a class="reference internal" href="note.html#function:NOTE" title="NOTE function"><code class="xref ks ks-func docutils literal"><span class="pre">NOTE()</span></code></a>
 built-in function.  If it is missing it will be the same thing
 as the keyDownLength.</dd>
 <dt><code class="docutils literal"><span class="pre">keyDownLength</span></code></dt>
-<dd><strong>Optional</strong>: Same as the keyDownLength for the <a class="reference internal" href="#function:NOTE" title="NOTE function"><code class="xref ks ks-func docutils literal"><span class="pre">NOTE()</span></code></a>
+<dd><strong>Optional</strong>: Same as the keyDownLength for the <a class="reference internal" href="note.html#function:NOTE" title="NOTE function"><code class="xref ks ks-func docutils literal"><span class="pre">NOTE()</span></code></a>
 built-in function.</dd>
 <dt><code class="docutils literal"><span class="pre">volume</span></code></dt>
-<dd><strong>Optional</strong>: Same as the volume for the <a class="reference internal" href="#function:NOTE" title="NOTE function"><code class="xref ks ks-func docutils literal"><span class="pre">NOTE()</span></code></a>
+<dd><strong>Optional</strong>: Same as the volume for the <a class="reference internal" href="note.html#function:NOTE" title="NOTE function"><code class="xref ks ks-func docutils literal"><span class="pre">NOTE()</span></code></a>
 built-in function.</dd>
 </dl>
 <p>The note&#8217;s frequency will change linearly from the starting to
@@ -298,9 +298,9 @@ PLAY() suffix method:</p>
 
 <dl class="structure">
 <dt id="structure:NOTE">
-<em class="property">structure </em><code class="descname">Note</code><a class="headerlink" href="#structure:NOTE" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">Note</code><a class="headerlink" href="note.html#structure:NOTE" title="Permalink to this definition">¶</a></dt>
 <dd><table border="1" class="docutils" id="id2">
-<caption><span class="caption-text">Members</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-text">Members</span><a class="headerlink" href="note.html#id2" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="29%" />
 <col width="14%" />
@@ -313,23 +313,23 @@ PLAY() suffix method:</p>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="#attribute:NOTE:FREQUENCY" title="NOTE:FREQUENCY attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">FREQUENCY</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="note.html#attribute:NOTE:FREQUENCY" title="NOTE:FREQUENCY attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">FREQUENCY</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Scalar</span></code></a></td>
 <td>initial frequency of the note in Hertz</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:NOTE:ENDFREQUENCY" title="NOTE:ENDFREQUENCY attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ENDFREQUENCY</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="note.html#attribute:NOTE:ENDFREQUENCY" title="NOTE:ENDFREQUENCY attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ENDFREQUENCY</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Scalar</span></code></a></td>
 <td>final frequency of the note in Hertz</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:NOTE:KEYDOWNLENGTH" title="NOTE:KEYDOWNLENGTH attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">KEYDOWNLENGTH</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="note.html#attribute:NOTE:KEYDOWNLENGTH" title="NOTE:KEYDOWNLENGTH attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">KEYDOWNLENGTH</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Scalar</span></code></a></td>
 <td>time to hold the &#8220;synthesizer key&#8221; down for</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:NOTE:DURATION" title="NOTE:DURATION attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">DURATION</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="note.html#attribute:NOTE:DURATION" title="NOTE:DURATION attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">DURATION</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Scalar</span></code></a></td>
 <td>total time of the note including</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:NOTE:VOLUME" title="NOTE:VOLUME attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">VOLUME</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="note.html#attribute:NOTE:VOLUME" title="NOTE:VOLUME attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">VOLUME</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Scalar</span></code></a></td>
 <td>multiplier for how loud this note is relative to others notes</td>
 </tr>
@@ -337,7 +337,7 @@ PLAY() suffix method:</p>
 </table>
 <dl class="attribute">
 <dt id="attribute:NOTE:FREQUENCY">
-Note:<code class="descname">FREQUENCY</code><a class="headerlink" href="#attribute:NOTE:FREQUENCY" title="Permalink to this definition">¶</a></dt>
+Note:<code class="descname">FREQUENCY</code><a class="headerlink" href="note.html#attribute:NOTE:FREQUENCY" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -353,7 +353,7 @@ Note:<code class="descname">FREQUENCY</code><a class="headerlink" href="#attribu
 
 <dl class="attribute">
 <dt id="attribute:NOTE:ENDFREQUENCY">
-Note:<code class="descname">ENDFREQUENCY</code><a class="headerlink" href="#attribute:NOTE:ENDFREQUENCY" title="Permalink to this definition">¶</a></dt>
+Note:<code class="descname">ENDFREQUENCY</code><a class="headerlink" href="note.html#attribute:NOTE:ENDFREQUENCY" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -364,14 +364,14 @@ Note:<code class="descname">ENDFREQUENCY</code><a class="headerlink" href="#attr
 </tr>
 </tbody>
 </table>
-<p>If the note was created using <a class="reference internal" href="#function:SLIDENOTE" title="SLIDENOTE function"><code class="xref ks ks-func docutils literal"><span class="pre">SlideNote()</span></code></a> this is the final
+<p>If the note was created using <a class="reference internal" href="note.html#function:SLIDENOTE" title="SLIDENOTE function"><code class="xref ks ks-func docutils literal"><span class="pre">SlideNote()</span></code></a> this is the final
 frequency of the note, in Hertz.  Otherwise the value is identical to
-<a class="reference internal" href="#attribute:NOTE:FREQUENCY" title="NOTE:FREQUENCY attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">FREQUENCY</span></code></a>.</p>
+<a class="reference internal" href="note.html#attribute:NOTE:FREQUENCY" title="NOTE:FREQUENCY attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">FREQUENCY</span></code></a>.</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="attribute:NOTE:KEYDOWNLENGTH">
-Note:<code class="descname">KEYDOWNLENGTH</code><a class="headerlink" href="#attribute:NOTE:KEYDOWNLENGTH" title="Permalink to this definition">¶</a></dt>
+Note:<code class="descname">KEYDOWNLENGTH</code><a class="headerlink" href="note.html#attribute:NOTE:KEYDOWNLENGTH" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -389,7 +389,7 @@ Note:<code class="descname">KEYDOWNLENGTH</code><a class="headerlink" href="#att
 
 <dl class="attribute">
 <dt id="attribute:NOTE:DURATION">
-Note:<code class="descname">DURATION</code><a class="headerlink" href="#attribute:NOTE:DURATION" title="Permalink to this definition">¶</a></dt>
+Note:<code class="descname">DURATION</code><a class="headerlink" href="note.html#attribute:NOTE:DURATION" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -406,7 +406,7 @@ Note:<code class="descname">DURATION</code><a class="headerlink" href="#attribut
 
 <dl class="attribute">
 <dt id="attribute:NOTE:VOLUME">
-Note:<code class="descname">VOLUME</code><a class="headerlink" href="#attribute:NOTE:VOLUME" title="Permalink to this definition">¶</a></dt>
+Note:<code class="descname">VOLUME</code><a class="headerlink" href="note.html#attribute:NOTE:VOLUME" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

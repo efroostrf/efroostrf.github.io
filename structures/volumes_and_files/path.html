@@ -105,7 +105,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../collections.html">Collections</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../volumes_and_files.html">Volumes &amp; Files</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="filecontent.html">FileContent</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">Path</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="path.html">Path</a></li>
 <li class="toctree-l3"><a class="reference internal" href="volume.html">Volume</a></li>
 <li class="toctree-l3"><a class="reference internal" href="volumedirectory.html">VolumeDirectory</a></li>
 <li class="toctree-l3"><a class="reference internal" href="volumefile.html">VolumeFile</a></li>
@@ -174,7 +174,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="path">
-<span id="id1"></span><h1>Path<a class="headerlink" href="#path" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1>Path<a class="headerlink" href="path.html#path" title="Permalink to this headline">¶</a></h1>
 <p>Represents a path. Contains suffixes that can be helpful when using and manipulating paths. You can use
 <a class="reference internal" href="../../commands/files.html#path-command"><span>path()</span></a> to create new instances.</p>
 <p>Instances of this structure can be passed as arguments instead of ordinary, string paths, for example:</p>
@@ -183,7 +183,7 @@
 </div>
 <dl class="structure">
 <dt id="structure:PATH">
-<em class="property">structure </em><code class="descname">Path</code><a class="headerlink" href="#structure:PATH" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">Path</code><a class="headerlink" href="path.html#structure:PATH" title="Permalink to this definition">¶</a></dt>
 <dd><table border="1" class="docutils">
 <colgroup>
 <col width="29%" />
@@ -197,52 +197,52 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="#attribute:PATH:VOLUME" title="PATH:VOLUME attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">VOLUME</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="path.html#attribute:PATH:VOLUME" title="PATH:VOLUME attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">VOLUME</span></code></a></td>
 <td><a class="reference internal" href="volume.html#structure:VOLUME" title="VOLUME structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Volume</span></code></a></td>
 <td>Volume this path belongs to</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:PATH:SEGMENTS" title="PATH:SEGMENTS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SEGMENTS</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="path.html#attribute:PATH:SEGMENTS" title="PATH:SEGMENTS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SEGMENTS</span></code></a></td>
 <td><a class="reference internal" href="../collections/list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a> of <a class="reference internal" href="../misc/string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">String</span></code></a></td>
 <td>List of this path&#8217;s segments</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:PATH:LENGTH" title="PATH:LENGTH attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">LENGTH</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="path.html#attribute:PATH:LENGTH" title="PATH:LENGTH attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">LENGTH</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Scalar</span></code></a></td>
 <td>Number of segments in this path</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:PATH:NAME" title="PATH:NAME attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">NAME</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="path.html#attribute:PATH:NAME" title="PATH:NAME attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">NAME</span></code></a></td>
 <td><a class="reference internal" href="../misc/string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">String</span></code></a></td>
 <td>Name of file or directory this path points to</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:PATH:HASEXTENSION" title="PATH:HASEXTENSION attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">HASEXTENSION</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="path.html#attribute:PATH:HASEXTENSION" title="PATH:HASEXTENSION attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">HASEXTENSION</span></code></a></td>
 <td><a class="reference internal" href="../misc/boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>True if path contains an extension</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:PATH:EXTENSION" title="PATH:EXTENSION attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">EXTENSION</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="path.html#attribute:PATH:EXTENSION" title="PATH:EXTENSION attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">EXTENSION</span></code></a></td>
 <td><a class="reference internal" href="../misc/string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">String</span></code></a></td>
 <td>This path&#8217;s extension</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:PATH:ROOT" title="PATH:ROOT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ROOT</span></code></a></td>
-<td><a class="reference internal" href="#structure:PATH" title="PATH structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Path</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="path.html#attribute:PATH:ROOT" title="PATH:ROOT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ROOT</span></code></a></td>
+<td><a class="reference internal" href="path.html#structure:PATH" title="PATH structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Path</span></code></a></td>
 <td>Root path of this path&#8217;s volume</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:PATH:PARENT" title="PATH:PARENT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PARENT</span></code></a></td>
-<td><a class="reference internal" href="#structure:PATH" title="PATH structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Path</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="path.html#attribute:PATH:PARENT" title="PATH:PARENT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PARENT</span></code></a></td>
+<td><a class="reference internal" href="path.html#structure:PATH" title="PATH structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Path</span></code></a></td>
 <td>Parent path</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#method:PATH:CHANGENAME" title="PATH:CHANGENAME method"><code class="xref ks ks-meth docutils literal"><span class="pre">CHANGENAME(name)</span></code></a></td>
-<td><a class="reference internal" href="#structure:PATH" title="PATH structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Path</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="path.html#method:PATH:CHANGENAME" title="PATH:CHANGENAME method"><code class="xref ks ks-meth docutils literal"><span class="pre">CHANGENAME(name)</span></code></a></td>
+<td><a class="reference internal" href="path.html#structure:PATH" title="PATH structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Path</span></code></a></td>
 <td>Returns a new path with its name (last segment) changed</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#method:PATH:CHANGEEXTENSION" title="PATH:CHANGEEXTENSION method"><code class="xref ks ks-meth docutils literal"><span class="pre">CHANGEEXTENSION(extension)</span></code></a></td>
-<td><a class="reference internal" href="#structure:PATH" title="PATH structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Path</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="path.html#method:PATH:CHANGEEXTENSION" title="PATH:CHANGEEXTENSION method"><code class="xref ks ks-meth docutils literal"><span class="pre">CHANGEEXTENSION(extension)</span></code></a></td>
+<td><a class="reference internal" href="path.html#structure:PATH" title="PATH structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Path</span></code></a></td>
 <td>Returns a new path with extension changed</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#method:PATH:ISPARENT" title="PATH:ISPARENT method"><code class="xref ks ks-meth docutils literal"><span class="pre">ISPARENT(path)</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="path.html#method:PATH:ISPARENT" title="PATH:ISPARENT method"><code class="xref ks ks-meth docutils literal"><span class="pre">ISPARENT(path)</span></code></a></td>
 <td><a class="reference internal" href="../misc/boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>True if <cite>path</cite> is the parent of this path</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#method:PATH:COMBINE" title="PATH:COMBINE method"><code class="xref ks ks-meth docutils literal"><span class="pre">COMBINE(name1,</span> <span class="pre">[name2,</span> <span class="pre">...])</span></code></a></td>
-<td><a class="reference internal" href="#structure:PATH" title="PATH structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Path</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="path.html#method:PATH:COMBINE" title="PATH:COMBINE method"><code class="xref ks ks-meth docutils literal"><span class="pre">COMBINE(name1,</span> <span class="pre">[name2,</span> <span class="pre">...])</span></code></a></td>
+<td><a class="reference internal" href="path.html#structure:PATH" title="PATH structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Path</span></code></a></td>
 <td>Returns a new path created by adding further elements to this one</td>
 </tr>
 </tbody>
@@ -251,7 +251,7 @@
 
 <dl class="attribute">
 <dt id="attribute:PATH:VOLUME">
-Path:<code class="descname">VOLUME</code><a class="headerlink" href="#attribute:PATH:VOLUME" title="Permalink to this definition">¶</a></dt>
+Path:<code class="descname">VOLUME</code><a class="headerlink" href="path.html#attribute:PATH:VOLUME" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -267,7 +267,7 @@ Path:<code class="descname">VOLUME</code><a class="headerlink" href="#attribute:
 
 <dl class="attribute">
 <dt id="attribute:PATH:SEGMENTS">
-Path:<code class="descname">SEGMENTS</code><a class="headerlink" href="#attribute:PATH:SEGMENTS" title="Permalink to this definition">¶</a></dt>
+Path:<code class="descname">SEGMENTS</code><a class="headerlink" href="path.html#attribute:PATH:SEGMENTS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -284,7 +284,7 @@ Path:<code class="descname">SEGMENTS</code><a class="headerlink" href="#attribut
 
 <dl class="attribute">
 <dt id="attribute:PATH:LENGTH">
-Path:<code class="descname">LENGTH</code><a class="headerlink" href="#attribute:PATH:LENGTH" title="Permalink to this definition">¶</a></dt>
+Path:<code class="descname">LENGTH</code><a class="headerlink" href="path.html#attribute:PATH:LENGTH" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -300,7 +300,7 @@ Path:<code class="descname">LENGTH</code><a class="headerlink" href="#attribute:
 
 <dl class="attribute">
 <dt id="attribute:PATH:NAME">
-Path:<code class="descname">NAME</code><a class="headerlink" href="#attribute:PATH:NAME" title="Permalink to this definition">¶</a></dt>
+Path:<code class="descname">NAME</code><a class="headerlink" href="path.html#attribute:PATH:NAME" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -316,7 +316,7 @@ Path:<code class="descname">NAME</code><a class="headerlink" href="#attribute:PA
 
 <dl class="attribute">
 <dt id="attribute:PATH:HASEXTENSION">
-Path:<code class="descname">HASEXTENSION</code><a class="headerlink" href="#attribute:PATH:HASEXTENSION" title="Permalink to this definition">¶</a></dt>
+Path:<code class="descname">HASEXTENSION</code><a class="headerlink" href="path.html#attribute:PATH:HASEXTENSION" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -332,7 +332,7 @@ Path:<code class="descname">HASEXTENSION</code><a class="headerlink" href="#attr
 
 <dl class="attribute">
 <dt id="attribute:PATH:EXTENSION">
-Path:<code class="descname">EXTENSION</code><a class="headerlink" href="#attribute:PATH:EXTENSION" title="Permalink to this definition">¶</a></dt>
+Path:<code class="descname">EXTENSION</code><a class="headerlink" href="path.html#attribute:PATH:EXTENSION" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -348,12 +348,12 @@ Path:<code class="descname">EXTENSION</code><a class="headerlink" href="#attribu
 
 <dl class="attribute">
 <dt id="attribute:PATH:ROOT">
-Path:<code class="descname">ROOT</code><a class="headerlink" href="#attribute:PATH:ROOT" title="Permalink to this definition">¶</a></dt>
+Path:<code class="descname">ROOT</code><a class="headerlink" href="path.html#attribute:PATH:ROOT" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#structure:PATH" title="PATH structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Path</span></code></a></td>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="path.html#structure:PATH" title="PATH structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Path</span></code></a></td>
 </tr>
 <tr class="field-even field"><th class="field-name">Access:</th><td class="field-body">Get only</td>
 </tr>
@@ -364,12 +364,12 @@ Path:<code class="descname">ROOT</code><a class="headerlink" href="#attribute:PA
 
 <dl class="attribute">
 <dt id="attribute:PATH:PARENT">
-Path:<code class="descname">PARENT</code><a class="headerlink" href="#attribute:PATH:PARENT" title="Permalink to this definition">¶</a></dt>
+Path:<code class="descname">PARENT</code><a class="headerlink" href="path.html#attribute:PATH:PARENT" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#structure:PATH" title="PATH structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Path</span></code></a></td>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="path.html#structure:PATH" title="PATH structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Path</span></code></a></td>
 </tr>
 <tr class="field-even field"><th class="field-name">Access:</th><td class="field-body">Get only</td>
 </tr>
@@ -380,7 +380,7 @@ Path:<code class="descname">PARENT</code><a class="headerlink" href="#attribute:
 
 <dl class="method">
 <dt id="method:PATH:CHANGENAME">
-Path:<code class="descname">CHANGENAME</code><span class="sig-paren">(</span>name<span class="sig-paren">)</span><a class="headerlink" href="#method:PATH:CHANGENAME" title="Permalink to this definition">¶</a></dt>
+Path:<code class="descname">CHANGENAME</code><span class="sig-paren">(</span>name<span class="sig-paren">)</span><a class="headerlink" href="path.html#method:PATH:CHANGENAME" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -390,7 +390,7 @@ Path:<code class="descname">CHANGENAME</code><span class="sig-paren">(</span>nam
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#structure:PATH" title="PATH structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Path</span></code></a></p>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><a class="reference internal" href="path.html#structure:PATH" title="PATH structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Path</span></code></a></p>
 </td>
 </tr>
 </tbody>
@@ -400,7 +400,7 @@ Path:<code class="descname">CHANGENAME</code><span class="sig-paren">(</span>nam
 
 <dl class="method">
 <dt id="method:PATH:CHANGEEXTENSION">
-Path:<code class="descname">CHANGEEXTENSION</code><span class="sig-paren">(</span>extension<span class="sig-paren">)</span><a class="headerlink" href="#method:PATH:CHANGEEXTENSION" title="Permalink to this definition">¶</a></dt>
+Path:<code class="descname">CHANGEEXTENSION</code><span class="sig-paren">(</span>extension<span class="sig-paren">)</span><a class="headerlink" href="path.html#method:PATH:CHANGEEXTENSION" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -410,7 +410,7 @@ Path:<code class="descname">CHANGEEXTENSION</code><span class="sig-paren">(</spa
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#structure:PATH" title="PATH structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Path</span></code></a></p>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><a class="reference internal" href="path.html#structure:PATH" title="PATH structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Path</span></code></a></p>
 </td>
 </tr>
 </tbody>
@@ -420,13 +420,13 @@ Path:<code class="descname">CHANGEEXTENSION</code><span class="sig-paren">(</spa
 
 <dl class="method">
 <dt id="method:PATH:ISPARENT">
-Path:<code class="descname">ISPARENT</code><span class="sig-paren">(</span>path<span class="sig-paren">)</span><a class="headerlink" href="#method:PATH:ISPARENT" title="Permalink to this definition">¶</a></dt>
+Path:<code class="descname">ISPARENT</code><span class="sig-paren">(</span>path<span class="sig-paren">)</span><a class="headerlink" href="path.html#method:PATH:ISPARENT" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>path</strong> &#8211; <a class="reference internal" href="#structure:PATH" title="PATH structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Path</span></code></a> path to check</li>
+<li><strong>path</strong> &#8211; <a class="reference internal" href="path.html#structure:PATH" title="PATH structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Path</span></code></a> path to check</li>
 </ul>
 </td>
 </tr>
@@ -440,7 +440,7 @@ Path:<code class="descname">ISPARENT</code><span class="sig-paren">(</span>path<
 
 <dl class="method">
 <dt id="method:PATH:COMBINE">
-Path:<code class="descname">COMBINE</code><span class="sig-paren">(</span>name1, [name2, ...]<span class="sig-paren">)</span><a class="headerlink" href="#method:PATH:COMBINE" title="Permalink to this definition">¶</a></dt>
+Path:<code class="descname">COMBINE</code><span class="sig-paren">(</span>name1, [name2, ...]<span class="sig-paren">)</span><a class="headerlink" href="path.html#method:PATH:COMBINE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -450,7 +450,7 @@ Path:<code class="descname">COMBINE</code><span class="sig-paren">(</span>name1,
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#structure:PATH" title="PATH structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Path</span></code></a></p>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><a class="reference internal" href="path.html#structure:PATH" title="PATH structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Path</span></code></a></p>
 </td>
 </tr>
 </tbody>

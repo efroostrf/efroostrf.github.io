@@ -105,7 +105,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../collections.html">Collections</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../volumes_and_files.html">Volumes &amp; Files</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../vessels.html">Vessels &amp; Parts</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="">AggregateResource</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="aggregateresource.html">AggregateResource</a></li>
 <li class="toctree-l3"><a class="reference internal" href="alt.html">ALT</a></li>
 <li class="toctree-l3"><a class="reference internal" href="bounds.html">BOUNDS</a></li>
 <li class="toctree-l3"><a class="reference internal" href="core.html">Core</a></li>
@@ -192,7 +192,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="aggregateresource">
-<span id="id1"></span><h1>AggregateResource<a class="headerlink" href="#aggregateresource" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1>AggregateResource<a class="headerlink" href="aggregateresource.html#aggregateresource" title="Permalink to this headline">¶</a></h1>
 <p>A ship can have many parts that contain resources (i.e. fuel, electric charge, etc). kOS has several tools for getting the summation of each resource.</p>
 <p>This is the type returned as the elements of the list from <code class="docutils literal"><span class="pre">LIST</span> <span class="pre">RESOURCES.</span></code></p>
 <p>IN MyList &lt;list command&gt;</p>
@@ -221,7 +221,7 @@
 </div>
 <dl class="structure">
 <dt id="structure:AGGREGATERESOURCE">
-<em class="property">structure </em><code class="descname">AggregateResource</code><a class="headerlink" href="#structure:AGGREGATERESOURCE" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">AggregateResource</code><a class="headerlink" href="aggregateresource.html#structure:AGGREGATERESOURCE" title="Permalink to this definition">¶</a></dt>
 <dd><table border="1" class="docutils">
 <colgroup>
 <col width="29%" />
@@ -235,19 +235,19 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="#attribute:AGGREGATERESOURCE:NAME" title="AGGREGATERESOURCE:NAME attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">NAME</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="aggregateresource.html#attribute:AGGREGATERESOURCE:NAME" title="AGGREGATERESOURCE:NAME attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">NAME</span></code></a></td>
 <td><a class="reference internal" href="../misc/string.html#string"><span>string</span></a></td>
 <td>Resource name</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:AGGREGATERESOURCE:AMOUNT" title="AGGREGATERESOURCE:AMOUNT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">AMOUNT</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="aggregateresource.html#attribute:AGGREGATERESOURCE:AMOUNT" title="AGGREGATERESOURCE:AMOUNT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">AMOUNT</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#scalar"><span>scalar</span></a></td>
 <td>Total amount remaining</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:AGGREGATERESOURCE:CAPACITY" title="AGGREGATERESOURCE:CAPACITY attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">CAPACITY</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="aggregateresource.html#attribute:AGGREGATERESOURCE:CAPACITY" title="AGGREGATERESOURCE:CAPACITY attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">CAPACITY</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#scalar"><span>scalar</span></a></td>
 <td>Total amount when full</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:AGGREGATERESOURCE:PARTS" title="AGGREGATERESOURCE:PARTS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PARTS</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="aggregateresource.html#attribute:AGGREGATERESOURCE:PARTS" title="AGGREGATERESOURCE:PARTS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PARTS</span></code></a></td>
 <td>List</td>
 <td>Parts containing this resource</td>
 </tr>
@@ -257,7 +257,7 @@
 
 <dl class="attribute">
 <dt id="attribute:AGGREGATERESOURCE:NAME">
-AggregateResource:<code class="descname">NAME</code><a class="headerlink" href="#attribute:AGGREGATERESOURCE:NAME" title="Permalink to this definition">¶</a></dt>
+AggregateResource:<code class="descname">NAME</code><a class="headerlink" href="aggregateresource.html#attribute:AGGREGATERESOURCE:NAME" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -273,7 +273,7 @@ AggregateResource:<code class="descname">NAME</code><a class="headerlink" href="
 
 <dl class="attribute">
 <dt id="attribute:AGGREGATERESOURCE:AMOUNT">
-AggregateResource:<code class="descname">AMOUNT</code><a class="headerlink" href="#attribute:AGGREGATERESOURCE:AMOUNT" title="Permalink to this definition">¶</a></dt>
+AggregateResource:<code class="descname">AMOUNT</code><a class="headerlink" href="aggregateresource.html#attribute:AGGREGATERESOURCE:AMOUNT" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -289,7 +289,7 @@ AggregateResource:<code class="descname">AMOUNT</code><a class="headerlink" href
 
 <dl class="attribute">
 <dt id="attribute:AGGREGATERESOURCE:CAPACITY">
-AggregateResource:<code class="descname">CAPACITY</code><a class="headerlink" href="#attribute:AGGREGATERESOURCE:CAPACITY" title="Permalink to this definition">¶</a></dt>
+AggregateResource:<code class="descname">CAPACITY</code><a class="headerlink" href="aggregateresource.html#attribute:AGGREGATERESOURCE:CAPACITY" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -305,7 +305,7 @@ AggregateResource:<code class="descname">CAPACITY</code><a class="headerlink" hr
 
 <dl class="attribute">
 <dt id="attribute:AGGREGATERESOURCE:PARTS">
-AggregateResource:<code class="descname">PARTS</code><a class="headerlink" href="#attribute:AGGREGATERESOURCE:PARTS" title="Permalink to this definition">¶</a></dt>
+AggregateResource:<code class="descname">PARTS</code><a class="headerlink" href="aggregateresource.html#attribute:AGGREGATERESOURCE:PARTS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

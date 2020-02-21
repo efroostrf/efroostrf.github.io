@@ -109,7 +109,7 @@
 <li class="toctree-l3"><a class="reference internal" href="list.html">List</a></li>
 <li class="toctree-l3"><a class="reference internal" href="queue.html">Queue</a></li>
 <li class="toctree-l3"><a class="reference internal" href="range.html">Range</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">Stack</a><ul class="simple">
+<li class="toctree-l3 current"><a class="current reference internal" href="stack.html">Stack</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="uniqueset.html">UniqueSet</a></li>
@@ -178,11 +178,11 @@
            <div itemprop="articleBody">
             
   <div class="section" id="stack">
-<span id="id1"></span><h1>Stack<a class="headerlink" href="#stack" title="Permalink to this headline">¶</a></h1>
-<p>A <a class="reference internal" href="#structure:STACK" title="STACK structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Stack</span></code></a> is a collection of any type in kOS. Stacks work according to <a class="reference external" href="https://en.wikipedia.org/wiki/FIFO_and_LIFO_accounting">Last-In first-out</a> principle. It may be useful to contrast
-<a class="reference internal" href="#structure:STACK" title="STACK structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Stack</span></code></a> with <a class="reference internal" href="queue.html#structure:QUEUE" title="QUEUE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Queue</span></code></a> to better understand how both structures work. You can read more about stacks on <a class="reference external" href="https://en.wikipedia.org/wiki/Stack_(abstract_data_type)">Wikipedia</a>.</p>
+<span id="id1"></span><h1>Stack<a class="headerlink" href="stack.html#stack" title="Permalink to this headline">¶</a></h1>
+<p>A <a class="reference internal" href="stack.html#structure:STACK" title="STACK structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Stack</span></code></a> is a collection of any type in kOS. Stacks work according to <a class="reference external" href="https://en.wikipedia.org/wiki/FIFO_and_LIFO_accounting">Last-In first-out</a> principle. It may be useful to contrast
+<a class="reference internal" href="stack.html#structure:STACK" title="STACK structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Stack</span></code></a> with <a class="reference internal" href="queue.html#structure:QUEUE" title="QUEUE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Queue</span></code></a> to better understand how both structures work. You can read more about stacks on <a class="reference external" href="https://en.wikipedia.org/wiki/Stack_(abstract_data_type)">Wikipedia</a>.</p>
 <div class="section" id="using-a-stack">
-<h2>Using a stack<a class="headerlink" href="#using-a-stack" title="Permalink to this headline">¶</a></h2>
+<h2>Using a stack<a class="headerlink" href="stack.html#using-a-stack" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">SET</span> <span class="nv">S</span> <span class="ow">TO</span> <span class="nv">STACK</span><span class="p">().</span>
 <span class="nv">S</span><span class="p">:</span><span class="nv">PUSH</span><span class="p">(</span><span class="s">&quot;alice&quot;</span><span class="p">).</span>
 <span class="nv">S</span><span class="p">:</span><span class="nv">PUSH</span><span class="p">(</span><span class="s">&quot;bob&quot;</span><span class="p">).</span>
@@ -193,12 +193,12 @@
 </div>
 </div>
 <div class="section" id="structure">
-<h2>Structure<a class="headerlink" href="#structure" title="Permalink to this headline">¶</a></h2>
+<h2>Structure<a class="headerlink" href="stack.html#structure" title="Permalink to this headline">¶</a></h2>
 <dl class="structure">
 <dt id="structure:STACK">
-<em class="property">structure </em><code class="descname">Stack</code><a class="headerlink" href="#structure:STACK" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">Stack</code><a class="headerlink" href="stack.html#structure:STACK" title="Permalink to this definition">¶</a></dt>
 <dd><table border="1" class="docutils" id="id2">
-<caption><span class="caption-text">Members</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-text">Members</span><a class="headerlink" href="stack.html#id2" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="29%" />
 <col width="14%" />
@@ -213,26 +213,26 @@
 <tbody valign="top">
 <tr class="row-even"><td>All suffixes of <a class="reference internal" href="enumerable.html#structure:ENUMERABLE" title="ENUMERABLE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Enumerable</span></code></a></td>
 <td>&nbsp;</td>
-<td><a class="reference internal" href="#structure:STACK" title="STACK structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Stack</span></code></a> objects are a type of <a class="reference internal" href="enumerable.html#structure:ENUMERABLE" title="ENUMERABLE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Enumerable</span></code></a></td>
+<td><a class="reference internal" href="stack.html#structure:STACK" title="STACK structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Stack</span></code></a> objects are a type of <a class="reference internal" href="enumerable.html#structure:ENUMERABLE" title="ENUMERABLE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Enumerable</span></code></a></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#method:STACK:PUSH" title="STACK:PUSH method"><code class="xref ks ks-meth docutils literal"><span class="pre">PUSH(item)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="stack.html#method:STACK:PUSH" title="STACK:PUSH method"><code class="xref ks ks-meth docutils literal"><span class="pre">PUSH(item)</span></code></a></td>
 <td>None</td>
 <td>add item to the top of the stack</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#method:STACK:POP" title="STACK:POP method"><code class="xref ks ks-meth docutils literal"><span class="pre">POP()</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="stack.html#method:STACK:POP" title="STACK:POP method"><code class="xref ks ks-meth docutils literal"><span class="pre">POP()</span></code></a></td>
 <td>any type</td>
 <td>returns the item on top of the stack and removes it</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#method:STACK:PEEK" title="STACK:PEEK method"><code class="xref ks ks-meth docutils literal"><span class="pre">PEEK()</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="stack.html#method:STACK:PEEK" title="STACK:PEEK method"><code class="xref ks ks-meth docutils literal"><span class="pre">PEEK()</span></code></a></td>
 <td>any type</td>
 <td>returns the item on top of the stack without removing it</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#method:STACK:CLEAR" title="STACK:CLEAR method"><code class="xref ks ks-meth docutils literal"><span class="pre">CLEAR()</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="stack.html#method:STACK:CLEAR" title="STACK:CLEAR method"><code class="xref ks ks-meth docutils literal"><span class="pre">CLEAR()</span></code></a></td>
 <td>None</td>
 <td>remove all elements</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:STACK:COPY" title="STACK:COPY attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">COPY</span></code></a></td>
-<td><a class="reference internal" href="#structure:STACK" title="STACK structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Stack</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="stack.html#attribute:STACK:COPY" title="STACK:COPY attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">COPY</span></code></a></td>
+<td><a class="reference internal" href="stack.html#structure:STACK" title="STACK structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Stack</span></code></a></td>
 <td>a new copy of this stack</td>
 </tr>
 </tbody>
@@ -245,7 +245,7 @@
 </div>
 <dl class="method">
 <dt id="method:STACK:PUSH">
-Stack:<code class="descname">PUSH</code><span class="sig-paren">(</span>item<span class="sig-paren">)</span><a class="headerlink" href="#method:STACK:PUSH" title="Permalink to this definition">¶</a></dt>
+Stack:<code class="descname">PUSH</code><span class="sig-paren">(</span>item<span class="sig-paren">)</span><a class="headerlink" href="stack.html#method:STACK:PUSH" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -262,30 +262,30 @@ Stack:<code class="descname">PUSH</code><span class="sig-paren">(</span>item<spa
 
 <dl class="method">
 <dt id="method:STACK:POP">
-Stack:<code class="descname">POP</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:STACK:POP" title="Permalink to this definition">¶</a></dt>
+Stack:<code class="descname">POP</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="stack.html#method:STACK:POP" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the item on top of the stack and removes it.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="method:STACK:PEEK">
-Stack:<code class="descname">PEEK</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:STACK:PEEK" title="Permalink to this definition">¶</a></dt>
+Stack:<code class="descname">PEEK</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="stack.html#method:STACK:PEEK" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the item on top of the stack without removing it.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="method:STACK:CLEAR">
-Stack:<code class="descname">CLEAR</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:STACK:CLEAR" title="Permalink to this definition">¶</a></dt>
+Stack:<code class="descname">CLEAR</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="stack.html#method:STACK:CLEAR" title="Permalink to this definition">¶</a></dt>
 <dd><p>Removes all elements from the stack.</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="attribute:STACK:COPY">
-Stack:<code class="descname">COPY</code><a class="headerlink" href="#attribute:STACK:COPY" title="Permalink to this definition">¶</a></dt>
+Stack:<code class="descname">COPY</code><a class="headerlink" href="stack.html#attribute:STACK:COPY" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#structure:STACK" title="STACK structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Stack</span></code></a></td>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="stack.html#structure:STACK" title="STACK structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Stack</span></code></a></td>
 </tr>
 <tr class="field-even field"><th class="field-name">Access:</th><td class="field-body">Get only</td>
 </tr>

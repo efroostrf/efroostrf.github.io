@@ -125,7 +125,7 @@
 <li class="toctree-l3"><a class="reference internal" href="resource.html">Resource</a></li>
 <li class="toctree-l3"><a class="reference internal" href="sciencedatavalue.html">ScienceData</a></li>
 <li class="toctree-l3"><a class="reference internal" href="scienceexperiment.html">ScienceExperimentModule</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">Sensor</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="sensor.html">Sensor</a></li>
 <li class="toctree-l3"><a class="reference internal" href="stage.html">Stage</a></li>
 <li class="toctree-l3"><a class="reference internal" href="vessel.html">Vessel</a></li>
 <li class="toctree-l3"><a class="reference internal" href="vesselsensors.html">VesselSensors</a></li>
@@ -192,8 +192,8 @@
            <div itemprop="articleBody">
             
   <div class="section" id="sensor">
-<span id="id1"></span><h1>Sensor<a class="headerlink" href="#sensor" title="Permalink to this headline">¶</a></h1>
-<p>The type of structures returned by <a class="reference internal" href="../../commands/list.html#list-command"><span>LIST SENSORS IN SOMEVARIABLE</span></a>. This is not fully understood because the type of <a class="reference internal" href="partmodule.html#structure:PARTMODULE" title="PARTMODULE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">PartModule</span></code></a> in the KSP API called <code class="docutils literal"><span class="pre">ModuleEnviroSensor</span></code>, which all Sensors are a kind of, is not well documented. Here is an example of using <a class="reference internal" href="#structure:SENSOR" title="SENSOR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Sensor</span></code></a>:</p>
+<span id="id1"></span><h1>Sensor<a class="headerlink" href="sensor.html#sensor" title="Permalink to this headline">¶</a></h1>
+<p>The type of structures returned by <a class="reference internal" href="../../commands/list.html#list-command"><span>LIST SENSORS IN SOMEVARIABLE</span></a>. This is not fully understood because the type of <a class="reference internal" href="partmodule.html#structure:PARTMODULE" title="PARTMODULE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">PartModule</span></code></a> in the KSP API called <code class="docutils literal"><span class="pre">ModuleEnviroSensor</span></code>, which all Sensors are a kind of, is not well documented. Here is an example of using <a class="reference internal" href="sensor.html#structure:SENSOR" title="SENSOR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Sensor</span></code></a>:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">PRINT</span> <span class="s">&quot;Full Sensor Dump:&quot;</span><span class="p">.</span>
 <span class="k">LIST</span> <span class="nv">SENSORS</span> <span class="nv">IN</span> <span class="nv">SENSELIST</span><span class="p">.</span>
 
@@ -212,7 +212,7 @@
 </div>
 <dl class="structure">
 <dt id="structure:SENSOR">
-<em class="property">structure </em><code class="descname">Sensor</code><a class="headerlink" href="#structure:SENSOR" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">Sensor</code><a class="headerlink" href="sensor.html#structure:SENSOR" title="Permalink to this definition">¶</a></dt>
 <dd><table border="1" class="docutils">
 <colgroup>
 <col width="29%" />
@@ -228,25 +228,25 @@
 <tbody valign="top">
 <tr class="row-even"><td>All suffixes of <a class="reference internal" href="part.html#structure:PART" title="PART structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Part</span></code></a></td>
 <td>&nbsp;</td>
-<td><a class="reference internal" href="#structure:SENSOR" title="SENSOR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Sensor</span></code></a> objects are a type of <a class="reference internal" href="part.html#structure:PART" title="PART structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Part</span></code></a></td>
+<td><a class="reference internal" href="sensor.html#structure:SENSOR" title="SENSOR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Sensor</span></code></a> objects are a type of <a class="reference internal" href="part.html#structure:PART" title="PART structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Part</span></code></a></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:SENSOR:ACTIVE" title="SENSOR:ACTIVE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ACTIVE</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="sensor.html#attribute:SENSOR:ACTIVE" title="SENSOR:ACTIVE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ACTIVE</span></code></a></td>
 <td><a class="reference internal" href="../misc/boolean.html#boolean"><span>Boolean</span></a></td>
 <td>Check if this sensor is active</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:SENSOR:TYPE" title="SENSOR:TYPE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TYPE</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="sensor.html#attribute:SENSOR:TYPE" title="SENSOR:TYPE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TYPE</span></code></a></td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:SENSOR:DISPLAY" title="SENSOR:DISPLAY attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">DISPLAY</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="sensor.html#attribute:SENSOR:DISPLAY" title="SENSOR:DISPLAY attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">DISPLAY</span></code></a></td>
 <td>string</td>
 <td>Value of the readout</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:SENSOR:POWERCONSUMPTION" title="SENSOR:POWERCONSUMPTION attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">POWERCONSUMPTION</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="sensor.html#attribute:SENSOR:POWERCONSUMPTION" title="SENSOR:POWERCONSUMPTION attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">POWERCONSUMPTION</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#scalar"><span>scalar</span></a></td>
 <td>Rate of required electric charge</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#method:SENSOR:TOGGLE" title="SENSOR:TOGGLE method"><code class="xref ks ks-meth docutils literal"><span class="pre">TOGGLE()</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="sensor.html#method:SENSOR:TOGGLE" title="SENSOR:TOGGLE method"><code class="xref ks ks-meth docutils literal"><span class="pre">TOGGLE()</span></code></a></td>
 <td>&nbsp;</td>
 <td>Call to activate/deactivate</td>
 </tr>
@@ -256,11 +256,11 @@
 
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">A <a class="reference internal" href="#structure:SENSOR" title="SENSOR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Sensor</span></code></a> is a type of <a class="reference internal" href="part.html#structure:PART" title="PART structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Part</span></code></a>, and therefore can use all the suffixes of <a class="reference internal" href="part.html#structure:PART" title="PART structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Part</span></code></a>.</p>
+<p class="last">A <a class="reference internal" href="sensor.html#structure:SENSOR" title="SENSOR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Sensor</span></code></a> is a type of <a class="reference internal" href="part.html#structure:PART" title="PART structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Part</span></code></a>, and therefore can use all the suffixes of <a class="reference internal" href="part.html#structure:PART" title="PART structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Part</span></code></a>.</p>
 </div>
 <dl class="attribute">
 <dt id="attribute:SENSOR:ACTIVE">
-Sensor:<code class="descname">ACTIVE</code><a class="headerlink" href="#attribute:SENSOR:ACTIVE" title="Permalink to this definition">¶</a></dt>
+Sensor:<code class="descname">ACTIVE</code><a class="headerlink" href="sensor.html#attribute:SENSOR:ACTIVE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -276,7 +276,7 @@ Sensor:<code class="descname">ACTIVE</code><a class="headerlink" href="#attribut
 
 <dl class="attribute">
 <dt id="attribute:SENSOR:TYPE">
-Sensor:<code class="descname">TYPE</code><a class="headerlink" href="#attribute:SENSOR:TYPE" title="Permalink to this definition">¶</a></dt>
+Sensor:<code class="descname">TYPE</code><a class="headerlink" href="sensor.html#attribute:SENSOR:TYPE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -289,7 +289,7 @@ Sensor:<code class="descname">TYPE</code><a class="headerlink" href="#attribute:
 
 <dl class="attribute">
 <dt id="attribute:SENSOR:DISPLAY">
-Sensor:<code class="descname">DISPLAY</code><a class="headerlink" href="#attribute:SENSOR:DISPLAY" title="Permalink to this definition">¶</a></dt>
+Sensor:<code class="descname">DISPLAY</code><a class="headerlink" href="sensor.html#attribute:SENSOR:DISPLAY" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -305,7 +305,7 @@ Sensor:<code class="descname">DISPLAY</code><a class="headerlink" href="#attribu
 
 <dl class="attribute">
 <dt id="attribute:SENSOR:POWERCONSUMPTION">
-Sensor:<code class="descname">POWERCONSUMPTION</code><a class="headerlink" href="#attribute:SENSOR:POWERCONSUMPTION" title="Permalink to this definition">¶</a></dt>
+Sensor:<code class="descname">POWERCONSUMPTION</code><a class="headerlink" href="sensor.html#attribute:SENSOR:POWERCONSUMPTION" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -321,7 +321,7 @@ Sensor:<code class="descname">POWERCONSUMPTION</code><a class="headerlink" href=
 
 <dl class="method">
 <dt id="method:SENSOR:TOGGLE">
-Sensor:<code class="descname">TOGGLE</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:SENSOR:TOGGLE" title="Permalink to this definition">¶</a></dt>
+Sensor:<code class="descname">TOGGLE</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="sensor.html#method:SENSOR:TOGGLE" title="Permalink to this definition">¶</a></dt>
 <dd><p>Call this method to cause the sensor to switch between active and deactivated or visa versa.</p>
 </dd></dl>
 

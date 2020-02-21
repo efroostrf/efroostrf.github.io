@@ -108,7 +108,7 @@
 <li class="toctree-l2 current"><a class="reference internal" href="../communication.html">Communication</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="connection.html">Connection</a></li>
 <li class="toctree-l3"><a class="reference internal" href="message.html">Message</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">MessageQueue</a><ul class="simple">
+<li class="toctree-l3 current"><a class="current reference internal" href="message_queue.html">MessageQueue</a><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -173,12 +173,12 @@
            <div itemprop="articleBody">
             
   <div class="section" id="messagequeue">
-<span id="message-queue"></span><h1>MessageQueue<a class="headerlink" href="#messagequeue" title="Permalink to this headline">¶</a></h1>
+<span id="message-queue"></span><h1>MessageQueue<a class="headerlink" href="message_queue.html#messagequeue" title="Permalink to this headline">¶</a></h1>
 <p>Just like ordinary <a class="reference internal" href="../collections/queue.html#structure:QUEUE" title="QUEUE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">queues</span></code></a> message queues work according to <a class="reference external" href="https://en.wikipedia.org/wiki/FIFO_and_LIFO_accounting">First-In first-out</a> principle.
 You can read more about queues on <a class="reference external" href="https://en.wikipedia.org/wiki/Queue_(abstract_data_type)">Wikipedia</a>.</p>
 <p>Whenever you send a message to a CPU or a vessel it gets added to the end of that CPU&#8217;s or vessel&#8217;s message queue. The recipient can then read those messages from the queue.</p>
 <div class="section" id="accessing-message-queues">
-<h2>Accessing message queues<a class="headerlink" href="#accessing-message-queues" title="Permalink to this headline">¶</a></h2>
+<h2>Accessing message queues<a class="headerlink" href="message_queue.html#accessing-message-queues" title="Permalink to this headline">¶</a></h2>
 <p>You can access the current processor&#8217;s message queue using <a class="reference internal" href="../vessels/core.html#attribute:CORE:MESSAGES" title="CORE:MESSAGES attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">CORE:MESSAGES</span></code></a>:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">SET</span> <span class="nv">QUEUE</span> <span class="ow">TO</span> <span class="nv">CORE</span><span class="p">:</span><span class="nv">MESSAGES</span><span class="p">.</span>
 <span class="k">PRINT</span> <span class="s">&quot;Number of messages on the queue: &quot;</span> <span class="o">+</span> <span class="nv">QUEUE</span><span class="p">:</span><span class="nv">LENGTH</span><span class="p">.</span>
@@ -190,10 +190,10 @@ You can read more about queues on <a class="reference external" href="https://en
 </div>
 </div>
 <div class="section" id="structure">
-<h2>Structure<a class="headerlink" href="#structure" title="Permalink to this headline">¶</a></h2>
+<h2>Structure<a class="headerlink" href="message_queue.html#structure" title="Permalink to this headline">¶</a></h2>
 <dl class="structure">
 <dt id="structure:MESSAGEQUEUE">
-<em class="property">structure </em><code class="descname">MessageQueue</code><a class="headerlink" href="#structure:MESSAGEQUEUE" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">MessageQueue</code><a class="headerlink" href="message_queue.html#structure:MESSAGEQUEUE" title="Permalink to this definition">¶</a></dt>
 <dd><table border="1" class="docutils">
 <colgroup>
 <col width="29%" />
@@ -207,27 +207,27 @@ You can read more about queues on <a class="reference external" href="https://en
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="#attribute:MESSAGEQUEUE:EMPTY" title="MESSAGEQUEUE:EMPTY attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">EMPTY</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="message_queue.html#attribute:MESSAGEQUEUE:EMPTY" title="MESSAGEQUEUE:EMPTY attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">EMPTY</span></code></a></td>
 <td><a class="reference internal" href="../misc/boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>true if there are no messages in the queue</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:MESSAGEQUEUE:LENGTH" title="MESSAGEQUEUE:LENGTH attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">LENGTH</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="message_queue.html#attribute:MESSAGEQUEUE:LENGTH" title="MESSAGEQUEUE:LENGTH attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">LENGTH</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Scalar</span></code></a></td>
 <td>number of messages in the queue</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#method:MESSAGEQUEUE:POP" title="MESSAGEQUEUE:POP method"><code class="xref ks ks-meth docutils literal"><span class="pre">POP()</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="message_queue.html#method:MESSAGEQUEUE:POP" title="MESSAGEQUEUE:POP method"><code class="xref ks ks-meth docutils literal"><span class="pre">POP()</span></code></a></td>
 <td><a class="reference internal" href="message.html#structure:MESSAGE" title="MESSAGE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Message</span></code></a></td>
 <td>returns the oldest element in the queue and removes it</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#method:MESSAGEQUEUE:PEEK" title="MESSAGEQUEUE:PEEK method"><code class="xref ks ks-meth docutils literal"><span class="pre">PEEK()</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="message_queue.html#method:MESSAGEQUEUE:PEEK" title="MESSAGEQUEUE:PEEK method"><code class="xref ks ks-meth docutils literal"><span class="pre">PEEK()</span></code></a></td>
 <td><a class="reference internal" href="message.html#structure:MESSAGE" title="MESSAGE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Message</span></code></a></td>
 <td>returns the oldest element in the queue without removing it</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#method:MESSAGEQUEUE:CLEAR" title="MESSAGEQUEUE:CLEAR method"><code class="xref ks ks-meth docutils literal"><span class="pre">CLEAR()</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="message_queue.html#method:MESSAGEQUEUE:CLEAR" title="MESSAGEQUEUE:CLEAR method"><code class="xref ks ks-meth docutils literal"><span class="pre">CLEAR()</span></code></a></td>
 <td>None</td>
 <td>remove all messages</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#method:MESSAGEQUEUE:PUSH" title="MESSAGEQUEUE:PUSH method"><code class="xref ks ks-meth docutils literal"><span class="pre">PUSH(message)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="message_queue.html#method:MESSAGEQUEUE:PUSH" title="MESSAGEQUEUE:PUSH method"><code class="xref ks ks-meth docutils literal"><span class="pre">PUSH(message)</span></code></a></td>
 <td>None</td>
 <td>explicitly append a message</td>
 </tr>
@@ -237,7 +237,7 @@ You can read more about queues on <a class="reference external" href="https://en
 
 <dl class="attribute">
 <dt id="attribute:MESSAGEQUEUE:EMPTY">
-MessageQueue:<code class="descname">EMPTY</code><a class="headerlink" href="#attribute:MESSAGEQUEUE:EMPTY" title="Permalink to this definition">¶</a></dt>
+MessageQueue:<code class="descname">EMPTY</code><a class="headerlink" href="message_queue.html#attribute:MESSAGEQUEUE:EMPTY" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -251,7 +251,7 @@ MessageQueue:<code class="descname">EMPTY</code><a class="headerlink" href="#att
 
 <dl class="attribute">
 <dt id="attribute:MESSAGEQUEUE:LENGTH">
-MessageQueue:<code class="descname">LENGTH</code><a class="headerlink" href="#attribute:MESSAGEQUEUE:LENGTH" title="Permalink to this definition">¶</a></dt>
+MessageQueue:<code class="descname">LENGTH</code><a class="headerlink" href="message_queue.html#attribute:MESSAGEQUEUE:LENGTH" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -265,13 +265,13 @@ MessageQueue:<code class="descname">LENGTH</code><a class="headerlink" href="#at
 
 <dl class="method">
 <dt id="method:MESSAGEQUEUE:POP">
-MessageQueue:<code class="descname">POP</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:MESSAGEQUEUE:POP" title="Permalink to this definition">¶</a></dt>
+MessageQueue:<code class="descname">POP</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="message_queue.html#method:MESSAGEQUEUE:POP" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the first (oldest) message in the queue and removes it. Messages in the queue are always ordered by their arrival date.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="method:MESSAGEQUEUE:PEEK">
-MessageQueue:<code class="descname">PEEK</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:MESSAGEQUEUE:PEEK" title="Permalink to this definition">¶</a></dt>
+MessageQueue:<code class="descname">PEEK</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="message_queue.html#method:MESSAGEQUEUE:PEEK" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -285,13 +285,13 @@ MessageQueue:<code class="descname">PEEK</code><span class="sig-paren">(</span><
 
 <dl class="method">
 <dt id="method:MESSAGEQUEUE:CLEAR">
-MessageQueue:<code class="descname">CLEAR</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:MESSAGEQUEUE:CLEAR" title="Permalink to this definition">¶</a></dt>
+MessageQueue:<code class="descname">CLEAR</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="message_queue.html#method:MESSAGEQUEUE:CLEAR" title="Permalink to this definition">¶</a></dt>
 <dd><p>Removes all messages from the queue.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="method:MESSAGEQUEUE:PUSH">
-MessageQueue:<code class="descname">PUSH</code><span class="sig-paren">(</span>message<span class="sig-paren">)</span><a class="headerlink" href="#method:MESSAGEQUEUE:PUSH" title="Permalink to this definition">¶</a></dt>
+MessageQueue:<code class="descname">PUSH</code><span class="sig-paren">(</span>message<span class="sig-paren">)</span><a class="headerlink" href="message_queue.html#method:MESSAGEQUEUE:PUSH" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

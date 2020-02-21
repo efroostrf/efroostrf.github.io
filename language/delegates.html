@@ -104,13 +104,13 @@
 <li class="toctree-l2"><a class="reference internal" href="variables.html">Variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="user_functions.html">User Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="anonymous.html">Anonymous User Functions</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Delegates (function references)</a><ul class="simple">
+<li class="toctree-l2 current"><a class="current reference internal" href="delegates.html">Delegates (function references)</a><ul class="simple">
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#advanced-topics">Advanced topics</a><ul class="simple">
+<li class="toctree-l2"><a class="reference internal" href="delegates.html#advanced-topics">Advanced topics</a><ul class="simple">
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#kinds-of-delegate-no-suffixes">Kinds of Delegate (no suffixes)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="delegates.html#kinds-of-delegate-no-suffixes">Kinds of Delegate (no suffixes)</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../math.html">Mathematics</a></li>
@@ -167,23 +167,23 @@
            <div itemprop="articleBody">
             
   <div class="section" id="delegates-function-references">
-<span id="delegates"></span><h1>Delegates (function references)<a class="headerlink" href="#delegates-function-references" title="Permalink to this headline">¶</a></h1>
+<span id="delegates"></span><h1>Delegates (function references)<a class="headerlink" href="delegates.html#delegates-function-references" title="Permalink to this headline">¶</a></h1>
 <div class="contents local topic" id="contents">
 <p class="topic-title first">Contents</p>
 <ul class="simple">
-<li><a class="reference internal" href="#overview" id="id1">Overview</a><ul>
-<li><a class="reference internal" href="#syntax-symbol" id="id2">Syntax: &#64; symbol</a></li>
-<li><a class="reference internal" href="#omitting-call" id="id3">Omitting :CALL</a></li>
-<li><a class="reference internal" href="#why-the-sign" id="id4">Why the &#8216;&#64;&#8217; sign?</a></li>
+<li><a class="reference internal" href="delegates.html#overview" id="id1">Overview</a><ul>
+<li><a class="reference internal" href="delegates.html#syntax-symbol" id="id2">Syntax: &#64; symbol</a></li>
+<li><a class="reference internal" href="delegates.html#omitting-call" id="id3">Omitting :CALL</a></li>
+<li><a class="reference internal" href="delegates.html#why-the-sign" id="id4">Why the &#8216;&#64;&#8217; sign?</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#why" id="id5">Why?</a></li>
-<li><a class="reference internal" href="#anonymous-functions" id="id6">Anonymous functions</a></li>
-<li><a class="reference internal" href="#lib-enum-in-kslib" id="id7">lib_enum in KSLib</a></li>
+<li><a class="reference internal" href="delegates.html#why" id="id5">Why?</a></li>
+<li><a class="reference internal" href="delegates.html#anonymous-functions" id="id6">Anonymous functions</a></li>
+<li><a class="reference internal" href="delegates.html#lib-enum-in-kslib" id="id7">lib_enum in KSLib</a></li>
 </ul>
 </div>
 <div class="section" id="overview">
-<h2><a class="toc-backref" href="#id1">Overview</a><a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="delegates.html#id1">Overview</a><a class="headerlink" href="delegates.html#overview" title="Permalink to this headline">¶</a></h2>
 <p>There are times it would be useful to be able to store, not the
 result of calling a function, but rather a reference to the function
 itself without calling it yet.  Then you can use this value to call
@@ -207,7 +207,7 @@ feature described here does not work on structure suffixes as of
 this release of kOS.  See the bottom of this page for more details.</p>
 </div>
 <div class="section" id="syntax-symbol">
-<span id="kosdelegate-atsign"></span><h3><a class="toc-backref" href="#id2">Syntax: &#64; symbol</a><a class="headerlink" href="#syntax-symbol" title="Permalink to this headline">¶</a></h3>
+<span id="kosdelegate-atsign"></span><h3><a class="toc-backref" href="delegates.html#id2">Syntax: &#64; symbol</a><a class="headerlink" href="delegates.html#syntax-symbol" title="Permalink to this headline">¶</a></h3>
 <p>To obtain a <em>delegate</em> of a function in kOS, you place a single
 at-sign (<code class="docutils literal"><span class="pre">&#64;</span></code>) to the right of the function name, where the
 parentheses and arguments would normally have gone, as shown
@@ -245,7 +245,7 @@ have expected, which might look something like this:</p>
 </div>
 </div>
 <div class="section" id="omitting-call">
-<h3><a class="toc-backref" href="#id3">Omitting :CALL</a><a class="headerlink" href="#omitting-call" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="delegates.html#id3">Omitting :CALL</a><a class="headerlink" href="delegates.html#omitting-call" title="Permalink to this headline">¶</a></h3>
 <p>You can call a KOSDelegate without the use of the <code class="docutils literal"><span class="pre">:call</span></code> suffix,
 instead just using parentheses directly abutted against the variable
 name like a normal function call:</p>
@@ -260,7 +260,7 @@ name like a normal function call:</p>
 </div>
 </div>
 <div class="section" id="why-the-sign">
-<h3><a class="toc-backref" href="#id4">Why the &#8216;&#64;&#8217; sign?</a><a class="headerlink" href="#why-the-sign" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="delegates.html#id4">Why the &#8216;&#64;&#8217; sign?</a><a class="headerlink" href="delegates.html#why-the-sign" title="Permalink to this headline">¶</a></h3>
 <p>In Kerboscript, often when you mention a function&#8217;s name and don&#8217;t provide
 any empty parentheses, if it&#8217;s a function that takes zero arguments, it
 ends up being called anyway.  Thus <code class="docutils literal"><span class="pre">set</span> <span class="pre">x</span> <span class="pre">to</span> <span class="pre">myfunc.</span></code> ends up doing
@@ -272,7 +272,7 @@ function that would have occurred if you had left it bare.</p>
 </div>
 </div>
 <div class="section" id="why">
-<h2><a class="toc-backref" href="#id5">Why?</a><a class="headerlink" href="#why" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="delegates.html#id5">Why?</a><a class="headerlink" href="delegates.html#why" title="Permalink to this headline">¶</a></h2>
 <p>There are several reasons this feature can be useful.  Some experienced
 programmers will already know them, but here is an example of a useful
 case as an illustration for people new to programming.  Let&#8217;s say you
@@ -384,7 +384,7 @@ some limited concepts of functional programming style are possible through the u
 of these delegates.</p>
 </div>
 <div class="section" id="anonymous-functions">
-<h2><a class="toc-backref" href="#id6">Anonymous functions</a><a class="headerlink" href="#anonymous-functions" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="delegates.html#id6">Anonymous functions</a><a class="headerlink" href="delegates.html#anonymous-functions" title="Permalink to this headline">¶</a></h2>
 <p>Kerboscript also allows you to make a Delegate from an
 <a class="reference internal" href="anonymous.html#anonymous-functions"><span>Anonymous function</span></a> (see the link
 for the full description of the syntax and its use), as in this
@@ -401,7 +401,7 @@ actually make an entire program library out of delegates
 rather than normal functions.</p>
 </div>
 <div class="section" id="lib-enum-in-kslib">
-<h2><a class="toc-backref" href="#id7">lib_enum in KSLib</a><a class="headerlink" href="#lib-enum-in-kslib" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="delegates.html#id7">lib_enum in KSLib</a><a class="headerlink" href="delegates.html#lib-enum-in-kslib" title="Permalink to this headline">¶</a></h2>
 <p>There is a library in the kslib that can be used to perform many data
 set enumeration operations like the one described in the above section.
 It was written to be released coinciding with the addition of this feature
@@ -417,9 +417,9 @@ matches given criteria, and so on.</p>
 </div>
 </div>
 <div class="section" id="advanced-topics">
-<h1>Advanced topics<a class="headerlink" href="#advanced-topics" title="Permalink to this headline">¶</a></h1>
+<h1>Advanced topics<a class="headerlink" href="delegates.html#advanced-topics" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="can-t-call-dead-delegates">
-<h2>Can&#8217;t call dead delegates<a class="headerlink" href="#can-t-call-dead-delegates" title="Permalink to this headline">¶</a></h2>
+<h2>Can&#8217;t call dead delegates<a class="headerlink" href="delegates.html#can-t-call-dead-delegates" title="Permalink to this headline">¶</a></h2>
 <p>You might store a KOSDelegate in a global variable.
 Global varibles continue existing even after all the programs
 are done and you are back at the terminal interpreter.</p>
@@ -433,7 +433,7 @@ error.  You can test for this with the <a class="reference internal" href="../st
 suffix.</p>
 </div>
 <div class="section" id="pre-binding-arguments-with-bind">
-<span id="kosdelegate-bind"></span><h2>Pre-binding arguments with :bind<a class="headerlink" href="#pre-binding-arguments-with-bind" title="Permalink to this headline">¶</a></h2>
+<span id="kosdelegate-bind"></span><h2>Pre-binding arguments with :bind<a class="headerlink" href="delegates.html#pre-binding-arguments-with-bind" title="Permalink to this headline">¶</a></h2>
 <p>A <a class="reference internal" href="../structures/misc/kosdelegate.html#structure:KOSDELEGATE" title="KOSDELEGATE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">KOSDelegate</span></code></a> allows you to create another KOSDelegate that
 has some of its parameters bound to some pre-set values, so you then
 only need to supply the remaining, unbound values when you call it.
@@ -486,7 +486,7 @@ KOSDelegate, as follows:</p>
 <a class="reference internal" href="../structures/misc/kosdelegate.html#structure:KOSDELEGATE" title="KOSDELEGATE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">KOSDelegate</span></code></a> that can be used in-line right in the expression,
 as demonstrated above.</p>
 <div class="section" id="currying">
-<h3>Currying<a class="headerlink" href="#currying" title="Permalink to this headline">¶</a></h3>
+<h3>Currying<a class="headerlink" href="delegates.html#currying" title="Permalink to this headline">¶</a></h3>
 <p>It is possible to shave off exactly one parameter at a time in a chain
 of these <code class="docutils literal"><span class="pre">:bind</span></code> calls.  You could do this, for example:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="c1">// V() is the built-in function that makes a vector of x, y, and z</span>
@@ -515,7 +515,7 @@ and thus doesn&#8217;t <em>require</em> that you limit it to only one parameter 
 </div>
 </div>
 <div class="section" id="closures">
-<h2>Closures<a class="headerlink" href="#closures" title="Permalink to this headline">¶</a></h2>
+<h2>Closures<a class="headerlink" href="delegates.html#closures" title="Permalink to this headline">¶</a></h2>
 <p>Kerboscript <code class="xref ks ks-struct docutils literal"><span class="pre">KOSDelegates</span></code> of user functions do hold their
 &#8220;closure&#8221; information inside themselves.  What on earth does that
 mean?  If you haven&#8217;t heard this term before, it essentially means
@@ -528,7 +528,7 @@ normally be in <a class="reference internal" href="variables.html#scope"><span>s
 </div>
 </div>
 <div class="section" id="kinds-of-delegate-no-suffixes">
-<h1>Kinds of Delegate (no suffixes)<a class="headerlink" href="#kinds-of-delegate-no-suffixes" title="Permalink to this headline">¶</a></h1>
+<h1>Kinds of Delegate (no suffixes)<a class="headerlink" href="delegates.html#kinds-of-delegate-no-suffixes" title="Permalink to this headline">¶</a></h1>
 <p>Under the hood, kOS handles several different kinds of &#8220;functions&#8221; and
 methods that aren&#8217;t actually implemented the same way.  A <code class="docutils literal"><span class="pre">KOSDelegate</span></code>
 attempts to hide the details of these differences from the user, but

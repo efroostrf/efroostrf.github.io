@@ -128,7 +128,7 @@
 <li class="toctree-l3"><a class="reference internal" href="time.html">Time Span</a></li>
 <li class="toctree-l3"><a class="reference internal" href="timewarp.html">WARP</a></li>
 <li class="toctree-l3"><a class="reference internal" href="vecdraw.html">Drawing Vectors on the Screen</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">Structure</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="versioninfo.html">Structure</a></li>
 <li class="toctree-l3"><a class="reference internal" href="voice.html">Voice</a></li>
 </ul>
 </li>
@@ -190,14 +190,14 @@
   <p id="versioninfo">A <code class="docutils literal"><span class="pre">VersionInfo</span></code> is a structure that breaks the version string for
 kOS down into its component fields as numbers (rather than as
 a string) so you can look at them one at a time.</p>
-<p>You obtain a <a class="reference internal" href="#structure:VERSIONINFO" title="VERSIONINFO structure"><code class="xref ks ks-struct docutils literal"><span class="pre">VersionInfo</span></code></a> by calling <a class="reference internal" href="../vessels/core.html#attribute:CORE:VERSION" title="CORE:VERSION attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">CORE:VERSION</span></code></a>.</p>
+<p>You obtain a <a class="reference internal" href="versioninfo.html#structure:VERSIONINFO" title="VERSIONINFO structure"><code class="xref ks ks-struct docutils literal"><span class="pre">VersionInfo</span></code></a> by calling <a class="reference internal" href="../vessels/core.html#attribute:CORE:VERSION" title="CORE:VERSION attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">CORE:VERSION</span></code></a>.</p>
 <div class="section" id="structure">
-<h1>Structure<a class="headerlink" href="#structure" title="Permalink to this headline">¶</a></h1>
+<h1>Structure<a class="headerlink" href="versioninfo.html#structure" title="Permalink to this headline">¶</a></h1>
 <dl class="structure">
 <dt id="structure:VERSIONINFO">
-<em class="property">structure </em><code class="descname">VersionInfo</code><a class="headerlink" href="#structure:VERSIONINFO" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">VersionInfo</code><a class="headerlink" href="versioninfo.html#structure:VERSIONINFO" title="Permalink to this definition">¶</a></dt>
 <dd><table border="1" class="docutils" id="id1">
-<caption><span class="caption-text">Members</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-text">Members</span><a class="headerlink" href="versioninfo.html#id1" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="25%" />
 <col width="13%" />
@@ -212,22 +212,22 @@ a string) so you can look at them one at a time.</p>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="#attribute:VERSIONINFO:MAJOR" title="VERSIONINFO:MAJOR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MAJOR</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="versioninfo.html#attribute:VERSIONINFO:MAJOR" title="VERSIONINFO:MAJOR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MAJOR</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Scalar</span></code></a></td>
 <td>get only</td>
 <td>The &#8220;NN&#8221; in the version string <code class="docutils literal"><span class="pre">vNN.xx.xx.xx</span></code>.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:VERSIONINFO:MINOR" title="VERSIONINFO:MINOR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MINOR</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="versioninfo.html#attribute:VERSIONINFO:MINOR" title="VERSIONINFO:MINOR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MINOR</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Scalar</span></code></a></td>
 <td>get only</td>
 <td>The &#8220;NN&#8221; in the version string <code class="docutils literal"><span class="pre">vxx.NN.xx.xx</span></code>.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:VERSIONINFO:PATCH" title="VERSIONINFO:PATCH attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PATCH</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="versioninfo.html#attribute:VERSIONINFO:PATCH" title="VERSIONINFO:PATCH attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PATCH</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Scalar</span></code></a></td>
 <td>get only</td>
 <td>The &#8220;NN&#8221; in the version string <code class="docutils literal"><span class="pre">vxx.xx.NN.xx</span></code>.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:VERSIONINFO:BUILD" title="VERSIONINFO:BUILD attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">BUILD</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="versioninfo.html#attribute:VERSIONINFO:BUILD" title="VERSIONINFO:BUILD attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">BUILD</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Scalar</span></code></a></td>
 <td>get only</td>
 <td>The &#8220;NN&#8221; in the version string <code class="docutils literal"><span class="pre">vxx.xx.xx.NN</span></code>.</td>
@@ -238,7 +238,7 @@ a string) so you can look at them one at a time.</p>
 
 <dl class="attribute">
 <dt id="attribute:VERSIONINFO:MAJOR">
-VersionInfo:<code class="descname">MAJOR</code><a class="headerlink" href="#attribute:VERSIONINFO:MAJOR" title="Permalink to this definition">¶</a></dt>
+VersionInfo:<code class="descname">MAJOR</code><a class="headerlink" href="versioninfo.html#attribute:VERSIONINFO:MAJOR" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -255,7 +255,7 @@ VersionInfo:<code class="descname">MAJOR</code><a class="headerlink" href="#attr
 
 <dl class="attribute">
 <dt id="attribute:VERSIONINFO:MINOR">
-VersionInfo:<code class="descname">MINOR</code><a class="headerlink" href="#attribute:VERSIONINFO:MINOR" title="Permalink to this definition">¶</a></dt>
+VersionInfo:<code class="descname">MINOR</code><a class="headerlink" href="versioninfo.html#attribute:VERSIONINFO:MINOR" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -272,7 +272,7 @@ VersionInfo:<code class="descname">MINOR</code><a class="headerlink" href="#attr
 
 <dl class="attribute">
 <dt id="attribute:VERSIONINFO:PATCH">
-VersionInfo:<code class="descname">PATCH</code><a class="headerlink" href="#attribute:VERSIONINFO:PATCH" title="Permalink to this definition">¶</a></dt>
+VersionInfo:<code class="descname">PATCH</code><a class="headerlink" href="versioninfo.html#attribute:VERSIONINFO:PATCH" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -289,7 +289,7 @@ VersionInfo:<code class="descname">PATCH</code><a class="headerlink" href="#attr
 
 <dl class="attribute">
 <dt id="attribute:VERSIONINFO:BUILD">
-VersionInfo:<code class="descname">BUILD</code><a class="headerlink" href="#attribute:VERSIONINFO:BUILD" title="Permalink to this definition">¶</a></dt>
+VersionInfo:<code class="descname">BUILD</code><a class="headerlink" href="versioninfo.html#attribute:VERSIONINFO:BUILD" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

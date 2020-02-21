@@ -121,7 +121,7 @@
 <li class="toctree-l3"><a class="reference internal" href="note.html">Note</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pidloop.html">PIDLoop</a></li>
 <li class="toctree-l3"><a class="reference internal" href="resource_transfer.html">Resource Transfer</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">SteeringManager</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="steeringmanager.html">SteeringManager</a></li>
 <li class="toctree-l3"><a class="reference internal" href="string.html">String</a></li>
 <li class="toctree-l3"><a class="reference internal" href="terminal.html">Terminal</a></li>
 <li class="toctree-l3"><a class="reference internal" href="terminalinput.html">Terminal Input</a></li>
@@ -188,7 +188,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="steeringmanager">
-<span id="id1"></span><h1>SteeringManager<a class="headerlink" href="#steeringmanager" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1>SteeringManager<a class="headerlink" href="steeringmanager.html#steeringmanager" title="Permalink to this headline">¶</a></h1>
 <p>See <a class="reference internal" href="../../commands/flight/cooked.html#cooked-tuning"><span>the cooked control tuning explanation</span></a> for
 information to help with tuning the steering manager.  It&#8217;s important to read
 that section first to understand which setting below is affecting which
@@ -203,7 +203,7 @@ portion of the steering system.</p>
 </div>
 <dl class="structure">
 <dt id="structure:STEERINGMANAGER">
-<em class="property">structure </em><code class="descname">SteeringManager</code><a class="headerlink" href="#structure:STEERINGMANAGER" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">SteeringManager</code><a class="headerlink" href="steeringmanager.html#structure:STEERINGMANAGER" title="Permalink to this definition">¶</a></dt>
 <dd><table border="1" class="docutils">
 <colgroup>
 <col width="26%" />
@@ -217,107 +217,107 @@ portion of the steering system.</p>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="#attribute:STEERINGMANAGER:PITCHPID" title="STEERINGMANAGER:PITCHPID attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PITCHPID</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="steeringmanager.html#attribute:STEERINGMANAGER:PITCHPID" title="STEERINGMANAGER:PITCHPID attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PITCHPID</span></code></a></td>
 <td><a class="reference internal" href="pidloop.html#structure:PIDLOOP" title="PIDLOOP structure"><code class="xref ks ks-struct docutils literal"><span class="pre">PIDLoop</span></code></a></td>
 <td>The PIDLoop for the pitch <a class="reference internal" href="../../commands/flight/cooked.html#cooked-omega-pid"><span>rotational velocity PID</span></a>.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:STEERINGMANAGER:YAWPID" title="STEERINGMANAGER:YAWPID attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">YAWPID</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="steeringmanager.html#attribute:STEERINGMANAGER:YAWPID" title="STEERINGMANAGER:YAWPID attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">YAWPID</span></code></a></td>
 <td><a class="reference internal" href="pidloop.html#structure:PIDLOOP" title="PIDLOOP structure"><code class="xref ks ks-struct docutils literal"><span class="pre">PIDLoop</span></code></a></td>
 <td>The PIDLoop for the yaw <a class="reference internal" href="../../commands/flight/cooked.html#cooked-omega-pid"><span>rotational velocity PID</span></a>.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:STEERINGMANAGER:ROLLPID" title="STEERINGMANAGER:ROLLPID attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ROLLPID</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="steeringmanager.html#attribute:STEERINGMANAGER:ROLLPID" title="STEERINGMANAGER:ROLLPID attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ROLLPID</span></code></a></td>
 <td><a class="reference internal" href="pidloop.html#structure:PIDLOOP" title="PIDLOOP structure"><code class="xref ks ks-struct docutils literal"><span class="pre">PIDLoop</span></code></a></td>
 <td>The PIDLoop for the roll <a class="reference internal" href="../../commands/flight/cooked.html#cooked-omega-pid"><span>rotational velocity PID</span></a>.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:STEERINGMANAGER:ENABLED" title="STEERINGMANAGER:ENABLED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ENABLED</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="steeringmanager.html#attribute:STEERINGMANAGER:ENABLED" title="STEERINGMANAGER:ENABLED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ENABLED</span></code></a></td>
 <td><a class="reference internal" href="boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">boolean</span></code></a></td>
 <td>Returns true if the <cite>SteeringManager</cite> is currently controlling the vessel</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:STEERINGMANAGER:TARGET" title="STEERINGMANAGER:TARGET attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TARGET</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="steeringmanager.html#attribute:STEERINGMANAGER:TARGET" title="STEERINGMANAGER:TARGET attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TARGET</span></code></a></td>
 <td><a class="reference internal" href="../../math/direction.html#structure:DIRECTION" title="DIRECTION structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Direction</span></code></a></td>
 <td>The direction that the vessel is currently steering towards</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#method:STEERINGMANAGER:RESETPIDS" title="STEERINGMANAGER:RESETPIDS method"><code class="xref ks ks-meth docutils literal"><span class="pre">RESETPIDS()</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="steeringmanager.html#method:STEERINGMANAGER:RESETPIDS" title="STEERINGMANAGER:RESETPIDS method"><code class="xref ks ks-meth docutils literal"><span class="pre">RESETPIDS()</span></code></a></td>
 <td>none</td>
 <td>Called to call <cite>RESET</cite> on all steering PID loops.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#method:STEERINGMANAGER:RESETTODEFAULT" title="STEERINGMANAGER:RESETTODEFAULT method"><code class="xref ks ks-meth docutils literal"><span class="pre">RESETTODEFAULT()</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="steeringmanager.html#method:STEERINGMANAGER:RESETTODEFAULT" title="STEERINGMANAGER:RESETTODEFAULT method"><code class="xref ks ks-meth docutils literal"><span class="pre">RESETTODEFAULT()</span></code></a></td>
 <td>none</td>
 <td>Called to reset all steering tuning parameters.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:STEERINGMANAGER:SHOWFACINGVECTORS" title="STEERINGMANAGER:SHOWFACINGVECTORS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SHOWFACINGVECTORS</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="steeringmanager.html#attribute:STEERINGMANAGER:SHOWFACINGVECTORS" title="STEERINGMANAGER:SHOWFACINGVECTORS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SHOWFACINGVECTORS</span></code></a></td>
 <td><a class="reference internal" href="boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">boolean</span></code></a></td>
 <td>Enable/disable display of ship facing, target, and world coordinates vectors.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:STEERINGMANAGER:SHOWANGULARVECTORS" title="STEERINGMANAGER:SHOWANGULARVECTORS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SHOWANGULARVECTORS</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="steeringmanager.html#attribute:STEERINGMANAGER:SHOWANGULARVECTORS" title="STEERINGMANAGER:SHOWANGULARVECTORS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SHOWANGULARVECTORS</span></code></a></td>
 <td><a class="reference internal" href="boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">boolean</span></code></a></td>
 <td>Enable/disable display of angular rotation vectors</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:STEERINGMANAGER:SHOWSTEERINGSTATS" title="STEERINGMANAGER:SHOWSTEERINGSTATS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SHOWSTEERINGSTATS</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="steeringmanager.html#attribute:STEERINGMANAGER:SHOWSTEERINGSTATS" title="STEERINGMANAGER:SHOWSTEERINGSTATS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SHOWSTEERINGSTATS</span></code></a></td>
 <td><a class="reference internal" href="boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">boolean</span></code></a></td>
 <td>Enable/disable printing of the steering information on the terminal</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:STEERINGMANAGER:WRITECSVFILES" title="STEERINGMANAGER:WRITECSVFILES attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">WRITECSVFILES</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="steeringmanager.html#attribute:STEERINGMANAGER:WRITECSVFILES" title="STEERINGMANAGER:WRITECSVFILES attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">WRITECSVFILES</span></code></a></td>
 <td><a class="reference internal" href="boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">boolean</span></code></a></td>
 <td>Enable/disable logging steering to csv files.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:STEERINGMANAGER:PITCHTS" title="STEERINGMANAGER:PITCHTS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PITCHTS</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="steeringmanager.html#attribute:STEERINGMANAGER:PITCHTS" title="STEERINGMANAGER:PITCHTS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PITCHTS</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a> (s)</td>
 <td>Settling time for the pitch torque calculation.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:STEERINGMANAGER:YAWTS" title="STEERINGMANAGER:YAWTS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">YAWTS</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="steeringmanager.html#attribute:STEERINGMANAGER:YAWTS" title="STEERINGMANAGER:YAWTS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">YAWTS</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a> (s)</td>
 <td>Settling time for the yaw torque calculation.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:STEERINGMANAGER:ROLLTS" title="STEERINGMANAGER:ROLLTS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ROLLTS</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="steeringmanager.html#attribute:STEERINGMANAGER:ROLLTS" title="STEERINGMANAGER:ROLLTS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ROLLTS</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a> (s)</td>
 <td>Settling time for the roll torque calculation.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:STEERINGMANAGER:MAXSTOPPINGTIME" title="STEERINGMANAGER:MAXSTOPPINGTIME attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MAXSTOPPINGTIME</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="steeringmanager.html#attribute:STEERINGMANAGER:MAXSTOPPINGTIME" title="STEERINGMANAGER:MAXSTOPPINGTIME attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MAXSTOPPINGTIME</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a> (s)</td>
 <td>The maximum amount of stopping time to limit angular turn rate.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:STEERINGMANAGER:ROLLCONTROLANGLERANGE" title="STEERINGMANAGER:ROLLCONTROLANGLERANGE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ROLLCONTROLANGLERANGE</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="steeringmanager.html#attribute:STEERINGMANAGER:ROLLCONTROLANGLERANGE" title="STEERINGMANAGER:ROLLCONTROLANGLERANGE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ROLLCONTROLANGLERANGE</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a> (deg)</td>
-<td>The maximum value of <a class="reference internal" href="#attribute:STEERINGMANAGER:ANGLEERROR" title="STEERINGMANAGER:ANGLEERROR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ANGLEERROR</span></code></a> for which to control roll.</td>
+<td>The maximum value of <a class="reference internal" href="steeringmanager.html#attribute:STEERINGMANAGER:ANGLEERROR" title="STEERINGMANAGER:ANGLEERROR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ANGLEERROR</span></code></a> for which to control roll.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:STEERINGMANAGER:ANGLEERROR" title="STEERINGMANAGER:ANGLEERROR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ANGLEERROR</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="steeringmanager.html#attribute:STEERINGMANAGER:ANGLEERROR" title="STEERINGMANAGER:ANGLEERROR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ANGLEERROR</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a> (deg)</td>
 <td>The angle between vessel:facing and target directions</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:STEERINGMANAGER:PITCHERROR" title="STEERINGMANAGER:PITCHERROR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PITCHERROR</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="steeringmanager.html#attribute:STEERINGMANAGER:PITCHERROR" title="STEERINGMANAGER:PITCHERROR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PITCHERROR</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a> (deg)</td>
 <td>The angular error in the pitch direction</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:STEERINGMANAGER:YAWERROR" title="STEERINGMANAGER:YAWERROR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">YAWERROR</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="steeringmanager.html#attribute:STEERINGMANAGER:YAWERROR" title="STEERINGMANAGER:YAWERROR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">YAWERROR</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a> (deg)</td>
 <td>The angular error in the yaw direction</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:STEERINGMANAGER:ROLLERROR" title="STEERINGMANAGER:ROLLERROR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ROLLERROR</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="steeringmanager.html#attribute:STEERINGMANAGER:ROLLERROR" title="STEERINGMANAGER:ROLLERROR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ROLLERROR</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a> (deg)</td>
 <td>The angular error in the roll direction</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:STEERINGMANAGER:PITCHTORQUEADJUST" title="STEERINGMANAGER:PITCHTORQUEADJUST attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PITCHTORQUEADJUST</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="steeringmanager.html#attribute:STEERINGMANAGER:PITCHTORQUEADJUST" title="STEERINGMANAGER:PITCHTORQUEADJUST attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PITCHTORQUEADJUST</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a> (kN)</td>
 <td>Additive adjustment to pitch torque (calculated)</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:STEERINGMANAGER:YAWTORQUEADJUST" title="STEERINGMANAGER:YAWTORQUEADJUST attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">YAWTORQUEADJUST</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="steeringmanager.html#attribute:STEERINGMANAGER:YAWTORQUEADJUST" title="STEERINGMANAGER:YAWTORQUEADJUST attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">YAWTORQUEADJUST</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a> (kN)</td>
 <td>Additive adjustment to yaw torque (calculated)</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:STEERINGMANAGER:ROLLTORQUEADJUST" title="STEERINGMANAGER:ROLLTORQUEADJUST attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ROLLTORQUEADJUST</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="steeringmanager.html#attribute:STEERINGMANAGER:ROLLTORQUEADJUST" title="STEERINGMANAGER:ROLLTORQUEADJUST attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ROLLTORQUEADJUST</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a> (kN)</td>
 <td>Additive adjustment to roll torque (calculated)</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:STEERINGMANAGER:PITCHTORQUEFACTOR" title="STEERINGMANAGER:PITCHTORQUEFACTOR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PITCHTORQUEFACTOR</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="steeringmanager.html#attribute:STEERINGMANAGER:PITCHTORQUEFACTOR" title="STEERINGMANAGER:PITCHTORQUEFACTOR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PITCHTORQUEFACTOR</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a></td>
 <td>Multiplicative adjustment to pitch torque (calculated)</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:STEERINGMANAGER:YAWTORQUEFACTOR" title="STEERINGMANAGER:YAWTORQUEFACTOR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">YAWTORQUEFACTOR</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="steeringmanager.html#attribute:STEERINGMANAGER:YAWTORQUEFACTOR" title="STEERINGMANAGER:YAWTORQUEFACTOR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">YAWTORQUEFACTOR</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a></td>
 <td>Multiplicative adjustment to yaw torque (calculated)</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:STEERINGMANAGER:ROLLTORQUEFACTOR" title="STEERINGMANAGER:ROLLTORQUEFACTOR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ROLLTORQUEFACTOR</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="steeringmanager.html#attribute:STEERINGMANAGER:ROLLTORQUEFACTOR" title="STEERINGMANAGER:ROLLTORQUEFACTOR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ROLLTORQUEFACTOR</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a></td>
 <td>Multiplicative adjustment to roll torque (calculated)</td>
 </tr>
@@ -334,7 +334,7 @@ deprecated with the move to using stock torque calculation with KSP 1.1.</p>
 </div>
 <dl class="attribute">
 <dt id="attribute:STEERINGMANAGER:PITCHPID">
-SteeringManager:<code class="descname">PITCHPID</code><a class="headerlink" href="#attribute:STEERINGMANAGER:PITCHPID" title="Permalink to this definition">¶</a></dt>
+SteeringManager:<code class="descname">PITCHPID</code><a class="headerlink" href="steeringmanager.html#attribute:STEERINGMANAGER:PITCHPID" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -350,7 +350,7 @@ SteeringManager:<code class="descname">PITCHPID</code><a class="headerlink" href
 
 <dl class="attribute">
 <dt id="attribute:STEERINGMANAGER:YAWPID">
-SteeringManager:<code class="descname">YAWPID</code><a class="headerlink" href="#attribute:STEERINGMANAGER:YAWPID" title="Permalink to this definition">¶</a></dt>
+SteeringManager:<code class="descname">YAWPID</code><a class="headerlink" href="steeringmanager.html#attribute:STEERINGMANAGER:YAWPID" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -366,7 +366,7 @@ SteeringManager:<code class="descname">YAWPID</code><a class="headerlink" href="
 
 <dl class="attribute">
 <dt id="attribute:STEERINGMANAGER:ROLLPID">
-SteeringManager:<code class="descname">ROLLPID</code><a class="headerlink" href="#attribute:STEERINGMANAGER:ROLLPID" title="Permalink to this definition">¶</a></dt>
+SteeringManager:<code class="descname">ROLLPID</code><a class="headerlink" href="steeringmanager.html#attribute:STEERINGMANAGER:ROLLPID" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -392,7 +392,7 @@ won&#8217;t be getting used at all.</p>
 
 <dl class="attribute">
 <dt id="attribute:STEERINGMANAGER:ENABLED">
-SteeringManager:<code class="descname">ENABLED</code><a class="headerlink" href="#attribute:STEERINGMANAGER:ENABLED" title="Permalink to this definition">¶</a></dt>
+SteeringManager:<code class="descname">ENABLED</code><a class="headerlink" href="steeringmanager.html#attribute:STEERINGMANAGER:ENABLED" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -408,7 +408,7 @@ SteeringManager:<code class="descname">ENABLED</code><a class="headerlink" href=
 
 <dl class="attribute">
 <dt id="attribute:STEERINGMANAGER:TARGET">
-SteeringManager:<code class="descname">TARGET</code><a class="headerlink" href="#attribute:STEERINGMANAGER:TARGET" title="Permalink to this definition">¶</a></dt>
+SteeringManager:<code class="descname">TARGET</code><a class="headerlink" href="steeringmanager.html#attribute:STEERINGMANAGER:TARGET" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -424,7 +424,7 @@ SteeringManager:<code class="descname">TARGET</code><a class="headerlink" href="
 
 <dl class="method">
 <dt id="method:STEERINGMANAGER:RESETPIDS">
-SteeringManager:<code class="descname">RESETPIDS</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:STEERINGMANAGER:RESETPIDS" title="Permalink to this definition">¶</a></dt>
+SteeringManager:<code class="descname">RESETPIDS</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="steeringmanager.html#method:STEERINGMANAGER:RESETPIDS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -438,7 +438,7 @@ SteeringManager:<code class="descname">RESETPIDS</code><span class="sig-paren">(
 
 <dl class="method">
 <dt id="method:STEERINGMANAGER:RESETTODEFAULT">
-SteeringManager:<code class="descname">RESETTODEFAULT</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:STEERINGMANAGER:RESETTODEFAULT" title="Permalink to this definition">¶</a></dt>
+SteeringManager:<code class="descname">RESETTODEFAULT</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="steeringmanager.html#method:STEERINGMANAGER:RESETTODEFAULT" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -447,14 +447,14 @@ SteeringManager:<code class="descname">RESETTODEFAULT</code><span class="sig-par
 </tr>
 </tbody>
 </table>
-<p>Resets the various tuning parameters of the <a class="reference internal" href="#structure:STEERINGMANAGER" title="STEERINGMANAGER structure"><code class="xref ks ks-struct docutils literal"><span class="pre">SteeringManager</span></code></a> to
+<p>Resets the various tuning parameters of the <a class="reference internal" href="steeringmanager.html#structure:STEERINGMANAGER" title="STEERINGMANAGER structure"><code class="xref ks ks-struct docutils literal"><span class="pre">SteeringManager</span></code></a> to
 their default values as if the ship had just been loaded.  This internally
-will also call <a class="reference internal" href="#method:STEERINGMANAGER:RESETPIDS" title="STEERINGMANAGER:RESETPIDS method"><code class="xref ks ks-meth docutils literal"><span class="pre">SteeringManager:RESETPIDS</span></code></a>.</p>
+will also call <a class="reference internal" href="steeringmanager.html#method:STEERINGMANAGER:RESETPIDS" title="STEERINGMANAGER:RESETPIDS method"><code class="xref ks ks-meth docutils literal"><span class="pre">SteeringManager:RESETPIDS</span></code></a>.</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="attribute:STEERINGMANAGER:SHOWFACINGVECTORS">
-SteeringManager:<code class="descname">SHOWFACINGVECTORS</code><a class="headerlink" href="#attribute:STEERINGMANAGER:SHOWFACINGVECTORS" title="Permalink to this definition">¶</a></dt>
+SteeringManager:<code class="descname">SHOWFACINGVECTORS</code><a class="headerlink" href="steeringmanager.html#attribute:STEERINGMANAGER:SHOWFACINGVECTORS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -470,7 +470,7 @@ SteeringManager:<code class="descname">SHOWFACINGVECTORS</code><a class="headerl
 
 <dl class="attribute">
 <dt id="attribute:STEERINGMANAGER:SHOWANGULARVECTORS">
-SteeringManager:<code class="descname">SHOWANGULARVECTORS</code><a class="headerlink" href="#attribute:STEERINGMANAGER:SHOWANGULARVECTORS" title="Permalink to this definition">¶</a></dt>
+SteeringManager:<code class="descname">SHOWANGULARVECTORS</code><a class="headerlink" href="steeringmanager.html#attribute:STEERINGMANAGER:SHOWANGULARVECTORS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -486,7 +486,7 @@ SteeringManager:<code class="descname">SHOWANGULARVECTORS</code><a class="header
 
 <dl class="attribute">
 <dt id="attribute:STEERINGMANAGER:SHOWSTEERINGSTATS">
-SteeringManager:<code class="descname">SHOWSTEERINGSTATS</code><a class="headerlink" href="#attribute:STEERINGMANAGER:SHOWSTEERINGSTATS" title="Permalink to this definition">¶</a></dt>
+SteeringManager:<code class="descname">SHOWSTEERINGSTATS</code><a class="headerlink" href="steeringmanager.html#attribute:STEERINGMANAGER:SHOWSTEERINGSTATS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -502,7 +502,7 @@ SteeringManager:<code class="descname">SHOWSTEERINGSTATS</code><a class="headerl
 
 <dl class="attribute">
 <dt id="attribute:STEERINGMANAGER:WRITECSVFILES">
-SteeringManager:<code class="descname">WRITECSVFILES</code><a class="headerlink" href="#attribute:STEERINGMANAGER:WRITECSVFILES" title="Permalink to this definition">¶</a></dt>
+SteeringManager:<code class="descname">WRITECSVFILES</code><a class="headerlink" href="steeringmanager.html#attribute:STEERINGMANAGER:WRITECSVFILES" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -518,7 +518,7 @@ SteeringManager:<code class="descname">WRITECSVFILES</code><a class="headerlink"
 
 <dl class="attribute">
 <dt id="attribute:STEERINGMANAGER:PITCHTS">
-SteeringManager:<code class="descname">PITCHTS</code><a class="headerlink" href="#attribute:STEERINGMANAGER:PITCHTS" title="Permalink to this definition">¶</a></dt>
+SteeringManager:<code class="descname">PITCHTS</code><a class="headerlink" href="steeringmanager.html#attribute:STEERINGMANAGER:PITCHTS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -534,7 +534,7 @@ SteeringManager:<code class="descname">PITCHTS</code><a class="headerlink" href=
 
 <dl class="attribute">
 <dt id="attribute:STEERINGMANAGER:YAWTS">
-SteeringManager:<code class="descname">YAWTS</code><a class="headerlink" href="#attribute:STEERINGMANAGER:YAWTS" title="Permalink to this definition">¶</a></dt>
+SteeringManager:<code class="descname">YAWTS</code><a class="headerlink" href="steeringmanager.html#attribute:STEERINGMANAGER:YAWTS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -550,7 +550,7 @@ SteeringManager:<code class="descname">YAWTS</code><a class="headerlink" href="#
 
 <dl class="attribute">
 <dt id="attribute:STEERINGMANAGER:ROLLTS">
-SteeringManager:<code class="descname">ROLLTS</code><a class="headerlink" href="#attribute:STEERINGMANAGER:ROLLTS" title="Permalink to this definition">¶</a></dt>
+SteeringManager:<code class="descname">ROLLTS</code><a class="headerlink" href="steeringmanager.html#attribute:STEERINGMANAGER:ROLLTS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -566,7 +566,7 @@ SteeringManager:<code class="descname">ROLLTS</code><a class="headerlink" href="
 
 <dl class="attribute">
 <dt id="attribute:STEERINGMANAGER:MAXSTOPPINGTIME">
-SteeringManager:<code class="descname">MAXSTOPPINGTIME</code><a class="headerlink" href="#attribute:STEERINGMANAGER:MAXSTOPPINGTIME" title="Permalink to this definition">¶</a></dt>
+SteeringManager:<code class="descname">MAXSTOPPINGTIME</code><a class="headerlink" href="steeringmanager.html#attribute:STEERINGMANAGER:MAXSTOPPINGTIME" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -586,7 +586,7 @@ SteeringManager:<code class="descname">MAXSTOPPINGTIME</code><a class="headerlin
 
 <dl class="attribute">
 <dt id="attribute:STEERINGMANAGER:ROLLCONTROLANGLERANGE">
-SteeringManager:<code class="descname">ROLLCONTROLANGLERANGE</code><a class="headerlink" href="#attribute:STEERINGMANAGER:ROLLCONTROLANGLERANGE" title="Permalink to this definition">¶</a></dt>
+SteeringManager:<code class="descname">ROLLCONTROLANGLERANGE</code><a class="headerlink" href="steeringmanager.html#attribute:STEERINGMANAGER:ROLLCONTROLANGLERANGE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -597,19 +597,19 @@ SteeringManager:<code class="descname">ROLLCONTROLANGLERANGE</code><a class="hea
 </tr>
 </tbody>
 </table>
-<p>The maximum value of <a class="reference internal" href="#attribute:STEERINGMANAGER:ANGLEERROR" title="STEERINGMANAGER:ANGLEERROR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ANGLEERROR</span></code></a> for
+<p>The maximum value of <a class="reference internal" href="steeringmanager.html#attribute:STEERINGMANAGER:ANGLEERROR" title="STEERINGMANAGER:ANGLEERROR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ANGLEERROR</span></code></a> for
 which kOS will attempt to respond to error along the roll axis.  If this
 is set to 5 (the default value), the facing direction will need to be within
 5 degrees of the target direction before it actually attempts to roll the
 ship.  Setting the value to 180 will effectivelly allow roll control at any
-error amount.  When <a class="reference internal" href="#attribute:STEERINGMANAGER:ANGLEERROR" title="STEERINGMANAGER:ANGLEERROR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ANGLEERROR</span></code></a> is
+error amount.  When <a class="reference internal" href="steeringmanager.html#attribute:STEERINGMANAGER:ANGLEERROR" title="STEERINGMANAGER:ANGLEERROR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ANGLEERROR</span></code></a> is
 greater than this value, kOS will only attempt to kill all roll angular
 velocity.  The value is clamped between 180 and 1e-16.</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="attribute:STEERINGMANAGER:ANGLEERROR">
-SteeringManager:<code class="descname">ANGLEERROR</code><a class="headerlink" href="#attribute:STEERINGMANAGER:ANGLEERROR" title="Permalink to this definition">¶</a></dt>
+SteeringManager:<code class="descname">ANGLEERROR</code><a class="headerlink" href="steeringmanager.html#attribute:STEERINGMANAGER:ANGLEERROR" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -625,7 +625,7 @@ SteeringManager:<code class="descname">ANGLEERROR</code><a class="headerlink" hr
 
 <dl class="attribute">
 <dt id="attribute:STEERINGMANAGER:PITCHERROR">
-SteeringManager:<code class="descname">PITCHERROR</code><a class="headerlink" href="#attribute:STEERINGMANAGER:PITCHERROR" title="Permalink to this definition">¶</a></dt>
+SteeringManager:<code class="descname">PITCHERROR</code><a class="headerlink" href="steeringmanager.html#attribute:STEERINGMANAGER:PITCHERROR" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -641,7 +641,7 @@ SteeringManager:<code class="descname">PITCHERROR</code><a class="headerlink" hr
 
 <dl class="attribute">
 <dt id="attribute:STEERINGMANAGER:YAWERROR">
-SteeringManager:<code class="descname">YAWERROR</code><a class="headerlink" href="#attribute:STEERINGMANAGER:YAWERROR" title="Permalink to this definition">¶</a></dt>
+SteeringManager:<code class="descname">YAWERROR</code><a class="headerlink" href="steeringmanager.html#attribute:STEERINGMANAGER:YAWERROR" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -657,7 +657,7 @@ SteeringManager:<code class="descname">YAWERROR</code><a class="headerlink" href
 
 <dl class="attribute">
 <dt id="attribute:STEERINGMANAGER:ROLLERROR">
-SteeringManager:<code class="descname">ROLLERROR</code><a class="headerlink" href="#attribute:STEERINGMANAGER:ROLLERROR" title="Permalink to this definition">¶</a></dt>
+SteeringManager:<code class="descname">ROLLERROR</code><a class="headerlink" href="steeringmanager.html#attribute:STEERINGMANAGER:ROLLERROR" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -673,7 +673,7 @@ SteeringManager:<code class="descname">ROLLERROR</code><a class="headerlink" hre
 
 <dl class="attribute">
 <dt id="attribute:STEERINGMANAGER:PITCHTORQUEADJUST">
-SteeringManager:<code class="descname">PITCHTORQUEADJUST</code><a class="headerlink" href="#attribute:STEERINGMANAGER:PITCHTORQUEADJUST" title="Permalink to this definition">¶</a></dt>
+SteeringManager:<code class="descname">PITCHTORQUEADJUST</code><a class="headerlink" href="steeringmanager.html#attribute:STEERINGMANAGER:PITCHTORQUEADJUST" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -689,7 +689,7 @@ SteeringManager:<code class="descname">PITCHTORQUEADJUST</code><a class="headerl
 
 <dl class="attribute">
 <dt id="attribute:STEERINGMANAGER:YAWTORQUEADJUST">
-SteeringManager:<code class="descname">YAWTORQUEADJUST</code><a class="headerlink" href="#attribute:STEERINGMANAGER:YAWTORQUEADJUST" title="Permalink to this definition">¶</a></dt>
+SteeringManager:<code class="descname">YAWTORQUEADJUST</code><a class="headerlink" href="steeringmanager.html#attribute:STEERINGMANAGER:YAWTORQUEADJUST" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -705,7 +705,7 @@ SteeringManager:<code class="descname">YAWTORQUEADJUST</code><a class="headerlin
 
 <dl class="attribute">
 <dt id="attribute:STEERINGMANAGER:ROLLTORQUEADJUST">
-SteeringManager:<code class="descname">ROLLTORQUEADJUST</code><a class="headerlink" href="#attribute:STEERINGMANAGER:ROLLTORQUEADJUST" title="Permalink to this definition">¶</a></dt>
+SteeringManager:<code class="descname">ROLLTORQUEADJUST</code><a class="headerlink" href="steeringmanager.html#attribute:STEERINGMANAGER:ROLLTORQUEADJUST" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -721,7 +721,7 @@ SteeringManager:<code class="descname">ROLLTORQUEADJUST</code><a class="headerli
 
 <dl class="attribute">
 <dt id="attribute:STEERINGMANAGER:PITCHTORQUEFACTOR">
-SteeringManager:<code class="descname">PITCHTORQUEFACTOR</code><a class="headerlink" href="#attribute:STEERINGMANAGER:PITCHTORQUEFACTOR" title="Permalink to this definition">¶</a></dt>
+SteeringManager:<code class="descname">PITCHTORQUEFACTOR</code><a class="headerlink" href="steeringmanager.html#attribute:STEERINGMANAGER:PITCHTORQUEFACTOR" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -737,7 +737,7 @@ SteeringManager:<code class="descname">PITCHTORQUEFACTOR</code><a class="headerl
 
 <dl class="attribute">
 <dt id="attribute:STEERINGMANAGER:YAWTORQUEFACTOR">
-SteeringManager:<code class="descname">YAWTORQUEFACTOR</code><a class="headerlink" href="#attribute:STEERINGMANAGER:YAWTORQUEFACTOR" title="Permalink to this definition">¶</a></dt>
+SteeringManager:<code class="descname">YAWTORQUEFACTOR</code><a class="headerlink" href="steeringmanager.html#attribute:STEERINGMANAGER:YAWTORQUEFACTOR" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -753,7 +753,7 @@ SteeringManager:<code class="descname">YAWTORQUEFACTOR</code><a class="headerlin
 
 <dl class="attribute">
 <dt id="attribute:STEERINGMANAGER:ROLLTORQUEFACTOR">
-SteeringManager:<code class="descname">ROLLTORQUEFACTOR</code><a class="headerlink" href="#attribute:STEERINGMANAGER:ROLLTORQUEFACTOR" title="Permalink to this definition">¶</a></dt>
+SteeringManager:<code class="descname">ROLLTORQUEFACTOR</code><a class="headerlink" href="steeringmanager.html#attribute:STEERINGMANAGER:ROLLTORQUEFACTOR" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

@@ -108,7 +108,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../communication.html">Communication</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../orbits.html">Orbits</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../celestial_bodies.html">Celestial Bodies</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="">Atmosphere</a><ul class="simple">
+<li class="toctree-l3 current"><a class="current reference internal" href="atmosphere.html">Atmosphere</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="body.html">Body</a></li>
@@ -172,11 +172,11 @@
            <div itemprop="articleBody">
             
   <div class="section" id="atmosphere">
-<span id="id1"></span><h1>Atmosphere<a class="headerlink" href="#atmosphere" title="Permalink to this headline">¶</a></h1>
-<p>A Structure closely tied to <a class="reference internal" href="body.html#structure:BODY" title="BODY structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Body</span></code></a> A variable of type <a class="reference internal" href="#structure:ATMOSPHERE" title="ATMOSPHERE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Atmosphere</span></code></a> usually is obtained by the <a class="reference internal" href="body.html#attribute:BODY:ATM" title="BODY:ATM attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">:ATM</span></code></a> suffix of a <a class="reference internal" href="body.html#structure:BODY" title="BODY structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Body</span></code></a>. ALL The following values are read-only. You can&#8217;t change the value of a body&#8217;s atmosphere.</p>
+<span id="id1"></span><h1>Atmosphere<a class="headerlink" href="atmosphere.html#atmosphere" title="Permalink to this headline">¶</a></h1>
+<p>A Structure closely tied to <a class="reference internal" href="body.html#structure:BODY" title="BODY structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Body</span></code></a> A variable of type <a class="reference internal" href="atmosphere.html#structure:ATMOSPHERE" title="ATMOSPHERE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Atmosphere</span></code></a> usually is obtained by the <a class="reference internal" href="body.html#attribute:BODY:ATM" title="BODY:ATM attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">:ATM</span></code></a> suffix of a <a class="reference internal" href="body.html#structure:BODY" title="BODY structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Body</span></code></a>. ALL The following values are read-only. You can&#8217;t change the value of a body&#8217;s atmosphere.</p>
 <dl class="structure">
 <dt id="structure:ATMOSPHERE">
-<em class="property">structure </em><code class="descname">Atmosphere</code><a class="headerlink" href="#structure:ATMOSPHERE" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">Atmosphere</code><a class="headerlink" href="atmosphere.html#structure:ATMOSPHERE" title="Permalink to this definition">¶</a></dt>
 <dd><table border="1" class="docutils">
 <colgroup>
 <col width="17%" />
@@ -190,51 +190,51 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="#attribute:ATMOSPHERE:BODY" title="ATMOSPHERE:BODY attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">BODY</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="atmosphere.html#attribute:ATMOSPHERE:BODY" title="ATMOSPHERE:BODY attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">BODY</span></code></a></td>
 <td><a class="reference internal" href="../misc/string.html#string"><span>string</span></a></td>
 <td>Name of the celestial body</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:ATMOSPHERE:EXISTS" title="ATMOSPHERE:EXISTS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">EXISTS</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="atmosphere.html#attribute:ATMOSPHERE:EXISTS" title="ATMOSPHERE:EXISTS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">EXISTS</span></code></a></td>
 <td><a class="reference internal" href="../misc/boolean.html#boolean"><span>boolean</span></a></td>
 <td>True if this body has an atmosphere</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:ATMOSPHERE:OXYGEN" title="ATMOSPHERE:OXYGEN attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">OXYGEN</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="atmosphere.html#attribute:ATMOSPHERE:OXYGEN" title="ATMOSPHERE:OXYGEN attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">OXYGEN</span></code></a></td>
 <td><a class="reference internal" href="../misc/boolean.html#boolean"><span>boolean</span></a></td>
 <td>True if oxygen is present</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:ATMOSPHERE:SCALE" title="ATMOSPHERE:SCALE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SCALE</span></code></a> (DEPRECATED)</td>
+<tr class="row-odd"><td><a class="reference internal" href="atmosphere.html#attribute:ATMOSPHERE:SCALE" title="ATMOSPHERE:SCALE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SCALE</span></code></a> (DEPRECATED)</td>
 <td><a class="reference internal" href="../../math/scalar.html#scalar"><span>scalar</span></a></td>
 <td>Used to find atmospheric density</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:ATMOSPHERE:SEALEVELPRESSURE" title="ATMOSPHERE:SEALEVELPRESSURE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SEALEVELPRESSURE</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="atmosphere.html#attribute:ATMOSPHERE:SEALEVELPRESSURE" title="ATMOSPHERE:SEALEVELPRESSURE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SEALEVELPRESSURE</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#scalar"><span>scalar</span></a> (atm)</td>
 <td>pressure at sea level</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#method:ATMOSPHERE:ALTITUDEPRESSURE" title="ATMOSPHERE:ALTITUDEPRESSURE method"><code class="xref ks ks-meth docutils literal"><span class="pre">ALTITUDEPRESSURE(altitude)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="atmosphere.html#method:ATMOSPHERE:ALTITUDEPRESSURE" title="ATMOSPHERE:ALTITUDEPRESSURE method"><code class="xref ks ks-meth docutils literal"><span class="pre">ALTITUDEPRESSURE(altitude)</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#scalar"><span>scalar</span></a> (atm)</td>
 <td>pressure at the givel altitude</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:ATMOSPHERE:HEIGHT" title="ATMOSPHERE:HEIGHT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">HEIGHT</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="atmosphere.html#attribute:ATMOSPHERE:HEIGHT" title="ATMOSPHERE:HEIGHT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">HEIGHT</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#scalar"><span>scalar</span></a> (m)</td>
 <td>advertised atmospheric height</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:ATMOSPHERE:MOLARMASS" title="ATMOSPHERE:MOLARMASS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MOLARMASS</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="atmosphere.html#attribute:ATMOSPHERE:MOLARMASS" title="ATMOSPHERE:MOLARMASS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MOLARMASS</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#scalar"><span>scalar</span></a> (kg/mol)</td>
 <td>The molecular mass of the atmosphere&#8217;s gas</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:ATMOSPHERE:ADIABATICINDEX" title="ATMOSPHERE:ADIABATICINDEX attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ADIABATICINDEX</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="atmosphere.html#attribute:ATMOSPHERE:ADIABATICINDEX" title="ATMOSPHERE:ADIABATICINDEX attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ADIABATICINDEX</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#scalar"><span>scalar</span></a></td>
 <td>The Adiabatic index of the atmosphere&#8217;s gas</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:ATMOSPHERE:ADBIDX" title="ATMOSPHERE:ADBIDX attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ADBIDX</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="atmosphere.html#attribute:ATMOSPHERE:ADBIDX" title="ATMOSPHERE:ADBIDX attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ADBIDX</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#scalar"><span>scalar</span></a></td>
-<td>Short alias for <a class="reference internal" href="#attribute:ATMOSPHERE:ADIABATICINDEX" title="ATMOSPHERE:ADIABATICINDEX attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ADIABATICINDEX</span></code></a></td>
+<td>Short alias for <a class="reference internal" href="atmosphere.html#attribute:ATMOSPHERE:ADIABATICINDEX" title="ATMOSPHERE:ADIABATICINDEX attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ADIABATICINDEX</span></code></a></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#method:ATMOSPHERE:ALTITUDETEMPERATURE" title="ATMOSPHERE:ALTITUDETEMPERATURE method"><code class="xref ks ks-meth docutils literal"><span class="pre">ALTITUDETEMPERATURE(altitude)</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="atmosphere.html#method:ATMOSPHERE:ALTITUDETEMPERATURE" title="ATMOSPHERE:ALTITUDETEMPERATURE method"><code class="xref ks ks-meth docutils literal"><span class="pre">ALTITUDETEMPERATURE(altitude)</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#scalar"><span>scalar</span></a></td>
 <td>Estimate of temperature at the given altitude.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#method:ATMOSPHERE:ALTTEMP" title="ATMOSPHERE:ALTTEMP method"><code class="xref ks ks-meth docutils literal"><span class="pre">ALTTEMP(altitude)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="atmosphere.html#method:ATMOSPHERE:ALTTEMP" title="ATMOSPHERE:ALTTEMP method"><code class="xref ks ks-meth docutils literal"><span class="pre">ALTTEMP(altitude)</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#scalar"><span>scalar</span></a></td>
 <td>Short alias for <code class="xref ks ks-attr docutils literal"><span class="pre">ALTITUDETEMPERATURE</span></code></td>
 </tr>
@@ -244,7 +244,7 @@
 
 <dl class="attribute">
 <dt id="attribute:ATMOSPHERE:BODY">
-Atmosphere:<code class="descname">BODY</code><a class="headerlink" href="#attribute:ATMOSPHERE:BODY" title="Permalink to this definition">¶</a></dt>
+Atmosphere:<code class="descname">BODY</code><a class="headerlink" href="atmosphere.html#attribute:ATMOSPHERE:BODY" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -260,7 +260,7 @@ Atmosphere:<code class="descname">BODY</code><a class="headerlink" href="#attrib
 
 <dl class="attribute">
 <dt id="attribute:ATMOSPHERE:EXISTS">
-Atmosphere:<code class="descname">EXISTS</code><a class="headerlink" href="#attribute:ATMOSPHERE:EXISTS" title="Permalink to this definition">¶</a></dt>
+Atmosphere:<code class="descname">EXISTS</code><a class="headerlink" href="atmosphere.html#attribute:ATMOSPHERE:EXISTS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -276,7 +276,7 @@ Atmosphere:<code class="descname">EXISTS</code><a class="headerlink" href="#attr
 
 <dl class="attribute">
 <dt id="attribute:ATMOSPHERE:OXYGEN">
-Atmosphere:<code class="descname">OXYGEN</code><a class="headerlink" href="#attribute:ATMOSPHERE:OXYGEN" title="Permalink to this definition">¶</a></dt>
+Atmosphere:<code class="descname">OXYGEN</code><a class="headerlink" href="atmosphere.html#attribute:ATMOSPHERE:OXYGEN" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -292,7 +292,7 @@ Atmosphere:<code class="descname">OXYGEN</code><a class="headerlink" href="#attr
 
 <dl class="attribute">
 <dt id="attribute:ATMOSPHERE:SEALEVELPRESSURE">
-Atmosphere:<code class="descname">SEALEVELPRESSURE</code><a class="headerlink" href="#attribute:ATMOSPHERE:SEALEVELPRESSURE" title="Permalink to this definition">¶</a></dt>
+Atmosphere:<code class="descname">SEALEVELPRESSURE</code><a class="headerlink" href="atmosphere.html#attribute:ATMOSPHERE:SEALEVELPRESSURE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -318,7 +318,7 @@ which has now been changed to Atmospheres.</p>
 
 <dl class="method">
 <dt id="method:ATMOSPHERE:ALTITUDEPRESSURE">
-Atmosphere:<code class="descname">ALTITUDEPRESSURE</code><span class="sig-paren">(</span>altitude<span class="sig-paren">)</span><a class="headerlink" href="#method:ATMOSPHERE:ALTITUDEPRESSURE" title="Permalink to this definition">¶</a></dt>
+Atmosphere:<code class="descname">ALTITUDEPRESSURE</code><span class="sig-paren">(</span>altitude<span class="sig-paren">)</span><a class="headerlink" href="atmosphere.html#method:ATMOSPHERE:ALTITUDEPRESSURE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -345,7 +345,7 @@ If you prefer to see the answer in KiloPascals, multiply the answer by
 
 <dl class="attribute">
 <dt id="attribute:ATMOSPHERE:HEIGHT">
-Atmosphere:<code class="descname">HEIGHT</code><a class="headerlink" href="#attribute:ATMOSPHERE:HEIGHT" title="Permalink to this definition">¶</a></dt>
+Atmosphere:<code class="descname">HEIGHT</code><a class="headerlink" href="atmosphere.html#attribute:ATMOSPHERE:HEIGHT" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -361,7 +361,7 @@ Atmosphere:<code class="descname">HEIGHT</code><a class="headerlink" href="#attr
 
 <dl class="attribute">
 <dt id="attribute:ATMOSPHERE:MOLARMASS">
-Atmosphere:<code class="descname">MOLARMASS</code><a class="headerlink" href="#attribute:ATMOSPHERE:MOLARMASS" title="Permalink to this definition">¶</a></dt>
+Atmosphere:<code class="descname">MOLARMASS</code><a class="headerlink" href="atmosphere.html#attribute:ATMOSPHERE:MOLARMASS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -379,7 +379,7 @@ Units are in kg/mol.
 
 <dl class="attribute">
 <dt id="attribute:ATMOSPHERE:ADIABATICINDEX">
-Atmosphere:<code class="descname">ADIABATICINDEX</code><a class="headerlink" href="#attribute:ATMOSPHERE:ADIABATICINDEX" title="Permalink to this definition">¶</a></dt>
+Atmosphere:<code class="descname">ADIABATICINDEX</code><a class="headerlink" href="atmosphere.html#attribute:ATMOSPHERE:ADIABATICINDEX" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -396,7 +396,7 @@ Atmosphere:<code class="descname">ADIABATICINDEX</code><a class="headerlink" hre
 
 <dl class="attribute">
 <dt id="attribute:ATMOSPHERE:ADBIDX">
-Atmosphere:<code class="descname">ADBIDX</code><a class="headerlink" href="#attribute:ATMOSPHERE:ADBIDX" title="Permalink to this definition">¶</a></dt>
+Atmosphere:<code class="descname">ADBIDX</code><a class="headerlink" href="atmosphere.html#attribute:ATMOSPHERE:ADBIDX" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -412,7 +412,7 @@ Atmosphere:<code class="descname">ADBIDX</code><a class="headerlink" href="#attr
 
 <dl class="method">
 <dt id="method:ATMOSPHERE:ALTITUDETEMPERATURE">
-Atmosphere:<code class="descname">ALTITUDETEMPERATURE</code><span class="sig-paren">(</span>altitude<span class="sig-paren">)</span><a class="headerlink" href="#method:ATMOSPHERE:ALTITUDETEMPERATURE" title="Permalink to this definition">¶</a></dt>
+Atmosphere:<code class="descname">ALTITUDETEMPERATURE</code><span class="sig-paren">(</span>altitude<span class="sig-paren">)</span><a class="headerlink" href="atmosphere.html#method:ATMOSPHERE:ALTITUDETEMPERATURE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -430,15 +430,15 @@ on the sun position in the sky (i.e. your latitude and what time of day it is).<
 
 <dl class="method">
 <dt id="method:ATMOSPHERE:ALTTEMP">
-Atmosphere:<code class="descname">ALTTEMP</code><span class="sig-paren">(</span>altitude<span class="sig-paren">)</span><a class="headerlink" href="#method:ATMOSPHERE:ALTTEMP" title="Permalink to this definition">¶</a></dt>
+Atmosphere:<code class="descname">ALTTEMP</code><span class="sig-paren">(</span>altitude<span class="sig-paren">)</span><a class="headerlink" href="atmosphere.html#method:ATMOSPHERE:ALTTEMP" title="Permalink to this definition">¶</a></dt>
 <dd><p>A shorthand alias for :meth:ALTITUDETEMPERATURE(altitude).</p>
 </dd></dl>
 
 <div class="section" id="deprecated-suffix">
-<h2>Deprecated Suffix<a class="headerlink" href="#deprecated-suffix" title="Permalink to this headline">¶</a></h2>
+<h2>Deprecated Suffix<a class="headerlink" href="atmosphere.html#deprecated-suffix" title="Permalink to this headline">¶</a></h2>
 <dl class="attribute">
 <dt id="attribute:ATMOSPHERE:SCALE">
-Atmosphere:<code class="descname">SCALE</code><a class="headerlink" href="#attribute:ATMOSPHERE:SCALE" title="Permalink to this definition">¶</a></dt>
+Atmosphere:<code class="descname">SCALE</code><a class="headerlink" href="atmosphere.html#attribute:ATMOSPHERE:SCALE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

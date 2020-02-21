@@ -109,7 +109,7 @@
 <li class="toctree-l2"><a class="reference internal" href="terminalgui.html">Terminal and GUI</a></li>
 <li class="toctree-l2"><a class="reference internal" href="serialization.html">Serialization</a></li>
 <li class="toctree-l2"><a class="reference internal" href="communication.html">Communication</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Resource Transfer</a><ul class="simple">
+<li class="toctree-l2 current"><a class="current reference internal" href="resource_transfer.html">Resource Transfer</a><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -166,7 +166,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="transferring-resources">
-<span id="resource-transfer"></span><h1>Transferring resources<a class="headerlink" href="#transferring-resources" title="Permalink to this headline">¶</a></h1>
+<span id="resource-transfer"></span><h1>Transferring resources<a class="headerlink" href="resource_transfer.html#transferring-resources" title="Permalink to this headline">¶</a></h1>
 <p>Resource transfer is an important part of many missions in Kerbal Space Program,
 whether you are gassing up a lander or refuelling a station. Because of this, we need
 a way to describe a resource transfer in script and monitor that transfer to be sure it
@@ -180,12 +180,12 @@ was successful.</p>
 the resource until the source is empty or the destination is full. Both functions
 return a new <a class="reference internal" href="../structures/misc/resource_transfer.html#structure:RESOURCETRANSFER" title="RESOURCETRANSFER structure"><code class="xref ks ks-struct docutils literal"><span class="pre">ResourceTransfer</span></code></a>.</p>
 <div class="section" id="resource">
-<h2>Resource<a class="headerlink" href="#resource" title="Permalink to this headline">¶</a></h2>
+<h2>Resource<a class="headerlink" href="resource_transfer.html#resource" title="Permalink to this headline">¶</a></h2>
 <p>in all transfers, you must specify a resource by name
 (eg &#8220;oxidizer&#8221;, &#8220;LIQUIDFUEL&#8221;, etc). this term is not case sensitive.</p>
 </div>
 <div class="section" id="source-and-destination">
-<h2>Source and Destination<a class="headerlink" href="#source-and-destination" title="Permalink to this headline">¶</a></h2>
+<h2>Source and Destination<a class="headerlink" href="resource_transfer.html#source-and-destination" title="Permalink to this headline">¶</a></h2>
 <p>In all transfers, you must specify a source and a destination, both of these need
 to be one of these three types:</p>
 <ul class="simple">
@@ -195,7 +195,7 @@ to be one of these three types:</p>
 </ul>
 </div>
 <div class="section" id="examples">
-<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="resource_transfer.html#examples" title="Permalink to this headline">¶</a></h2>
 <p>Building a list of <a class="reference internal" href="../structures/vessels/element.html#structure:ELEMENT" title="ELEMENT structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Element</span></code></a>, then transferring all of the oxidizer from
 one element to another:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">LIST</span> <span class="nv">ELEMENTS</span> <span class="nv">IN</span> <span class="nv">elist</span><span class="p">.</span>

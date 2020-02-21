@@ -110,8 +110,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../celestial_bodies.html">Celestial Bodies</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../gui.html">GUI Widgets</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="box.html">Box</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">Button</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#example">Example</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="button.html">Button</a></li>
+<li class="toctree-l3"><a class="reference internal" href="button.html#example">Example</a></li>
 <li class="toctree-l3"><a class="reference internal" href="gui.html">GUI structure</a></li>
 <li class="toctree-l3"><a class="reference internal" href="label.html">Label</a></li>
 <li class="toctree-l3"><a class="reference internal" href="label.html#rich-text">Rich Text</a></li>
@@ -185,10 +185,10 @@
            <div itemprop="articleBody">
             
   <div class="section" id="button">
-<span id="gui-button"></span><h1>Button<a class="headerlink" href="#button" title="Permalink to this headline">¶</a></h1>
+<span id="gui-button"></span><h1>Button<a class="headerlink" href="button.html#button" title="Permalink to this headline">¶</a></h1>
 <dl class="structure">
 <dt id="structure:BUTTON">
-<em class="property">structure </em><code class="descname">Button</code><a class="headerlink" href="#structure:BUTTON" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">Button</code><a class="headerlink" href="button.html#structure:BUTTON" title="Permalink to this definition">¶</a></dt>
 <dd><p>A <code class="docutils literal"><span class="pre">Button</span></code> is a widget that can have script activity occur when the user
 presses it.</p>
 <p><code class="docutils literal"><span class="pre">Button</span></code> widgets are created inside Box objects via one of these three methods:</p>
@@ -200,7 +200,7 @@ clicked and doesn&#8217;t turn off until clicked again.</li>
 a set of checkboxes that only allow one of themselves to be on at a time.</li>
 </ul>
 <p>The differences between how these types of button behave come from how
-they will have their default <a class="reference internal" href="#attribute:BUTTON:TOGGLE" title="BUTTON:TOGGLE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TOGGLE</span></code></a> and <a class="reference internal" href="#attribute:BUTTON:EXCLUSIVE" title="BUTTON:EXCLUSIVE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">EXCLUSIVE</span></code></a>
+they will have their default <a class="reference internal" href="button.html#attribute:BUTTON:TOGGLE" title="BUTTON:TOGGLE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TOGGLE</span></code></a> and <a class="reference internal" href="button.html#attribute:BUTTON:EXCLUSIVE" title="BUTTON:EXCLUSIVE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">EXCLUSIVE</span></code></a>
 suffixes set when they are created.</p>
 <p>Buttons are a special case of <a class="reference internal" href="label.html#structure:LABEL" title="LABEL structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Label</span></code></a>, and can use all the features
 of <a class="reference internal" href="label.html#structure:LABEL" title="LABEL structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Label</span></code></a> to define how their text looks.</p>
@@ -219,27 +219,27 @@ of <a class="reference internal" href="label.html#structure:LABEL" title="LABEL 
 <tbody valign="top">
 <tr class="row-even"><td colspan="3">Every suffix of <a class="reference internal" href="label.html#structure:LABEL" title="LABEL structure"><code class="xref ks ks-struct docutils literal"><span class="pre">LABEL</span></code></a></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:BUTTON:PRESSED" title="BUTTON:PRESSED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PRESSED</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="button.html#attribute:BUTTON:PRESSED" title="BUTTON:PRESSED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PRESSED</span></code></a></td>
 <td><a class="reference internal" href="../misc/boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>Is the button currently down?</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:BUTTON:TAKEPRESS" title="BUTTON:TAKEPRESS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TAKEPRESS</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="button.html#attribute:BUTTON:TAKEPRESS" title="BUTTON:TAKEPRESS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TAKEPRESS</span></code></a></td>
 <td><a class="reference internal" href="../misc/boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>Return the PRESSED value AND release the button if it&#8217;s down.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:BUTTON:TOGGLE" title="BUTTON:TOGGLE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TOGGLE</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="button.html#attribute:BUTTON:TOGGLE" title="BUTTON:TOGGLE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TOGGLE</span></code></a></td>
 <td><a class="reference internal" href="../misc/boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>Is this button into a toggle-style button?</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:BUTTON:EXCLUSIVE" title="BUTTON:EXCLUSIVE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">EXCLUSIVE</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="button.html#attribute:BUTTON:EXCLUSIVE" title="BUTTON:EXCLUSIVE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">EXCLUSIVE</span></code></a></td>
 <td><a class="reference internal" href="../misc/boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>Does turning this button on cause other buttons to turn off?</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:BUTTON:ONCLICK" title="BUTTON:ONCLICK attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ONCLICK</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="button.html#attribute:BUTTON:ONCLICK" title="BUTTON:ONCLICK attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ONCLICK</span></code></a></td>
 <td><a class="reference internal" href="../misc/kosdelegate.html#structure:KOSDELEGATE" title="KOSDELEGATE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">KOSDelegate</span></code></a> (no args)</td>
 <td>Your function called whenever the button gets clicked.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:BUTTON:ONTOGGLE" title="BUTTON:ONTOGGLE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ONTOGGLE</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="button.html#attribute:BUTTON:ONTOGGLE" title="BUTTON:ONTOGGLE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ONTOGGLE</span></code></a></td>
 <td><a class="reference internal" href="../misc/kosdelegate.html#structure:KOSDELEGATE" title="KOSDELEGATE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">KOSDelegate</span></code></a> (<a class="reference internal" href="../misc/boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a>)</td>
 <td>Your function called whenever the button&#8217;s PRESSED state changes.</td>
 </tr>
@@ -247,7 +247,7 @@ of <a class="reference internal" href="label.html#structure:LABEL" title="LABEL 
 </table>
 <dl class="attribute">
 <dt id="attribute:BUTTON:PRESSED">
-Button:<code class="descname">PRESSED</code><a class="headerlink" href="#attribute:BUTTON:PRESSED" title="Permalink to this definition">¶</a></dt>
+Button:<code class="descname">PRESSED</code><a class="headerlink" href="button.html#attribute:BUTTON:PRESSED" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -265,7 +265,7 @@ on or off.</p>
 
 <dl class="attribute">
 <dt id="attribute:BUTTON:TAKEPRESS">
-Button:<code class="descname">TAKEPRESS</code><a class="headerlink" href="#attribute:BUTTON:TAKEPRESS" title="Permalink to this definition">¶</a></dt>
+Button:<code class="descname">TAKEPRESS</code><a class="headerlink" href="button.html#attribute:BUTTON:TAKEPRESS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -280,7 +280,7 @@ Button:<code class="descname">TAKEPRESS</code><a class="headerlink" href="#attri
 or off (false), however reading this value has a side-effect.
 When you read this value, if it said the button was on (pressed in),
 then reading it will cause the button to become off (popped out).</p>
-<p>This is useful only for normal buttons (buttons that have <a class="reference internal" href="#attribute:BUTTON:TOGGLE" title="BUTTON:TOGGLE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TOGGLE</span></code></a>
+<p>This is useful only for normal buttons (buttons that have <a class="reference internal" href="button.html#attribute:BUTTON:TOGGLE" title="BUTTON:TOGGLE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TOGGLE</span></code></a>
 set to false).  It allows you to use the
 <a class="reference internal" href="../gui.html#gui-polling-technique"><span>polling technique</span></a> to repeatedly check to
 see if the button is on, and as soon as your script notices that it&#8217;s on,
@@ -289,7 +289,7 @@ it will pop it back out again so the user sees the proper visual feedback.</p>
 
 <dl class="attribute">
 <dt id="attribute:BUTTON:TOGGLE">
-Button:<code class="descname">TOGGLE</code><a class="headerlink" href="#attribute:BUTTON:TOGGLE" title="Permalink to this definition">¶</a></dt>
+Button:<code class="descname">TOGGLE</code><a class="headerlink" href="button.html#attribute:BUTTON:TOGGLE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -306,20 +306,20 @@ By default, :meth`BOX:ADDBUTTON` will create a button with <code class="docutils
 to false, while <a class="reference internal" href="box.html#method:BOX:ADDCHECKBOX" title="BOX:ADDCHECKBOX method"><code class="xref ks ks-meth docutils literal"><span class="pre">BOX:ADDCHECKBOX</span></code></a> and <a class="reference internal" href="box.html#method:BOX:ADDRADIOBUTTON" title="BOX:ADDRADIOBUTTON method"><code class="xref ks ks-meth docutils literal"><span class="pre">BOX:ADDRADIOBUTTON</span></code></a> will
 create buttons which have their <code class="docutils literal"><span class="pre">TOGGLE</span></code> suffixes set to true.</p>
 <p><strong>Behaviour when TOGGLE is false (the default):</strong></p>
-<p>The conditions under which a button will automatically release itself when <a class="reference internal" href="#attribute:BUTTON:TOGGLE" title="BUTTON:TOGGLE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TOGGLE</span></code></a> is
+<p>The conditions under which a button will automatically release itself when <a class="reference internal" href="button.html#attribute:BUTTON:TOGGLE" title="BUTTON:TOGGLE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TOGGLE</span></code></a> is
 set to <cite>False</cite> are:</p>
 <ul class="simple">
-<li>When the script calls the <a class="reference internal" href="#attribute:BUTTON:TAKEPRESS" title="BUTTON:TAKEPRESS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TAKEPRESS</span></code></a> suffix method.  When this is done, the
+<li>When the script calls the <a class="reference internal" href="button.html#attribute:BUTTON:TAKEPRESS" title="BUTTON:TAKEPRESS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TAKEPRESS</span></code></a> suffix method.  When this is done, the
 button will become false even if it was was previously true.</li>
-<li>If the script defines an <a class="reference internal" href="#attribute:BUTTON:ONCLICK" title="BUTTON:ONCLICK attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ONCLICK</span></code></a> user delegate.
-(Then when the <a class="reference internal" href="#attribute:BUTTON:PRESSED" title="BUTTON:PRESSED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PRESSED</span></code></a> value becomes true, kOS will immediately set it
+<li>If the script defines an <a class="reference internal" href="button.html#attribute:BUTTON:ONCLICK" title="BUTTON:ONCLICK attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ONCLICK</span></code></a> user delegate.
+(Then when the <a class="reference internal" href="button.html#attribute:BUTTON:PRESSED" title="BUTTON:PRESSED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PRESSED</span></code></a> value becomes true, kOS will immediately set it
 back to false (too fast for the kerboscript to see it) and instead call the
 <code class="docutils literal"><span class="pre">ONCLICK</span></code> callback delegate you gave it.)</li>
 </ul>
 <p><strong>Behaviour when TOGGLE is true:</strong></p>
 <p>If TOGGLE is set to True, then the button will <strong>not</strong> automatically release after it is
 read by the script.  Instead it will need to be clicked by the user a second time to make
-it pop back out.  In this mode, the button&#8217;s <a class="reference internal" href="#attribute:BUTTON:PRESSED" title="BUTTON:PRESSED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PRESSED</span></code></a> value will never automatically
+it pop back out.  In this mode, the button&#8217;s <a class="reference internal" href="button.html#attribute:BUTTON:PRESSED" title="BUTTON:PRESSED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PRESSED</span></code></a> value will never automatically
 reset to false on its own.</p>
 <p>If the Button is created by <code class="xref ks ks-meth docutils literal"><span class="pre">Button:ADDCHECKBOX</span></code>, or by
 <code class="xref ks ks-meth docutils literal"><span class="pre">Button:ADDRADIOBUTTON</span></code>, it will have a different visual
@@ -328,7 +328,7 @@ style (the style called &#8220;toggle&#8221;) and it will start already in TOGGL
 
 <dl class="attribute">
 <dt id="attribute:BUTTON:EXCLUSIVE">
-Button:<code class="descname">EXCLUSIVE</code><a class="headerlink" href="#attribute:BUTTON:EXCLUSIVE" title="Permalink to this definition">¶</a></dt>
+Button:<code class="descname">EXCLUSIVE</code><a class="headerlink" href="button.html#attribute:BUTTON:EXCLUSIVE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -348,7 +348,7 @@ if they are EXCLUSIVE).</p>
 
 <dl class="attribute">
 <dt id="attribute:BUTTON:ONCLICK">
-Button:<code class="descname">ONCLICK</code><a class="headerlink" href="#attribute:BUTTON:ONCLICK" title="Permalink to this definition">¶</a></dt>
+Button:<code class="descname">ONCLICK</code><a class="headerlink" href="button.html#attribute:BUTTON:ONCLICK" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -366,18 +366,18 @@ interaction.</p>
 <p>You can assign <code class="docutils literal"><span class="pre">ONCLICK</span></code> to a <a class="reference internal" href="../misc/kosdelegate.html#structure:KOSDELEGATE" title="KOSDELEGATE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">KOSDelegate</span></code></a> of one of your
 functions (named or anonymous) and from then on kOS will call that
 function whenever the button becomes clicked by the user.</p>
-<p>The <a class="reference internal" href="#attribute:BUTTON:ONCLICK" title="BUTTON:ONCLICK attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ONCLICK</span></code></a> suffix is intended to be used for non-toggle buttons.</p>
+<p>The <a class="reference internal" href="button.html#attribute:BUTTON:ONCLICK" title="BUTTON:ONCLICK attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ONCLICK</span></code></a> suffix is intended to be used for non-toggle buttons.</p>
 <p>Example:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">set</span> <span class="nv">mybutton</span><span class="p">:</span><span class="nv">ONCLICK</span> <span class="ow">to</span> <span class="p">{</span> <span class="k">print</span> <span class="s">&quot;Do something here.&quot;</span><span class="p">.</span> <span class="p">}.</span>
 </pre></div>
 </div>
-<p><a class="reference internal" href="#attribute:BUTTON:ONCLICK" title="BUTTON:ONCLICK attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ONCLICK</span></code></a> is called with no parameters.  To use it, your function must be
+<p><a class="reference internal" href="button.html#attribute:BUTTON:ONCLICK" title="BUTTON:ONCLICK attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ONCLICK</span></code></a> is called with no parameters.  To use it, your function must be
 written to expect no parameters.</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="attribute:BUTTON:ONTOGGLE">
-Button:<code class="descname">ONTOGGLE</code><a class="headerlink" href="#attribute:BUTTON:ONTOGGLE" title="Permalink to this definition">¶</a></dt>
+Button:<code class="descname">ONTOGGLE</code><a class="headerlink" href="button.html#attribute:BUTTON:ONTOGGLE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -400,14 +400,14 @@ which is the new state the button has just be changed to.</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">set</span> <span class="nv">mybutton</span><span class="p">:</span><span class="nv">ONTOGGLE</span> <span class="ow">to</span> <span class="p">{</span> <span class="kd">parameter</span> <span class="nv">val</span><span class="p">.</span> <span class="k">print</span> <span class="s">&quot;Button value just became &quot;</span> <span class="o">+</span> <span class="nv">val</span><span class="p">.</span> <span class="p">}.</span>
 </pre></div>
 </div>
-<p><code class="docutils literal"><span class="pre">ONTOGGLE</span></code> is really only useful with buttons where <a class="reference internal" href="#attribute:BUTTON:TOGGLE" title="BUTTON:TOGGLE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TOGGLE</span></code></a> is true.</p>
+<p><code class="docutils literal"><span class="pre">ONTOGGLE</span></code> is really only useful with buttons where <a class="reference internal" href="button.html#attribute:BUTTON:TOGGLE" title="BUTTON:TOGGLE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TOGGLE</span></code></a> is true.</p>
 </dd></dl>
 
 </dd></dl>
 
 </div>
 <div class="section" id="example">
-<h1>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h1>
+<h1>Example<a class="headerlink" href="button.html#example" title="Permalink to this headline">¶</a></h1>
 <p>Here is a longer example of buttons using the button callback hooks:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">LOCAL</span> <span class="nv">doneYet</span> <span class="ow">is</span> <span class="nb">FALSE</span><span class="p">.</span>
 <span class="k">LOCAL</span> <span class="nv">g</span> <span class="ow">IS</span> <span class="nv">GUI</span><span class="p">(</span><span class="mf">200</span><span class="p">).</span>

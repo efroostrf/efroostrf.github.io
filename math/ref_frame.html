@@ -104,7 +104,7 @@
 <li class="toctree-l2"><a class="reference internal" href="vector.html">Vectors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="direction.html">Directions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="geocoordinates.html">Geographic Coordinates</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Reference Frames</a><ul class="simple">
+<li class="toctree-l2 current"><a class="current reference internal" href="ref_frame.html">Reference Frames</a><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -162,7 +162,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="reference-frames">
-<span id="ref-frame"></span><h1>Reference Frames<a class="headerlink" href="#reference-frames" title="Permalink to this headline">¶</a></h1>
+<span id="ref-frame"></span><h1>Reference Frames<a class="headerlink" href="ref_frame.html#reference-frames" title="Permalink to this headline">¶</a></h1>
 <p>This page describes the <span class="math">\((x,y,z)\)</span> reference frame used for most
 of <strong>kOS</strong>&#8216;s vectors. kOS inherits its reference frame mostly from the
 base Kerbal Space Program game itself.  The coordinate system of Kerbal
@@ -209,7 +209,7 @@ instead, and Kerbal Space Program is one of them.</p>
 <p class="last">It is hoped that this may be expanded in the future, and conversion routines provided to let people pick a reference frame that makes sense depending on what the script is trying to do. At the moment the only reference frames used are SHIP-RAW and SOI-RAW, as they match closely to what <strong>KSP</strong> is using internally.</p>
 </div>
 <div class="section" id="raw-orientation">
-<h2>Raw Orientation<a class="headerlink" href="#raw-orientation" title="Permalink to this headline">¶</a></h2>
+<h2>Raw Orientation<a class="headerlink" href="ref_frame.html#raw-orientation" title="Permalink to this headline">¶</a></h2>
 <div class="figure">
 <img alt="../_images/KSP_body_coords.png" src="../_images/KSP_body_coords.png" />
 </div>
@@ -221,7 +221,7 @@ instead, and Kerbal Space Program is one of them.</p>
 <p>However, it&#8217;s hard to predict exactly where the X and Z axes will be. They keep moving depending on where you are, to the point where it&#8217;s impossible to get a fix on just which direction they&#8217;ll point.</p>
 </div>
 <div class="section" id="origin-position">
-<h2>Origin Position<a class="headerlink" href="#origin-position" title="Permalink to this headline">¶</a></h2>
+<h2>Origin Position<a class="headerlink" href="ref_frame.html#origin-position" title="Permalink to this headline">¶</a></h2>
 <p>The origin position of the <span class="math">\((x,y,z)\)</span> coordinate grid in <strong>KSP</strong> is also a bit messy. It&#8217;s usually <em>near</em> but not exactly <em>on</em> the current ship. <strong>kOS</strong> performs some conversions for you to make this a bit simpler and keep everything consistent.</p>
 <p>Regardless of where the origin of the underlying <strong>KSP</strong> system is, in <strong>kOS</strong>, whenever a POSITION is reported, it will always be reported in a frame of reference where the origin is located at the <a class="reference internal" href="../general/cpu_vessel.html#cpu-vessel"><span>CPU Vessel</span></a>.</p>
 <p>However, for the sake of VELOCITY, the origin point of all vectors is usually not SHIP, but the SOI body&#8217;s center. This is because if the origin point was the SHIP, then the ship&#8217;s velocity would always be zero in that frame of reference, and that would not be useful.</p>
@@ -233,7 +233,7 @@ instead, and Kerbal Space Program is one of them.</p>
 </ul>
 </div>
 <div class="section" id="converting">
-<h2>Converting<a class="headerlink" href="#converting" title="Permalink to this headline">¶</a></h2>
+<h2>Converting<a class="headerlink" href="ref_frame.html#converting" title="Permalink to this headline">¶</a></h2>
 <p>Converting between SHIP-RAW and SOI-RAW reference frames is a simple matter of moving the origin point by adding or subtracting the <code class="docutils literal"><span class="pre">SHIP:BODY:POSITION</span></code> vector from the coordinate. This works because both frames are using the same axes rotation.</p>
 <ul class="simple">
 <li>Any SHIP-RAW position vector <em>minus</em> <code class="docutils literal"><span class="pre">SHIP:BODY:POSITION</span></code> Gives the vector in SOI-RAW coordinates.</li>

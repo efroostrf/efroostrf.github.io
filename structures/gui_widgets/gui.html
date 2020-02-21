@@ -112,7 +112,7 @@
 <li class="toctree-l3"><a class="reference internal" href="box.html">Box</a></li>
 <li class="toctree-l3"><a class="reference internal" href="button.html">Button</a></li>
 <li class="toctree-l3"><a class="reference internal" href="button.html#example">Example</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">GUI structure</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="gui.html">GUI structure</a></li>
 <li class="toctree-l3"><a class="reference internal" href="label.html">Label</a></li>
 <li class="toctree-l3"><a class="reference internal" href="label.html#rich-text">Rich Text</a></li>
 <li class="toctree-l3"><a class="reference internal" href="popupmenu.html">PopupMenu</a></li>
@@ -185,10 +185,10 @@
            <div itemprop="articleBody">
             
   <div class="section" id="gui-structure">
-<span id="id1"></span><h1>GUI structure<a class="headerlink" href="#gui-structure" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1>GUI structure<a class="headerlink" href="gui.html#gui-structure" title="Permalink to this headline">¶</a></h1>
 <dl class="structure">
 <dt id="structure:GUI">
-<em class="property">structure </em><code class="descname">GUI</code><a class="headerlink" href="#structure:GUI" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">GUI</code><a class="headerlink" href="gui.html#structure:GUI" title="Permalink to this definition">¶</a></dt>
 <dd><p>This object is created with the <a class="reference internal" href="../gui.html#function:GUI" title="GUI function"><code class="xref ks ks-func docutils literal"><span class="pre">GUI(width,height)</span></code></a> function.</p>
 <p>A GUI object is a kind of <a class="reference internal" href="box.html#structure:BOX" title="BOX structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Box</span></code></a> that is the outermost
 window that holds all the other widgets.  In order to work at all, all
@@ -213,35 +213,35 @@ of them.)</p>
 <tbody valign="top">
 <tr class="row-even"><td colspan="3">Every suffix of <a class="reference internal" href="box.html#structure:BOX" title="BOX structure"><code class="xref ks ks-struct docutils literal"><span class="pre">BOX</span></code></a>.  Note, to add widgets to this window, see the BOX suffixes.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:GUI:X" title="GUI:X attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">X</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="gui.html#attribute:GUI:X" title="GUI:X attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">X</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a> (pixels)</td>
 <td>X-position of the window. Negative values measure from the right.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:GUI:Y" title="GUI:Y attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">Y</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="gui.html#attribute:GUI:Y" title="GUI:Y attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">Y</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a> (pixels)</td>
 <td>Y-position of the window. Negative values measure from the bottom.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:GUI:DRAGGABLE" title="GUI:DRAGGABLE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">DRAGGABLE</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="gui.html#attribute:GUI:DRAGGABLE" title="GUI:DRAGGABLE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">DRAGGABLE</span></code></a></td>
 <td><a class="reference internal" href="../misc/boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>True = user can move window.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:GUI:EXTRADELAY" title="GUI:EXTRADELAY attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">EXTRADELAY</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="gui.html#attribute:GUI:EXTRADELAY" title="GUI:EXTRADELAY attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">EXTRADELAY</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a> (seconds)</td>
 <td>Add artificial delay to all communication with this GUI (good for testing before you get into deep space)</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:GUI:SKIN" title="GUI:SKIN attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SKIN</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="gui.html#attribute:GUI:SKIN" title="GUI:SKIN attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SKIN</span></code></a></td>
 <td><a class="reference internal" href="skin.html#structure:SKIN" title="SKIN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Skin</span></code></a></td>
 <td>The skin defining the default style of widgets in this GUI.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:GUI:TOOLTIP" title="GUI:TOOLTIP attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TOOLTIP</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="gui.html#attribute:GUI:TOOLTIP" title="GUI:TOOLTIP attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TOOLTIP</span></code></a></td>
 <td><a class="reference internal" href="../misc/string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">String</span></code></a></td>
 <td>Current value of hovertext</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#method:GUI:SHOW" title="GUI:SHOW method"><code class="xref ks ks-meth docutils literal"><span class="pre">SHOW</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="gui.html#method:GUI:SHOW" title="GUI:SHOW method"><code class="xref ks ks-meth docutils literal"><span class="pre">SHOW</span></code></a></td>
 <td>none</td>
 <td>Call to make the gui appear</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#method:GUI:HIDE" title="GUI:HIDE method"><code class="xref ks ks-meth docutils literal"><span class="pre">HIDE</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="gui.html#method:GUI:HIDE" title="GUI:HIDE method"><code class="xref ks ks-meth docutils literal"><span class="pre">HIDE</span></code></a></td>
 <td>none</td>
 <td>Call to make the gui disappear</td>
 </tr>
@@ -249,7 +249,7 @@ of them.)</p>
 </table>
 <dl class="attribute">
 <dt id="attribute:GUI:X">
-GUI:<code class="descname">X</code><a class="headerlink" href="#attribute:GUI:X" title="Permalink to this definition">¶</a></dt>
+GUI:<code class="descname">X</code><a class="headerlink" href="gui.html#attribute:GUI:X" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -269,7 +269,7 @@ setting it to -200 means 200 pixels away from the right edge of the screen.)</p>
 
 <dl class="attribute">
 <dt id="attribute:GUI:Y">
-GUI:<code class="descname">Y</code><a class="headerlink" href="#attribute:GUI:Y" title="Permalink to this definition">¶</a></dt>
+GUI:<code class="descname">Y</code><a class="headerlink" href="gui.html#attribute:GUI:Y" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -289,7 +289,7 @@ setting it to -200 means 200 pixels away from the bottom edge of the screen.)</p
 
 <dl class="attribute">
 <dt id="attribute:GUI:DRAGGABLE">
-GUI:<code class="descname">DRAGGABLE</code><a class="headerlink" href="#attribute:GUI:DRAGGABLE" title="Permalink to this definition">¶</a></dt>
+GUI:<code class="descname">DRAGGABLE</code><a class="headerlink" href="gui.html#attribute:GUI:DRAGGABLE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -301,13 +301,13 @@ GUI:<code class="descname">DRAGGABLE</code><a class="headerlink" href="#attribut
 </tbody>
 </table>
 <p>Set to true to allow the window to be moved by the user dragging it.  If
-set to false, it can still be moved by the script setting <a class="reference internal" href="#attribute:GUI:X" title="GUI:X attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">GUI:X</span></code></a>
-and <a class="reference internal" href="#attribute:GUI:Y" title="GUI:Y attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">GUI:Y</span></code></a>, but can&#8217;t be moved by the user.</p>
+set to false, it can still be moved by the script setting <a class="reference internal" href="gui.html#attribute:GUI:X" title="GUI:X attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">GUI:X</span></code></a>
+and <a class="reference internal" href="gui.html#attribute:GUI:Y" title="GUI:Y attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">GUI:Y</span></code></a>, but can&#8217;t be moved by the user.</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="attribute:GUI:EXTRADELAY">
-GUI:<code class="descname">EXTRADELAY</code><a class="headerlink" href="#attribute:GUI:EXTRADELAY" title="Permalink to this definition">¶</a></dt>
+GUI:<code class="descname">EXTRADELAY</code><a class="headerlink" href="gui.html#attribute:GUI:EXTRADELAY" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -332,7 +332,7 @@ low orbit).</p>
 
 <dl class="attribute">
 <dt id="attribute:GUI:SKIN">
-GUI:<code class="descname">SKIN</code><a class="headerlink" href="#attribute:GUI:SKIN" title="Permalink to this definition">¶</a></dt>
+GUI:<code class="descname">SKIN</code><a class="headerlink" href="gui.html#attribute:GUI:SKIN" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -352,7 +352,7 @@ inside the window.</p>
 
 <dl class="attribute">
 <dt id="attribute:GUI:TOOLTIP">
-GUI:<code class="descname">TOOLTIP</code><a class="headerlink" href="#attribute:GUI:TOOLTIP" title="Permalink to this definition">¶</a></dt>
+GUI:<code class="descname">TOOLTIP</code><a class="headerlink" href="gui.html#attribute:GUI:TOOLTIP" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -375,7 +375,7 @@ like, instead of using the baked-in <a class="reference internal" href="tipdispl
 
 <dl class="method">
 <dt id="method:GUI:SHOW">
-GUI:<code class="descname">SHOW</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:GUI:SHOW" title="Permalink to this definition">¶</a></dt>
+GUI:<code class="descname">SHOW</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="gui.html#method:GUI:SHOW" title="Permalink to this definition">¶</a></dt>
 <dd><p>Synopsis:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">set</span> <span class="nv">g</span> <span class="ow">to</span> <span class="nv">gui</span><span class="p">(</span><span class="mf">200</span><span class="p">).</span>
 <span class="c1">// .. call G:addbutton, G:addslider, etc etc here</span>
@@ -390,7 +390,7 @@ call this.)</p>
 
 <dl class="method">
 <dt id="method:GUI:HIDE">
-GUI:<code class="descname">HIDE</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:GUI:HIDE" title="Permalink to this definition">¶</a></dt>
+GUI:<code class="descname">HIDE</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="gui.html#method:GUI:HIDE" title="Permalink to this definition">¶</a></dt>
 <dd><p>Synopsis:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">set</span> <span class="nv">g</span> <span class="ow">to</span> <span class="nv">gui</span><span class="p">(</span><span class="mf">200</span><span class="p">).</span>
 <span class="c1">// .. call G:addbutton, G:addslider, etc etc here</span>

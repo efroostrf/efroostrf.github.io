@@ -100,13 +100,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../language.html">Language</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../math.html">Mathematics</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="basic.html">Basic Math Functions</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Scalar</a><ul class="simple">
+<li class="toctree-l2 current"><a class="current reference internal" href="scalar.html">Scalar</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="vector.html">Vectors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="direction.html">Directions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="geocoordinates.html">Geographic Coordinates</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ref_frame.html">Reference Frames</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://ksp-kos.github.io/KOS/math/ref_frame.html">Reference Frames</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../commands.html">Commands</a></li>
@@ -162,12 +162,12 @@
            <div itemprop="articleBody">
             
   <div class="section" id="scalar">
-<span id="id1"></span><h1>Scalar<a class="headerlink" href="#scalar" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1>Scalar<a class="headerlink" href="scalar.html#scalar" title="Permalink to this headline">¶</a></h1>
 <dl class="structure">
 <dt id="structure:SCALAR">
-<em class="property">structure </em><code class="descname">Scalar</code><a class="headerlink" href="#structure:SCALAR" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">Scalar</code><a class="headerlink" href="scalar.html#structure:SCALAR" title="Permalink to this definition">¶</a></dt>
 <dd><table border="1" class="docutils" id="id3">
-<caption><span class="caption-text"><strong>Members</strong></span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-text"><strong>Members</strong></span><a class="headerlink" href="scalar.html#id3" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="100%" />
 </colgroup>
@@ -190,7 +190,7 @@ and theres single-precision, double-precision and so on.</p>
 simple programming without a lot of expertise, and to that end, the
 difference between these types is abstracted away as much as possible.</p>
 <div class="section" id="scalar-syntax">
-<span id="id2"></span><h2>Scalar Syntax<a class="headerlink" href="#scalar-syntax" title="Permalink to this headline">¶</a></h2>
+<span id="id2"></span><h2>Scalar Syntax<a class="headerlink" href="scalar.html#scalar-syntax" title="Permalink to this headline">¶</a></h2>
 <p>Scalar numbers are allowed to be represented in any number of ways, both
 in the source code and in strings passed in to the <code class="xref ks ks-attr docutils literal"><span class="pre">String:TOSCALAR</span></code>
 method.</p>
@@ -226,7 +226,7 @@ sign, and a string of digits) to shift the decimal place:</p>
 </div>
 </div>
 <div class="section" id="operators">
-<h2>Operators<a class="headerlink" href="#operators" title="Permalink to this headline">¶</a></h2>
+<h2>Operators<a class="headerlink" href="scalar.html#operators" title="Permalink to this headline">¶</a></h2>
 <p>The following basic arithmetic operators are defined when both <code class="docutils literal"><span class="pre">a</span></code> and
 <code class="docutils literal"><span class="pre">b</span></code> are scalars:</p>
 <table border="1" class="docutils">
@@ -254,7 +254,7 @@ For example, multiplication and division happen before subtraction
 and addition.</p>
 </div>
 <div class="section" id="scientific-notation">
-<h2>Scientific Notation<a class="headerlink" href="#scientific-notation" title="Permalink to this headline">¶</a></h2>
+<h2>Scientific Notation<a class="headerlink" href="scalar.html#scientific-notation" title="Permalink to this headline">¶</a></h2>
 <p>You can specify a number using scientific notation using the letter <code class="docutils literal"><span class="pre">e</span></code>,
 as shown:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">set</span> <span class="nv">x</span> <span class="ow">to</span> <span class="mf">1.23e5</span><span class="p">.</span>
@@ -265,11 +265,11 @@ as shown:</p>
 </div>
 </div>
 <div class="section" id="limitations-of-scalars">
-<h2>Limitations of Scalars<a class="headerlink" href="#limitations-of-scalars" title="Permalink to this headline">¶</a></h2>
+<h2>Limitations of Scalars<a class="headerlink" href="scalar.html#limitations-of-scalars" title="Permalink to this headline">¶</a></h2>
 <p>The implementation of Scalars can currently only store values that fit
 the following criteria:</p>
 <div class="section" id="the-value-is-a-real-number">
-<h3>The value is a <em>real number</em><a class="headerlink" href="#the-value-is-a-real-number" title="Permalink to this headline">¶</a></h3>
+<h3>The value is a <em>real number</em><a class="headerlink" href="scalar.html#the-value-is-a-real-number" title="Permalink to this headline">¶</a></h3>
 <p>Or &#8220;What the heck does &#8216;attempted to push NaN onto the stack&#8217; mean?&#8221;.</p>
 <p>kOS does not have a numeric type designed to deal with
 <em>imaginary numbers</em> or <em>complex numbers</em>.  Therefore, for
@@ -281,14 +281,14 @@ is if you attempt to perform <code class="docutils literal"><span class="pre">ar
 thing as the angle that gives a sine of 1.01.</p>
 </div>
 <div class="section" id="the-value-must-be-a-rational-number">
-<h3>The value must be a <em>rational number</em><a class="headerlink" href="#the-value-must-be-a-rational-number" title="Permalink to this headline">¶</a></h3>
+<h3>The value must be a <em>rational number</em><a class="headerlink" href="scalar.html#the-value-must-be-a-rational-number" title="Permalink to this headline">¶</a></h3>
 <p>When you ask kOS to tell you <code class="docutils literal"><span class="pre">constant:pi</span></code>, you are technically not
 getting the <em>actual</em> correct value.  Instead you are getting a rational
 number approximation that is accurate to about 15 decimal places.  In
 kOS, scalar values cannot store irrational numbers.</p>
 </div>
 <div class="section" id="the-larger-the-magnitude-the-less-the-precision">
-<h3>The larger the magnitude, the less the precision<a class="headerlink" href="#the-larger-the-magnitude-the-less-the-precision" title="Permalink to this headline">¶</a></h3>
+<h3>The larger the magnitude, the less the precision<a class="headerlink" href="scalar.html#the-larger-the-magnitude-the-less-the-precision" title="Permalink to this headline">¶</a></h3>
 <p>For example, while it <em>is</em> possible to store exactly the number <code class="docutils literal"><span class="pre">99.001</span></code>,
 it is not possible to store exactly the number <code class="docutils literal"><span class="pre">999999999999999.001</span></code>, even
 though both numbers are only precise up to the thousandths place.</p>

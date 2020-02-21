@@ -127,7 +127,7 @@
 <li class="toctree-l3"><a class="reference internal" href="scienceexperiment.html">ScienceExperimentModule</a></li>
 <li class="toctree-l3"><a class="reference internal" href="sensor.html">Sensor</a></li>
 <li class="toctree-l3"><a class="reference internal" href="stage.html">Stage</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">Vessel</a><ul class="simple">
+<li class="toctree-l3 current"><a class="current reference internal" href="vessel.html">Vessel</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="vesselsensors.html">VesselSensors</a></li>
@@ -194,7 +194,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="vessel">
-<span id="id1"></span><h1>Vessel<a class="headerlink" href="#vessel" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1>Vessel<a class="headerlink" href="vessel.html#vessel" title="Permalink to this headline">¶</a></h1>
 <p>All vessels share a structure. To get a variable referring to any vessel you can do this:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="c1">// Get a vessel by it&#39;s name.</span>
 <span class="c1">// The name is Case Sensitive.</span>
@@ -212,7 +212,7 @@
 <p>Vessels are also <a class="reference internal" href="../orbits/orbitable.html#orbitable"><span>Orbitable</span></a>, and as such have all the associated suffixes as well as some additional suffixes.</p>
 <dl class="structure">
 <dt id="structure:VESSEL">
-<em class="property">structure </em><code class="descname">Vessel</code><a class="headerlink" href="#structure:VESSEL" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">Vessel</code><a class="headerlink" href="vessel.html#structure:VESSEL" title="Permalink to this definition">¶</a></dt>
 <dd><table border="1" class="docutils">
 <colgroup>
 <col width="21%" />
@@ -228,215 +228,215 @@
 <tbody valign="top">
 <tr class="row-even"><td colspan="3">Every suffix of <a class="reference internal" href="../orbits/orbitable.html#structure:ORBITABLE" title="ORBITABLE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Orbitable</span></code></a></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:VESSEL:CONTROL" title="VESSEL:CONTROL attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">CONTROL</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="vessel.html#attribute:VESSEL:CONTROL" title="VESSEL:CONTROL attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">CONTROL</span></code></a></td>
 <td><a class="reference internal" href="../../commands/flight/pilot.html#structure:CONTROL" title="CONTROL structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Control</span></code></a></td>
 <td>Raw flight controls</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:VESSEL:BEARING" title="VESSEL:BEARING attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">BEARING</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="vessel.html#attribute:VESSEL:BEARING" title="VESSEL:BEARING attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">BEARING</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a> (deg)</td>
 <td>relative heading to this vessel</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:VESSEL:HEADING" title="VESSEL:HEADING attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">HEADING</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="vessel.html#attribute:VESSEL:HEADING" title="VESSEL:HEADING attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">HEADING</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a> (deg)</td>
 <td>Absolute heading to this vessel</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:VESSEL:MAXTHRUST" title="VESSEL:MAXTHRUST attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MAXTHRUST</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="vessel.html#attribute:VESSEL:MAXTHRUST" title="VESSEL:MAXTHRUST attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MAXTHRUST</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a></td>
 <td>Sum of active maximum thrusts</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#method:VESSEL:MAXTHRUSTAT" title="VESSEL:MAXTHRUSTAT method"><code class="xref ks ks-meth docutils literal"><span class="pre">MAXTHRUSTAT(pressure)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="vessel.html#method:VESSEL:MAXTHRUSTAT" title="VESSEL:MAXTHRUSTAT method"><code class="xref ks ks-meth docutils literal"><span class="pre">MAXTHRUSTAT(pressure)</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a></td>
 <td>Sum of active maximum thrusts at the given atmospheric pressure</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:VESSEL:AVAILABLETHRUST" title="VESSEL:AVAILABLETHRUST attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">AVAILABLETHRUST</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="vessel.html#attribute:VESSEL:AVAILABLETHRUST" title="VESSEL:AVAILABLETHRUST attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">AVAILABLETHRUST</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a></td>
 <td>Sum of active limited maximum thrusts</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#method:VESSEL:AVAILABLETHRUSTAT" title="VESSEL:AVAILABLETHRUSTAT method"><code class="xref ks ks-meth docutils literal"><span class="pre">AVAILABLETHRUSTAT(pressure)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="vessel.html#method:VESSEL:AVAILABLETHRUSTAT" title="VESSEL:AVAILABLETHRUSTAT method"><code class="xref ks ks-meth docutils literal"><span class="pre">AVAILABLETHRUSTAT(pressure)</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a></td>
 <td>Sum of active limited maximum thrusts at the given atmospheric pressure</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:VESSEL:FACING" title="VESSEL:FACING attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">FACING</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="vessel.html#attribute:VESSEL:FACING" title="VESSEL:FACING attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">FACING</span></code></a></td>
 <td><a class="reference internal" href="../../math/direction.html#structure:DIRECTION" title="DIRECTION structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Direction</span></code></a></td>
 <td>The way the vessel is pointed</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:VESSEL:BOUNDS" title="VESSEL:BOUNDS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">BOUNDS</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="vessel.html#attribute:VESSEL:BOUNDS" title="VESSEL:BOUNDS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">BOUNDS</span></code></a></td>
 <td><a class="reference internal" href="bounds.html#structure:BOUNDS" title="BOUNDS structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Bounds</span></code></a></td>
 <td>Construct bounding box information about the vessel</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:VESSEL:MASS" title="VESSEL:MASS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MASS</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="vessel.html#attribute:VESSEL:MASS" title="VESSEL:MASS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MASS</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a> (metric tons)</td>
 <td>Mass of the ship</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:VESSEL:WETMASS" title="VESSEL:WETMASS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">WETMASS</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="vessel.html#attribute:VESSEL:WETMASS" title="VESSEL:WETMASS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">WETMASS</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a> (metric tons)</td>
 <td>Mass of the ship fully fuelled</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:VESSEL:DRYMASS" title="VESSEL:DRYMASS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">DRYMASS</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="vessel.html#attribute:VESSEL:DRYMASS" title="VESSEL:DRYMASS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">DRYMASS</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a> (metric tons)</td>
 <td>Mass of the ship with no resources</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:VESSEL:DYNAMICPRESSURE" title="VESSEL:DYNAMICPRESSURE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">DYNAMICPRESSURE</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="vessel.html#attribute:VESSEL:DYNAMICPRESSURE" title="VESSEL:DYNAMICPRESSURE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">DYNAMICPRESSURE</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a> (ATM&#8217;s)</td>
 <td>Air Pressure surrounding the vessel</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:VESSEL:Q" title="VESSEL:Q attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">Q</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="vessel.html#attribute:VESSEL:Q" title="VESSEL:Q attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">Q</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a> (ATM&#8217;s)</td>
 <td>Alias name for DYNAMICPRESSURE</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:VESSEL:VERTICALSPEED" title="VESSEL:VERTICALSPEED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">VERTICALSPEED</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="vessel.html#attribute:VESSEL:VERTICALSPEED" title="VESSEL:VERTICALSPEED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">VERTICALSPEED</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a> (m/s)</td>
 <td>How fast the ship is moving &#8220;up&#8221;</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:VESSEL:GROUNDSPEED" title="VESSEL:GROUNDSPEED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">GROUNDSPEED</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="vessel.html#attribute:VESSEL:GROUNDSPEED" title="VESSEL:GROUNDSPEED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">GROUNDSPEED</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a> (m/s)</td>
 <td>How fast the ship is moving &#8220;horizontally&#8221;</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:VESSEL:AIRSPEED" title="VESSEL:AIRSPEED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">AIRSPEED</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="vessel.html#attribute:VESSEL:AIRSPEED" title="VESSEL:AIRSPEED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">AIRSPEED</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a> (m/s)</td>
 <td>How fast the ship is moving relative to the air</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:VESSEL:TERMVELOCITY" title="VESSEL:TERMVELOCITY attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TERMVELOCITY</span></code></a> (DEPRECATED)</td>
+<tr class="row-even"><td><a class="reference internal" href="vessel.html#attribute:VESSEL:TERMVELOCITY" title="VESSEL:TERMVELOCITY attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TERMVELOCITY</span></code></a> (DEPRECATED)</td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a> (m/s)</td>
 <td>terminal velocity of the vessel</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:VESSEL:SHIPNAME" title="VESSEL:SHIPNAME attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SHIPNAME</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="vessel.html#attribute:VESSEL:SHIPNAME" title="VESSEL:SHIPNAME attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SHIPNAME</span></code></a></td>
 <td><a class="reference internal" href="../misc/string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">string</span></code></a></td>
 <td>The name of the vessel</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:VESSEL:NAME" title="VESSEL:NAME attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">NAME</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="vessel.html#attribute:VESSEL:NAME" title="VESSEL:NAME attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">NAME</span></code></a></td>
 <td><a class="reference internal" href="../misc/string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">string</span></code></a></td>
 <td>Synonym for SHIPNAME</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:VESSEL:STATUS" title="VESSEL:STATUS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">STATUS</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="vessel.html#attribute:VESSEL:STATUS" title="VESSEL:STATUS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">STATUS</span></code></a></td>
 <td><a class="reference internal" href="../misc/string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">string</span></code></a></td>
 <td>Current ship status</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:VESSEL:TYPE" title="VESSEL:TYPE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TYPE</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="vessel.html#attribute:VESSEL:TYPE" title="VESSEL:TYPE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TYPE</span></code></a></td>
 <td><a class="reference internal" href="../misc/string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">string</span></code></a></td>
 <td>Ship type</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#method:VESSEL:STARTTRACKING" title="VESSEL:STARTTRACKING method"><code class="xref ks ks-meth docutils literal"><span class="pre">STARTTRACKING</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="vessel.html#method:VESSEL:STARTTRACKING" title="VESSEL:STARTTRACKING method"><code class="xref ks ks-meth docutils literal"><span class="pre">STARTTRACKING</span></code></a></td>
 <td>None</td>
 <td>Start tracking the &#8220;vessel&#8221; via the tracking statin</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:VESSEL:ANGULARMOMENTUM" title="VESSEL:ANGULARMOMENTUM attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ANGULARMOMENTUM</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="vessel.html#attribute:VESSEL:ANGULARMOMENTUM" title="VESSEL:ANGULARMOMENTUM attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ANGULARMOMENTUM</span></code></a></td>
 <td><a class="reference internal" href="../../math/vector.html#structure:VECTOR" title="VECTOR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Vector</span></code></a></td>
-<td>In <a class="reference internal" href="../../math/ref_frame.html#ship-raw"><span>SHIP_RAW</span></a></td>
+<td>In <a class="reference internal" href="https://ksp-kos.github.io/KOS/math/ref_frame.html#ship-raw"><span>SHIP_RAW</span></a></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:VESSEL:ANGULARVEL" title="VESSEL:ANGULARVEL attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ANGULARVEL</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="vessel.html#attribute:VESSEL:ANGULARVEL" title="VESSEL:ANGULARVEL attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ANGULARVEL</span></code></a></td>
 <td><a class="reference internal" href="../../math/vector.html#structure:VECTOR" title="VECTOR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Vector</span></code></a></td>
-<td>In <a class="reference internal" href="../../math/ref_frame.html#ship-raw"><span>SHIP_RAW</span></a></td>
+<td>In <a class="reference internal" href="https://ksp-kos.github.io/KOS/math/ref_frame.html#ship-raw"><span>SHIP_RAW</span></a></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:VESSEL:SENSORS" title="VESSEL:SENSORS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SENSORS</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="vessel.html#attribute:VESSEL:SENSORS" title="VESSEL:SENSORS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SENSORS</span></code></a></td>
 <td><a class="reference internal" href="vesselsensors.html#structure:VESSELSENSORS" title="VESSELSENSORS structure"><code class="xref ks ks-struct docutils literal"><span class="pre">VesselSensors</span></code></a></td>
 <td>Sensor data</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:VESSEL:LOADED" title="VESSEL:LOADED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">LOADED</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="vessel.html#attribute:VESSEL:LOADED" title="VESSEL:LOADED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">LOADED</span></code></a></td>
 <td><a class="reference internal" href="../misc/boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>loaded into KSP physics engine or &#8220;on rails&#8221;</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:VESSEL:UNPACKED" title="VESSEL:UNPACKED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">UNPACKED</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="vessel.html#attribute:VESSEL:UNPACKED" title="VESSEL:UNPACKED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">UNPACKED</span></code></a></td>
 <td><a class="reference internal" href="../misc/boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>The ship has individual parts unpacked</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:VESSEL:LOADDISTANCE" title="VESSEL:LOADDISTANCE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">LOADDISTANCE</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="vessel.html#attribute:VESSEL:LOADDISTANCE" title="VESSEL:LOADDISTANCE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">LOADDISTANCE</span></code></a></td>
 <td><a class="reference internal" href="../misc/loaddistance.html#structure:LOADDISTANCE" title="LOADDISTANCE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">LoadDistance</span></code></a></td>
 <td>the <a class="reference internal" href="../misc/loaddistance.html#structure:LOADDISTANCE" title="LOADDISTANCE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">LoadDistance</span></code></a> object for this vessel</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:VESSEL:ISDEAD" title="VESSEL:ISDEAD attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ISDEAD</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="vessel.html#attribute:VESSEL:ISDEAD" title="VESSEL:ISDEAD attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ISDEAD</span></code></a></td>
 <td><a class="reference internal" href="../misc/boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>True if the vessel refers to a ship that has gone away.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:VESSEL:PATCHES" title="VESSEL:PATCHES attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PATCHES</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="vessel.html#attribute:VESSEL:PATCHES" title="VESSEL:PATCHES attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PATCHES</span></code></a></td>
 <td><a class="reference internal" href="../collections/list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a></td>
 <td><a class="reference internal" href="../orbits/orbit.html#structure:ORBIT" title="ORBIT structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Orbit</span></code></a> patches</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:VESSEL:ROOTPART" title="VESSEL:ROOTPART attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ROOTPART</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="vessel.html#attribute:VESSEL:ROOTPART" title="VESSEL:ROOTPART attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ROOTPART</span></code></a></td>
 <td><a class="reference internal" href="part.html#structure:PART" title="PART structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Part</span></code></a></td>
 <td>Root <a class="reference internal" href="part.html#structure:PART" title="PART structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Part</span></code></a> of this vessel</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:VESSEL:CONTROLPART" title="VESSEL:CONTROLPART attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">CONTROLPART</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="vessel.html#attribute:VESSEL:CONTROLPART" title="VESSEL:CONTROLPART attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">CONTROLPART</span></code></a></td>
 <td><a class="reference internal" href="part.html#structure:PART" title="PART structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Part</span></code></a></td>
 <td>Control reference <a class="reference internal" href="part.html#structure:PART" title="PART structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Part</span></code></a> of this vessel</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:VESSEL:PARTS" title="VESSEL:PARTS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PARTS</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="vessel.html#attribute:VESSEL:PARTS" title="VESSEL:PARTS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PARTS</span></code></a></td>
 <td><a class="reference internal" href="../collections/list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a></td>
 <td>all <a class="reference internal" href="part.html#structure:PART" title="PART structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Parts</span></code></a></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:VESSEL:DOCKINGPORTS" title="VESSEL:DOCKINGPORTS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">DOCKINGPORTS</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="vessel.html#attribute:VESSEL:DOCKINGPORTS" title="VESSEL:DOCKINGPORTS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">DOCKINGPORTS</span></code></a></td>
 <td><a class="reference internal" href="../collections/list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a></td>
 <td>all <a class="reference internal" href="dockingport.html#structure:DOCKINGPORT" title="DOCKINGPORT structure"><code class="xref ks ks-struct docutils literal"><span class="pre">DockingPorts</span></code></a></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:VESSEL:ELEMENTS" title="VESSEL:ELEMENTS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ELEMENTS</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="vessel.html#attribute:VESSEL:ELEMENTS" title="VESSEL:ELEMENTS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ELEMENTS</span></code></a></td>
 <td><a class="reference internal" href="../collections/list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a></td>
 <td>all <a class="reference internal" href="element.html#structure:ELEMENT" title="ELEMENT structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Elements</span></code></a></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:VESSEL:RESOURCES" title="VESSEL:RESOURCES attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">RESOURCES</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="vessel.html#attribute:VESSEL:RESOURCES" title="VESSEL:RESOURCES attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">RESOURCES</span></code></a></td>
 <td><a class="reference internal" href="../collections/list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a></td>
 <td>all <a class="reference internal" href="aggregateresource.html#structure:AGGREGATERESOURCE" title="AGGREGATERESOURCE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">AggrgateResources</span></code></a></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#method:VESSEL:PARTSNAMED" title="VESSEL:PARTSNAMED method"><code class="xref ks ks-meth docutils literal"><span class="pre">PARTSNAMED(name)</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="vessel.html#method:VESSEL:PARTSNAMED" title="VESSEL:PARTSNAMED method"><code class="xref ks ks-meth docutils literal"><span class="pre">PARTSNAMED(name)</span></code></a></td>
 <td><a class="reference internal" href="../collections/list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a></td>
 <td><a class="reference internal" href="part.html#structure:PART" title="PART structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Parts</span></code></a> by <a class="reference internal" href="part.html#attribute:PART:NAME" title="PART:NAME attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">NAME</span></code></a></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#method:VESSEL:PARTSNAMEDPATTERN" title="VESSEL:PARTSNAMEDPATTERN method"><code class="xref ks ks-meth docutils literal"><span class="pre">PARTSNAMEDPATTERN(namePattern)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="vessel.html#method:VESSEL:PARTSNAMEDPATTERN" title="VESSEL:PARTSNAMEDPATTERN method"><code class="xref ks ks-meth docutils literal"><span class="pre">PARTSNAMEDPATTERN(namePattern)</span></code></a></td>
 <td><a class="reference internal" href="../collections/list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a></td>
 <td><a class="reference internal" href="part.html#structure:PART" title="PART structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Parts</span></code></a> by <a class="reference internal" href="part.html#attribute:PART:NAME" title="PART:NAME attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">NAME</span></code></a> regex pattern</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#method:VESSEL:PARTSTITLED" title="VESSEL:PARTSTITLED method"><code class="xref ks ks-meth docutils literal"><span class="pre">PARTSTITLED(title)</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="vessel.html#method:VESSEL:PARTSTITLED" title="VESSEL:PARTSTITLED method"><code class="xref ks ks-meth docutils literal"><span class="pre">PARTSTITLED(title)</span></code></a></td>
 <td><a class="reference internal" href="../collections/list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a></td>
 <td><a class="reference internal" href="part.html#structure:PART" title="PART structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Parts</span></code></a> by <a class="reference internal" href="part.html#attribute:PART:TITLE" title="PART:TITLE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TITLE</span></code></a></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#method:VESSEL:PARTSTITLEDPATTERN" title="VESSEL:PARTSTITLEDPATTERN method"><code class="xref ks ks-meth docutils literal"><span class="pre">PARTSTITLEDPATTERN(titlePattern)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="vessel.html#method:VESSEL:PARTSTITLEDPATTERN" title="VESSEL:PARTSTITLEDPATTERN method"><code class="xref ks ks-meth docutils literal"><span class="pre">PARTSTITLEDPATTERN(titlePattern)</span></code></a></td>
 <td><a class="reference internal" href="../collections/list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a></td>
 <td><a class="reference internal" href="part.html#structure:PART" title="PART structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Parts</span></code></a> by <a class="reference internal" href="part.html#attribute:PART:TITLE" title="PART:TITLE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TITLE</span></code></a> regex pattern</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#method:VESSEL:PARTSTAGGED" title="VESSEL:PARTSTAGGED method"><code class="xref ks ks-meth docutils literal"><span class="pre">PARTSTAGGED(tag)</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="vessel.html#method:VESSEL:PARTSTAGGED" title="VESSEL:PARTSTAGGED method"><code class="xref ks ks-meth docutils literal"><span class="pre">PARTSTAGGED(tag)</span></code></a></td>
 <td><a class="reference internal" href="../collections/list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a></td>
 <td><a class="reference internal" href="part.html#structure:PART" title="PART structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Parts</span></code></a> by <a class="reference internal" href="part.html#attribute:PART:TAG" title="PART:TAG attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TAG</span></code></a></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#method:VESSEL:PARTSTAGGEDPATTERN" title="VESSEL:PARTSTAGGEDPATTERN method"><code class="xref ks ks-meth docutils literal"><span class="pre">PARTSTAGGEDPATTERN(tagPattern)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="vessel.html#method:VESSEL:PARTSTAGGEDPATTERN" title="VESSEL:PARTSTAGGEDPATTERN method"><code class="xref ks ks-meth docutils literal"><span class="pre">PARTSTAGGEDPATTERN(tagPattern)</span></code></a></td>
 <td><a class="reference internal" href="../collections/list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a></td>
 <td><a class="reference internal" href="part.html#structure:PART" title="PART structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Parts</span></code></a> by <a class="reference internal" href="part.html#attribute:PART:TAG" title="PART:TAG attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TAG</span></code></a> regex pattern</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#method:VESSEL:PARTSDUBBED" title="VESSEL:PARTSDUBBED method"><code class="xref ks ks-meth docutils literal"><span class="pre">PARTSDUBBED(name)</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="vessel.html#method:VESSEL:PARTSDUBBED" title="VESSEL:PARTSDUBBED method"><code class="xref ks ks-meth docutils literal"><span class="pre">PARTSDUBBED(name)</span></code></a></td>
 <td><a class="reference internal" href="../collections/list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a></td>
 <td><a class="reference internal" href="part.html#structure:PART" title="PART structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Parts</span></code></a> by <a class="reference internal" href="part.html#attribute:PART:NAME" title="PART:NAME attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">NAME</span></code></a>, <a class="reference internal" href="part.html#attribute:PART:TITLE" title="PART:TITLE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TITLE</span></code></a> or <a class="reference internal" href="part.html#attribute:PART:TAG" title="PART:TAG attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TAG</span></code></a></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#method:VESSEL:PARTSDUBBEDPATTERN" title="VESSEL:PARTSDUBBEDPATTERN method"><code class="xref ks ks-meth docutils literal"><span class="pre">PARTSDUBBEDPATTERN(namePattern)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="vessel.html#method:VESSEL:PARTSDUBBEDPATTERN" title="VESSEL:PARTSDUBBEDPATTERN method"><code class="xref ks ks-meth docutils literal"><span class="pre">PARTSDUBBEDPATTERN(namePattern)</span></code></a></td>
 <td><a class="reference internal" href="../collections/list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a></td>
 <td><a class="reference internal" href="part.html#structure:PART" title="PART structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Parts</span></code></a> by <a class="reference internal" href="part.html#attribute:PART:NAME" title="PART:NAME attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">NAME</span></code></a>, <a class="reference internal" href="part.html#attribute:PART:TITLE" title="PART:TITLE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TITLE</span></code></a> or <a class="reference internal" href="part.html#attribute:PART:TAG" title="PART:TAG attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TAG</span></code></a>  regex pattern</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#method:VESSEL:MODULESNAMED" title="VESSEL:MODULESNAMED method"><code class="xref ks ks-meth docutils literal"><span class="pre">MODULESNAMED(name)</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="vessel.html#method:VESSEL:MODULESNAMED" title="VESSEL:MODULESNAMED method"><code class="xref ks ks-meth docutils literal"><span class="pre">MODULESNAMED(name)</span></code></a></td>
 <td><a class="reference internal" href="../collections/list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a></td>
 <td><a class="reference internal" href="partmodule.html#structure:PARTMODULE" title="PARTMODULE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">PartModules</span></code></a> by <a class="reference internal" href="partmodule.html#attribute:PARTMODULE:NAME" title="PARTMODULE:NAME attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">NAME</span></code></a></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#method:VESSEL:PARTSINGROUP" title="VESSEL:PARTSINGROUP method"><code class="xref ks ks-meth docutils literal"><span class="pre">PARTSINGROUP(group)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="vessel.html#method:VESSEL:PARTSINGROUP" title="VESSEL:PARTSINGROUP method"><code class="xref ks ks-meth docutils literal"><span class="pre">PARTSINGROUP(group)</span></code></a></td>
 <td><a class="reference internal" href="../collections/list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a></td>
 <td><a class="reference internal" href="part.html#structure:PART" title="PART structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Parts</span></code></a> by action group</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#method:VESSEL:MODULESINGROUP" title="VESSEL:MODULESINGROUP method"><code class="xref ks ks-meth docutils literal"><span class="pre">MODULESINGROUP(group)</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="vessel.html#method:VESSEL:MODULESINGROUP" title="VESSEL:MODULESINGROUP method"><code class="xref ks ks-meth docutils literal"><span class="pre">MODULESINGROUP(group)</span></code></a></td>
 <td><a class="reference internal" href="../collections/list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a></td>
 <td><a class="reference internal" href="partmodule.html#structure:PARTMODULE" title="PARTMODULE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">PartModules</span></code></a> by action group</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#method:VESSEL:ALLTAGGEDPARTS" title="VESSEL:ALLTAGGEDPARTS method"><code class="xref ks ks-meth docutils literal"><span class="pre">ALLTAGGEDPARTS()</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="vessel.html#method:VESSEL:ALLTAGGEDPARTS" title="VESSEL:ALLTAGGEDPARTS method"><code class="xref ks ks-meth docutils literal"><span class="pre">ALLTAGGEDPARTS()</span></code></a></td>
 <td><a class="reference internal" href="../collections/list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a></td>
 <td><a class="reference internal" href="part.html#structure:PART" title="PART structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Parts</span></code></a> that have non-blank nametags</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:VESSEL:CREWCAPACITY" title="VESSEL:CREWCAPACITY attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">CREWCAPACITY</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="vessel.html#attribute:VESSEL:CREWCAPACITY" title="VESSEL:CREWCAPACITY attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">CREWCAPACITY</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a></td>
 <td>Crew capacity of this vessel</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#method:VESSEL:CREW" title="VESSEL:CREW method"><code class="xref ks ks-meth docutils literal"><span class="pre">CREW()</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="vessel.html#method:VESSEL:CREW" title="VESSEL:CREW method"><code class="xref ks ks-meth docutils literal"><span class="pre">CREW()</span></code></a></td>
 <td><a class="reference internal" href="../collections/list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a></td>
 <td>all <a class="reference internal" href="crewmember.html#structure:CREWMEMBER" title="CREWMEMBER structure"><code class="xref ks ks-struct docutils literal"><span class="pre">CrewMembers</span></code></a></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:VESSEL:CONNECTION" title="VESSEL:CONNECTION attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">CONNECTION</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="vessel.html#attribute:VESSEL:CONNECTION" title="VESSEL:CONNECTION attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">CONNECTION</span></code></a></td>
 <td><a class="reference internal" href="../communication/connection.html#structure:CONNECTION" title="CONNECTION structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Connection</span></code></a></td>
 <td>Returns your connection to this vessel</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:VESSEL:MESSAGES" title="VESSEL:MESSAGES attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MESSAGES</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="vessel.html#attribute:VESSEL:MESSAGES" title="VESSEL:MESSAGES attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MESSAGES</span></code></a></td>
 <td><a class="reference internal" href="../communication/message_queue.html#structure:MESSAGEQUEUE" title="MESSAGEQUEUE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">MessageQueue</span></code></a></td>
 <td>This vessel&#8217;s message queue</td>
 </tr>
@@ -450,7 +450,7 @@
 </div>
 <dl class="attribute">
 <dt id="attribute:VESSEL:CONTROL">
-Vessel:<code class="descname">CONTROL</code><a class="headerlink" href="#attribute:VESSEL:CONTROL" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">CONTROL</code><a class="headerlink" href="vessel.html#attribute:VESSEL:CONTROL" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -467,7 +467,7 @@ Vessel:<code class="descname">CONTROL</code><a class="headerlink" href="#attribu
 
 <dl class="attribute">
 <dt id="attribute:VESSEL:BEARING">
-Vessel:<code class="descname">BEARING</code><a class="headerlink" href="#attribute:VESSEL:BEARING" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">BEARING</code><a class="headerlink" href="vessel.html#attribute:VESSEL:BEARING" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -483,7 +483,7 @@ Vessel:<code class="descname">BEARING</code><a class="headerlink" href="#attribu
 
 <dl class="attribute">
 <dt id="attribute:VESSEL:HEADING">
-Vessel:<code class="descname">HEADING</code><a class="headerlink" href="#attribute:VESSEL:HEADING" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">HEADING</code><a class="headerlink" href="vessel.html#attribute:VESSEL:HEADING" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -499,7 +499,7 @@ Vessel:<code class="descname">HEADING</code><a class="headerlink" href="#attribu
 
 <dl class="attribute">
 <dt id="attribute:VESSEL:MAXTHRUST">
-Vessel:<code class="descname">MAXTHRUST</code><a class="headerlink" href="#attribute:VESSEL:MAXTHRUST" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">MAXTHRUST</code><a class="headerlink" href="vessel.html#attribute:VESSEL:MAXTHRUST" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -515,7 +515,7 @@ Vessel:<code class="descname">MAXTHRUST</code><a class="headerlink" href="#attri
 
 <dl class="method">
 <dt id="method:VESSEL:MAXTHRUSTAT">
-Vessel:<code class="descname">MAXTHRUSTAT</code><span class="sig-paren">(</span>pressure<span class="sig-paren">)</span><a class="headerlink" href="#method:VESSEL:MAXTHRUSTAT" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">MAXTHRUSTAT</code><span class="sig-paren">(</span>pressure<span class="sig-paren">)</span><a class="headerlink" href="vessel.html#method:VESSEL:MAXTHRUSTAT" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -537,7 +537,7 @@ negative value, it will be treated as if you had given a zero instead.)</p>
 
 <dl class="attribute">
 <dt id="attribute:VESSEL:AVAILABLETHRUST">
-Vessel:<code class="descname">AVAILABLETHRUST</code><a class="headerlink" href="#attribute:VESSEL:AVAILABLETHRUST" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">AVAILABLETHRUST</code><a class="headerlink" href="vessel.html#attribute:VESSEL:AVAILABLETHRUST" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -553,7 +553,7 @@ Vessel:<code class="descname">AVAILABLETHRUST</code><a class="headerlink" href="
 
 <dl class="method">
 <dt id="method:VESSEL:AVAILABLETHRUSTAT">
-Vessel:<code class="descname">AVAILABLETHRUSTAT</code><span class="sig-paren">(</span>pressure<span class="sig-paren">)</span><a class="headerlink" href="#method:VESSEL:AVAILABLETHRUSTAT" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">AVAILABLETHRUSTAT</code><span class="sig-paren">(</span>pressure<span class="sig-paren">)</span><a class="headerlink" href="vessel.html#method:VESSEL:AVAILABLETHRUSTAT" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -575,7 +575,7 @@ negative value, it will be treated as if you had given a zero instead.)</p>
 
 <dl class="attribute">
 <dt id="attribute:VESSEL:FACING">
-Vessel:<code class="descname">FACING</code><a class="headerlink" href="#attribute:VESSEL:FACING" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">FACING</code><a class="headerlink" href="vessel.html#attribute:VESSEL:FACING" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -596,7 +596,7 @@ ship is pointed (it&#8217;s Z-axis) in absolute ship-raw coordinates</p>
 
 <dl class="attribute">
 <dt id="attribute:VESSEL:BOUNDS">
-Vessel:<code class="descname">BOUNDS</code><a class="headerlink" href="#attribute:VESSEL:BOUNDS" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">BOUNDS</code><a class="headerlink" href="vessel.html#attribute:VESSEL:BOUNDS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -632,7 +632,7 @@ bounds box, is found on the documentation page for <a class="reference internal"
 
 <dl class="attribute">
 <dt id="attribute:VESSEL:MASS">
-Vessel:<code class="descname">MASS</code><a class="headerlink" href="#attribute:VESSEL:MASS" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">MASS</code><a class="headerlink" href="vessel.html#attribute:VESSEL:MASS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -648,7 +648,7 @@ Vessel:<code class="descname">MASS</code><a class="headerlink" href="#attribute:
 
 <dl class="attribute">
 <dt id="attribute:VESSEL:WETMASS">
-Vessel:<code class="descname">WETMASS</code><a class="headerlink" href="#attribute:VESSEL:WETMASS" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">WETMASS</code><a class="headerlink" href="vessel.html#attribute:VESSEL:WETMASS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -664,7 +664,7 @@ Vessel:<code class="descname">WETMASS</code><a class="headerlink" href="#attribu
 
 <dl class="attribute">
 <dt id="attribute:VESSEL:DRYMASS">
-Vessel:<code class="descname">DRYMASS</code><a class="headerlink" href="#attribute:VESSEL:DRYMASS" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">DRYMASS</code><a class="headerlink" href="vessel.html#attribute:VESSEL:DRYMASS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -680,7 +680,7 @@ Vessel:<code class="descname">DRYMASS</code><a class="headerlink" href="#attribu
 
 <dl class="attribute">
 <dt id="attribute:VESSEL:DYNAMICPRESSURE">
-Vessel:<code class="descname">DYNAMICPRESSURE</code><a class="headerlink" href="#attribute:VESSEL:DYNAMICPRESSURE" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">DYNAMICPRESSURE</code><a class="headerlink" href="vessel.html#attribute:VESSEL:DYNAMICPRESSURE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -700,7 +700,7 @@ kPA.  You can convert this value into kPa by multiplying it by
 
 <dl class="attribute">
 <dt id="attribute:VESSEL:Q">
-Vessel:<code class="descname">Q</code><a class="headerlink" href="#attribute:VESSEL:Q" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">Q</code><a class="headerlink" href="vessel.html#attribute:VESSEL:Q" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -716,7 +716,7 @@ Vessel:<code class="descname">Q</code><a class="headerlink" href="#attribute:VES
 
 <dl class="attribute">
 <dt id="attribute:VESSEL:VERTICALSPEED">
-Vessel:<code class="descname">VERTICALSPEED</code><a class="headerlink" href="#attribute:VESSEL:VERTICALSPEED" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">VERTICALSPEED</code><a class="headerlink" href="vessel.html#attribute:VESSEL:VERTICALSPEED" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -732,7 +732,7 @@ Vessel:<code class="descname">VERTICALSPEED</code><a class="headerlink" href="#a
 
 <dl class="attribute">
 <dt id="attribute:VESSEL:GROUNDSPEED">
-Vessel:<code class="descname">GROUNDSPEED</code><a class="headerlink" href="#attribute:VESSEL:GROUNDSPEED" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">GROUNDSPEED</code><a class="headerlink" href="vessel.html#attribute:VESSEL:GROUNDSPEED" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -759,7 +759,7 @@ it ignores the vertical component.</p>
 
 <dl class="attribute">
 <dt id="attribute:VESSEL:AIRSPEED">
-Vessel:<code class="descname">AIRSPEED</code><a class="headerlink" href="#attribute:VESSEL:AIRSPEED" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">AIRSPEED</code><a class="headerlink" href="vessel.html#attribute:VESSEL:AIRSPEED" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -775,7 +775,7 @@ Vessel:<code class="descname">AIRSPEED</code><a class="headerlink" href="#attrib
 
 <dl class="attribute">
 <dt id="attribute:VESSEL:SHIPNAME">
-Vessel:<code class="descname">SHIPNAME</code><a class="headerlink" href="#attribute:VESSEL:SHIPNAME" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">SHIPNAME</code><a class="headerlink" href="vessel.html#attribute:VESSEL:SHIPNAME" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -791,13 +791,13 @@ Vessel:<code class="descname">SHIPNAME</code><a class="headerlink" href="#attrib
 
 <dl class="attribute">
 <dt id="attribute:VESSEL:NAME">
-Vessel:<code class="descname">NAME</code><a class="headerlink" href="#attribute:VESSEL:NAME" title="Permalink to this definition">¶</a></dt>
-<dd><p>Same as <a class="reference internal" href="#attribute:VESSEL:SHIPNAME" title="VESSEL:SHIPNAME attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">Vessel:SHIPNAME</span></code></a>.</p>
+Vessel:<code class="descname">NAME</code><a class="headerlink" href="vessel.html#attribute:VESSEL:NAME" title="Permalink to this definition">¶</a></dt>
+<dd><p>Same as <a class="reference internal" href="vessel.html#attribute:VESSEL:SHIPNAME" title="VESSEL:SHIPNAME attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">Vessel:SHIPNAME</span></code></a>.</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="attribute:VESSEL:STATUS">
-Vessel:<code class="descname">STATUS</code><a class="headerlink" href="#attribute:VESSEL:STATUS" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">STATUS</code><a class="headerlink" href="vessel.html#attribute:VESSEL:STATUS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -813,7 +813,7 @@ Vessel:<code class="descname">STATUS</code><a class="headerlink" href="#attribut
 
 <dl class="attribute">
 <dt id="attribute:VESSEL:TYPE">
-Vessel:<code class="descname">TYPE</code><a class="headerlink" href="#attribute:VESSEL:TYPE" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">TYPE</code><a class="headerlink" href="vessel.html#attribute:VESSEL:TYPE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -829,7 +829,7 @@ Vessel:<code class="descname">TYPE</code><a class="headerlink" href="#attribute:
 
 <dl class="method">
 <dt id="method:VESSEL:STARTTRACKING">
-Vessel:<code class="descname">STARTTRACKING</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:VESSEL:STARTTRACKING" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">STARTTRACKING</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="vessel.html#method:VESSEL:STARTTRACKING" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -846,7 +846,7 @@ in the tracking station or on the map as <code class="docutils literal"><span cl
 KSP&#8217;s asteroid management system.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">This does not change the value returned by <a class="reference internal" href="#attribute:VESSEL:TYPE" title="VESSEL:TYPE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">Vessel:TYPE</span></code></a>.  KSP
+<p class="last">This does not change the value returned by <a class="reference internal" href="vessel.html#attribute:VESSEL:TYPE" title="VESSEL:TYPE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">Vessel:TYPE</span></code></a>.  KSP
 internally manages the &#8220;discovery information&#8221; for vessels, including
 assteroids, in a different system. As a result, the value kOS reads for
 <code class="docutils literal"><span class="pre">TYPE</span></code> may be different from that displayed on the map.</p>
@@ -855,7 +855,7 @@ assteroids, in a different system. As a result, the value kOS reads for
 
 <dl class="attribute">
 <dt id="attribute:VESSEL:ANGULARMOMENTUM">
-Vessel:<code class="descname">ANGULARMOMENTUM</code><a class="headerlink" href="#attribute:VESSEL:ANGULARMOMENTUM" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">ANGULARMOMENTUM</code><a class="headerlink" href="vessel.html#attribute:VESSEL:ANGULARMOMENTUM" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -866,7 +866,7 @@ Vessel:<code class="descname">ANGULARMOMENTUM</code><a class="headerlink" href="
 </tr>
 </tbody>
 </table>
-<p>Given in <a class="reference internal" href="../../math/ref_frame.html#ship-raw"><span>SHIP_RAW</span></a> reference frame. The vector
+<p>Given in <a class="reference internal" href="https://ksp-kos.github.io/KOS/math/ref_frame.html#ship-raw"><span>SHIP_RAW</span></a> reference frame. The vector
 represents the axis of the rotation (in left-handed convention,
 not right handed as most physics textbooks show it), and its
 magnitude is the angular momentum of the rotation, which varies
@@ -889,7 +889,7 @@ It&#8217;s been like this for quite a while.).</p>
 
 <dl class="attribute">
 <dt id="attribute:VESSEL:ANGULARVEL">
-Vessel:<code class="descname">ANGULARVEL</code><a class="headerlink" href="#attribute:VESSEL:ANGULARVEL" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">ANGULARVEL</code><a class="headerlink" href="vessel.html#attribute:VESSEL:ANGULARVEL" title="Permalink to this definition">¶</a></dt>
 <dd><p>Angular velocity of the body&#8217;s rotation about its axis (its
 day) expressed as a vector.</p>
 <p>The direction the angular velocity points is in Ship-Raw orientation,
@@ -908,7 +908,7 @@ backward compatibility with older kOS scripts.</p>
 
 <dl class="attribute">
 <dt id="attribute:VESSEL:SENSORS">
-Vessel:<code class="descname">SENSORS</code><a class="headerlink" href="#attribute:VESSEL:SENSORS" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">SENSORS</code><a class="headerlink" href="vessel.html#attribute:VESSEL:SENSORS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -924,7 +924,7 @@ Vessel:<code class="descname">SENSORS</code><a class="headerlink" href="#attribu
 
 <dl class="attribute">
 <dt id="attribute:VESSEL:LOADED">
-Vessel:<code class="descname">LOADED</code><a class="headerlink" href="#attribute:VESSEL:LOADED" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">LOADED</code><a class="headerlink" href="vessel.html#attribute:VESSEL:LOADED" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -941,7 +941,7 @@ See <a class="reference internal" href="../misc/loaddistance.html#structure:LOAD
 
 <dl class="attribute">
 <dt id="attribute:VESSEL:UNPACKED">
-Vessel:<code class="descname">UNPACKED</code><a class="headerlink" href="#attribute:VESSEL:UNPACKED" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">UNPACKED</code><a class="headerlink" href="vessel.html#attribute:VESSEL:UNPACKED" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -959,7 +959,7 @@ actions/events on parts will actually trigger.  See <a class="reference internal
 
 <dl class="attribute">
 <dt id="attribute:VESSEL:LOADDISTANCE">
-Vessel:<code class="descname">LOADDISTANCE</code><a class="headerlink" href="#attribute:VESSEL:LOADDISTANCE" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">LOADDISTANCE</code><a class="headerlink" href="vessel.html#attribute:VESSEL:LOADDISTANCE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -975,7 +975,7 @@ Vessel:<code class="descname">LOADDISTANCE</code><a class="headerlink" href="#at
 
 <dl class="attribute">
 <dt id="attribute:VESSEL:ISDEAD">
-Vessel:<code class="descname">ISDEAD</code><a class="headerlink" href="#attribute:VESSEL:ISDEAD" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">ISDEAD</code><a class="headerlink" href="vessel.html#attribute:VESSEL:ISDEAD" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -997,7 +997,7 @@ valid isn&#8217;t valid anymore.</p>
 
 <dl class="attribute">
 <dt id="attribute:VESSEL:PATCHES">
-Vessel:<code class="descname">PATCHES</code><a class="headerlink" href="#attribute:VESSEL:PATCHES" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">PATCHES</code><a class="headerlink" href="vessel.html#attribute:VESSEL:PATCHES" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1013,7 +1013,7 @@ Vessel:<code class="descname">PATCHES</code><a class="headerlink" href="#attribu
 
 <dl class="attribute">
 <dt id="attribute:VESSEL:ROOTPART">
-Vessel:<code class="descname">ROOTPART</code><a class="headerlink" href="#attribute:VESSEL:ROOTPART" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">ROOTPART</code><a class="headerlink" href="vessel.html#attribute:VESSEL:ROOTPART" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1029,7 +1029,7 @@ Vessel:<code class="descname">ROOTPART</code><a class="headerlink" href="#attrib
 
 <dl class="attribute">
 <dt id="attribute:VESSEL:CONTROLPART">
-Vessel:<code class="descname">CONTROLPART</code><a class="headerlink" href="#attribute:VESSEL:CONTROLPART" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">CONTROLPART</code><a class="headerlink" href="vessel.html#attribute:VESSEL:CONTROLPART" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1051,7 +1051,7 @@ control reference, and the control has not been directly selected.</p>
 
 <dl class="attribute">
 <dt id="attribute:VESSEL:PARTS">
-Vessel:<code class="descname">PARTS</code><a class="headerlink" href="#attribute:VESSEL:PARTS" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">PARTS</code><a class="headerlink" href="vessel.html#attribute:VESSEL:PARTS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1067,7 +1067,7 @@ Vessel:<code class="descname">PARTS</code><a class="headerlink" href="#attribute
 
 <dl class="attribute">
 <dt id="attribute:VESSEL:DOCKINGPORTS">
-Vessel:<code class="descname">DOCKINGPORTS</code><a class="headerlink" href="#attribute:VESSEL:DOCKINGPORTS" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">DOCKINGPORTS</code><a class="headerlink" href="vessel.html#attribute:VESSEL:DOCKINGPORTS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1083,7 +1083,7 @@ Vessel:<code class="descname">DOCKINGPORTS</code><a class="headerlink" href="#at
 
 <dl class="attribute">
 <dt id="attribute:VESSEL:ELEMENTS">
-Vessel:<code class="descname">ELEMENTS</code><a class="headerlink" href="#attribute:VESSEL:ELEMENTS" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">ELEMENTS</code><a class="headerlink" href="vessel.html#attribute:VESSEL:ELEMENTS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1099,7 +1099,7 @@ Vessel:<code class="descname">ELEMENTS</code><a class="headerlink" href="#attrib
 
 <dl class="attribute">
 <dt id="attribute:VESSEL:RESOURCES">
-Vessel:<code class="descname">RESOURCES</code><a class="headerlink" href="#attribute:VESSEL:RESOURCES" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">RESOURCES</code><a class="headerlink" href="vessel.html#attribute:VESSEL:RESOURCES" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1115,7 +1115,7 @@ Vessel:<code class="descname">RESOURCES</code><a class="headerlink" href="#attri
 
 <dl class="method">
 <dt id="method:VESSEL:PARTSNAMED">
-Vessel:<code class="descname">PARTSNAMED</code><span class="sig-paren">(</span>name<span class="sig-paren">)</span><a class="headerlink" href="#method:VESSEL:PARTSNAMED" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">PARTSNAMED</code><span class="sig-paren">(</span>name<span class="sig-paren">)</span><a class="headerlink" href="vessel.html#method:VESSEL:PARTSNAMED" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1135,7 +1135,7 @@ Vessel:<code class="descname">PARTSNAMED</code><span class="sig-paren">(</span>n
 
 <dl class="method">
 <dt id="method:VESSEL:PARTSNAMEDPATTERN">
-Vessel:<code class="descname">PARTSNAMEDPATTERN</code><span class="sig-paren">(</span>namePattern<span class="sig-paren">)</span><a class="headerlink" href="#method:VESSEL:PARTSNAMEDPATTERN" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">PARTSNAMEDPATTERN</code><span class="sig-paren">(</span>namePattern<span class="sig-paren">)</span><a class="headerlink" href="vessel.html#method:VESSEL:PARTSNAMEDPATTERN" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1155,7 +1155,7 @@ Vessel:<code class="descname">PARTSNAMEDPATTERN</code><span class="sig-paren">(<
 
 <dl class="method">
 <dt id="method:VESSEL:PARTSTITLED">
-Vessel:<code class="descname">PARTSTITLED</code><span class="sig-paren">(</span>title<span class="sig-paren">)</span><a class="headerlink" href="#method:VESSEL:PARTSTITLED" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">PARTSTITLED</code><span class="sig-paren">(</span>title<span class="sig-paren">)</span><a class="headerlink" href="vessel.html#method:VESSEL:PARTSTITLED" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1175,7 +1175,7 @@ Vessel:<code class="descname">PARTSTITLED</code><span class="sig-paren">(</span>
 
 <dl class="method">
 <dt id="method:VESSEL:PARTSTITLEDPATTERN">
-Vessel:<code class="descname">PARTSTITLEDPATTERN</code><span class="sig-paren">(</span>titlePattern<span class="sig-paren">)</span><a class="headerlink" href="#method:VESSEL:PARTSTITLEDPATTERN" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">PARTSTITLEDPATTERN</code><span class="sig-paren">(</span>titlePattern<span class="sig-paren">)</span><a class="headerlink" href="vessel.html#method:VESSEL:PARTSTITLEDPATTERN" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1195,7 +1195,7 @@ Vessel:<code class="descname">PARTSTITLEDPATTERN</code><span class="sig-paren">(
 
 <dl class="method">
 <dt id="method:VESSEL:PARTSTAGGED">
-Vessel:<code class="descname">PARTSTAGGED</code><span class="sig-paren">(</span>tag<span class="sig-paren">)</span><a class="headerlink" href="#method:VESSEL:PARTSTAGGED" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">PARTSTAGGED</code><span class="sig-paren">(</span>tag<span class="sig-paren">)</span><a class="headerlink" href="vessel.html#method:VESSEL:PARTSTAGGED" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1215,7 +1215,7 @@ Vessel:<code class="descname">PARTSTAGGED</code><span class="sig-paren">(</span>
 
 <dl class="method">
 <dt id="method:VESSEL:PARTSTAGGEDPATTERN">
-Vessel:<code class="descname">PARTSTAGGEDPATTERN</code><span class="sig-paren">(</span>tagPattern<span class="sig-paren">)</span><a class="headerlink" href="#method:VESSEL:PARTSTAGGEDPATTERN" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">PARTSTAGGEDPATTERN</code><span class="sig-paren">(</span>tagPattern<span class="sig-paren">)</span><a class="headerlink" href="vessel.html#method:VESSEL:PARTSTAGGEDPATTERN" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1235,7 +1235,7 @@ Vessel:<code class="descname">PARTSTAGGEDPATTERN</code><span class="sig-paren">(
 
 <dl class="method">
 <dt id="method:VESSEL:PARTSDUBBED">
-Vessel:<code class="descname">PARTSDUBBED</code><span class="sig-paren">(</span>name<span class="sig-paren">)</span><a class="headerlink" href="#method:VESSEL:PARTSDUBBED" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">PARTSDUBBED</code><span class="sig-paren">(</span>name<span class="sig-paren">)</span><a class="headerlink" href="vessel.html#method:VESSEL:PARTSDUBBED" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1255,7 +1255,7 @@ Vessel:<code class="descname">PARTSDUBBED</code><span class="sig-paren">(</span>
 
 <dl class="method">
 <dt id="method:VESSEL:PARTSDUBBEDPATTERN">
-Vessel:<code class="descname">PARTSDUBBEDPATTERN</code><span class="sig-paren">(</span>namePattern<span class="sig-paren">)</span><a class="headerlink" href="#method:VESSEL:PARTSDUBBEDPATTERN" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">PARTSDUBBEDPATTERN</code><span class="sig-paren">(</span>namePattern<span class="sig-paren">)</span><a class="headerlink" href="vessel.html#method:VESSEL:PARTSDUBBEDPATTERN" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1275,7 +1275,7 @@ Vessel:<code class="descname">PARTSDUBBEDPATTERN</code><span class="sig-paren">(
 
 <dl class="method">
 <dt id="method:VESSEL:MODULESNAMED">
-Vessel:<code class="descname">MODULESNAMED</code><span class="sig-paren">(</span>name<span class="sig-paren">)</span><a class="headerlink" href="#method:VESSEL:MODULESNAMED" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">MODULESNAMED</code><span class="sig-paren">(</span>name<span class="sig-paren">)</span><a class="headerlink" href="vessel.html#method:VESSEL:MODULESNAMED" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1295,7 +1295,7 @@ Vessel:<code class="descname">MODULESNAMED</code><span class="sig-paren">(</span
 
 <dl class="method">
 <dt id="method:VESSEL:PARTSINGROUP">
-Vessel:<code class="descname">PARTSINGROUP</code><span class="sig-paren">(</span>group<span class="sig-paren">)</span><a class="headerlink" href="#method:VESSEL:PARTSINGROUP" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">PARTSINGROUP</code><span class="sig-paren">(</span>group<span class="sig-paren">)</span><a class="headerlink" href="vessel.html#method:VESSEL:PARTSINGROUP" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1315,7 +1315,7 @@ Vessel:<code class="descname">PARTSINGROUP</code><span class="sig-paren">(</span
 
 <dl class="method">
 <dt id="method:VESSEL:MODULESINGROUP">
-Vessel:<code class="descname">MODULESINGROUP</code><span class="sig-paren">(</span>group<span class="sig-paren">)</span><a class="headerlink" href="#method:VESSEL:MODULESINGROUP" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">MODULESINGROUP</code><span class="sig-paren">(</span>group<span class="sig-paren">)</span><a class="headerlink" href="vessel.html#method:VESSEL:MODULESINGROUP" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1335,7 +1335,7 @@ Vessel:<code class="descname">MODULESINGROUP</code><span class="sig-paren">(</sp
 
 <dl class="method">
 <dt id="method:VESSEL:ALLTAGGEDPARTS">
-Vessel:<code class="descname">ALLTAGGEDPARTS</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:VESSEL:ALLTAGGEDPARTS" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">ALLTAGGEDPARTS</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="vessel.html#method:VESSEL:ALLTAGGEDPARTS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1349,7 +1349,7 @@ Vessel:<code class="descname">ALLTAGGEDPARTS</code><span class="sig-paren">(</sp
 
 <dl class="attribute">
 <dt id="attribute:VESSEL:CREWCAPACITY">
-Vessel:<code class="descname">CREWCAPACITY</code><a class="headerlink" href="#attribute:VESSEL:CREWCAPACITY" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">CREWCAPACITY</code><a class="headerlink" href="vessel.html#attribute:VESSEL:CREWCAPACITY" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1365,7 +1365,7 @@ Vessel:<code class="descname">CREWCAPACITY</code><a class="headerlink" href="#at
 
 <dl class="method">
 <dt id="method:VESSEL:CREW">
-Vessel:<code class="descname">CREW</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:VESSEL:CREW" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">CREW</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="vessel.html#method:VESSEL:CREW" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1379,7 +1379,7 @@ Vessel:<code class="descname">CREW</code><span class="sig-paren">(</span><span c
 
 <dl class="attribute">
 <dt id="attribute:VESSEL:CONNECTION">
-Vessel:<code class="descname">CONNECTION</code><a class="headerlink" href="#attribute:VESSEL:CONNECTION" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">CONNECTION</code><a class="headerlink" href="vessel.html#attribute:VESSEL:CONNECTION" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1393,7 +1393,7 @@ Vessel:<code class="descname">CONNECTION</code><a class="headerlink" href="#attr
 
 <dl class="attribute">
 <dt id="attribute:VESSEL:MESSAGES">
-Vessel:<code class="descname">MESSAGES</code><a class="headerlink" href="#attribute:VESSEL:MESSAGES" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">MESSAGES</code><a class="headerlink" href="vessel.html#attribute:VESSEL:MESSAGES" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1406,10 +1406,10 @@ Vessel:<code class="descname">MESSAGES</code><a class="headerlink" href="#attrib
 </dd></dl>
 
 <div class="section" id="deprecated-suffix">
-<h2>Deprecated Suffix<a class="headerlink" href="#deprecated-suffix" title="Permalink to this headline">¶</a></h2>
+<h2>Deprecated Suffix<a class="headerlink" href="vessel.html#deprecated-suffix" title="Permalink to this headline">¶</a></h2>
 <dl class="attribute">
 <dt id="attribute:VESSEL:TERMVELOCITY">
-Vessel:<code class="descname">TERMVELOCITY</code><a class="headerlink" href="#attribute:VESSEL:TERMVELOCITY" title="Permalink to this definition">¶</a></dt>
+Vessel:<code class="descname">TERMVELOCITY</code><a class="headerlink" href="vessel.html#attribute:VESSEL:TERMVELOCITY" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

@@ -103,7 +103,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../../structures.html">Structures</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../reflection.html">Generic Structure</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../collections.html">Collections</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="">Enumerable</a><ul class="simple">
+<li class="toctree-l3 current"><a class="current reference internal" href="enumerable.html">Enumerable</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="iterator.html">Iterator</a></li>
@@ -178,16 +178,16 @@
            <div itemprop="articleBody">
             
   <div class="section" id="enumerable">
-<span id="id1"></span><h1>Enumerable<a class="headerlink" href="#enumerable" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference internal" href="#structure:ENUMERABLE" title="ENUMERABLE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Enumerable</span></code></a> is a parent structure that contains a set of suffixes common to few structures in kOS. As a user of kOS you will never handle pure instances of this structure,
+<span id="id1"></span><h1>Enumerable<a class="headerlink" href="enumerable.html#enumerable" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference internal" href="enumerable.html#structure:ENUMERABLE" title="ENUMERABLE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Enumerable</span></code></a> is a parent structure that contains a set of suffixes common to few structures in kOS. As a user of kOS you will never handle pure instances of this structure,
 but rather concrete types like <a class="reference internal" href="list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a>, <a class="reference internal" href="range.html#structure:RANGE" title="RANGE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Range</span></code></a>, <a class="reference internal" href="queue.html#structure:QUEUE" title="QUEUE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Queue</span></code></a> etc.</p>
 <div class="section" id="structure">
-<h2>Structure<a class="headerlink" href="#structure" title="Permalink to this headline">¶</a></h2>
+<h2>Structure<a class="headerlink" href="enumerable.html#structure" title="Permalink to this headline">¶</a></h2>
 <dl class="structure">
 <dt id="structure:ENUMERABLE">
-<em class="property">structure </em><code class="descname">Enumerable</code><a class="headerlink" href="#structure:ENUMERABLE" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">Enumerable</code><a class="headerlink" href="enumerable.html#structure:ENUMERABLE" title="Permalink to this definition">¶</a></dt>
 <dd><table border="1" class="docutils" id="id2">
-<caption><span class="caption-text">Members</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-text">Members</span><a class="headerlink" href="enumerable.html#id2" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="29%" />
 <col width="14%" />
@@ -200,27 +200,27 @@ but rather concrete types like <a class="reference internal" href="list.html#str
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="#attribute:ENUMERABLE:ITERATOR" title="ENUMERABLE:ITERATOR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ITERATOR</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="enumerable.html#attribute:ENUMERABLE:ITERATOR" title="ENUMERABLE:ITERATOR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ITERATOR</span></code></a></td>
 <td><a class="reference internal" href="iterator.html#structure:ITERATOR" title="ITERATOR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Iterator</span></code></a></td>
 <td>for iterating over the elements</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:ENUMERABLE:REVERSEITERATOR" title="ENUMERABLE:REVERSEITERATOR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">REVERSEITERATOR</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="enumerable.html#attribute:ENUMERABLE:REVERSEITERATOR" title="ENUMERABLE:REVERSEITERATOR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">REVERSEITERATOR</span></code></a></td>
 <td><a class="reference internal" href="iterator.html#structure:ITERATOR" title="ITERATOR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Iterator</span></code></a></td>
 <td>for iterating over the elements in the reverse order</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:ENUMERABLE:LENGTH" title="ENUMERABLE:LENGTH attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">LENGTH</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="enumerable.html#attribute:ENUMERABLE:LENGTH" title="ENUMERABLE:LENGTH attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">LENGTH</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#scalar"><span>scalar</span></a></td>
 <td>number of elements in the enumerable</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#method:ENUMERABLE:CONTAINS" title="ENUMERABLE:CONTAINS method"><code class="xref ks ks-meth docutils literal"><span class="pre">CONTAINS(item)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="enumerable.html#method:ENUMERABLE:CONTAINS" title="ENUMERABLE:CONTAINS method"><code class="xref ks ks-meth docutils literal"><span class="pre">CONTAINS(item)</span></code></a></td>
 <td><a class="reference internal" href="../misc/boolean.html#boolean"><span>Boolean</span></a></td>
 <td>check if enumerable contains an item</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:ENUMERABLE:EMPTY" title="ENUMERABLE:EMPTY attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">EMPTY</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="enumerable.html#attribute:ENUMERABLE:EMPTY" title="ENUMERABLE:EMPTY attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">EMPTY</span></code></a></td>
 <td><a class="reference internal" href="../misc/boolean.html#boolean"><span>Boolean</span></a></td>
 <td>check if enumerable is empty</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:ENUMERABLE:DUMP" title="ENUMERABLE:DUMP attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">DUMP</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="enumerable.html#attribute:ENUMERABLE:DUMP" title="ENUMERABLE:DUMP attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">DUMP</span></code></a></td>
 <td><a class="reference internal" href="../misc/string.html#string"><span>string</span></a></td>
 <td>verbose dump of all contained elements</td>
 </tr>
@@ -230,7 +230,7 @@ but rather concrete types like <a class="reference internal" href="list.html#str
 
 <dl class="attribute">
 <dt id="attribute:ENUMERABLE:ITERATOR">
-Enumerable:<code class="descname">ITERATOR</code><a class="headerlink" href="#attribute:ENUMERABLE:ITERATOR" title="Permalink to this definition">¶</a></dt>
+Enumerable:<code class="descname">ITERATOR</code><a class="headerlink" href="enumerable.html#attribute:ENUMERABLE:ITERATOR" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -246,7 +246,7 @@ Enumerable:<code class="descname">ITERATOR</code><a class="headerlink" href="#at
 
 <dl class="attribute">
 <dt id="attribute:ENUMERABLE:REVERSEITERATOR">
-Enumerable:<code class="descname">REVERSEITERATOR</code><a class="headerlink" href="#attribute:ENUMERABLE:REVERSEITERATOR" title="Permalink to this definition">¶</a></dt>
+Enumerable:<code class="descname">REVERSEITERATOR</code><a class="headerlink" href="enumerable.html#attribute:ENUMERABLE:REVERSEITERATOR" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -262,7 +262,7 @@ Enumerable:<code class="descname">REVERSEITERATOR</code><a class="headerlink" hr
 
 <dl class="attribute">
 <dt id="attribute:ENUMERABLE:LENGTH">
-Enumerable:<code class="descname">LENGTH</code><a class="headerlink" href="#attribute:ENUMERABLE:LENGTH" title="Permalink to this definition">¶</a></dt>
+Enumerable:<code class="descname">LENGTH</code><a class="headerlink" href="enumerable.html#attribute:ENUMERABLE:LENGTH" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -278,7 +278,7 @@ Enumerable:<code class="descname">LENGTH</code><a class="headerlink" href="#attr
 
 <dl class="method">
 <dt id="method:ENUMERABLE:CONTAINS">
-Enumerable:<code class="descname">CONTAINS</code><span class="sig-paren">(</span>item<span class="sig-paren">)</span><a class="headerlink" href="#method:ENUMERABLE:CONTAINS" title="Permalink to this definition">¶</a></dt>
+Enumerable:<code class="descname">CONTAINS</code><span class="sig-paren">(</span>item<span class="sig-paren">)</span><a class="headerlink" href="enumerable.html#method:ENUMERABLE:CONTAINS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -298,7 +298,7 @@ Enumerable:<code class="descname">CONTAINS</code><span class="sig-paren">(</span
 
 <dl class="attribute">
 <dt id="attribute:ENUMERABLE:EMPTY">
-Enumerable:<code class="descname">EMPTY</code><a class="headerlink" href="#attribute:ENUMERABLE:EMPTY" title="Permalink to this definition">¶</a></dt>
+Enumerable:<code class="descname">EMPTY</code><a class="headerlink" href="enumerable.html#attribute:ENUMERABLE:EMPTY" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -314,7 +314,7 @@ Enumerable:<code class="descname">EMPTY</code><a class="headerlink" href="#attri
 
 <dl class="attribute">
 <dt id="attribute:ENUMERABLE:DUMP">
-Enumerable:<code class="descname">DUMP</code><a class="headerlink" href="#attribute:ENUMERABLE:DUMP" title="Permalink to this definition">¶</a></dt>
+Enumerable:<code class="descname">DUMP</code><a class="headerlink" href="enumerable.html#attribute:ENUMERABLE:DUMP" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

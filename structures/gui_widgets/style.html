@@ -120,7 +120,7 @@
 <li class="toctree-l3"><a class="reference internal" href="skin.html">Skin</a></li>
 <li class="toctree-l3"><a class="reference internal" href="slider.html">Slider</a></li>
 <li class="toctree-l3"><a class="reference internal" href="spacing.html">Spacing</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">Style</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="style.html">Style</a></li>
 <li class="toctree-l3"><a class="reference internal" href="stylerecoffset.html">StyleRectOffset</a></li>
 <li class="toctree-l3"><a class="reference internal" href="stylestate.html">StyleState</a></li>
 <li class="toctree-l3"><a class="reference internal" href="textfield.html">TextField</a></li>
@@ -185,10 +185,10 @@
            <div itemprop="articleBody">
             
   <div class="section" id="style">
-<span id="gui-style"></span><h1>Style<a class="headerlink" href="#style" title="Permalink to this headline">¶</a></h1>
+<span id="gui-style"></span><h1>Style<a class="headerlink" href="style.html#style" title="Permalink to this headline">¶</a></h1>
 <dl class="structure">
 <dt id="structure:STYLE">
-<em class="property">structure </em><code class="descname">Style</code><a class="headerlink" href="#structure:STYLE" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">Style</code><a class="headerlink" href="style.html#structure:STYLE" title="Permalink to this definition">¶</a></dt>
 <dd><p>This object represents the style of a widget. Styles can be either changed directly
 on a <a class="reference internal" href="widget.html#structure:WIDGET" title="WIDGET structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Widget</span></code></a>, or changed on the GUI:SKIN so as to affect all subsequently
 created widgets of a particular type inside that GUI.</p>
@@ -205,99 +205,99 @@ created widgets of a particular type inside that GUI.</p>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="#attribute:STYLE:HSTRETCH" title="STYLE:HSTRETCH attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">HSTRETCH</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="style.html#attribute:STYLE:HSTRETCH" title="STYLE:HSTRETCH attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">HSTRETCH</span></code></a></td>
 <td><a class="reference internal" href="../misc/boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>Should the widget stretch horizontally? (default depends on widget subclass)</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:STYLE:VSTRETCH" title="STYLE:VSTRETCH attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">VSTRETCH</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="style.html#attribute:STYLE:VSTRETCH" title="STYLE:VSTRETCH attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">VSTRETCH</span></code></a></td>
 <td><a class="reference internal" href="../misc/boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>Should the widget stretch vertically?</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:STYLE:WIDTH" title="STYLE:WIDTH attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">WIDTH</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="style.html#attribute:STYLE:WIDTH" title="STYLE:WIDTH attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">WIDTH</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a> (pixels)</td>
 <td>Fixed width (or 0 if flexible).</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:STYLE:HEIGHT" title="STYLE:HEIGHT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">HEIGHT</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="style.html#attribute:STYLE:HEIGHT" title="STYLE:HEIGHT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">HEIGHT</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a> (pixels)</td>
 <td>Fixed height (or 0 if flexible).</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:STYLE:MARGIN" title="STYLE:MARGIN attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MARGIN</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="style.html#attribute:STYLE:MARGIN" title="STYLE:MARGIN attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MARGIN</span></code></a></td>
 <td><a class="reference internal" href="stylerecoffset.html#structure:STYLERECTOFFSET" title="STYLERECTOFFSET structure"><code class="xref ks ks-struct docutils literal"><span class="pre">StyleRectOffset</span></code></a></td>
 <td>Spacing between this and other widgets.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:STYLE:PADDING" title="STYLE:PADDING attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PADDING</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="style.html#attribute:STYLE:PADDING" title="STYLE:PADDING attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PADDING</span></code></a></td>
 <td><a class="reference internal" href="stylerecoffset.html#structure:STYLERECTOFFSET" title="STYLERECTOFFSET structure"><code class="xref ks ks-struct docutils literal"><span class="pre">StyleRectOffset</span></code></a></td>
 <td>Spacing between the outside of the widget and its contents (text, etc.).</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:STYLE:BORDER" title="STYLE:BORDER attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">BORDER</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="style.html#attribute:STYLE:BORDER" title="STYLE:BORDER attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">BORDER</span></code></a></td>
 <td><a class="reference internal" href="stylerecoffset.html#structure:STYLERECTOFFSET" title="STYLERECTOFFSET structure"><code class="xref ks ks-struct docutils literal"><span class="pre">StyleRectOffset</span></code></a></td>
 <td>Size of the edges in the 9-slice image for BG images in NORMAL, HOVER, etc.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:STYLE:OVERFLOW" title="STYLE:OVERFLOW attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">OVERFLOW</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="style.html#attribute:STYLE:OVERFLOW" title="STYLE:OVERFLOW attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">OVERFLOW</span></code></a></td>
 <td><a class="reference internal" href="stylerecoffset.html#structure:STYLERECTOFFSET" title="STYLERECTOFFSET structure"><code class="xref ks ks-struct docutils literal"><span class="pre">StyleRectOffset</span></code></a></td>
 <td>Extra space added to the area of the background image. Allows the background to go beyond the widget&#8217;s rectangle.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:STYLE:ALIGN" title="STYLE:ALIGN attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ALIGN</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="style.html#attribute:STYLE:ALIGN" title="STYLE:ALIGN attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ALIGN</span></code></a></td>
 <td><a class="reference internal" href="../misc/string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">string</span></code></a></td>
 <td>One of &#8220;CENTER&#8221;, &#8220;LEFT&#8221;, or &#8220;RIGHT&#8221;. See note below.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:STYLE:FONT" title="STYLE:FONT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">FONT</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="style.html#attribute:STYLE:FONT" title="STYLE:FONT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">FONT</span></code></a></td>
 <td><a class="reference internal" href="../misc/string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">string</span></code></a></td>
 <td>The name of the font of the text on the content or &#8220;&#8221; if the default.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:STYLE:FONTSIZE" title="STYLE:FONTSIZE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">FONTSIZE</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="style.html#attribute:STYLE:FONTSIZE" title="STYLE:FONTSIZE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">FONTSIZE</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a></td>
 <td>The size of the text on the content.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:STYLE:RICHTEXT" title="STYLE:RICHTEXT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">RICHTEXT</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="style.html#attribute:STYLE:RICHTEXT" title="STYLE:RICHTEXT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">RICHTEXT</span></code></a></td>
 <td><a class="reference internal" href="../misc/boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>Set to False to disable rich-text (&lt;i&gt;...&lt;/i&gt;, etc.)</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:STYLE:NORMAL" title="STYLE:NORMAL attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">NORMAL</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="style.html#attribute:STYLE:NORMAL" title="STYLE:NORMAL attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">NORMAL</span></code></a></td>
 <td><a class="reference internal" href="stylestate.html#structure:STYLESTATE" title="STYLESTATE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">StyleState</span></code></a></td>
 <td>Properties for the widget normally.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:STYLE:ON" title="STYLE:ON attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ON</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="style.html#attribute:STYLE:ON" title="STYLE:ON attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ON</span></code></a></td>
 <td><a class="reference internal" href="stylestate.html#structure:STYLESTATE" title="STYLESTATE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">StyleState</span></code></a></td>
 <td>Properties for when the widget is under the mouse and &#8220;on&#8221;.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:STYLE:NORMAL_ON" title="STYLE:NORMAL_ON attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">NORMAL_ON</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="style.html#attribute:STYLE:NORMAL_ON" title="STYLE:NORMAL_ON attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">NORMAL_ON</span></code></a></td>
 <td><a class="reference internal" href="stylestate.html#structure:STYLESTATE" title="STYLESTATE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">StyleState</span></code></a></td>
 <td>Alias for ON.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:STYLE:HOVER" title="STYLE:HOVER attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">HOVER</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="style.html#attribute:STYLE:HOVER" title="STYLE:HOVER attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">HOVER</span></code></a></td>
 <td><a class="reference internal" href="stylestate.html#structure:STYLESTATE" title="STYLESTATE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">StyleState</span></code></a></td>
 <td>Properties for when the widget is under the mouse.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:STYLE:HOVER_ON" title="STYLE:HOVER_ON attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">HOVER_ON</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="style.html#attribute:STYLE:HOVER_ON" title="STYLE:HOVER_ON attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">HOVER_ON</span></code></a></td>
 <td><a class="reference internal" href="stylestate.html#structure:STYLESTATE" title="STYLESTATE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">StyleState</span></code></a></td>
 <td>Properties for when the widget is under the mouse and &#8220;on&#8221;.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:STYLE:ACTIVE" title="STYLE:ACTIVE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ACTIVE</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="style.html#attribute:STYLE:ACTIVE" title="STYLE:ACTIVE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ACTIVE</span></code></a></td>
 <td><a class="reference internal" href="stylestate.html#structure:STYLESTATE" title="STYLESTATE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">StyleState</span></code></a></td>
 <td>Properties for when the widget is active (eg. button being held down).</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:STYLE:ACTIVE_ON" title="STYLE:ACTIVE_ON attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ACTIVE_ON</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="style.html#attribute:STYLE:ACTIVE_ON" title="STYLE:ACTIVE_ON attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ACTIVE_ON</span></code></a></td>
 <td><a class="reference internal" href="stylestate.html#structure:STYLESTATE" title="STYLESTATE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">StyleState</span></code></a></td>
 <td>Properties for when the widget is active and &#8220;on&#8221;.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:STYLE:FOCUSED" title="STYLE:FOCUSED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">FOCUSED</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="style.html#attribute:STYLE:FOCUSED" title="STYLE:FOCUSED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">FOCUSED</span></code></a></td>
 <td><a class="reference internal" href="stylestate.html#structure:STYLESTATE" title="STYLESTATE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">StyleState</span></code></a></td>
 <td>Properties for when the widget has keyboard focus.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:STYLE:FOCUSED_ON" title="STYLE:FOCUSED_ON attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">FOCUSED_ON</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="style.html#attribute:STYLE:FOCUSED_ON" title="STYLE:FOCUSED_ON attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">FOCUSED_ON</span></code></a></td>
 <td><a class="reference internal" href="stylestate.html#structure:STYLESTATE" title="STYLESTATE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">StyleState</span></code></a></td>
 <td>Properties for when the widget has keyboard focus and is &#8220;on&#8221;.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:STYLE:BG" title="STYLE:BG attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">BG</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="style.html#attribute:STYLE:BG" title="STYLE:BG attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">BG</span></code></a></td>
 <td><a class="reference internal" href="../misc/string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">string</span></code></a></td>
 <td>The same as NORMAL:BG. Name of a &#8220;9-slice&#8221; image file.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:STYLE:TEXTCOLOR" title="STYLE:TEXTCOLOR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TEXTCOLOR</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="style.html#attribute:STYLE:TEXTCOLOR" title="STYLE:TEXTCOLOR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TEXTCOLOR</span></code></a></td>
 <td><a class="reference internal" href="../misc/colors.html#colors"><span>Color</span></a></td>
 <td>The same as NORMAL:TEXTCOLOR. The color of the text on the label.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:STYLE:WORDWRAP" title="STYLE:WORDWRAP attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">WORDWRAP</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="style.html#attribute:STYLE:WORDWRAP" title="STYLE:WORDWRAP attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">WORDWRAP</span></code></a></td>
 <td><a class="reference internal" href="../misc/boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>Can labels be broken into multiple lines on word boundaries?</td>
 </tr>
@@ -305,7 +305,7 @@ created widgets of a particular type inside that GUI.</p>
 </table>
 <dl class="attribute">
 <dt id="attribute:STYLE:HSTRETCH">
-Style:<code class="descname">HSTRETCH</code><a class="headerlink" href="#attribute:STYLE:HSTRETCH" title="Permalink to this definition">¶</a></dt>
+Style:<code class="descname">HSTRETCH</code><a class="headerlink" href="style.html#attribute:STYLE:HSTRETCH" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -321,7 +321,7 @@ Style:<code class="descname">HSTRETCH</code><a class="headerlink" href="#attribu
 
 <dl class="attribute">
 <dt id="attribute:STYLE:VSTRETCH">
-Style:<code class="descname">VSTRETCH</code><a class="headerlink" href="#attribute:STYLE:VSTRETCH" title="Permalink to this definition">¶</a></dt>
+Style:<code class="descname">VSTRETCH</code><a class="headerlink" href="style.html#attribute:STYLE:VSTRETCH" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -337,7 +337,7 @@ Style:<code class="descname">VSTRETCH</code><a class="headerlink" href="#attribu
 
 <dl class="attribute">
 <dt id="attribute:STYLE:WIDTH">
-Style:<code class="descname">WIDTH</code><a class="headerlink" href="#attribute:STYLE:WIDTH" title="Permalink to this definition">¶</a></dt>
+Style:<code class="descname">WIDTH</code><a class="headerlink" href="style.html#attribute:STYLE:WIDTH" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -353,7 +353,7 @@ Style:<code class="descname">WIDTH</code><a class="headerlink" href="#attribute:
 
 <dl class="attribute">
 <dt id="attribute:STYLE:HEIGHT">
-Style:<code class="descname">HEIGHT</code><a class="headerlink" href="#attribute:STYLE:HEIGHT" title="Permalink to this definition">¶</a></dt>
+Style:<code class="descname">HEIGHT</code><a class="headerlink" href="style.html#attribute:STYLE:HEIGHT" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -369,7 +369,7 @@ Style:<code class="descname">HEIGHT</code><a class="headerlink" href="#attribute
 
 <dl class="attribute">
 <dt id="attribute:STYLE:MARGIN">
-Style:<code class="descname">MARGIN</code><a class="headerlink" href="#attribute:STYLE:MARGIN" title="Permalink to this definition">¶</a></dt>
+Style:<code class="descname">MARGIN</code><a class="headerlink" href="style.html#attribute:STYLE:MARGIN" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -385,7 +385,7 @@ Style:<code class="descname">MARGIN</code><a class="headerlink" href="#attribute
 
 <dl class="attribute">
 <dt id="attribute:STYLE:PADDING">
-Style:<code class="descname">PADDING</code><a class="headerlink" href="#attribute:STYLE:PADDING" title="Permalink to this definition">¶</a></dt>
+Style:<code class="descname">PADDING</code><a class="headerlink" href="style.html#attribute:STYLE:PADDING" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -401,7 +401,7 @@ Style:<code class="descname">PADDING</code><a class="headerlink" href="#attribut
 
 <dl class="attribute">
 <dt id="attribute:STYLE:BORDER">
-Style:<code class="descname">BORDER</code><a class="headerlink" href="#attribute:STYLE:BORDER" title="Permalink to this definition">¶</a></dt>
+Style:<code class="descname">BORDER</code><a class="headerlink" href="style.html#attribute:STYLE:BORDER" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -417,7 +417,7 @@ Style:<code class="descname">BORDER</code><a class="headerlink" href="#attribute
 
 <dl class="attribute">
 <dt id="attribute:STYLE:OVERFLOW">
-Style:<code class="descname">OVERFLOW</code><a class="headerlink" href="#attribute:STYLE:OVERFLOW" title="Permalink to this definition">¶</a></dt>
+Style:<code class="descname">OVERFLOW</code><a class="headerlink" href="style.html#attribute:STYLE:OVERFLOW" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -433,7 +433,7 @@ Style:<code class="descname">OVERFLOW</code><a class="headerlink" href="#attribu
 
 <dl class="attribute">
 <dt id="attribute:STYLE:ALIGN">
-Style:<code class="descname">ALIGN</code><a class="headerlink" href="#attribute:STYLE:ALIGN" title="Permalink to this definition">¶</a></dt>
+Style:<code class="descname">ALIGN</code><a class="headerlink" href="style.html#attribute:STYLE:ALIGN" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -455,7 +455,7 @@ since otherwise it will be exactly the right size to fit the content of the widg
 </div>
 <dl class="attribute">
 <dt id="attribute:STYLE:FONT">
-Style:<code class="descname">FONT</code><a class="headerlink" href="#attribute:STYLE:FONT" title="Permalink to this definition">¶</a></dt>
+Style:<code class="descname">FONT</code><a class="headerlink" href="style.html#attribute:STYLE:FONT" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -482,7 +482,7 @@ Arial, CALIBRI, HEADINGFONT, calibri, calibrib, calibriz, calibril, and dotty</p
 
 <dl class="attribute">
 <dt id="attribute:STYLE:FONTSIZE">
-Style:<code class="descname">FONTSIZE</code><a class="headerlink" href="#attribute:STYLE:FONTSIZE" title="Permalink to this definition">¶</a></dt>
+Style:<code class="descname">FONTSIZE</code><a class="headerlink" href="style.html#attribute:STYLE:FONTSIZE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -498,7 +498,7 @@ Style:<code class="descname">FONTSIZE</code><a class="headerlink" href="#attribu
 
 <dl class="attribute">
 <dt id="attribute:STYLE:RICHTEXT">
-Style:<code class="descname">RICHTEXT</code><a class="headerlink" href="#attribute:STYLE:RICHTEXT" title="Permalink to this definition">¶</a></dt>
+Style:<code class="descname">RICHTEXT</code><a class="headerlink" href="style.html#attribute:STYLE:RICHTEXT" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -514,7 +514,7 @@ Style:<code class="descname">RICHTEXT</code><a class="headerlink" href="#attribu
 
 <dl class="attribute">
 <dt id="attribute:STYLE:NORMAL">
-Style:<code class="descname">NORMAL</code><a class="headerlink" href="#attribute:STYLE:NORMAL" title="Permalink to this definition">¶</a></dt>
+Style:<code class="descname">NORMAL</code><a class="headerlink" href="style.html#attribute:STYLE:NORMAL" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -530,7 +530,7 @@ Style:<code class="descname">NORMAL</code><a class="headerlink" href="#attribute
 
 <dl class="attribute">
 <dt id="attribute:STYLE:ON">
-Style:<code class="descname">ON</code><a class="headerlink" href="#attribute:STYLE:ON" title="Permalink to this definition">¶</a></dt>
+Style:<code class="descname">ON</code><a class="headerlink" href="style.html#attribute:STYLE:ON" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -546,7 +546,7 @@ Style:<code class="descname">ON</code><a class="headerlink" href="#attribute:STY
 
 <dl class="attribute">
 <dt id="attribute:STYLE:NORMAL_ON">
-Style:<code class="descname">NORMAL_ON</code><a class="headerlink" href="#attribute:STYLE:NORMAL_ON" title="Permalink to this definition">¶</a></dt>
+Style:<code class="descname">NORMAL_ON</code><a class="headerlink" href="style.html#attribute:STYLE:NORMAL_ON" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -562,7 +562,7 @@ Style:<code class="descname">NORMAL_ON</code><a class="headerlink" href="#attrib
 
 <dl class="attribute">
 <dt id="attribute:STYLE:HOVER">
-Style:<code class="descname">HOVER</code><a class="headerlink" href="#attribute:STYLE:HOVER" title="Permalink to this definition">¶</a></dt>
+Style:<code class="descname">HOVER</code><a class="headerlink" href="style.html#attribute:STYLE:HOVER" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -578,7 +578,7 @@ Style:<code class="descname">HOVER</code><a class="headerlink" href="#attribute:
 
 <dl class="attribute">
 <dt id="attribute:STYLE:HOVER_ON">
-Style:<code class="descname">HOVER_ON</code><a class="headerlink" href="#attribute:STYLE:HOVER_ON" title="Permalink to this definition">¶</a></dt>
+Style:<code class="descname">HOVER_ON</code><a class="headerlink" href="style.html#attribute:STYLE:HOVER_ON" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -594,7 +594,7 @@ Style:<code class="descname">HOVER_ON</code><a class="headerlink" href="#attribu
 
 <dl class="attribute">
 <dt id="attribute:STYLE:ACTIVE">
-Style:<code class="descname">ACTIVE</code><a class="headerlink" href="#attribute:STYLE:ACTIVE" title="Permalink to this definition">¶</a></dt>
+Style:<code class="descname">ACTIVE</code><a class="headerlink" href="style.html#attribute:STYLE:ACTIVE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -610,7 +610,7 @@ Style:<code class="descname">ACTIVE</code><a class="headerlink" href="#attribute
 
 <dl class="attribute">
 <dt id="attribute:STYLE:ACTIVE_ON">
-Style:<code class="descname">ACTIVE_ON</code><a class="headerlink" href="#attribute:STYLE:ACTIVE_ON" title="Permalink to this definition">¶</a></dt>
+Style:<code class="descname">ACTIVE_ON</code><a class="headerlink" href="style.html#attribute:STYLE:ACTIVE_ON" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -626,7 +626,7 @@ Style:<code class="descname">ACTIVE_ON</code><a class="headerlink" href="#attrib
 
 <dl class="attribute">
 <dt id="attribute:STYLE:FOCUSED">
-Style:<code class="descname">FOCUSED</code><a class="headerlink" href="#attribute:STYLE:FOCUSED" title="Permalink to this definition">¶</a></dt>
+Style:<code class="descname">FOCUSED</code><a class="headerlink" href="style.html#attribute:STYLE:FOCUSED" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -642,7 +642,7 @@ Style:<code class="descname">FOCUSED</code><a class="headerlink" href="#attribut
 
 <dl class="attribute">
 <dt id="attribute:STYLE:FOCUSED_ON">
-Style:<code class="descname">FOCUSED_ON</code><a class="headerlink" href="#attribute:STYLE:FOCUSED_ON" title="Permalink to this definition">¶</a></dt>
+Style:<code class="descname">FOCUSED_ON</code><a class="headerlink" href="style.html#attribute:STYLE:FOCUSED_ON" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -658,7 +658,7 @@ Style:<code class="descname">FOCUSED_ON</code><a class="headerlink" href="#attri
 
 <dl class="attribute">
 <dt id="attribute:STYLE:BG">
-Style:<code class="descname">BG</code><a class="headerlink" href="#attribute:STYLE:BG" title="Permalink to this definition">¶</a></dt>
+Style:<code class="descname">BG</code><a class="headerlink" href="style.html#attribute:STYLE:BG" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -674,7 +674,7 @@ Style:<code class="descname">BG</code><a class="headerlink" href="#attribute:STY
 
 <dl class="attribute">
 <dt id="attribute:STYLE:TEXTCOLOR">
-Style:<code class="descname">TEXTCOLOR</code><a class="headerlink" href="#attribute:STYLE:TEXTCOLOR" title="Permalink to this definition">¶</a></dt>
+Style:<code class="descname">TEXTCOLOR</code><a class="headerlink" href="style.html#attribute:STYLE:TEXTCOLOR" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -688,7 +688,7 @@ Style:<code class="descname">TEXTCOLOR</code><a class="headerlink" href="#attrib
 
 <dl class="attribute">
 <dt id="attribute:STYLE:WORDWRAP">
-Style:<code class="descname">WORDWRAP</code><a class="headerlink" href="#attribute:STYLE:WORDWRAP" title="Permalink to this definition">¶</a></dt>
+Style:<code class="descname">WORDWRAP</code><a class="headerlink" href="style.html#attribute:STYLE:WORDWRAP" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

@@ -116,7 +116,7 @@
 <li class="toctree-l3"><a class="reference internal" href="element.html">Element</a></li>
 <li class="toctree-l3"><a class="reference internal" href="engine.html">Engine</a></li>
 <li class="toctree-l3"><a class="reference internal" href="eta.html">ETA</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">Gimbal</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="gimbal.html">Gimbal</a></li>
 <li class="toctree-l3"><a class="reference internal" href="kosprocessor.html">kOSProcessor</a></li>
 <li class="toctree-l3"><a class="reference internal" href="launchclamp.html">LaunchClamp</a></li>
 <li class="toctree-l3"><a class="reference internal" href="node.html">Maneuver Node</a></li>
@@ -192,11 +192,11 @@
            <div itemprop="articleBody">
             
   <div class="section" id="gimbal">
-<span id="id1"></span><h1>Gimbal<a class="headerlink" href="#gimbal" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1>Gimbal<a class="headerlink" href="gimbal.html#gimbal" title="Permalink to this headline">¶</a></h1>
 <p>Many engines in KSP have thrust vectoring gimbals which are handled by their own module</p>
 <dl class="structure">
 <dt id="structure:GIMBAL">
-<em class="property">structure </em><code class="descname">Gimbal</code><a class="headerlink" href="#structure:GIMBAL" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">Gimbal</code><a class="headerlink" href="gimbal.html#structure:GIMBAL" title="Permalink to this definition">¶</a></dt>
 <dd><table border="1" class="docutils">
 <colgroup>
 <col width="29%" />
@@ -214,43 +214,43 @@
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:GIMBAL:LOCK" title="GIMBAL:LOCK attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">LOCK</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="gimbal.html#attribute:GIMBAL:LOCK" title="GIMBAL:LOCK attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">LOCK</span></code></a></td>
 <td><a class="reference internal" href="../misc/boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>Is the Gimbal locked in neutral position?</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:GIMBAL:PITCH" title="GIMBAL:PITCH attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PITCH</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="gimbal.html#attribute:GIMBAL:PITCH" title="GIMBAL:PITCH attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PITCH</span></code></a></td>
 <td><a class="reference internal" href="../misc/boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>Does the Gimbal respond to pitch controls?</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:GIMBAL:YAW" title="GIMBAL:YAW attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">YAW</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="gimbal.html#attribute:GIMBAL:YAW" title="GIMBAL:YAW attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">YAW</span></code></a></td>
 <td><a class="reference internal" href="../misc/boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>Does the Gimbal respond to yaw controls?</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:GIMBAL:ROLL" title="GIMBAL:ROLL attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ROLL</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="gimbal.html#attribute:GIMBAL:ROLL" title="GIMBAL:ROLL attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ROLL</span></code></a></td>
 <td><a class="reference internal" href="../misc/boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>Does the Gimbal respond to roll controls?</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:GIMBAL:LIMIT" title="GIMBAL:LIMIT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">LIMIT</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="gimbal.html#attribute:GIMBAL:LIMIT" title="GIMBAL:LIMIT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">LIMIT</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Scalar</span></code></a> (%)</td>
 <td>Percentage of the maximum range the Gimbal is allowed to travel</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:GIMBAL:RANGE" title="GIMBAL:RANGE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">RANGE</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="gimbal.html#attribute:GIMBAL:RANGE" title="GIMBAL:RANGE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">RANGE</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Scalar</span></code></a> (deg)</td>
 <td>The Gimbal&#8217;s Possible Range of movement</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:GIMBAL:RESPONSESPEED" title="GIMBAL:RESPONSESPEED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">RESPONSESPEED</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="gimbal.html#attribute:GIMBAL:RESPONSESPEED" title="GIMBAL:RESPONSESPEED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">RESPONSESPEED</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Scalar</span></code></a></td>
 <td>The Gimbal&#8217;s Possible Rate of travel</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:GIMBAL:PITCHANGLE" title="GIMBAL:PITCHANGLE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PITCHANGLE</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="gimbal.html#attribute:GIMBAL:PITCHANGLE" title="GIMBAL:PITCHANGLE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PITCHANGLE</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Scalar</span></code></a></td>
 <td>Current Gimbal Pitch</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:GIMBAL:YAWANGLE" title="GIMBAL:YAWANGLE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">YAWANGLE</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="gimbal.html#attribute:GIMBAL:YAWANGLE" title="GIMBAL:YAWANGLE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">YAWANGLE</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Scalar</span></code></a></td>
 <td>Current Gimbal Yaw</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:GIMBAL:ROLLANGLE" title="GIMBAL:ROLLANGLE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ROLLANGLE</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="gimbal.html#attribute:GIMBAL:ROLLANGLE" title="GIMBAL:ROLLANGLE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ROLLANGLE</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Scalar</span></code></a></td>
 <td>Current Gimbal Roll</td>
 </tr>
@@ -260,12 +260,12 @@
 
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last"><a class="reference internal" href="#structure:GIMBAL" title="GIMBAL structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Gimbal</span></code></a> is a type of <a class="reference internal" href="partmodule.html#structure:PARTMODULE" title="PARTMODULE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">PartModule</span></code></a>, and therefore can use all the suffixes of <a class="reference internal" href="partmodule.html#structure:PARTMODULE" title="PARTMODULE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">PartModule</span></code></a>. Shown below are only the suffixes that are unique to <a class="reference internal" href="#structure:GIMBAL" title="GIMBAL structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Gimbal</span></code></a>.
-<a class="reference internal" href="#structure:GIMBAL" title="GIMBAL structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Gimbal</span></code></a> can be accessed as <a class="reference internal" href="engine.html#attribute:ENGINE:GIMBAL" title="ENGINE:GIMBAL attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">Engine:GIMBAL</span></code></a> atribute of  <a class="reference internal" href="engine.html#structure:ENGINE" title="ENGINE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Engine</span></code></a>.</p>
+<p class="last"><a class="reference internal" href="gimbal.html#structure:GIMBAL" title="GIMBAL structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Gimbal</span></code></a> is a type of <a class="reference internal" href="partmodule.html#structure:PARTMODULE" title="PARTMODULE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">PartModule</span></code></a>, and therefore can use all the suffixes of <a class="reference internal" href="partmodule.html#structure:PARTMODULE" title="PARTMODULE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">PartModule</span></code></a>. Shown below are only the suffixes that are unique to <a class="reference internal" href="gimbal.html#structure:GIMBAL" title="GIMBAL structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Gimbal</span></code></a>.
+<a class="reference internal" href="gimbal.html#structure:GIMBAL" title="GIMBAL structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Gimbal</span></code></a> can be accessed as <a class="reference internal" href="engine.html#attribute:ENGINE:GIMBAL" title="ENGINE:GIMBAL attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">Engine:GIMBAL</span></code></a> atribute of  <a class="reference internal" href="engine.html#structure:ENGINE" title="ENGINE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Engine</span></code></a>.</p>
 </div>
 <dl class="attribute">
 <dt id="attribute:GIMBAL:LOCK">
-Gimbal:<code class="descname">LOCK</code><a class="headerlink" href="#attribute:GIMBAL:LOCK" title="Permalink to this definition">¶</a></dt>
+Gimbal:<code class="descname">LOCK</code><a class="headerlink" href="gimbal.html#attribute:GIMBAL:LOCK" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -281,7 +281,7 @@ Gimbal:<code class="descname">LOCK</code><a class="headerlink" href="#attribute:
 
 <dl class="attribute">
 <dt id="attribute:GIMBAL:PITCH">
-Gimbal:<code class="descname">PITCH</code><a class="headerlink" href="#attribute:GIMBAL:PITCH" title="Permalink to this definition">¶</a></dt>
+Gimbal:<code class="descname">PITCH</code><a class="headerlink" href="gimbal.html#attribute:GIMBAL:PITCH" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -297,7 +297,7 @@ Gimbal:<code class="descname">PITCH</code><a class="headerlink" href="#attribute
 
 <dl class="attribute">
 <dt id="attribute:GIMBAL:YAW">
-Gimbal:<code class="descname">YAW</code><a class="headerlink" href="#attribute:GIMBAL:YAW" title="Permalink to this definition">¶</a></dt>
+Gimbal:<code class="descname">YAW</code><a class="headerlink" href="gimbal.html#attribute:GIMBAL:YAW" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -313,7 +313,7 @@ Gimbal:<code class="descname">YAW</code><a class="headerlink" href="#attribute:G
 
 <dl class="attribute">
 <dt id="attribute:GIMBAL:ROLL">
-Gimbal:<code class="descname">ROLL</code><a class="headerlink" href="#attribute:GIMBAL:ROLL" title="Permalink to this definition">¶</a></dt>
+Gimbal:<code class="descname">ROLL</code><a class="headerlink" href="gimbal.html#attribute:GIMBAL:ROLL" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -329,7 +329,7 @@ Gimbal:<code class="descname">ROLL</code><a class="headerlink" href="#attribute:
 
 <dl class="attribute">
 <dt id="attribute:GIMBAL:LIMIT">
-Gimbal:<code class="descname">LIMIT</code><a class="headerlink" href="#attribute:GIMBAL:LIMIT" title="Permalink to this definition">¶</a></dt>
+Gimbal:<code class="descname">LIMIT</code><a class="headerlink" href="gimbal.html#attribute:GIMBAL:LIMIT" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -345,7 +345,7 @@ Gimbal:<code class="descname">LIMIT</code><a class="headerlink" href="#attribute
 
 <dl class="attribute">
 <dt id="attribute:GIMBAL:RANGE">
-Gimbal:<code class="descname">RANGE</code><a class="headerlink" href="#attribute:GIMBAL:RANGE" title="Permalink to this definition">¶</a></dt>
+Gimbal:<code class="descname">RANGE</code><a class="headerlink" href="gimbal.html#attribute:GIMBAL:RANGE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -361,7 +361,7 @@ Gimbal:<code class="descname">RANGE</code><a class="headerlink" href="#attribute
 
 <dl class="attribute">
 <dt id="attribute:GIMBAL:RESPONSESPEED">
-Gimbal:<code class="descname">RESPONSESPEED</code><a class="headerlink" href="#attribute:GIMBAL:RESPONSESPEED" title="Permalink to this definition">¶</a></dt>
+Gimbal:<code class="descname">RESPONSESPEED</code><a class="headerlink" href="gimbal.html#attribute:GIMBAL:RESPONSESPEED" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -377,7 +377,7 @@ Gimbal:<code class="descname">RESPONSESPEED</code><a class="headerlink" href="#a
 
 <dl class="attribute">
 <dt id="attribute:GIMBAL:PITCHANGLE">
-Gimbal:<code class="descname">PITCHANGLE</code><a class="headerlink" href="#attribute:GIMBAL:PITCHANGLE" title="Permalink to this definition">¶</a></dt>
+Gimbal:<code class="descname">PITCHANGLE</code><a class="headerlink" href="gimbal.html#attribute:GIMBAL:PITCHANGLE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -393,7 +393,7 @@ Gimbal:<code class="descname">PITCHANGLE</code><a class="headerlink" href="#attr
 
 <dl class="attribute">
 <dt id="attribute:GIMBAL:YAWANGLE">
-Gimbal:<code class="descname">YAWANGLE</code><a class="headerlink" href="#attribute:GIMBAL:YAWANGLE" title="Permalink to this definition">¶</a></dt>
+Gimbal:<code class="descname">YAWANGLE</code><a class="headerlink" href="gimbal.html#attribute:GIMBAL:YAWANGLE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -409,7 +409,7 @@ Gimbal:<code class="descname">YAWANGLE</code><a class="headerlink" href="#attrib
 
 <dl class="attribute">
 <dt id="attribute:GIMBAL:ROLLANGLE">
-Gimbal:<code class="descname">ROLLANGLE</code><a class="headerlink" href="#attribute:GIMBAL:ROLLANGLE" title="Permalink to this definition">¶</a></dt>
+Gimbal:<code class="descname">ROLLANGLE</code><a class="headerlink" href="gimbal.html#attribute:GIMBAL:ROLLANGLE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

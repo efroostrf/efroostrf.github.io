@@ -105,7 +105,7 @@
 <li class="toctree-l2 current"><a class="reference internal" href="../collections.html">Collections</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="enumerable.html">Enumerable</a></li>
 <li class="toctree-l3"><a class="reference internal" href="iterator.html">Iterator</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">Lexicon</a><ul class="simple">
+<li class="toctree-l3 current"><a class="current reference internal" href="lexicon.html">Lexicon</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="list.html">List</a></li>
@@ -178,8 +178,8 @@
            <div itemprop="articleBody">
             
   <div class="section" id="lexicon">
-<span id="id1"></span><h1>Lexicon<a class="headerlink" href="#lexicon" title="Permalink to this headline">¶</a></h1>
-<p>A <a class="reference internal" href="#structure:LEXICON" title="LEXICON structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Lexicon</span></code></a> is
+<span id="id1"></span><h1>Lexicon<a class="headerlink" href="lexicon.html#lexicon" title="Permalink to this headline">¶</a></h1>
+<p>A <a class="reference internal" href="lexicon.html#structure:LEXICON" title="LEXICON structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Lexicon</span></code></a> is
 <a class="reference external" href="https://en.wikipedia.org/wiki/Associative_array">an associative array</a>,
 and is similar to the <a class="reference internal" href="list.html#list"><span>LIST type</span></a>.  If you are an experienced
 programmer who already knows what &#8220;associative array&#8221; means, you can
@@ -188,7 +188,7 @@ down, otherwise read on:</p>
 <p>In a normal array, or in kerboscript&#8217;s <a class="reference internal" href="list.html#list"><span>LIST type</span></a> you
 specify which item in the list you want by giving its integer position
 in the list.</p>
-<p>But in a <a class="reference internal" href="#structure:LEXICON" title="LEXICON structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Lexicon</span></code></a>, you store pairs of keys and values, where
+<p>But in a <a class="reference internal" href="lexicon.html#structure:LEXICON" title="LEXICON structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Lexicon</span></code></a>, you store pairs of keys and values, where
 the keys can be any type of thing you like, not just integers, and
 then you specify which item you want by using that key&#8217;s value.</p>
 <p>Here&#8217;s a small example:</p>
@@ -206,14 +206,14 @@ values (and in fact why it&#8217;s called &#8220;lexicon&#8221;).  However you c
 really use any value you feel like for the keys - strings, RGB colors,
 numbers, etc.</p>
 <div class="section" id="lexicons-are-case-insensitive">
-<h2>Lexicons are case-insensitive<a class="headerlink" href="#lexicons-are-case-insensitive" title="Permalink to this headline">¶</a></h2>
+<h2>Lexicons are case-insensitive<a class="headerlink" href="lexicon.html#lexicons-are-case-insensitive" title="Permalink to this headline">¶</a></h2>
 <p>One important difference between Lexicons in kerboscript and associative
 arrays in most other languages is that kerboscript Lexicons use
 case-insensitive keys by default (when the keys are strings).  This
 behaviour can be changed with the <code class="docutils literal"><span class="pre">:CASESENSITIVE</span></code> flag described below.</p>
 </div>
 <div class="section" id="constructing-a-lexicon">
-<h2>Constructing a lexicon<a class="headerlink" href="#constructing-a-lexicon" title="Permalink to this headline">¶</a></h2>
+<h2>Constructing a lexicon<a class="headerlink" href="lexicon.html#constructing-a-lexicon" title="Permalink to this headline">¶</a></h2>
 <p>If you wish to make your own lexicon from scratch you can do so with the
 LEXICON() or LEX() built-in function:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="c1">// Make an empty lexicon with zero items in it:</span>
@@ -243,8 +243,8 @@ the same effect as the previous code fragment:</p>
 need to be of a homogeneous type.</p>
 </div>
 <div class="section" id="lexicons-can-use-suffix-syntax">
-<span id="lexicon-suffix"></span><h2>Lexicons can use suffix syntax<a class="headerlink" href="#lexicons-can-use-suffix-syntax" title="Permalink to this headline">¶</a></h2>
-<p>One special thing can be done with a <a class="reference internal" href="#structure:LEXICON" title="LEXICON structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Lexicon</span></code></a> that cannot be done
+<span id="lexicon-suffix"></span><h2>Lexicons can use suffix syntax<a class="headerlink" href="lexicon.html#lexicons-can-use-suffix-syntax" title="Permalink to this headline">¶</a></h2>
+<p>One special thing can be done with a <a class="reference internal" href="lexicon.html#structure:LEXICON" title="LEXICON structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Lexicon</span></code></a> that cannot be done
 with other types of structures in kOS - a lexicon can use the &#8220;suffix
 syntax&#8221;.</p>
 <p>By &#8220;suffix syntax&#8221;, what is meant is things like the colons in these
@@ -256,7 +256,7 @@ statements:</p>
 <p>There is a special extra step when looking up a suffix.  Normally
 kOS throws an error if the suffix name refers to a suffix that does
 not exist on the object.  But, if the item on the left side of the
-colon is a <a class="reference internal" href="#structure:LEXICON" title="LEXICON structure"><code class="xref ks ks-struct docutils literal"><span class="pre">LEXICON</span></code></a> type, then it also will check to see if
+colon is a <a class="reference internal" href="lexicon.html#structure:LEXICON" title="LEXICON structure"><code class="xref ks ks-struct docutils literal"><span class="pre">LEXICON</span></code></a> type, then it also will check to see if
 the suffix matches any of the lexicon&#8217;s keys, and if it does, that
 key&#8217;s value will be retrieved.</p>
 <p>Here is an example:</p>
@@ -312,7 +312,7 @@ line of code.</p>
 </pre></div>
 </div>
 <div class="section" id="clashes-between-built-in-suffixes-versus-lexicon-keys">
-<h3>Clashes between built-in suffixes versus lexicon keys<a class="headerlink" href="#clashes-between-built-in-suffixes-versus-lexicon-keys" title="Permalink to this headline">¶</a></h3>
+<h3>Clashes between built-in suffixes versus lexicon keys<a class="headerlink" href="lexicon.html#clashes-between-built-in-suffixes-versus-lexicon-keys" title="Permalink to this headline">¶</a></h3>
 <p>kOS will always prefer to use the built-in suffix name first when
 trying to search for a suffix name in a lexicon.  Therefore
 if you make a key who&#8217;s name matches an existing built-in suffix
@@ -333,7 +333,7 @@ your key&#8217;s value.  Here&#8217;s an example:</p>
 </div>
 </div>
 <div class="section" id="suffix-keys-also-work-with-hassuffix-and-suffixnames">
-<h3>Suffix keys also work with HASSUFFIX and SUFFIXNAMES<a class="headerlink" href="#suffix-keys-also-work-with-hassuffix-and-suffixnames" title="Permalink to this headline">¶</a></h3>
+<h3>Suffix keys also work with HASSUFFIX and SUFFIXNAMES<a class="headerlink" href="lexicon.html#suffix-keys-also-work-with-hassuffix-and-suffixnames" title="Permalink to this headline">¶</a></h3>
 <p>All values in kerboscript derive from <a class="reference internal" href="../reflection/structure.html#structure"><span>Structure:</span></a>, and
 all such structures have <code class="xref ks ks-attr docutils literal"><span class="pre">Structure:HASSUFFIX</span></code> and
 <a class="reference internal" href="../reflection/structure.html#attribute:STRUCTURE:SUFFIXNAMES" title="STRUCTURE:SUFFIXNAMES attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">Structure:SUFFIXNAMES</span></code></a> members.  Because a Lexicon has
@@ -346,12 +346,12 @@ return true, in addition to the normal built-in suffixes.</p>
 </div>
 </div>
 <div class="section" id="structure">
-<h2>Structure<a class="headerlink" href="#structure" title="Permalink to this headline">¶</a></h2>
+<h2>Structure<a class="headerlink" href="lexicon.html#structure" title="Permalink to this headline">¶</a></h2>
 <dl class="structure">
 <dt id="structure:LEXICON">
-<em class="property">structure </em><code class="descname">Lexicon</code><a class="headerlink" href="#structure:LEXICON" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">Lexicon</code><a class="headerlink" href="lexicon.html#structure:LEXICON" title="Permalink to this definition">¶</a></dt>
 <dd><table border="1" class="docutils" id="id2">
-<caption><span class="caption-text">Members</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-text">Members</span><a class="headerlink" href="lexicon.html#id2" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="29%" />
 <col width="14%" />
@@ -364,51 +364,51 @@ return true, in addition to the normal built-in suffixes.</p>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="#method:LEXICON:ADD" title="LEXICON:ADD method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADD(key,value)</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="lexicon.html#method:LEXICON:ADD" title="LEXICON:ADD method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADD(key,value)</span></code></a></td>
 <td>None</td>
 <td>append an item to the lexicon</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:LEXICON:CASESENSITIVE" title="LEXICON:CASESENSITIVE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">CASESENSITIVE</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="lexicon.html#attribute:LEXICON:CASESENSITIVE" title="LEXICON:CASESENSITIVE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">CASESENSITIVE</span></code></a></td>
 <td><a class="reference internal" href="../misc/boolean.html#boolean"><span>boolean</span></a></td>
 <td>changes the behaviour of string based keys. Which are by default case insensitive. Setting this will clear the lexicon.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:LEXICON:CASE" title="LEXICON:CASE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">CASE</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="lexicon.html#attribute:LEXICON:CASE" title="LEXICON:CASE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">CASE</span></code></a></td>
 <td><a class="reference internal" href="../misc/boolean.html#boolean"><span>boolean</span></a></td>
 <td>A synonym for <cite>CASESENSITIVE</cite></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#method:LEXICON:CLEAR" title="LEXICON:CLEAR method"><code class="xref ks ks-meth docutils literal"><span class="pre">CLEAR</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="lexicon.html#method:LEXICON:CLEAR" title="LEXICON:CLEAR method"><code class="xref ks ks-meth docutils literal"><span class="pre">CLEAR</span></code></a></td>
 <td>None</td>
 <td>remove all items in the lexicon</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#method:LEXICON:COPY" title="LEXICON:COPY method"><code class="xref ks ks-meth docutils literal"><span class="pre">COPY</span></code></a></td>
-<td><a class="reference internal" href="#structure:LEXICON" title="LEXICON structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Lexicon</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="lexicon.html#method:LEXICON:COPY" title="LEXICON:COPY method"><code class="xref ks ks-meth docutils literal"><span class="pre">COPY</span></code></a></td>
+<td><a class="reference internal" href="lexicon.html#structure:LEXICON" title="LEXICON structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Lexicon</span></code></a></td>
 <td>returns a (shallow) copy of the contents of the lexicon</td>
 </tr>
 <tr class="row-odd"><td><code class="xref ks ks-meth docutils literal"><span class="pre">DUMP</span></code></td>
 <td><a class="reference internal" href="../misc/string.html#string"><span>string</span></a></td>
 <td>verbose dump of all contained elements</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#method:LEXICON:HASKEY" title="LEXICON:HASKEY method"><code class="xref ks ks-meth docutils literal"><span class="pre">HASKEY(keyvalue)</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="lexicon.html#method:LEXICON:HASKEY" title="LEXICON:HASKEY method"><code class="xref ks ks-meth docutils literal"><span class="pre">HASKEY(keyvalue)</span></code></a></td>
 <td><a class="reference internal" href="../misc/boolean.html#boolean"><span>boolean</span></a></td>
 <td>does the lexicon have a key of the given value?</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#method:LEXICON:HASVALUE" title="LEXICON:HASVALUE method"><code class="xref ks ks-meth docutils literal"><span class="pre">HASVALUE(value)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="lexicon.html#method:LEXICON:HASVALUE" title="LEXICON:HASVALUE method"><code class="xref ks ks-meth docutils literal"><span class="pre">HASVALUE(value)</span></code></a></td>
 <td><a class="reference internal" href="../misc/boolean.html#boolean"><span>boolean</span></a></td>
 <td>does the lexicon have a value of the given value?</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:LEXICON:KEYS" title="LEXICON:KEYS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">KEYS</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="lexicon.html#attribute:LEXICON:KEYS" title="LEXICON:KEYS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">KEYS</span></code></a></td>
 <td><a class="reference internal" href="list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a></td>
 <td>gives a flat <a class="reference internal" href="list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a> of the keys in the lexicon</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:LEXICON:VALUES" title="LEXICON:VALUES attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">VALUES</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="lexicon.html#attribute:LEXICON:VALUES" title="LEXICON:VALUES attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">VALUES</span></code></a></td>
 <td><a class="reference internal" href="list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a></td>
 <td>gives a flat <a class="reference internal" href="list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a> of the values in the lexicon</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:LEXICON:LENGTH" title="LEXICON:LENGTH attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">LENGTH</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="lexicon.html#attribute:LEXICON:LENGTH" title="LEXICON:LENGTH attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">LENGTH</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#scalar"><span>scalar</span></a></td>
 <td>number of pairs in the lexicon</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#method:LEXICON:REMOVE" title="LEXICON:REMOVE method"><code class="xref ks ks-meth docutils literal"><span class="pre">REMOVE(keyvalue)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="lexicon.html#method:LEXICON:REMOVE" title="LEXICON:REMOVE method"><code class="xref ks ks-meth docutils literal"><span class="pre">REMOVE(keyvalue)</span></code></a></td>
 <td>None</td>
 <td>removes the pair with the given key</td>
 </tr>
@@ -416,7 +416,7 @@ return true, in addition to the normal built-in suffixes.</p>
 <td><a class="reference internal" href="../misc/boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>True if the suffix OR a key with the name, exists.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:LEXICON:SUFFIXNAMES" title="LEXICON:SUFFIXNAMES attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SUFFIXNAMES</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="lexicon.html#attribute:LEXICON:SUFFIXNAMES" title="LEXICON:SUFFIXNAMES attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SUFFIXNAMES</span></code></a></td>
 <td><a class="reference internal" href="list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a> of <a class="reference internal" href="../misc/string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">strings</span></code></a></td>
 <td>Gives both the suffixes AND the keys that work as suffixes</td>
 </tr>
@@ -430,7 +430,7 @@ return true, in addition to the normal built-in suffixes.</p>
 </div>
 <dl class="method">
 <dt id="method:LEXICON:ADD">
-Lexicon:<code class="descname">ADD</code><span class="sig-paren">(</span>key, value<span class="sig-paren">)</span><a class="headerlink" href="#method:LEXICON:ADD" title="Permalink to this definition">¶</a></dt>
+Lexicon:<code class="descname">ADD</code><span class="sig-paren">(</span>key, value<span class="sig-paren">)</span><a class="headerlink" href="lexicon.html#method:LEXICON:ADD" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -448,7 +448,7 @@ Lexicon:<code class="descname">ADD</code><span class="sig-paren">(</span>key, va
 
 <dl class="attribute">
 <dt id="attribute:LEXICON:CASESENSITIVE">
-Lexicon:<code class="descname">CASESENSITIVE</code><a class="headerlink" href="#attribute:LEXICON:CASESENSITIVE" title="Permalink to this definition">¶</a></dt>
+Lexicon:<code class="descname">CASESENSITIVE</code><a class="headerlink" href="lexicon.html#attribute:LEXICON:CASESENSITIVE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -475,7 +475,7 @@ right after you&#8217;ve created it, and never change it after that.</p>
 
 <dl class="attribute">
 <dt id="attribute:LEXICON:CASE">
-Lexicon:<code class="descname">CASE</code><a class="headerlink" href="#attribute:LEXICON:CASE" title="Permalink to this definition">¶</a></dt>
+Lexicon:<code class="descname">CASE</code><a class="headerlink" href="lexicon.html#attribute:LEXICON:CASE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -491,7 +491,7 @@ Lexicon:<code class="descname">CASE</code><a class="headerlink" href="#attribute
 
 <dl class="method">
 <dt id="method:LEXICON:REMOVE">
-Lexicon:<code class="descname">REMOVE</code><span class="sig-paren">(</span>key<span class="sig-paren">)</span><a class="headerlink" href="#method:LEXICON:REMOVE" title="Permalink to this definition">¶</a></dt>
+Lexicon:<code class="descname">REMOVE</code><span class="sig-paren">(</span>key<span class="sig-paren">)</span><a class="headerlink" href="lexicon.html#method:LEXICON:REMOVE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -508,13 +508,13 @@ Lexicon:<code class="descname">REMOVE</code><span class="sig-paren">(</span>key<
 
 <dl class="method">
 <dt id="method:LEXICON:CLEAR">
-Lexicon:<code class="descname">CLEAR</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:LEXICON:CLEAR" title="Permalink to this definition">¶</a></dt>
+Lexicon:<code class="descname">CLEAR</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="lexicon.html#method:LEXICON:CLEAR" title="Permalink to this definition">¶</a></dt>
 <dd><p>Removes all of the pairs from the lexicon. Making it empty.</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="attribute:LEXICON:LENGTH">
-Lexicon:<code class="descname">LENGTH</code><a class="headerlink" href="#attribute:LEXICON:LENGTH" title="Permalink to this definition">¶</a></dt>
+Lexicon:<code class="descname">LENGTH</code><a class="headerlink" href="lexicon.html#attribute:LEXICON:LENGTH" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -530,12 +530,12 @@ Lexicon:<code class="descname">LENGTH</code><a class="headerlink" href="#attribu
 
 <dl class="method">
 <dt id="method:LEXICON:COPY">
-Lexicon:<code class="descname">COPY</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:LEXICON:COPY" title="Permalink to this definition">¶</a></dt>
+Lexicon:<code class="descname">COPY</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="lexicon.html#method:LEXICON:COPY" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#structure:LEXICON" title="LEXICON structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Lexicon</span></code></a></td>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="lexicon.html#structure:LEXICON" title="LEXICON structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Lexicon</span></code></a></td>
 </tr>
 <tr class="field-even field"><th class="field-name">Access:</th><td class="field-body">Get only</td>
 </tr>
@@ -550,7 +550,7 @@ original copy in that value.</p>
 
 <dl class="method">
 <dt id="method:LEXICON:HASKEY">
-Lexicon:<code class="descname">HASKEY</code><span class="sig-paren">(</span>key<span class="sig-paren">)</span><a class="headerlink" href="#method:LEXICON:HASKEY" title="Permalink to this definition">¶</a></dt>
+Lexicon:<code class="descname">HASKEY</code><span class="sig-paren">(</span>key<span class="sig-paren">)</span><a class="headerlink" href="lexicon.html#method:LEXICON:HASKEY" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -570,7 +570,7 @@ Lexicon:<code class="descname">HASKEY</code><span class="sig-paren">(</span>key<
 
 <dl class="method">
 <dt id="method:LEXICON:HASVALUE">
-Lexicon:<code class="descname">HASVALUE</code><span class="sig-paren">(</span>key<span class="sig-paren">)</span><a class="headerlink" href="#method:LEXICON:HASVALUE" title="Permalink to this definition">¶</a></dt>
+Lexicon:<code class="descname">HASVALUE</code><span class="sig-paren">(</span>key<span class="sig-paren">)</span><a class="headerlink" href="lexicon.html#method:LEXICON:HASVALUE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -590,7 +590,7 @@ Lexicon:<code class="descname">HASVALUE</code><span class="sig-paren">(</span>ke
 
 <dl class="attribute">
 <dt id="attribute:LEXICON:DUMP">
-Lexicon:<code class="descname">DUMP</code><a class="headerlink" href="#attribute:LEXICON:DUMP" title="Permalink to this definition">¶</a></dt>
+Lexicon:<code class="descname">DUMP</code><a class="headerlink" href="lexicon.html#attribute:LEXICON:DUMP" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -618,7 +618,7 @@ of every complex object inside the Lexicon.</p>
 
 <dl class="attribute">
 <dt id="attribute:LEXICON:KEYS">
-Lexicon:<code class="descname">KEYS</code><a class="headerlink" href="#attribute:LEXICON:KEYS" title="Permalink to this definition">¶</a></dt>
+Lexicon:<code class="descname">KEYS</code><a class="headerlink" href="lexicon.html#attribute:LEXICON:KEYS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -634,7 +634,7 @@ Lexicon:<code class="descname">KEYS</code><a class="headerlink" href="#attribute
 
 <dl class="attribute">
 <dt id="attribute:LEXICON:VALUES">
-Lexicon:<code class="descname">VALUES</code><a class="headerlink" href="#attribute:LEXICON:VALUES" title="Permalink to this definition">¶</a></dt>
+Lexicon:<code class="descname">VALUES</code><a class="headerlink" href="lexicon.html#attribute:LEXICON:VALUES" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -650,7 +650,7 @@ Lexicon:<code class="descname">VALUES</code><a class="headerlink" href="#attribu
 
 <dl class="method">
 <dt id="method:LEXICON:HASSUFFIX">
-Lexicon:<code class="descname">HASSUFFIX</code><span class="sig-paren">(</span>name<span class="sig-paren">)</span><a class="headerlink" href="#method:LEXICON:HASSUFFIX" title="Permalink to this definition">¶</a></dt>
+Lexicon:<code class="descname">HASSUFFIX</code><span class="sig-paren">(</span>name<span class="sig-paren">)</span><a class="headerlink" href="lexicon.html#method:LEXICON:HASSUFFIX" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -671,12 +671,12 @@ Lexicon:<code class="descname">HASSUFFIX</code><span class="sig-paren">(</span>n
 <p>This is just like the base method <a class="reference internal" href="../reflection/structure.html#method:STRUCTURE:HASSUFFIX" title="STRUCTURE:HASSUFFIX method"><code class="xref ks ks-meth docutils literal"><span class="pre">Structure:HASSUFFIX(name)</span></code></a> that
 all structures have, but with one slight difference - it will also return
 true if the name you pass in matches one of the keys of this lexicon that
-could be used with the <a class="reference internal" href="#lexicon-suffix"><span>lexicon suffix syntax</span></a>.</p>
+could be used with the <a class="reference internal" href="lexicon.html#lexicon-suffix"><span>lexicon suffix syntax</span></a>.</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="attribute:LEXICON:SUFFIXNAMES">
-Lexicon:<code class="descname">SUFFIXNAMES</code><a class="headerlink" href="#attribute:LEXICON:SUFFIXNAMES" title="Permalink to this definition">¶</a></dt>
+Lexicon:<code class="descname">SUFFIXNAMES</code><a class="headerlink" href="lexicon.html#attribute:LEXICON:SUFFIXNAMES" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -691,12 +691,12 @@ Lexicon:<code class="descname">SUFFIXNAMES</code><a class="headerlink" href="#at
 attribute that shows a list of all the suffixes on the structure,
 but for Lexicons the SUFFIXNAMES attribute has been altered so
 that it will additionally include any keys of the suffix that could
-be callled using the <a class="reference internal" href="#lexicon-suffix"><span>lexicon suffix syntax</span></a>.</p>
+be callled using the <a class="reference internal" href="lexicon.html#lexicon-suffix"><span>lexicon suffix syntax</span></a>.</p>
 </dd></dl>
 
 </div>
 <div class="section" id="access-to-individual-elements">
-<h2>Access to Individual Elements<a class="headerlink" href="#access-to-individual-elements" title="Permalink to this headline">¶</a></h2>
+<h2>Access to Individual Elements<a class="headerlink" href="lexicon.html#access-to-individual-elements" title="Permalink to this headline">¶</a></h2>
 <dl class="docutils">
 <dt><code class="docutils literal"><span class="pre">lexicon[expression]</span></code></dt>
 <dd>operator: another syntax to access the element at position &#8216;expression&#8217;. Works for get or set. Any arbitrary complex expression may be used with this syntax, not just a number or variable name.</dd>
@@ -705,7 +705,7 @@ be callled using the <a class="reference internal" href="#lexicon-suffix"><span>
 </dl>
 </div>
 <div class="section" id="implicit-add-when-using-index-brackets-with-new-key-values">
-<h2>Implicit ADD when using index brackets with new key values<a class="headerlink" href="#implicit-add-when-using-index-brackets-with-new-key-values" title="Permalink to this headline">¶</a></h2>
+<h2>Implicit ADD when using index brackets with new key values<a class="headerlink" href="lexicon.html#implicit-add-when-using-index-brackets-with-new-key-values" title="Permalink to this headline">¶</a></h2>
 <p><strong>(a.k.a. The difference between GETTING and SETTING with nonexistant keys)</strong></p>
 <p>If you attempt to use a key that does not exist in the lexicon, to
 GET a value, as follows:</p>
@@ -748,7 +748,7 @@ existing value in-place rather than trying to make a new one.</p>
 <p>In a nutshell, using [..] to set a value in a lexicon does this:  If the key already exists, replace the value with the new value.  If the key does not already exist, make it exist and give it this new value.</p>
 </div>
 <div class="section" id="examples">
-<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="lexicon.html#examples" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">SET</span> <span class="nv">BAR</span> <span class="ow">TO</span> <span class="nv">LEXICON</span><span class="p">().</span>       <span class="c1">// Creates a new empty lexicon in BAR variable</span>
 <span class="nv">BAR</span><span class="p">:</span><span class="k">ADD</span><span class="p">(</span><span class="s">&quot;FIRST&quot;</span><span class="p">,</span><span class="mf">10</span><span class="p">).</span>        <span class="c1">// Adds a new element to the lexicon with the key of &quot;FIRST&quot;</span>
 <span class="nv">BAR</span><span class="p">:</span><span class="k">ADD</span><span class="p">(</span><span class="s">&quot;SECOND&quot;</span><span class="p">,</span><span class="mf">20</span><span class="p">).</span>       <span class="c1">// Adds a new element to the lexicon with the key of &quot;SECOND&quot;</span>

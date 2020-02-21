@@ -108,7 +108,7 @@
 <li class="toctree-l2"><a class="reference internal" href="files.html">File I/O</a></li>
 <li class="toctree-l2"><a class="reference internal" href="terminalgui.html">Terminal and GUI</a></li>
 <li class="toctree-l2"><a class="reference internal" href="serialization.html">Serialization</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Communication</a><ul class="simple">
+<li class="toctree-l2 current"><a class="current reference internal" href="communication.html">Communication</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="resource_transfer.html">Resource Transfer</a></li>
@@ -166,11 +166,11 @@
            <div itemprop="articleBody">
             
   <div class="section" id="communication">
-<span id="id1"></span><h1>Communication<a class="headerlink" href="#communication" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1>Communication<a class="headerlink" href="communication.html#communication" title="Permalink to this headline">¶</a></h1>
 <p>kOS allows you to write scripts that communicate with scripts running on other processors within the same vessel
 (inter-processor communication) or on other vessels (inter-vessel communication).</p>
 <div class="section" id="limitations">
-<h2>Limitations<a class="headerlink" href="#limitations" title="Permalink to this headline">¶</a></h2>
+<h2>Limitations<a class="headerlink" href="communication.html#limitations" title="Permalink to this headline">¶</a></h2>
 <p>While you are able to send messages to vessels that are unloaded, the receiving
 vessel must be loaded in order to use and reply to the message.  This is because
 kOS is unable to run on an unloaded vessel.  The loaded status of a vessel
@@ -182,7 +182,7 @@ vessel reply when unloaded, it will need to be set to the
 <a class="reference internal" href="../structures/misc/kuniverse.html#attribute:KUNIVERSE:ACTIVEVESSEL" title="KUNIVERSE:ACTIVEVESSEL attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">KUNIVERSE:ACTIVEVESSEL</span></code></a> or the load distance needs to be adjusted.</p>
 </div>
 <div class="section" id="messages">
-<h2>Messages<a class="headerlink" href="#messages" title="Permalink to this headline">¶</a></h2>
+<h2>Messages<a class="headerlink" href="communication.html#messages" title="Permalink to this headline">¶</a></h2>
 <p>The basic unit of data that is sent between two entities (CPUs or vessels) is called a <a class="reference internal" href="../structures/communication/message.html#structure:MESSAGE" title="MESSAGE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Message</span></code></a>.
 Messages can contain any primitive (scalars, strings, booleans) data types as well as any
 <a class="reference internal" href="serialization.html#serialization"><span>serializable</span></a> types. This allows for a lot of flexibility. It is up to you as a script author
@@ -191,7 +191,7 @@ to decide what those messages will need to contain in order to achieve a specifi
 and <a class="reference internal" href="../structures/communication/message.html#attribute:MESSAGE:SENDER" title="MESSAGE:SENDER attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">Message:SENDER</span></code></a>. The original data that the sender has sent can be accessed using <a class="reference internal" href="../structures/communication/message.html#attribute:MESSAGE:CONTENT" title="MESSAGE:CONTENT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">Message:CONTENT</span></code></a>.</p>
 </div>
 <div class="section" id="message-queues">
-<h2>Message queues<a class="headerlink" href="#message-queues" title="Permalink to this headline">¶</a></h2>
+<h2>Message queues<a class="headerlink" href="communication.html#message-queues" title="Permalink to this headline">¶</a></h2>
 <p>Whenever a message is received by a CPU or a vessel it is added to its <a class="reference internal" href="../structures/communication/message_queue.html#structure:MESSAGEQUEUE" title="MESSAGEQUEUE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">MessageQueue</span></code></a>. Message queues
 store messages in order they were received in and allow the recipient to read them in the same order.</p>
 <p><strong>It is important to understand that every CPU has its own message queue, but also every vessel as a whole has
@@ -212,19 +212,19 @@ inter-processor communication all processors are part of the same vessel. No sce
 need to persist messages.</p>
 </div>
 <div class="section" id="connections">
-<h2>Connections<a class="headerlink" href="#connections" title="Permalink to this headline">¶</a></h2>
+<h2>Connections<a class="headerlink" href="communication.html#connections" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference internal" href="../structures/communication/connection.html#structure:CONNECTION" title="CONNECTION structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Connection</span></code></a> structure represents your ability to communicate with a processor or a vessel. Whenever you want
 to send a message you need to obtain a connection first.</p>
 </div>
 <div class="section" id="inter-vessel-communication">
-<h2>Inter-vessel communication<a class="headerlink" href="#inter-vessel-communication" title="Permalink to this headline">¶</a></h2>
+<h2>Inter-vessel communication<a class="headerlink" href="communication.html#inter-vessel-communication" title="Permalink to this headline">¶</a></h2>
 <p>First we&#8217;ll have a look at the scenario where we want to send messages between two processors on different vessels. As
 the first step we must obtain the <a class="reference internal" href="../structures/vessels/vessel.html#structure:VESSEL" title="VESSEL structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Vessel</span></code></a> structure associated with the target vessel. We can do that using:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">SET</span> <span class="nv">V</span> <span class="ow">TO</span> <span class="nv">VESSEL</span><span class="p">(</span><span class="s">&quot;vesselname&quot;</span><span class="p">).</span>
 </pre></div>
 </div>
 <div class="section" id="sending-messages">
-<h3>Sending messages<a class="headerlink" href="#sending-messages" title="Permalink to this headline">¶</a></h3>
+<h3>Sending messages<a class="headerlink" href="communication.html#sending-messages" title="Permalink to this headline">¶</a></h3>
 <p>Once we have a <a class="reference internal" href="../structures/vessels/vessel.html#structure:VESSEL" title="VESSEL structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Vessel</span></code></a> structure associated with the vessel we want to send the message to we can
 easily obtain a <a class="reference internal" href="../structures/communication/connection.html#structure:CONNECTION" title="CONNECTION structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Connection</span></code></a> to that vessel using <a class="reference internal" href="../structures/vessels/vessel.html#attribute:VESSEL:CONNECTION" title="VESSEL:CONNECTION attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">Vessel:CONNECTION</span></code></a>. Next we&#8217;re going to
 send a message using <a class="reference internal" href="../structures/communication/connection.html#method:CONNECTION:SENDMESSAGE" title="CONNECTION:SENDMESSAGE method"><code class="xref ks ks-meth docutils literal"><span class="pre">Connection:SENDMESSAGE</span></code></a>. This is an example of how the whole thing could look:</p>
@@ -238,7 +238,7 @@ send a message using <a class="reference internal" href="../structures/communica
 </div>
 </div>
 <div class="section" id="receiving-messages">
-<h3>Receiving messages<a class="headerlink" href="#receiving-messages" title="Permalink to this headline">¶</a></h3>
+<h3>Receiving messages<a class="headerlink" href="communication.html#receiving-messages" title="Permalink to this headline">¶</a></h3>
 <p>We now switch to the second vessel (in the example above it was named <cite>&#8220;probe.&#8221;</cite>). It should have a message
 in its message queue. To access the queue from the current processor we use the <a class="reference internal" href="../structures/vessels/vessel.html#attribute:VESSEL:MESSAGES" title="VESSEL:MESSAGES attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SHIP:MESSAGES</span></code></a> suffix:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">WHEN</span> <span class="ow">NOT</span> <span class="nv">SHIP</span><span class="p">:</span><span class="nv">MESSAGES</span><span class="p">:</span><span class="nv">EMPTY</span> <span class="p">{</span>
@@ -251,16 +251,16 @@ in its message queue. To access the queue from the current processor we use the 
 </div>
 </div>
 <div class="section" id="inter-processor-communication">
-<h2>Inter-processor communication<a class="headerlink" href="#inter-processor-communication" title="Permalink to this headline">¶</a></h2>
+<h2>Inter-processor communication<a class="headerlink" href="communication.html#inter-processor-communication" title="Permalink to this headline">¶</a></h2>
 <p>This will be very similar to how inter-vessel communication was done. As
 the first step we must obtain the <a class="reference internal" href="../structures/vessels/kosprocessor.html#structure:KOSPROCESSOR" title="KOSPROCESSOR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">kOSProcessor</span></code></a> structure associated with the target CPU.</p>
 <div class="section" id="accessing-processors">
-<h3>Accessing processors<a class="headerlink" href="#accessing-processors" title="Permalink to this headline">¶</a></h3>
+<h3>Accessing processors<a class="headerlink" href="communication.html#accessing-processors" title="Permalink to this headline">¶</a></h3>
 <p>The easiest way of accessing the processor&#8217;s <a class="reference internal" href="../structures/vessels/kosprocessor.html#structure:KOSPROCESSOR" title="KOSPROCESSOR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">kOSProcessor</span></code></a> structure (as long as your CPUs have their
 <a class="reference internal" href="../general/nametag.html#nametag"><span>name tags</span></a> set) is to use the following function:</p>
 <dl class="function">
 <dt id="function:PROCESSOR">
-<code class="descname">PROCESSOR</code><span class="sig-paren">(</span>volumeOrNameTag<span class="sig-paren">)</span><a class="headerlink" href="#function:PROCESSOR" title="Permalink to this definition">¶</a></dt>
+<code class="descname">PROCESSOR</code><span class="sig-paren">(</span>volumeOrNameTag<span class="sig-paren">)</span><a class="headerlink" href="communication.html#function:PROCESSOR" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -287,7 +287,7 @@ the first step we must obtain the <a class="reference internal" href="../structu
 </div>
 </div>
 <div class="section" id="sending-and-receiving-messages">
-<h3>Sending and receiving messages<a class="headerlink" href="#sending-and-receiving-messages" title="Permalink to this headline">¶</a></h3>
+<h3>Sending and receiving messages<a class="headerlink" href="communication.html#sending-and-receiving-messages" title="Permalink to this headline">¶</a></h3>
 <p>Then we can use <a class="reference internal" href="../structures/vessels/kosprocessor.html#attribute:KOSPROCESSOR:CONNECTION" title="KOSPROCESSOR:CONNECTION attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">kOSProcessor:CONNECTION</span></code></a> to get the connection to that processor. This is how sender&#8217;s code could look like:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">SET</span> <span class="nv">MESSAGE</span> <span class="ow">TO</span> <span class="s">&quot;undock&quot;</span><span class="p">.</span> <span class="c1">// can be any serializable value or a primitive</span>
 <span class="k">SET</span> <span class="nv">P</span> <span class="ow">TO</span> <span class="nv">PROCESSOR</span><span class="p">(</span><span class="s">&quot;probe&quot;</span><span class="p">).</span>
@@ -310,7 +310,7 @@ the first step we must obtain the <a class="reference internal" href="../structu
 </div>
 </div>
 <div class="section" id="connectivity-managers">
-<span id="connectivitymanagers"></span><h2>Connectivity Managers<a class="headerlink" href="#connectivity-managers" title="Permalink to this headline">¶</a></h2>
+<span id="connectivitymanagers"></span><h2>Connectivity Managers<a class="headerlink" href="communication.html#connectivity-managers" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <div class="last versionadded">
@@ -390,7 +390,7 @@ monitor the basic network status using a single unified system, regardless of
 which connectivity manager is selected.</p>
 <dl class="global">
 <dt id="global:HOMECONNECTION">
-<code class="descname">HOMECONNECTION</code><a class="headerlink" href="#global:HOMECONNECTION" title="Permalink to this definition">¶</a></dt>
+<code class="descname">HOMECONNECTION</code><a class="headerlink" href="communication.html#global:HOMECONNECTION" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns a <a class="reference internal" href="../structures/communication/connection.html#structure:CONNECTION" title="CONNECTION structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Connection</span></code></a> representing the <a class="reference internal" href="../general/cpu_vessel.html#cpu-vessel"><span>CPU Vessel&#8217;s</span></a>
 communication line to a network &#8220;home&#8221; node.  This home node may be the KSC
 ground station, or other ground stations added by the CommNet settings or
@@ -407,10 +407,10 @@ not included.</p>
 
 <dl class="global">
 <dt id="global:CONTROLCONNECTION">
-<code class="descname">CONTROLCONNECTION</code><a class="headerlink" href="#global:CONTROLCONNECTION" title="Permalink to this definition">¶</a></dt>
+<code class="descname">CONTROLCONNECTION</code><a class="headerlink" href="communication.html#global:CONTROLCONNECTION" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns a <a class="reference internal" href="../structures/communication/connection.html#structure:CONNECTION" title="CONNECTION structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Connection</span></code></a> representing the <a class="reference internal" href="../general/cpu_vessel.html#cpu-vessel"><span>CPU Vessel&#8217;s</span></a>
 communication line to a control source.  This may be the same as the
-<a class="reference internal" href="#global:HOMECONNECTION" title="HOMECONNECTION global"><code class="xref ks ks-global docutils literal"><span class="pre">HOMECONNECTION</span></code></a>, or it may represent a local crewed command pod,
+<a class="reference internal" href="communication.html#global:HOMECONNECTION" title="HOMECONNECTION global"><code class="xref ks ks-global docutils literal"><span class="pre">HOMECONNECTION</span></code></a>, or it may represent a local crewed command pod,
 or it may represent a connection to a control station.  When using the
 <code class="docutils literal"><span class="pre">CommNetConnectivityManager</span></code> this should show as connected whenever a vessel
 has partial manned control, or full control.  Functionally this may be used

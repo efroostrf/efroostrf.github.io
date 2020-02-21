@@ -112,7 +112,7 @@
 <li class="toctree-l3"><a class="reference internal" href="crafttemplate.html">CraftTemplate</a></li>
 <li class="toctree-l3"><a class="reference internal" href="crewmember.html">CrewMember</a></li>
 <li class="toctree-l3"><a class="reference internal" href="decoupler.html">Decoupler</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">DockingPort</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="dockingport.html">DockingPort</a></li>
 <li class="toctree-l3"><a class="reference internal" href="element.html">Element</a></li>
 <li class="toctree-l3"><a class="reference internal" href="engine.html">Engine</a></li>
 <li class="toctree-l3"><a class="reference internal" href="eta.html">ETA</a></li>
@@ -192,18 +192,18 @@
            <div itemprop="articleBody">
             
   <div class="section" id="dockingport">
-<span id="id1"></span><h1>DockingPort<a class="headerlink" href="#dockingport" title="Permalink to this headline">¶</a></h1>
-<p>Some of the Parts returned by <a class="reference internal" href="../../commands/list.html#list-command"><span>LIST PARTS</span></a> will be of type <a class="reference internal" href="#structure:DOCKINGPORT" title="DOCKINGPORT structure"><code class="xref ks ks-struct docutils literal"><span class="pre">DockingPort</span></code></a>.
+<span id="id1"></span><h1>DockingPort<a class="headerlink" href="dockingport.html#dockingport" title="Permalink to this headline">¶</a></h1>
+<p>Some of the Parts returned by <a class="reference internal" href="../../commands/list.html#list-command"><span>LIST PARTS</span></a> will be of type <a class="reference internal" href="dockingport.html#structure:DOCKINGPORT" title="DOCKINGPORT structure"><code class="xref ks ks-struct docutils literal"><span class="pre">DockingPort</span></code></a>.
 Such part can also be retrieved from <a class="reference internal" href="../../commands/flight/systems.html#global:TARGET" title="TARGET global"><code class="xref ks ks-global docutils literal"><span class="pre">TARGET</span></code></a>, if docking port is selected as target.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <div class="last versionadded">
-<p><span class="versionmodified">New in version 0.18: </span>The spelling of suffixes <cite>AQUIRERANGE</cite>, <cite>AQUIREFORCE</cite>, and <cite>AQUIRETORQUE</cite> on the <a class="reference internal" href="#structure:DOCKINGPORT" title="DOCKINGPORT structure"><code class="xref ks ks-struct docutils literal"><span class="pre">DockingPort</span></code></a> structure has been corrected.  Please use <cite>ACQUIRERANGE</cite>, <cite>ACQUIREFORCE</cite>, and <cite>ACQUIRETORQURE</cite> instead.  Using the old incorrect spelling, a deprecation exception will be thrown, with instruction to use the new spelling.</p>
+<p><span class="versionmodified">New in version 0.18: </span>The spelling of suffixes <cite>AQUIRERANGE</cite>, <cite>AQUIREFORCE</cite>, and <cite>AQUIRETORQUE</cite> on the <a class="reference internal" href="dockingport.html#structure:DOCKINGPORT" title="DOCKINGPORT structure"><code class="xref ks ks-struct docutils literal"><span class="pre">DockingPort</span></code></a> structure has been corrected.  Please use <cite>ACQUIRERANGE</cite>, <cite>ACQUIREFORCE</cite>, and <cite>ACQUIRETORQURE</cite> instead.  Using the old incorrect spelling, a deprecation exception will be thrown, with instruction to use the new spelling.</p>
 </div>
 </div>
 <dl class="structure">
 <dt id="structure:DOCKINGPORT">
-<em class="property">structure </em><code class="descname">DockingPort</code><a class="headerlink" href="#structure:DOCKINGPORT" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">DockingPort</code><a class="headerlink" href="dockingport.html#structure:DOCKINGPORT" title="Permalink to this definition">¶</a></dt>
 <dd><table border="1" class="docutils">
 <colgroup>
 <col width="29%" />
@@ -219,57 +219,57 @@ Such part can also be retrieved from <a class="reference internal" href="../../c
 <tbody valign="top">
 <tr class="row-even"><td>All suffixes of <a class="reference internal" href="decoupler.html#structure:DECOUPLER" title="DECOUPLER structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Decoupler</span></code></a></td>
 <td>&nbsp;</td>
-<td>A <a class="reference internal" href="#structure:DOCKINGPORT" title="DOCKINGPORT structure"><code class="xref ks ks-struct docutils literal"><span class="pre">DockingPort</span></code></a> is a kind of <a class="reference internal" href="decoupler.html#structure:DECOUPLER" title="DECOUPLER structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Decoupler</span></code></a> (which is <a class="reference internal" href="part.html#structure:PART" title="PART structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Part</span></code></a>)</td>
+<td>A <a class="reference internal" href="dockingport.html#structure:DOCKINGPORT" title="DOCKINGPORT structure"><code class="xref ks ks-struct docutils literal"><span class="pre">DockingPort</span></code></a> is a kind of <a class="reference internal" href="decoupler.html#structure:DECOUPLER" title="DECOUPLER structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Decoupler</span></code></a> (which is <a class="reference internal" href="part.html#structure:PART" title="PART structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Part</span></code></a>)</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:DOCKINGPORT:ACQUIRERANGE" title="DOCKINGPORT:ACQUIRERANGE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ACQUIRERANGE</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="dockingport.html#attribute:DOCKINGPORT:ACQUIRERANGE" title="DOCKINGPORT:ACQUIRERANGE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ACQUIRERANGE</span></code></a></td>
 <td>scalar</td>
 <td>active range of the port</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:DOCKINGPORT:ACQUIREFORCE" title="DOCKINGPORT:ACQUIREFORCE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ACQUIREFORCE</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="dockingport.html#attribute:DOCKINGPORT:ACQUIREFORCE" title="DOCKINGPORT:ACQUIREFORCE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ACQUIREFORCE</span></code></a></td>
 <td>scalar</td>
 <td>force experienced when docking</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:DOCKINGPORT:ACQUIRETORQUE" title="DOCKINGPORT:ACQUIRETORQUE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ACQUIRETORQUE</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="dockingport.html#attribute:DOCKINGPORT:ACQUIRETORQUE" title="DOCKINGPORT:ACQUIRETORQUE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ACQUIRETORQUE</span></code></a></td>
 <td>scalar</td>
 <td>torque experienced when docking</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:DOCKINGPORT:REENGAGEDDISTANCE" title="DOCKINGPORT:REENGAGEDDISTANCE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">REENGAGEDDISTANCE</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="dockingport.html#attribute:DOCKINGPORT:REENGAGEDDISTANCE" title="DOCKINGPORT:REENGAGEDDISTANCE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">REENGAGEDDISTANCE</span></code></a></td>
 <td>scalar</td>
 <td>distance at which the port is reset</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:DOCKINGPORT:DOCKEDSHIPNAME" title="DOCKINGPORT:DOCKEDSHIPNAME attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">DOCKEDSHIPNAME</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="dockingport.html#attribute:DOCKINGPORT:DOCKEDSHIPNAME" title="DOCKINGPORT:DOCKEDSHIPNAME attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">DOCKEDSHIPNAME</span></code></a></td>
 <td><a class="reference internal" href="../misc/string.html#string"><span>string</span></a></td>
 <td>name of vessel the port is docked to</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:DOCKINGPORT:NODEPOSITION" title="DOCKINGPORT:NODEPOSITION attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">NODEPOSITION</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="dockingport.html#attribute:DOCKINGPORT:NODEPOSITION" title="DOCKINGPORT:NODEPOSITION attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">NODEPOSITION</span></code></a></td>
 <td>vector</td>
 <td>coords of where the docking node attachment point is in SHIP-RAW xyz</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:DOCKINGPORT:NODETYPE" title="DOCKINGPORT:NODETYPE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">NODETYPE</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="dockingport.html#attribute:DOCKINGPORT:NODETYPE" title="DOCKINGPORT:NODETYPE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">NODETYPE</span></code></a></td>
 <td><a class="reference internal" href="../misc/string.html#string"><span>string</span></a></td>
 <td>two nodes are only dockable together if their NODETYPE strings match</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:DOCKINGPORT:PORTFACING" title="DOCKINGPORT:PORTFACING attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PORTFACING</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="dockingport.html#attribute:DOCKINGPORT:PORTFACING" title="DOCKINGPORT:PORTFACING attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PORTFACING</span></code></a></td>
 <td><a class="reference internal" href="../../math/direction.html#structure:DIRECTION" title="DIRECTION structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Direction</span></code></a></td>
 <td>facing of the port</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:DOCKINGPORT:STATE" title="DOCKINGPORT:STATE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">STATE</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="dockingport.html#attribute:DOCKINGPORT:STATE" title="DOCKINGPORT:STATE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">STATE</span></code></a></td>
 <td><a class="reference internal" href="../misc/string.html#string"><span>string</span></a></td>
 <td>current state of the port</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#method:DOCKINGPORT:UNDOCK" title="DOCKINGPORT:UNDOCK method"><code class="xref ks ks-meth docutils literal"><span class="pre">UNDOCK</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="dockingport.html#method:DOCKINGPORT:UNDOCK" title="DOCKINGPORT:UNDOCK method"><code class="xref ks ks-meth docutils literal"><span class="pre">UNDOCK</span></code></a></td>
 <td>&nbsp;</td>
 <td>callable to release the dock</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:DOCKINGPORT:PARTNER" title="DOCKINGPORT:PARTNER attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PARTNER</span></code></a></td>
-<td><a class="reference internal" href="#structure:DOCKINGPORT" title="DOCKINGPORT structure"><code class="xref ks ks-struct docutils literal"><span class="pre">DockingPort</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="dockingport.html#attribute:DOCKINGPORT:PARTNER" title="DOCKINGPORT:PARTNER attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PARTNER</span></code></a></td>
+<td><a class="reference internal" href="dockingport.html#structure:DOCKINGPORT" title="DOCKINGPORT structure"><code class="xref ks ks-struct docutils literal"><span class="pre">DockingPort</span></code></a></td>
 <td>the docking port this docking port is attached to, or &#8220;None&#8221; if no such port</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:DOCKINGPORT:HASPARTNER" title="DOCKINGPORT:HASPARTNER attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">HASPARTNER</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="dockingport.html#attribute:DOCKINGPORT:HASPARTNER" title="DOCKINGPORT:HASPARTNER attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">HASPARTNER</span></code></a></td>
 <td>boolean</td>
 <td>whether or not this docking port is attached to another docking port</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:DOCKINGPORT:TARGETABLE" title="DOCKINGPORT:TARGETABLE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TARGETABLE</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="dockingport.html#attribute:DOCKINGPORT:TARGETABLE" title="DOCKINGPORT:TARGETABLE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TARGETABLE</span></code></a></td>
 <td>boolean</td>
 <td>check if this port can be targeted</td>
 </tr>
@@ -279,11 +279,11 @@ Such part can also be retrieved from <a class="reference internal" href="../../c
 
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last"><a class="reference internal" href="#structure:DOCKINGPORT" title="DOCKINGPORT structure"><code class="xref ks ks-struct docutils literal"><span class="pre">DockingPort</span></code></a> is a type of <a class="reference internal" href="decoupler.html#structure:DECOUPLER" title="DECOUPLER structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Decoupler</span></code></a>, and therefore can use all the suffixes of <a class="reference internal" href="decoupler.html#structure:DECOUPLER" title="DECOUPLER structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Decoupler</span></code></a>. Shown below are only the suffixes that are unique to <a class="reference internal" href="#structure:DOCKINGPORT" title="DOCKINGPORT structure"><code class="xref ks ks-struct docutils literal"><span class="pre">DockingPort</span></code></a>.</p>
+<p class="last"><a class="reference internal" href="dockingport.html#structure:DOCKINGPORT" title="DOCKINGPORT structure"><code class="xref ks ks-struct docutils literal"><span class="pre">DockingPort</span></code></a> is a type of <a class="reference internal" href="decoupler.html#structure:DECOUPLER" title="DECOUPLER structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Decoupler</span></code></a>, and therefore can use all the suffixes of <a class="reference internal" href="decoupler.html#structure:DECOUPLER" title="DECOUPLER structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Decoupler</span></code></a>. Shown below are only the suffixes that are unique to <a class="reference internal" href="dockingport.html#structure:DOCKINGPORT" title="DOCKINGPORT structure"><code class="xref ks ks-struct docutils literal"><span class="pre">DockingPort</span></code></a>.</p>
 </div>
 <dl class="attribute">
 <dt id="attribute:DOCKINGPORT:ACQUIRERANGE">
-DockingPort:<code class="descname">ACQUIRERANGE</code><a class="headerlink" href="#attribute:DOCKINGPORT:ACQUIRERANGE" title="Permalink to this definition">¶</a></dt>
+DockingPort:<code class="descname">ACQUIRERANGE</code><a class="headerlink" href="dockingport.html#attribute:DOCKINGPORT:ACQUIRERANGE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -299,7 +299,7 @@ DockingPort:<code class="descname">ACQUIRERANGE</code><a class="headerlink" href
 
 <dl class="attribute">
 <dt id="attribute:DOCKINGPORT:ACQUIREFORCE">
-DockingPort:<code class="descname">ACQUIREFORCE</code><a class="headerlink" href="#attribute:DOCKINGPORT:ACQUIREFORCE" title="Permalink to this definition">¶</a></dt>
+DockingPort:<code class="descname">ACQUIREFORCE</code><a class="headerlink" href="dockingport.html#attribute:DOCKINGPORT:ACQUIREFORCE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -315,7 +315,7 @@ DockingPort:<code class="descname">ACQUIREFORCE</code><a class="headerlink" href
 
 <dl class="attribute">
 <dt id="attribute:DOCKINGPORT:ACQUIRETORQUE">
-DockingPort:<code class="descname">ACQUIRETORQUE</code><a class="headerlink" href="#attribute:DOCKINGPORT:ACQUIRETORQUE" title="Permalink to this definition">¶</a></dt>
+DockingPort:<code class="descname">ACQUIRETORQUE</code><a class="headerlink" href="dockingport.html#attribute:DOCKINGPORT:ACQUIRETORQUE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -331,7 +331,7 @@ DockingPort:<code class="descname">ACQUIRETORQUE</code><a class="headerlink" hre
 
 <dl class="attribute">
 <dt id="attribute:DOCKINGPORT:REENGAGEDDISTANCE">
-DockingPort:<code class="descname">REENGAGEDDISTANCE</code><a class="headerlink" href="#attribute:DOCKINGPORT:REENGAGEDDISTANCE" title="Permalink to this definition">¶</a></dt>
+DockingPort:<code class="descname">REENGAGEDDISTANCE</code><a class="headerlink" href="dockingport.html#attribute:DOCKINGPORT:REENGAGEDDISTANCE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -347,7 +347,7 @@ DockingPort:<code class="descname">REENGAGEDDISTANCE</code><a class="headerlink"
 
 <dl class="attribute">
 <dt id="attribute:DOCKINGPORT:DOCKEDSHIPNAME">
-DockingPort:<code class="descname">DOCKEDSHIPNAME</code><a class="headerlink" href="#attribute:DOCKINGPORT:DOCKEDSHIPNAME" title="Permalink to this definition">¶</a></dt>
+DockingPort:<code class="descname">DOCKEDSHIPNAME</code><a class="headerlink" href="dockingport.html#attribute:DOCKINGPORT:DOCKEDSHIPNAME" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -363,7 +363,7 @@ DockingPort:<code class="descname">DOCKEDSHIPNAME</code><a class="headerlink" hr
 
 <dl class="attribute">
 <dt id="attribute:DOCKINGPORT:NODEPOSITION">
-DockingPort:<code class="descname">NODEPOSITION</code><a class="headerlink" href="#attribute:DOCKINGPORT:NODEPOSITION" title="Permalink to this definition">¶</a></dt>
+DockingPort:<code class="descname">NODEPOSITION</code><a class="headerlink" href="dockingport.html#attribute:DOCKINGPORT:NODEPOSITION" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -383,7 +383,7 @@ docking port.  Coordinates are in SHIP-RAW xyz coords.</p>
 
 <dl class="attribute">
 <dt id="attribute:DOCKINGPORT:NODETYPE">
-DockingPort:<code class="descname">NODETYPE</code><a class="headerlink" href="#attribute:DOCKINGPORT:NODETYPE" title="Permalink to this definition">¶</a></dt>
+DockingPort:<code class="descname">NODETYPE</code><a class="headerlink" href="dockingport.html#attribute:DOCKINGPORT:NODETYPE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -416,7 +416,7 @@ to stock ports will have to adhere to the above scheme.</p>
 
 <dl class="attribute">
 <dt id="attribute:DOCKINGPORT:PORTFACING">
-DockingPort:<code class="descname">PORTFACING</code><a class="headerlink" href="#attribute:DOCKINGPORT:PORTFACING" title="Permalink to this definition">¶</a></dt>
+DockingPort:<code class="descname">PORTFACING</code><a class="headerlink" href="dockingport.html#attribute:DOCKINGPORT:PORTFACING" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -432,7 +432,7 @@ DockingPort:<code class="descname">PORTFACING</code><a class="headerlink" href="
 
 <dl class="attribute">
 <dt id="attribute:DOCKINGPORT:STATE">
-DockingPort:<code class="descname">STATE</code><a class="headerlink" href="#attribute:DOCKINGPORT:STATE" title="Permalink to this definition">¶</a></dt>
+DockingPort:<code class="descname">STATE</code><a class="headerlink" href="dockingport.html#attribute:DOCKINGPORT:STATE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -462,18 +462,18 @@ DockingPort:<code class="descname">STATE</code><a class="headerlink" href="#attr
 
 <dl class="method">
 <dt id="method:DOCKINGPORT:UNDOCK">
-DockingPort:<code class="descname">UNDOCK</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:DOCKINGPORT:UNDOCK" title="Permalink to this definition">¶</a></dt>
+DockingPort:<code class="descname">UNDOCK</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="dockingport.html#method:DOCKINGPORT:UNDOCK" title="Permalink to this definition">¶</a></dt>
 <dd><p>Call this to cause the docking port to detach.</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="attribute:DOCKINGPORT:PARTNER">
-DockingPort:<code class="descname">PARTNER</code><a class="headerlink" href="#attribute:DOCKINGPORT:PARTNER" title="Permalink to this definition">¶</a></dt>
+DockingPort:<code class="descname">PARTNER</code><a class="headerlink" href="dockingport.html#attribute:DOCKINGPORT:PARTNER" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#structure:DOCKINGPORT" title="DOCKINGPORT structure"><code class="xref ks ks-struct docutils literal"><span class="pre">DockingPort</span></code></a>, or the <a class="reference internal" href="../misc/string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">String</span></code></a> &#8220;None&#8221; if no such port.</td>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="dockingport.html#structure:DOCKINGPORT" title="DOCKINGPORT structure"><code class="xref ks ks-struct docutils literal"><span class="pre">DockingPort</span></code></a>, or the <a class="reference internal" href="../misc/string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">String</span></code></a> &#8220;None&#8221; if no such port.</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Access:</th><td class="field-body">Get only</td>
 </tr>
@@ -489,7 +489,7 @@ docking port has a partner port attached by calling
 
 <dl class="attribute">
 <dt id="attribute:DOCKINGPORT:HASPARTNER">
-DockingPort:<code class="descname">HASPARTNER</code><a class="headerlink" href="#attribute:DOCKINGPORT:HASPARTNER" title="Permalink to this definition">¶</a></dt>
+DockingPort:<code class="descname">HASPARTNER</code><a class="headerlink" href="dockingport.html#attribute:DOCKINGPORT:HASPARTNER" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -505,7 +505,7 @@ DockingPort:<code class="descname">HASPARTNER</code><a class="headerlink" href="
 
 <dl class="attribute">
 <dt id="attribute:DOCKINGPORT:TARGETABLE">
-DockingPort:<code class="descname">TARGETABLE</code><a class="headerlink" href="#attribute:DOCKINGPORT:TARGETABLE" title="Permalink to this definition">¶</a></dt>
+DockingPort:<code class="descname">TARGETABLE</code><a class="headerlink" href="dockingport.html#attribute:DOCKINGPORT:TARGETABLE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

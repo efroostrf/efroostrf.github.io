@@ -118,7 +118,7 @@
 <li class="toctree-l3"><a class="reference internal" href="popupmenu.html">PopupMenu</a></li>
 <li class="toctree-l3"><a class="reference internal" href="scrollbox.html">Scrollbox</a></li>
 <li class="toctree-l3"><a class="reference internal" href="skin.html">Skin</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">Slider</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="slider.html">Slider</a></li>
 <li class="toctree-l3"><a class="reference internal" href="spacing.html">Spacing</a></li>
 <li class="toctree-l3"><a class="reference internal" href="style.html">Style</a></li>
 <li class="toctree-l3"><a class="reference internal" href="stylerecoffset.html">StyleRectOffset</a></li>
@@ -185,10 +185,10 @@
            <div itemprop="articleBody">
             
   <div class="section" id="slider">
-<span id="gui-slider"></span><h1>Slider<a class="headerlink" href="#slider" title="Permalink to this headline">¶</a></h1>
+<span id="gui-slider"></span><h1>Slider<a class="headerlink" href="slider.html#slider" title="Permalink to this headline">¶</a></h1>
 <dl class="structure">
 <dt id="structure:SLIDER">
-<em class="property">structure </em><code class="descname">Slider</code><a class="headerlink" href="#structure:SLIDER" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">Slider</code><a class="headerlink" href="slider.html#structure:SLIDER" title="Permalink to this definition">¶</a></dt>
 <dd><blockquote>
 <div><p><code class="docutils literal"><span class="pre">Slider</span></code> widgets are created via <a class="reference internal" href="box.html#method:BOX:ADDHSLIDER" title="BOX:ADDHSLIDER method"><code class="xref ks ks-meth docutils literal"><span class="pre">BOX:ADDHSLIDER</span></code></a>
 and <a class="reference internal" href="box.html#method:BOX:ADDVSLIDER" title="BOX:ADDVSLIDER method"><code class="xref ks ks-meth docutils literal"><span class="pre">BOX:ADDVSLIDER</span></code></a>.</p>
@@ -212,19 +212,19 @@ for integer values.</p>
 <tbody valign="top">
 <tr class="row-even"><td colspan="3">Every suffix of <a class="reference internal" href="widget.html#structure:WIDGET" title="WIDGET structure"><code class="xref ks ks-struct docutils literal"><span class="pre">WIDGET</span></code></a></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:SLIDER:VALUE" title="SLIDER:VALUE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">VALUE</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="slider.html#attribute:SLIDER:VALUE" title="SLIDER:VALUE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">VALUE</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a></td>
-<td>The current value. Initially set to <a class="reference internal" href="#attribute:SLIDER:MIN" title="SLIDER:MIN attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MIN</span></code></a>.</td>
+<td>The current value. Initially set to <a class="reference internal" href="slider.html#attribute:SLIDER:MIN" title="SLIDER:MIN attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MIN</span></code></a>.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:SLIDER:ONCHANGE" title="SLIDER:ONCHANGE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ONCHANGE</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="slider.html#attribute:SLIDER:ONCHANGE" title="SLIDER:ONCHANGE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ONCHANGE</span></code></a></td>
 <td><a class="reference internal" href="../misc/kosdelegate.html#structure:KOSDELEGATE" title="KOSDELEGATE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">KOSDelegate</span></code></a> (<a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Scalar</span></code></a>)</td>
-<td>Your function called whenever the <a class="reference internal" href="#attribute:SLIDER:VALUE" title="SLIDER:VALUE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">VALUE</span></code></a> changes.</td>
+<td>Your function called whenever the <a class="reference internal" href="slider.html#attribute:SLIDER:VALUE" title="SLIDER:VALUE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">VALUE</span></code></a> changes.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#attribute:SLIDER:MIN" title="SLIDER:MIN attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MIN</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="slider.html#attribute:SLIDER:MIN" title="SLIDER:MIN attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MIN</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a></td>
 <td>The minimum value (leftmost on horizontal slider).</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#attribute:SLIDER:MAX" title="SLIDER:MAX attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MAX</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="slider.html#attribute:SLIDER:MAX" title="SLIDER:MAX attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MAX</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a></td>
 <td>The maximum value (bottom on vertical slider).</td>
 </tr>
@@ -232,7 +232,7 @@ for integer values.</p>
 </table>
 <dl class="attribute">
 <dt id="attribute:SLIDER:VALUE">
-Slider:<code class="descname">VALUE</code><a class="headerlink" href="#attribute:SLIDER:VALUE" title="Permalink to this definition">¶</a></dt>
+Slider:<code class="descname">VALUE</code><a class="headerlink" href="slider.html#attribute:SLIDER:VALUE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -248,7 +248,7 @@ Slider:<code class="descname">VALUE</code><a class="headerlink" href="#attribute
 
 <dl class="attribute">
 <dt id="attribute:SLIDER:ONCHANGE">
-Slider:<code class="descname">ONCHANGE</code><a class="headerlink" href="#attribute:SLIDER:ONCHANGE" title="Permalink to this definition">¶</a></dt>
+Slider:<code class="descname">ONCHANGE</code><a class="headerlink" href="slider.html#attribute:SLIDER:ONCHANGE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -286,7 +286,7 @@ interaction.</p>
 
 <dl class="attribute">
 <dt id="attribute:SLIDER:MIN">
-Slider:<code class="descname">MIN</code><a class="headerlink" href="#attribute:SLIDER:MIN" title="Permalink to this definition">¶</a></dt>
+Slider:<code class="descname">MIN</code><a class="headerlink" href="slider.html#attribute:SLIDER:MIN" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -299,8 +299,8 @@ Slider:<code class="descname">MIN</code><a class="headerlink" href="#attribute:S
 </table>
 <p>The &#8220;left&#8221; (for horizontal sliders) or &#8220;top&#8221; (for vertical sliders)
 endpoint value of the slider.</p>
-<p>Note that despite the name, <a class="reference internal" href="#attribute:SLIDER:MIN" title="SLIDER:MIN attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MIN</span></code></a> doesn&#8217;t have to be smaller
-than <a class="reference internal" href="#attribute:SLIDER:MAX" title="SLIDER:MAX attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MAX</span></code></a>.  If <a class="reference internal" href="#attribute:SLIDER:MIN" title="SLIDER:MIN attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MIN</span></code></a> is larger than <a class="reference internal" href="#attribute:SLIDER:MAX" title="SLIDER:MAX attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MAX</span></code></a>, then
+<p>Note that despite the name, <a class="reference internal" href="slider.html#attribute:SLIDER:MIN" title="SLIDER:MIN attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MIN</span></code></a> doesn&#8217;t have to be smaller
+than <a class="reference internal" href="slider.html#attribute:SLIDER:MAX" title="SLIDER:MAX attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MAX</span></code></a>.  If <a class="reference internal" href="slider.html#attribute:SLIDER:MIN" title="SLIDER:MIN attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MIN</span></code></a> is larger than <a class="reference internal" href="slider.html#attribute:SLIDER:MAX" title="SLIDER:MAX attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MAX</span></code></a>, then
 that causes the slider to swap their meaning, and reverse its direction.
 (i.e. where numbers normally get larger when you slide to the right,
 inverting MIN and MAX causes the numbers to get larger when you
@@ -309,7 +309,7 @@ slide to the left.)</p>
 
 <dl class="attribute">
 <dt id="attribute:SLIDER:MAX">
-Slider:<code class="descname">MAX</code><a class="headerlink" href="#attribute:SLIDER:MAX" title="Permalink to this definition">¶</a></dt>
+Slider:<code class="descname">MAX</code><a class="headerlink" href="slider.html#attribute:SLIDER:MAX" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -322,8 +322,8 @@ Slider:<code class="descname">MAX</code><a class="headerlink" href="#attribute:S
 </table>
 <p>The &#8220;right&#8221; (for horizontal sliders) or &#8220;bottom&#8221; (for vertical sliders)
 endpoint value of the slider.</p>
-<p>Note that despite the name, <a class="reference internal" href="#attribute:SLIDER:MIN" title="SLIDER:MIN attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MIN</span></code></a> doesn&#8217;t have to be smaller
-than <a class="reference internal" href="#attribute:SLIDER:MAX" title="SLIDER:MAX attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MAX</span></code></a>.  If <a class="reference internal" href="#attribute:SLIDER:MIN" title="SLIDER:MIN attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MIN</span></code></a> is larger than <a class="reference internal" href="#attribute:SLIDER:MAX" title="SLIDER:MAX attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MAX</span></code></a>, then
+<p>Note that despite the name, <a class="reference internal" href="slider.html#attribute:SLIDER:MIN" title="SLIDER:MIN attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MIN</span></code></a> doesn&#8217;t have to be smaller
+than <a class="reference internal" href="slider.html#attribute:SLIDER:MAX" title="SLIDER:MAX attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MAX</span></code></a>.  If <a class="reference internal" href="slider.html#attribute:SLIDER:MIN" title="SLIDER:MIN attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MIN</span></code></a> is larger than <a class="reference internal" href="slider.html#attribute:SLIDER:MAX" title="SLIDER:MAX attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MAX</span></code></a>, then
 that causes the slider to swapr their meaning, and reverse its direction.
 (i.e. where numbers normally get larger when you slide to the right,
 inverting MIN and MAX causes the numbers to get larger when you
