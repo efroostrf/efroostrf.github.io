@@ -107,7 +107,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../vessels.html">Vessels &amp; Parts</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../communication.html">Communication</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="connection.html">Connection</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="message.html">Message</a><ul class="simple">
+<li class="toctree-l3 current"><a class="current reference internal" href="">Message</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="message_queue.html">MessageQueue</a></li>
@@ -173,9 +173,9 @@
            <div itemprop="articleBody">
             
   <div class="section" id="message">
-<span id="id1"></span><h1>Message<a class="headerlink" href="message.html#message" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1>Message<a class="headerlink" href="#message" title="Permalink to this headline">¶</a></h1>
 <p>Represents a single message stored in a CPU&#8217;s or vessel&#8217;s <a class="reference internal" href="message_queue.html#structure:MESSAGEQUEUE" title="MESSAGEQUEUE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">MessageQueue</span></code></a>.</p>
-<p>The main message content that the sender intended to send can be retrieved using <a class="reference internal" href="message.html#attribute:MESSAGE:CONTENT" title="MESSAGE:CONTENT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">Message:CONTENT</span></code></a> attribute. Other suffixes are
+<p>The main message content that the sender intended to send can be retrieved using <a class="reference internal" href="#attribute:MESSAGE:CONTENT" title="MESSAGE:CONTENT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">Message:CONTENT</span></code></a> attribute. Other suffixes are
 automatically added to every message by kOS.</p>
 <p>Messages are serializable and thus can be passed along:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="c1">// if there is a message in the ship&#39;s message queue</span>
@@ -191,10 +191,10 @@ automatically added to every message by kOS.</p>
 </pre></div>
 </div>
 <div class="section" id="structure">
-<h2>Structure<a class="headerlink" href="message.html#structure" title="Permalink to this headline">¶</a></h2>
+<h2>Structure<a class="headerlink" href="#structure" title="Permalink to this headline">¶</a></h2>
 <dl class="structure">
 <dt id="structure:MESSAGE">
-<em class="property">structure </em><code class="descname">Message</code><a class="headerlink" href="message.html#structure:MESSAGE" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">Message</code><a class="headerlink" href="#structure:MESSAGE" title="Permalink to this definition">¶</a></dt>
 <dd><table border="1" class="docutils">
 <colgroup>
 <col width="29%" />
@@ -208,23 +208,23 @@ automatically added to every message by kOS.</p>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="message.html#attribute:MESSAGE:SENTAT" title="MESSAGE:SENTAT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SENTAT</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:MESSAGE:SENTAT" title="MESSAGE:SENTAT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SENTAT</span></code></a></td>
 <td><a class="reference internal" href="../misc/time.html#structure:TIMESPAN" title="TIMESPAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">TimeSpan</span></code></a></td>
 <td>date this message was sent at</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="message.html#attribute:MESSAGE:RECEIVEDAT" title="MESSAGE:RECEIVEDAT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">RECEIVEDAT</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:MESSAGE:RECEIVEDAT" title="MESSAGE:RECEIVEDAT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">RECEIVEDAT</span></code></a></td>
 <td><a class="reference internal" href="../misc/time.html#structure:TIMESPAN" title="TIMESPAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">TimeSpan</span></code></a></td>
 <td>date this message was received at</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="message.html#attribute:MESSAGE:SENDER" title="MESSAGE:SENDER attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SENDER</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:MESSAGE:SENDER" title="MESSAGE:SENDER attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SENDER</span></code></a></td>
 <td><a class="reference internal" href="../vessels/vessel.html#structure:VESSEL" title="VESSEL structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Vessel</span></code></a> or <a class="reference internal" href="../misc/boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>vessel which has sent this message, or Boolean false if sender vessel is now gone</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="message.html#attribute:MESSAGE:HASSENDER" title="MESSAGE:HASSENDER attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">HASSENDER</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:MESSAGE:HASSENDER" title="MESSAGE:HASSENDER attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">HASSENDER</span></code></a></td>
 <td><a class="reference internal" href="../misc/boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>Tests whether or not the sender vessel still exists.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="message.html#attribute:MESSAGE:CONTENT" title="MESSAGE:CONTENT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">CONTENT</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:MESSAGE:CONTENT" title="MESSAGE:CONTENT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">CONTENT</span></code></a></td>
 <td><a class="reference internal" href="../reflection/structure.html#structure:STRUCTURE" title="STRUCTURE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Structure</span></code></a></td>
 <td>message content</td>
 </tr>
@@ -238,7 +238,7 @@ automatically added to every message by kOS.</p>
 </div>
 <dl class="attribute">
 <dt id="attribute:MESSAGE:SENTAT">
-Message:<code class="descname">SENTAT</code><a class="headerlink" href="message.html#attribute:MESSAGE:SENTAT" title="Permalink to this definition">¶</a></dt>
+Message:<code class="descname">SENTAT</code><a class="headerlink" href="#attribute:MESSAGE:SENTAT" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -252,7 +252,7 @@ Message:<code class="descname">SENTAT</code><a class="headerlink" href="message.
 
 <dl class="attribute">
 <dt id="attribute:MESSAGE:RECEIVEDAT">
-Message:<code class="descname">RECEIVEDAT</code><a class="headerlink" href="message.html#attribute:MESSAGE:RECEIVEDAT" title="Permalink to this definition">¶</a></dt>
+Message:<code class="descname">RECEIVEDAT</code><a class="headerlink" href="#attribute:MESSAGE:RECEIVEDAT" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -266,7 +266,7 @@ Message:<code class="descname">RECEIVEDAT</code><a class="headerlink" href="mess
 
 <dl class="attribute">
 <dt id="attribute:MESSAGE:SENDER">
-Message:<code class="descname">SENDER</code><a class="headerlink" href="message.html#attribute:MESSAGE:SENDER" title="Permalink to this definition">¶</a></dt>
+Message:<code class="descname">SENDER</code><a class="headerlink" href="#attribute:MESSAGE:SENDER" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -287,7 +287,7 @@ detect if it&#8217;s really a vessel or not.</p>
 
 <dl class="attribute">
 <dt id="attribute:MESSAGE:HASSENDER">
-Message:<code class="descname">HASSENDER</code><a class="headerlink" href="message.html#attribute:MESSAGE:HASSENDER" title="Permalink to this definition">¶</a></dt>
+Message:<code class="descname">HASSENDER</code><a class="headerlink" href="#attribute:MESSAGE:HASSENDER" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -309,7 +309,7 @@ object of type <a class="reference internal" href="../vessels/vessel.html#struct
 
 <dl class="attribute">
 <dt id="attribute:MESSAGE:CONTENT">
-Message:<code class="descname">CONTENT</code><a class="headerlink" href="message.html#attribute:MESSAGE:CONTENT" title="Permalink to this definition">¶</a></dt>
+Message:<code class="descname">CONTENT</code><a class="headerlink" href="#attribute:MESSAGE:CONTENT" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Быстрое начало &mdash; kOS 1.2.0.0 документация</title>
+  <title>Quick Start Tutorial &mdash; kOS 1.2.0.0 documentation</title>
   
 
   
@@ -91,11 +91,11 @@
             
             
                 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../index.html">Домашняя</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../contents.html">Содержание документации</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../downloads_links.html">Ссылки на загрузку</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../tutorials.html">Туториалы</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="quickstart.html">Быстрое начало</a><ul class="simple">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contents.html">Table of Contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../downloads_links.html">Downloads and Links</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../tutorials.html">Tutorials</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="">Quick Start</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="basictutorial.html">Basic Explanation</a></li>
@@ -106,16 +106,16 @@
 <li class="toctree-l2"><a class="reference internal" href="gui.html">Making a tabbed GUI</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../library.html">Библиотека примеров</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../general.html">Главная</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../language.html">Язык</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../math.html">Математика</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../commands.html">Команды</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../structures.html">Структура</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../addons.html">Адданоны</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../contribute.html">Помочь</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../changes.html">Изменения</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../about.html">Информация об kOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../library.html">Community Example Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general.html">General</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../language.html">Language</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../math.html">Mathematics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commands.html">Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structures.html">Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addons.html">Addons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute.html">Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changes.html">Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about.html">About</a></li>
 </ul>
 
             
@@ -163,130 +163,132 @@
            <div itemprop="articleBody">
             
   <div class="section" id="quick-start-tutorial">
-<span id="quickstart"></span><h1>Быстрое начало<a class="headerlink" href="quickstart.html#quick-start-tutorial" title="Permalink to this headline">¶</a></h1>
-<p>Это краткое руководство для начала понимания <strong>Kerbal Operating System</strong> (<strong>kOS</strong>). Рекомендуем прочитать его тем, кто начинает знакомиться с <strong>kOS</strong>. В даннном руководстве предполагается что Вы уже играли в <strong>Kerbal Space Program</strong> и знаете основы того, как управляется ракета в ручном режиме. Он <em>НЕ</em> предполагает что вы знаете другие языки программирования или имеете опыт в этой сфере, он нацелен провести вас через некоторые этапы для понимания языка kOS.</p>
+<span id="quickstart"></span><h1>Quick Start Tutorial<a class="headerlink" href="#quick-start-tutorial" title="Permalink to this headline">¶</a></h1>
+<p>This is a quick start guide for the <strong>Kerbal Operating System</strong> (<strong>kOS</strong>). It is intended for those who are just starting with using <strong>kOS</strong>. It does presume you have played <strong>Kerbal Space Program</strong> before and know the basics of how to fly a rocket under manual control. It does <em>NOT</em> assume you know a lot about computer programming, and it will walk you through some basic first steps.</p>
 <div class="contents local topic" id="contents">
-<p class="topic-title first">Содержание</p>
+<p class="topic-title first">Contents</p>
 <ul class="simple">
-<li><a class="reference internal" href="quickstart.html#first-example-hello-world" id="id1">Первый пример: "Привет мир!"</a><ul>
-<li><a class="reference internal" href="quickstart.html#step-1-start-a-new-sandbox-mode-game" id="id2">Шаг 1: Начни новую игру в режиме песочницы</a></li>
-<li><a class="reference internal" href="quickstart.html#step-2-make-a-vessel-in-the-vehicle-assembly-bay" id="id3">Шаг 2: Создай корабль в цехе Вертикальной сборки</a></li>
-<li><a class="reference internal" href="quickstart.html#step-3-put-the-vessel-on-the-launchpad" id="id4">Шаг 3: Перейди на ракетную площадку</a></li>
-<li><a class="reference internal" href="quickstart.html#step-4-invoke-the-terminal" id="id5">Шаг 4: Открыть терминал</a></li>
-<li><a class="reference internal" href="quickstart.html#step-5-see-what-an-interactive-command-is-like" id="id6">Шаг 5: Понятие того, что такое интерактивная компанда</a></li>
-<li><a class="reference internal" href="quickstart.html#step-6-okay-that-s-great-but-how-can-you-make-that-happen-in-a-program-script-instead" id="id7">Шаг 6: Отличяно, это здорово, но как это превратить в скрипт?</a></li>
-<li><a class="reference internal" href="quickstart.html#step-7-okay-but-where-is-this-program" id="id8">Шаг 7: Но, где же храниться данная программа?</a></li>
-<li><a class="reference internal" href="quickstart.html#step-8-i-don-t-like-the-idea-that-the-program-is-stored-only-on-this-vessel-can-t-i-save-it-somewhere-better-more-permanent" id="id9">Шаг 8: Мне не нравится что данная программа остаётся только на данном судне. Может сохранить ещё где-то можно? На постоянной основе?</a></li>
+<li><a class="reference internal" href="#first-example-hello-world" id="id1">First example: Hello World</a><ul>
+<li><a class="reference internal" href="#step-1-start-a-new-sandbox-mode-game" id="id2">Step 1: Start a new sandbox-mode game</a></li>
+<li><a class="reference internal" href="#step-2-make-a-vessel-in-the-vehicle-assembly-bay" id="id3">Step 2: Make a vessel in the Vehicle Assembly Bay</a></li>
+<li><a class="reference internal" href="#step-3-put-the-vessel-on-the-launchpad" id="id4">Step 3: Put the vessel on the launchpad</a></li>
+<li><a class="reference internal" href="#step-4-invoke-the-terminal" id="id5">Step 4: Invoke the terminal</a></li>
+<li><a class="reference internal" href="#step-5-see-what-an-interactive-command-is-like" id="id6">Step 5: See what an interactive command is like</a></li>
+<li><a class="reference internal" href="#step-6-okay-that-s-great-but-how-can-you-make-that-happen-in-a-program-script-instead" id="id7">Step 6: Okay that&#8217;s great, but how can you make that happen in a program script instead?</a></li>
+<li><a class="reference internal" href="#step-7-okay-but-where-is-this-program" id="id8">Step 7: Okay, but where is this program?</a></li>
+<li><a class="reference internal" href="#step-8-i-don-t-like-the-idea-that-the-program-is-stored-only-on-this-vessel-can-t-i-save-it-somewhere-better-more-permanent" id="id9">Step 8: I don&#8217;t like the idea that the program is stored only on this vessel. Can&#8217;t I save it somewhere better? More permanent?</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="quickstart.html#second-example-doing-something-real" id="id10">Second Example: Doing something real</a><ul>
-<li><a class="reference internal" href="quickstart.html#step-1-make-a-vessel" id="id11">Step 1: Make a vessel</a></li>
-<li><a class="reference internal" href="quickstart.html#step-2-make-the-start-of-the-script" id="id12">Step 2: Make the start of the script</a></li>
-<li><a class="reference internal" href="quickstart.html#step-3-make-the-script-actually-do-something" id="id13">Step 3: Make the script actually do something</a></li>
-<li><a class="reference internal" href="quickstart.html#step-4-make-the-script-actually-control-steering" id="id14">Step 4: Make the script actually control steering</a></li>
-<li><a class="reference internal" href="quickstart.html#step-5-add-staging-logic" id="id15">Step 5: Add staging logic</a></li>
-<li><a class="reference internal" href="quickstart.html#step-6-now-to-make-it-turn" id="id16">Step 6: Now to make it turn</a></li>
-<li><a class="reference internal" href="quickstart.html#step-7-putting-it-all-together" id="id17">Step 7: Putting it all together</a></li>
+<li><a class="reference internal" href="#second-example-doing-something-real" id="id10">Second Example: Doing something real</a><ul>
+<li><a class="reference internal" href="#step-1-make-a-vessel" id="id11">Step 1: Make a vessel</a></li>
+<li><a class="reference internal" href="#step-2-make-the-start-of-the-script" id="id12">Step 2: Make the start of the script</a></li>
+<li><a class="reference internal" href="#step-3-make-the-script-actually-do-something" id="id13">Step 3: Make the script actually do something</a></li>
+<li><a class="reference internal" href="#step-4-make-the-script-actually-control-steering" id="id14">Step 4: Make the script actually control steering</a></li>
+<li><a class="reference internal" href="#step-5-add-staging-logic" id="id15">Step 5: Add staging logic</a></li>
+<li><a class="reference internal" href="#step-6-now-to-make-it-turn" id="id16">Step 6: Now to make it turn</a></li>
+<li><a class="reference internal" href="#step-7-putting-it-all-together" id="id17">Step 7: Putting it all together</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="section" id="first-example-hello-world">
-<h2><a class="toc-backref" href="quickstart.html#id1">Первый пример: "Привет мир!"</a><a class="headerlink" href="quickstart.html#first-example-hello-world" title="Permalink to this headline">¶</a></h2>
-<p>Великой традицией руководств об программировании является пример с &#8220;Привет мир!&#8221; на экране. Целью этого примера будет показать вам, куда нужно поместить файлы, чтобы заставить работать их на вашем корабле.</p>
+<h2><a class="toc-backref" href="#id1">First example: Hello World</a><a class="headerlink" href="#first-example-hello-world" title="Permalink to this headline">¶</a></h2>
+<p>In the grand tradition of programming tutorials, the first example will be how to make a script that does nothing more than print the words &#8220;Hello World&#8221; on the screen. The purpose of this example is to show where you should put the files, how to move them about, and how to get one to run on the vessel.</p>
 <div class="section" id="step-1-start-a-new-sandbox-mode-game">
-<h3><a class="toc-backref" href="quickstart.html#id2">Шаг 1: Начни новую игру в режиме песочницы</a><a class="headerlink" href="quickstart.html#step-1-start-a-new-sandbox-mode-game" title="Permalink to this headline">¶</a></h3>
-<p>(Вы без проблем можете использовать <strong>kOS</strong> в режиме карьеры, однако для работы требуется часть ракеты, которая недоступна в начале игры и в начале иследований, поэтому чтобы понять как это работает используйте режим песочницы.)</p>
+<h3><a class="toc-backref" href="#id2">Step 1: Start a new sandbox-mode game</a><a class="headerlink" href="#step-1-start-a-new-sandbox-mode-game" title="Permalink to this headline">¶</a></h3>
+<p>(You can use <strong>kOS</strong> in a career mode game, but it requires a part that you have to research which isn&#8217;t available at the start of the tech tree, so this example will just use sandbox mode to keep it simple.)</p>
 </div>
 <div class="section" id="step-2-make-a-vessel-in-the-vehicle-assembly-bay">
-<h3><a class="toc-backref" href="quickstart.html#id3">Шаг 2: Создай корабль в цехе Вертикальной сборки</a><a class="headerlink" href="quickstart.html#step-2-make-a-vessel-in-the-vehicle-assembly-bay" title="Permalink to this headline">¶</a></h3>
-<p>Для примера, установите какое-либо беспилотное командное ядро, питание для него в виде электрической батареи, чтобы данная батарея быстро не разрядилась можете установить солнечные панели для подзарядки. Для примера будет использована деталь "Система управления Scriptable Comptronix CX-4181", далее она будет упоминаться с аббревиатурой "SCS". SCS находится во вкладке "Управление".</p>
+<h3><a class="toc-backref" href="#id3">Step 2: Make a vessel in the Vehicle Assembly Bay</a><a class="headerlink" href="#step-2-make-a-vessel-in-the-vehicle-assembly-bay" title="Permalink to this headline">¶</a></h3>
+<p>Make the vessel contain any unmanned command core, a few hundred units of battery power, a means of recharging the battery such as a solar panel array, and the &#8220;Comptronix CX-4181 Scriptable Control System&#8221;. (From this point onward the CX-4181 Scriptable Control System part will be referred to by the acronym &#8220;SCS&#8221;.) The SCS part is located in the parts bin under the &#8220;Control&#8221; tab (the same place where RCS thrusters and Torque Wheels are found.)</p>
 <div class="figure">
 <img alt="../_images/SCS_parts_bin.png" src="../_images/SCS_parts_bin.png" />
 </div>
 </div>
 <div class="section" id="step-3-put-the-vessel-on-the-launchpad">
-<h3><a class="toc-backref" href="quickstart.html#id4">Шаг 3: Перейди на ракетную площадку</a><a class="headerlink" href="quickstart.html#step-3-put-the-vessel-on-the-launchpad" title="Permalink to this headline">¶</a></h3>
-<p>Переместись на стартовую площадку вместе со своим творением. Для примера который мы рассматриваем не важно, взлетит ваше судно или нет, или имеет ли двигатели, это неважно.</p>
+<h3><a class="toc-backref" href="#id4">Step 3: Put the vessel on the launchpad</a><a class="headerlink" href="#step-3-put-the-vessel-on-the-launchpad" title="Permalink to this headline">¶</a></h3>
+<p>Put the vessel on the launchpad. For this first example it doesn&#8217;t matter if the vessel can actually liftoff or even has engines at all.</p>
 </div>
 <div class="section" id="step-4-invoke-the-terminal">
-<h3><a class="toc-backref" href="quickstart.html#id5">Шаг 4: Открыть терминал</a><a class="headerlink" href="quickstart.html#step-4-invoke-the-terminal" title="Permalink to this headline">¶</a></h3>
-<p>Для того чтобы открыть терминал тебе стоит нажать правой кнопкой мыши на деталь SCS в своём судне, и выбрать &#8220;Open Terminal&#8221;.</p>
-<p>Обратите внимание! Если терминал полупрозрачный - значит он в данный момент не активен (Исправляется обычным нажатием на этот самый терминал). Если вы нажали на терминал, всё что вы нажмёте на клавиатуре будет происходить именно в терминале, и наоборот. Другими словами, если вы нажмёте <code class="docutils literal"><span class="pre">W</span></code> <code class="docutils literal"><span class="pre">A</span></code> <code class="docutils literal"><span class="pre">S</span></code> <code class="docutils literal"><span class="pre">D</span></code>, ты получишь слово "wasd" в терминале, а не будешь управлять кораблём благодаря <code class="docutils literal"><span class="pre">W</span></code> <code class="docutils literal"><span class="pre">A</span></code> <code class="docutils literal"><span class="pre">S</span></code> <code class="docutils literal"><span class="pre">D</span></code>. Поэтому, чтобы вернуться к управлению кораблём, достаточно нажать в любое место вне терминала, за его собственно переделами.</p>
+<h3><a class="toc-backref" href="#id5">Step 4: Invoke the terminal</a><a class="headerlink" href="#step-4-invoke-the-terminal" title="Permalink to this headline">¶</a></h3>
+<p>Right click for the SCS part on the vessel and then click the button that says &#8220;Open Terminal&#8221;.</p>
+<p>Note that if the terminal is semi-transparent, this means it&#8217;s not currently selected. If you click on the terminal, then your keyboard input is directed to the terminal INSTEAD of to piloting. In other words if you type <code class="docutils literal"><span class="pre">W</span></code> <code class="docutils literal"><span class="pre">A</span></code> <code class="docutils literal"><span class="pre">S</span></code> <code class="docutils literal"><span class="pre">D</span></code>, you&#8217;ll actually get the word &#8220;wasd&#8221; to appear on the terminal, rather than the <code class="docutils literal"><span class="pre">W</span></code> <code class="docutils literal"><span class="pre">A</span></code> <code class="docutils literal"><span class="pre">S</span></code> <code class="docutils literal"><span class="pre">D</span></code> keys steering the ship. To switch back to manual control of the game instead of typing into the terminal, click outside the terminal window anywhere on the background of the screen.</p>
 </div>
 <div class="section" id="step-5-see-what-an-interactive-command-is-like">
-<h3><a class="toc-backref" href="quickstart.html#id6">Шаг 5: Понятие того, что такое интерактивная компанда</a><a class="headerlink" href="quickstart.html#step-5-see-what-an-interactive-command-is-like" title="Permalink to this headline">¶</a></h3>
-<p>Теперь вы увидете терминал в стиле "OldSchool", старый такой. После восхищения приступаем к написанию следующего:</p>
+<h3><a class="toc-backref" href="#id6">Step 5: See what an interactive command is like</a><a class="headerlink" href="#step-5-see-what-an-interactive-command-is-like" title="Permalink to this headline">¶</a></h3>
+<p>You should now see an old-school looking text terminal like the one shown below. Type the line:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">CLEARSCREEN</span><span class="p">.</span> <span class="k">PRINT</span> <span class="s">&quot;==HELLO WORLD==&quot;</span><span class="p">.</span>
 </pre></div>
 </div>
-<p>После набора убедитесь в том, что поставили точку в конце. Если точка есть, можете нажимать<code class="docutils literal"><span class="pre">ENTER</span></code>. Вы можете ввести команду как и большими, так и маленькими буквами. <strong>kOS</strong> это не волнует.</p>
+<p>into the terminal (make sure to actually type the periods (&#8221;.&#8221;) as shown) and hit <code class="docutils literal"><span class="pre">ENTER</span></code>. Note that you can type it in uppercase or lowercase. <strong>kOS</strong> doesn&#8217;t care.</p>
 <div class="figure">
 <a class="reference internal image-reference" href="../_images/terminal_open_1.png"><img alt="../_images/terminal_open_1.png" src="../_images/terminal_open_1.png" style="width: 80%;" /></a>
 </div>
-<p>И вот, вы получили ответ и собственно видете тот текст, который был задан командой:</p>
+<p>The terminal will respond by showing you this:</p>
 <div class="figure">
 <img alt="../_images/terminal_open_2.png" src="../_images/terminal_open_2.png" />
 </div>
 </div>
 <div class="section" id="step-6-okay-that-s-great-but-how-can-you-make-that-happen-in-a-program-script-instead">
-<h3><a class="toc-backref" href="quickstart.html#id7">Шаг 6: Отличяно, это здорово, но как это превратить в скрипт?</a><a class="headerlink" href="quickstart.html#step-6-okay-that-s-great-but-how-can-you-make-that-happen-in-a-program-script-instead" title="Permalink to this headline">¶</a></h3>
-<p>Да легко: Введи следующее:</p>
+<h3><a class="toc-backref" href="#id7">Step 6: Okay that&#8217;s great, but how can you make that happen in a program script instead?</a><a class="headerlink" href="#step-6-okay-that-s-great-but-how-can-you-make-that-happen-in-a-program-script-instead" title="Permalink to this headline">¶</a></h3>
+<p>Like so: Enter this command:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">EDIT</span> <span class="nv">HELLO</span><span class="p">.</span>
 </pre></div>
 </div>
-<p>(Не забывайте точку (&#8221;.&#8221;)! Все команды в <strong>kOS</strong> заканчиваются ТОЧКОЙ. Опять же, можешь писать команду как большими, так и маленькими буквами. <strong>kOS</strong> это не волнует.)</p>
-<p>Вы должны увидеть окно редактора, которое выглядит примерно так (без текста внутри, потому что вы запускаете пустой новый файл):</p>
+<p>(Don&#8217;t forget the period (&#8221;.&#8221;). All commands in <strong>kOS</strong> are ended with a period. Again, you can type it in uppercase or lowercase. <strong>kOS</strong> doesn&#8217;t care.)</p>
+<p>You should see an editor window appear, looking something like this (without the text inside because you&#8217;re starting a blank new file):</p>
 <div class="figure">
 <img alt="../_images/editor.png" src="../_images/editor.png" />
 </div>
-<p>Введи следующее в этом окне:</p>
+<p>Type this text into the window:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">PRINT</span> <span class="s">&quot;=========================================&quot;</span><span class="p">.</span>
 <span class="k">PRINT</span> <span class="s">&quot;      HELLO WORLD&quot;</span><span class="p">.</span>
 <span class="k">PRINT</span> <span class="s">&quot;THIS IS THE FIRST SCRIPT I WROTE IN kOS.&quot;</span><span class="p">.</span>
 <span class="k">PRINT</span> <span class="s">&quot;=========================================&quot;</span><span class="p">.</span>
 </pre></div>
 </div>
-<p>Нажми &#8220;Save&#8221;, а после &#8220;Exit&#8221; в окне редактора.</p>
+<p>Click &#8220;Save&#8221; then &#8220;Exit&#8221; in the editor pop-up window.</p>
 <ul class="simple">
-<li><em>Примечание: шрифт редактора. Опытные программисты, возможно, заметили, что шрифт редактора имеет пропорциональную ширину, а не моноширинную, и что он не идеален для программирования. И Вы правы, но мало что можно с этим сделать по ряду технических причин, которые слишком сложны, чтобы их обсуждать прямо сейчас.</li>
+<li><em>Side Note: The editor font</em> - Experienced programmers may have noticed that the editor&#8217;s font is proportional width rather than monospaced and that this is not ideal for programming work. You are right, but there is little that can be done about it for a variety of technical reasons that are too complex to go into right now.</li>
 </ul>
-<p>После этого введи в терминале:</p>
+<p>Then on the main text terminal Enter:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">RUN</span> <span class="nv">HELLO</span><span class="p">.</span>
 </pre></div>
 </div>
-<p>После этого вы увидете то, что написали в скрипте. Можете радоваться! Вы смогли создать свой первый скрипт, который вполне работает!</p>
+<p>And you will see the program run, showing the text on the screen like so.</p>
 <div class="figure">
 <img alt="../_images/hello_world1.png" src="../_images/hello_world1.png" />
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Заметка</p>
-<p class="last">Также вы можете использовать <code class="docutils literal"><span class="pre">RUNPATH(&quot;hello&quot;)</span></code> вместо <code class="docutils literal"><span class="pre">RUN</span> <span class="pre">HELLO</span></code>. Видно что команды отличаются, но по сути они имеют одинаковый эффект. Вы можете узнать об конкретной разнице во время исполнения данных команд <a class="reference internal" href="../commands/runprogram.html#running"><span>тут</span></a>.</p>
+<p class="first admonition-title">Note</p>
+<p class="last">You can also type <code class="docutils literal"><span class="pre">RUNPATH(&quot;hello&quot;)</span></code> instead of <code class="docutils literal"><span class="pre">RUN</span> <span class="pre">HELLO</span></code>.  The
+commands are slightly different but should have the same effect.  You can
+learn about the specific difference between them later <a class="reference internal" href="../commands/runprogram.html#running"><span>here</span></a>.</p>
 </div>
 </div>
 <div class="section" id="step-7-okay-but-where-is-this-program">
-<h3><a class="toc-backref" href="quickstart.html#id8">Шаг 7: Но, где же храниться данная программа?</a><a class="headerlink" href="quickstart.html#step-7-okay-but-where-is-this-program" title="Permalink to this headline">¶</a></h3>
-<p>Чтобы увидеть, где вы сохранили программу &#8220;HELLO&#8221;, необходимо ввести команду <code class="docutils literal"><span class="pre">LIST</span> <span class="pre">FILES</span></code> как показано ниже:</p>
+<h3><a class="toc-backref" href="#id8">Step 7: Okay, but where is this program?</a><a class="headerlink" href="#step-7-okay-but-where-is-this-program" title="Permalink to this headline">¶</a></h3>
+<p>To see where the &#8220;HELLO&#8221; program has been saved, Issue the command <code class="docutils literal"><span class="pre">LIST</span> <span class="pre">FILES</span></code> like this:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">LIST</span> <span class="nv">FILES</span><span class="p">.</span>
 </pre></div>
 </div>
-<p>(Небольшая заметка, по умолчанию для команды <code class="docutils literal"><span class="pre">LIST</span></code> используется список <code class="docutils literal"><span class="pre">FILES</span></code>, поэтому можете не вписывать &#8220;FILES&#8221; если хотите. &#8220;FILES&#8221; является списком, с которого будут загружаться данные, поэтому если вы создаёте свой список, после <code class="docutils literal"><span class="pre">LIST</span></code> можете указать название своего списка.)</p>
-<p>После команды вы увидете примерно следующее, а именно программу HELLO которую вы только что написали:</p>
+<p>(Note, that the default for the <code class="docutils literal"><span class="pre">LIST</span></code> command is to list <code class="docutils literal"><span class="pre">FILES</span></code>, so you can leave the word &#8220;FILES&#8221; off if you like.)</p>
+<p>It should look like this, showing you the HELLO program you just wrote:</p>
 <div class="figure">
 <img alt="../_images/hello_list.png" src="../_images/hello_list.png" />
 </div>
-<p>Это список всех файлов которые находятся в выбранном списке (объеме). По умолчанию когда вы запускаете новый корабль, ваш объем имеет номер "1", и он хранится только на корабле, где вы выполняете свои команды.</p>
-<p>Это локальное хранилище детали, которую мы установили в самом начале нашего туториала. Такие хранилища обычно имеют очень маленькое пространство, собственно, по скриншоту нише это можно самостоятельно увидеть.</p>
-<p>Но где же этот файл храниться <em>физически</em> на вашем компьютере? Ваши команды сохраняются в файле сохранения игры, и эти строки кода привязываются к детали, которую вы устанавливаете на свой новый корабль. Это важно потому-что вы не сможете получить доступ к данной программе с иного корабля, или же ракеты.. И когда вы захотите переключиться на иное судно, вы просто не сможете запустить данный скрипт там, и просто потеряете программу.</p>
+<p>This is a list of all the files on the currently selected VOLUME. By default, when you launch a new vessel, the currently selected VOLUME is called &#8220;1&#8221; and it&#8217;s the volume that&#8217;s stored on THAT SCS part that you are running all these commands in.</p>
+<p>This is the local volume of that SCS part. Local volumes such at this tend to have very small limited storage, as you can see when you look at the space remaining in the list printout.</p>
+<p>If you&#8217;re wondering where the file is stored <em>physically</em> on your computer, it&#8217;s represented by a section inside the persistence file for your saved game, as a piece of data associated with the SCS part. This is important because it means you can&#8217;t access the program from another vessel, and if this vessel ever crashes and the SCS part explodes, then you&#8217;ve lost the program.</p>
 </div>
 <div class="section" id="step-8-i-don-t-like-the-idea-that-the-program-is-stored-only-on-this-vessel-can-t-i-save-it-somewhere-better-more-permanent">
-<h3><a class="toc-backref" href="quickstart.html#id9">Шаг 8: Мне не нравится что данная программа остаётся только на данном судне. Может сохранить ещё где-то можно? На постоянной основе?</a><a class="headerlink" href="quickstart.html#step-8-i-don-t-like-the-idea-that-the-program-is-stored-only-on-this-vessel-can-t-i-save-it-somewhere-better-more-permanent" title="Permalink to this headline">¶</a></h3>
-<p>Да, да, ты можешь это сделать.</p>
-<p>Существует одно магическое хранилище, которое постоянно существует. Оно называется <em>Archive (Архивом)</em>, ну или же просто хранилище с номером 0 (любое имя можно использовать для выполнение команд). Смысл состоит в том, что данный архив предположительно храниться на домашней базе Кербина, в Космическом Центре, а не на судне. Он имеет бесконечное простронство для хранения данных, и никак не может потерять данные если какой либо корабль исчезает. ТАКЖЕ, все команды действительно сохраняются в файлах сохраненных игр. Если что либо сохранить в архив, после передать файл сохранения карьеры/песочницы кому либо, у него сохраниться скрипт который сохранили именно вы.</p>
-<p>Для того чтобы использовать архив достаточно запомнить команду<code class="docutils literal"><span class="pre">SWITCH</span> <span class="pre">TO</span></code>. Команда <code class="docutils literal"><span class="pre">SWITCH</span> <span class="pre">TO</span></code> изменяет хранилище с которым вы будете взаимодействовать..</p>
-<p>Чтобы поработать с архивом и создать там второй файл «Привет мир», выполните эти команды и наблюдайте за тем, что они делают:</p>
+<h3><a class="toc-backref" href="#id9">Step 8: I don&#8217;t like the idea that the program is stored only on this vessel. Can&#8217;t I save it somewhere better? More permanent?</a><a class="headerlink" href="#step-8-i-don-t-like-the-idea-that-the-program-is-stored-only-on-this-vessel-can-t-i-save-it-somewhere-better-more-permanent" title="Permalink to this headline">¶</a></h3>
+<p>Yes. Yes you can.</p>
+<p>There is another VOLUME that always exists called the <em>Archive</em>, which is also referred to as volume 0. (either name can be used in commands). The archive is conceptually stored somewhere back at Kerbin home base in the Space Center rather than on your vessel. It has infinite storage space, and does not disappear when your vessel is gone. ALSO, it actually exists across saved games - if you launch one saved game, put a new file in the Archive, and then later launch a different saved game, that file will be there in that game too.</p>
+<p>To use the Archive, first we&#8217;ll have to introduce you to a new command, called <code class="docutils literal"><span class="pre">SWITCH</span> <span class="pre">TO</span></code>. The <code class="docutils literal"><span class="pre">SWITCH</span> <span class="pre">TO</span></code> command changes which VOLUME is the one that you are doing your work with.</p>
+<p>To work with the archive, and create a second &#8220;hello world&#8221; file there, you issue these commands and see what they do:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">SWITCH</span> <span class="ow">TO</span> <span class="mf">0</span><span class="p">.</span>
-<span class="k">EDIT</span> <span class="nv">HELLO2</span><span class="p">.</span> <span class="c1">// Создайте новый файл, в котором будет просто напечатано: «Снова Привет».</span>
+<span class="k">EDIT</span> <span class="nv">HELLO2</span><span class="p">.</span> <span class="c1">// Make a new file here that just says: PRINT &quot;hi again&quot;.</span>
 <span class="k">LIST</span> <span class="nv">FILES</span><span class="p">.</span>
 <span class="k">RUN</span> <span class="nv">HELLO2</span><span class="p">.</span>
 <span class="k">SWITCH</span> <span class="ow">TO</span> <span class="mf">1</span><span class="p">.</span>
@@ -294,23 +296,23 @@
 <span class="k">RUN</span> <span class="nv">HELLO</span><span class="p">.</span>
 </pre></div>
 </div>
-<p><em>Но где всё это хранится за кулисами?</em> В настоящее время архив слегка нарушает дизайн модов <strong>KSP</strong>, когда всё помещается в папку GameData. Архив со скриптами на деле хранится в папке <code class="docutils literal"><span class="pre">Ships/Script</span></code> в самой папке с установленной <strong>KSP</strong>.</p>
-<p>Если вы поместили файл внутрь архива, мы можете редактировать его <em>с помощью програм на ваш выбор</em>, вместо того чтобы работать с редактором <strong>kOS</strong> в игре. Так намного удобнее, когда вам нужно сложить большой скрипт для <strong>kOS</strong>. Также вы можете создавать любые файлы в архиве. Для этого достаточно чтобы файлы который вы загрузили имели расширение <code class="docutils literal"><span class="pre">.ks</span></code> иначе <strong>kOS</strong> не будет использовать их.</p>
-<p>Если интересно, можешь продолжить чтение о файлах и хранилищах тут:</p>
+<p><em>But where is it stored behind the scenes?</em> The archive is currently slightly violating the design of <strong>KSP</strong> mods that puts everything in the GameData folder. The kSP Archive is actually stored in the <code class="docutils literal"><span class="pre">Ships/Script</span></code> folder of your MAIN <strong>KSP</strong> home, not inside GameData.</p>
+<p>If a file is stored inside the archive, it can actually be edited <em>by an external text editor of your choice</em> instead of using <strong>kOS</strong>&#8216;s in-game editor. This is usually a much better practice once you start doing more complex things with <strong>kOS</strong>. You can also make new files in the archive folder. Just make sure that all the files end with a <code class="docutils literal"><span class="pre">.ks</span></code> file name suffix or <strong>kOS</strong> won&#8217;t use them.</p>
+<p>Further reading about files and volumes:</p>
 <ul class="simple">
-<li><a class="reference internal" href="../general/volumes.html#volumes"><span>Хранилища</span></a></li>
-<li><a class="reference internal" href="../commands/files.html#files"><span>Управление файлами</span></a></li>
-<li><a class="reference internal" href="../structures/volumes_and_files/volumefile.html#volumefile"><span>Структура файлов в хранилище</span></a></li>
+<li><a class="reference internal" href="../general/volumes.html#volumes"><span>Volumes</span></a></li>
+<li><a class="reference internal" href="../commands/files.html#files"><span>File Control</span></a></li>
+<li><a class="reference internal" href="../structures/volumes_and_files/volumefile.html#volumefile"><span>VolumeFile structure</span></a></li>
 </ul>
 </div>
 </div>
 <div class="section" id="second-example-doing-something-real">
-<h2><a class="toc-backref" href="quickstart.html#id10">Second Example: Doing something real</a><a class="headerlink" href="quickstart.html#second-example-doing-something-real" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id10">Second Example: Doing something real</a><a class="headerlink" href="#second-example-doing-something-real" title="Permalink to this headline">¶</a></h2>
 <p>Okay that&#8217;s all basic setup stuff but you&#8217;re probably clamoring for a real example that actually does something nifty.</p>
 <p>This example will show the crudest, most basic use of <strong>kOS</strong> just to get started. In this example we&#8217;ll make a program that will launch a vessel using progressively more and more complex checks. <strong>kOS</strong> can be used at any stage of a vessel&#8217;s flight - launching, circularizing, docking, landing,... and in fact launching is one of the simpler piloting tasks that you can do without much need of automation. Where <strong>kOS</strong> really shines is for writing scripts to do touchy sensitive tasks like landing or docking or hovering. These are the areas that can benefit from the faster reaction speed that a computer script can handle.</p>
 <p>But in order to give you an example that you can start with from scratch, that&#8217;s easy to reload and retry from an initial point, we&#8217;ll use an example of launching.</p>
 <div class="section" id="step-1-make-a-vessel">
-<h3><a class="toc-backref" href="quickstart.html#id11">Step 1: Make a vessel</a><a class="headerlink" href="quickstart.html#step-1-make-a-vessel" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id11">Step 1: Make a vessel</a><a class="headerlink" href="#step-1-make-a-vessel" title="Permalink to this headline">¶</a></h3>
 <p>This tutorial is designed to work with a very specific rocket design.
 You need to make the vessel you see here:</p>
 <div class="figure">
@@ -320,7 +322,7 @@ You need to make the vessel you see here:</p>
 <a class="reference external" href="../_static/tutorials/quickstart/MyFirstRocket.craft">.craft file here</a></p>
 </div>
 <div class="section" id="step-2-make-the-start-of-the-script">
-<h3><a class="toc-backref" href="quickstart.html#id12">Step 2: Make the start of the script</a><a class="headerlink" href="quickstart.html#step-2-make-the-start-of-the-script" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id12">Step 2: Make the start of the script</a><a class="headerlink" href="#step-2-make-the-start-of-the-script" title="Permalink to this headline">¶</a></h3>
 <p>Okay, so type the lines below in an external <em>text editor of your choice</em> (i.e. Notepad on Windows, or TextEdit on Mac, or whatever you fancy):</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="c1">//hellolaunch</span>
 
@@ -355,7 +357,7 @@ You need to make the vessel you see here:</p>
 <p>You&#8217;ll note that what you&#8217;ve done is switch to the local volume (1) and then copy the program from the archive (0) to the local volume (1) and then run it from the local volume. Technically you didn&#8217;t need to do this. You could have just run it directly from the archive. For those looking at the <strong>KSP</strong> game as a bit of a role-play experience, it makes sense to never run programs directly from the archive, and instead live with the limitation that software should be copied to the craft for it to be able to run it.</p>
 </div>
 <div class="section" id="step-3-make-the-script-actually-do-something">
-<h3><a class="toc-backref" href="quickstart.html#id13">Step 3: Make the script actually do something</a><a class="headerlink" href="quickstart.html#step-3-make-the-script-actually-do-something" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id13">Step 3: Make the script actually do something</a><a class="headerlink" href="#step-3-make-the-script-actually-do-something" title="Permalink to this headline">¶</a></h3>
 <p>Okay now go back into your <em>text editor of choice</em> and append a few more lines to the hellolaunch.ks file so it now looks like this:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="c1">//hellolaunch</span>
 
@@ -400,7 +402,7 @@ You need to make the vessel you see here:</p>
 <p>Most likely you had a crash with this script because it didn&#8217;t do anything to affect the steering at all, so it probably allowed the rocket to tilt over.</p>
 </div>
 <div class="section" id="step-4-make-the-script-actually-control-steering">
-<h3><a class="toc-backref" href="quickstart.html#id14">Step 4: Make the script actually control steering</a><a class="headerlink" href="quickstart.html#step-4-make-the-script-actually-control-steering" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id14">Step 4: Make the script actually control steering</a><a class="headerlink" href="#step-4-make-the-script-actually-control-steering" title="Permalink to this headline">¶</a></h3>
 <p>So to fix that problem, let&#8217;s add steering control to the script.</p>
 <p>The easy way to control steering is to use the <code class="docutils literal"><span class="pre">LOCK</span> <span class="pre">STEERING</span></code> command.</p>
 <p>Once you have mastered the basics of <strong>kOS</strong>, you should go and read <a class="reference external" href="../commands/flight.html">the documentation on ship steering techniques</a>, but that&#8217;s a more advanced topic for later.</p>
@@ -457,7 +459,7 @@ You need to make the vessel you see here:</p>
 doing the next stage? how do I fix that?</em></p>
 </div>
 <div class="section" id="step-5-add-staging-logic">
-<h3><a class="toc-backref" href="quickstart.html#id15">Step 5: Add staging logic</a><a class="headerlink" href="quickstart.html#step-5-add-staging-logic" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id15">Step 5: Add staging logic</a><a class="headerlink" href="#step-5-add-staging-logic" title="Permalink to this headline">¶</a></h3>
 <p>The logic for how and when to stage can be an interesting and fun thing to write yourself. This example will keep it very simple, and this is the part where it&#8217;s important that you are using a vessel that only contains liquidfuel engines. If your vessel has some booster engines, then it would require a more sophisticated script to launch it correctly than this tutorial gives you.</p>
 <p>To add the logic to check when to stage, we introduce a new concept called the WHEN trigger. To see full documentation on it when you finish the tutorial, look for it on the <a class="reference external" href="../language/flow.html">Flow Control page</a></p>
 <p>The quick and dirty explanation is that a WHEN section is a short section of code that you set up to run LATER rather than right now. It creates a check in the background that will constantly look for some condition to occur, and when it happens, it interrupts whatever else the code is doing, and it will run the body of the WHEN code before continuing from where it left off in the main script.</p>
@@ -516,7 +518,7 @@ UNLIKE with all the previous edits this tutorial has asked you to make to the sc
 </div>
 </div>
 <div class="section" id="step-6-now-to-make-it-turn">
-<h3><a class="toc-backref" href="quickstart.html#id16">Step 6: Now to make it turn</a><a class="headerlink" href="quickstart.html#step-6-now-to-make-it-turn" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id16">Step 6: Now to make it turn</a><a class="headerlink" href="#step-6-now-to-make-it-turn" title="Permalink to this headline">¶</a></h3>
 <p><em>Okay that&#8217;s fine but it still just goes straight up! What about a
 gravity turn?</em></p>
 <p>Well, a true and proper gravity turn is a very complex bit of math that is best left as an exercise for the reader, given that the goal of <strong>kOS</strong> is to let you write your OWN autopilot, not to write it for you. But to give some basic examples of commands, lets just make a crude gravity turn approximation that simply flies the ship like a lot of new <strong>KSP</strong> pilots learn to do it for the first time:</p>
@@ -629,7 +631,7 @@ pitch down to 80 degrees and continuously print the apoapsis until the apoapsis 
 </div>
 </div>
 <div class="section" id="step-7-putting-it-all-together">
-<h3><a class="toc-backref" href="quickstart.html#id17">Step 7: Putting it all together</a><a class="headerlink" href="quickstart.html#step-7-putting-it-all-together" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id17">Step 7: Putting it all together</a><a class="headerlink" href="#step-7-putting-it-all-together" title="Permalink to this headline">¶</a></h3>
 <p>We now have every element of the script necessary to do a proper (albeit simple) gravity turn. We just need to extend it all the way through the ascent.</p>
 <p>Adding additional IF statements inside our main loop will allow us to perform further actions based on our velocity. Each IF statement you see in the script below
 covers a 100m/s block of velocity, and will adjust the pitch 10 degrees farther down than the previous block.</p>

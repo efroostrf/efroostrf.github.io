@@ -113,7 +113,7 @@
 <li class="toctree-l3"><a class="reference internal" href="crewmember.html">CrewMember</a></li>
 <li class="toctree-l3"><a class="reference internal" href="decoupler.html">Decoupler</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dockingport.html">DockingPort</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="element.html">Element</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Element</a></li>
 <li class="toctree-l3"><a class="reference internal" href="engine.html">Engine</a></li>
 <li class="toctree-l3"><a class="reference internal" href="eta.html">ETA</a></li>
 <li class="toctree-l3"><a class="reference internal" href="gimbal.html">Gimbal</a></li>
@@ -192,7 +192,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="element">
-<span id="id1"></span><h1>Element<a class="headerlink" href="element.html#element" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1>Element<a class="headerlink" href="#element" title="Permalink to this headline">¶</a></h1>
 <p>An element is a <em>docked component</em> of a <a class="reference internal" href="vessel.html#structure:VESSEL" title="VESSEL structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Vessel</span></code></a>.  When you dock several
 vessels together to create one larger vessel, you can obtain the &#8220;chunks&#8221; of the
 larger vessel organized by which original vessel they came from.  These &#8220;chunks&#8221;
@@ -210,7 +210,7 @@ elements and what they do.</p>
 </div>
 <dl class="structure">
 <dt id="structure:ELEMENT">
-<em class="property">structure </em><code class="descname">Element</code><a class="headerlink" href="element.html#structure:ELEMENT" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">Element</code><a class="headerlink" href="#structure:ELEMENT" title="Permalink to this definition">¶</a></dt>
 <dd><table border="1" class="docutils">
 <colgroup>
 <col width="33%" />
@@ -224,27 +224,27 @@ elements and what they do.</p>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="element.html#attribute:ELEMENT:NAME" title="ELEMENT:NAME attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">NAME</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:ELEMENT:NAME" title="ELEMENT:NAME attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">NAME</span></code></a></td>
 <td>:struct:string</td>
 <td>The name of the docked craft</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="element.html#attribute:ELEMENT:UID" title="ELEMENT:UID attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">UID</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:ELEMENT:UID" title="ELEMENT:UID attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">UID</span></code></a></td>
 <td>:struct:string</td>
 <td>Unique Identifier</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="element.html#attribute:ELEMENT:PARTS" title="ELEMENT:PARTS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PARTS</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:ELEMENT:PARTS" title="ELEMENT:PARTS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PARTS</span></code></a></td>
 <td><a class="reference internal" href="../collections/list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a></td>
 <td>all <a class="reference internal" href="part.html#structure:PART" title="PART structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Parts</span></code></a></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="element.html#attribute:ELEMENT:DOCKINGPORTS" title="ELEMENT:DOCKINGPORTS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">DOCKINGPORTS</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:ELEMENT:DOCKINGPORTS" title="ELEMENT:DOCKINGPORTS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">DOCKINGPORTS</span></code></a></td>
 <td><a class="reference internal" href="../collections/list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a></td>
 <td>all <a class="reference internal" href="dockingport.html#structure:DOCKINGPORT" title="DOCKINGPORT structure"><code class="xref ks ks-struct docutils literal"><span class="pre">DockingPorts</span></code></a></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="element.html#attribute:ELEMENT:VESSEL" title="ELEMENT:VESSEL attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">VESSEL</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:ELEMENT:VESSEL" title="ELEMENT:VESSEL attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">VESSEL</span></code></a></td>
 <td><a class="reference internal" href="vessel.html#structure:VESSEL" title="VESSEL structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Vessel</span></code></a></td>
 <td>the parent <a class="reference internal" href="vessel.html#structure:VESSEL" title="VESSEL structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Vessel</span></code></a></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="element.html#attribute:ELEMENT:RESOURCES" title="ELEMENT:RESOURCES attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">RESOURCES</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:ELEMENT:RESOURCES" title="ELEMENT:RESOURCES attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">RESOURCES</span></code></a></td>
 <td><a class="reference internal" href="../collections/list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a></td>
 <td>all <a class="reference internal" href="aggregateresource.html#structure:AGGREGATERESOURCE" title="AGGREGATERESOURCE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">AggrgateResources</span></code></a></td>
 </tr>
@@ -254,7 +254,7 @@ elements and what they do.</p>
 
 <dl class="attribute">
 <dt id="attribute:ELEMENT:UID">
-Element:<code class="descname">UID</code><a class="headerlink" href="element.html#attribute:ELEMENT:UID" title="Permalink to this definition">¶</a></dt>
+Element:<code class="descname">UID</code><a class="headerlink" href="#attribute:ELEMENT:UID" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -270,7 +270,7 @@ Element:<code class="descname">UID</code><a class="headerlink" href="element.htm
 
 <dl class="attribute">
 <dt id="attribute:ELEMENT:NAME">
-Element:<code class="descname">NAME</code><a class="headerlink" href="element.html#attribute:ELEMENT:NAME" title="Permalink to this definition">¶</a></dt>
+Element:<code class="descname">NAME</code><a class="headerlink" href="#attribute:ELEMENT:NAME" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -286,7 +286,7 @@ Element:<code class="descname">NAME</code><a class="headerlink" href="element.ht
 
 <dl class="attribute">
 <dt id="attribute:ELEMENT:PARTS">
-Element:<code class="descname">PARTS</code><a class="headerlink" href="element.html#attribute:ELEMENT:PARTS" title="Permalink to this definition">¶</a></dt>
+Element:<code class="descname">PARTS</code><a class="headerlink" href="#attribute:ELEMENT:PARTS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -302,7 +302,7 @@ Element:<code class="descname">PARTS</code><a class="headerlink" href="element.h
 
 <dl class="attribute">
 <dt id="attribute:ELEMENT:DOCKINGPORTS">
-Element:<code class="descname">DOCKINGPORTS</code><a class="headerlink" href="element.html#attribute:ELEMENT:DOCKINGPORTS" title="Permalink to this definition">¶</a></dt>
+Element:<code class="descname">DOCKINGPORTS</code><a class="headerlink" href="#attribute:ELEMENT:DOCKINGPORTS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -318,7 +318,7 @@ Element:<code class="descname">DOCKINGPORTS</code><a class="headerlink" href="el
 
 <dl class="attribute">
 <dt id="attribute:ELEMENT:VESSEL">
-Element:<code class="descname">VESSEL</code><a class="headerlink" href="element.html#attribute:ELEMENT:VESSEL" title="Permalink to this definition">¶</a></dt>
+Element:<code class="descname">VESSEL</code><a class="headerlink" href="#attribute:ELEMENT:VESSEL" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -334,7 +334,7 @@ Element:<code class="descname">VESSEL</code><a class="headerlink" href="element.
 
 <dl class="attribute">
 <dt id="attribute:ELEMENT:RESOURCES">
-Element:<code class="descname">RESOURCES</code><a class="headerlink" href="element.html#attribute:ELEMENT:RESOURCES" title="Permalink to this definition">¶</a></dt>
+Element:<code class="descname">RESOURCES</code><a class="headerlink" href="#attribute:ELEMENT:RESOURCES" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

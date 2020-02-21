@@ -105,7 +105,7 @@
 <li class="toctree-l3"><a class="reference internal" href="cooked.html">Cooked Control</a></li>
 <li class="toctree-l3"><a class="reference internal" href="raw.html">Raw Control</a></li>
 <li class="toctree-l3"><a class="reference internal" href="pilot.html">Pilot Input</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="systems.html">Ship Systems</a><ul class="simple">
+<li class="toctree-l3 current"><a class="current reference internal" href="">Ship Systems</a><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -174,9 +174,9 @@
            <div itemprop="articleBody">
             
   <div class="section" id="ship-systems">
-<span id="systems"></span><h1>Ship Systems<a class="headerlink" href="systems.html#ship-systems" title="Permalink to this headline">¶</a></h1>
+<span id="systems"></span><h1>Ship Systems<a class="headerlink" href="#ship-systems" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="control-reference">
-<h2>CONTROL REFERENCE<a class="headerlink" href="systems.html#control-reference" title="Permalink to this headline">¶</a></h2>
+<h2>CONTROL REFERENCE<a class="headerlink" href="#control-reference" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div>The axes for ship control and ship-relative coordinate system are determined
 in relation to a &#8220;control from&#8221; part (more specifically a transform
@@ -188,10 +188,10 @@ method.  You may retrieve the current control part using the
 <a class="reference internal" href="../../structures/vessels/vessel.html#attribute:VESSEL:CONTROLPART" title="VESSEL:CONTROLPART attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">Vessel:CONTROLPART</span></code></a> suffix.</div></blockquote>
 </div>
 <div class="section" id="rcs-and-sas">
-<h2>RCS and SAS<a class="headerlink" href="systems.html#rcs-and-sas" title="Permalink to this headline">¶</a></h2>
+<h2>RCS and SAS<a class="headerlink" href="#rcs-and-sas" title="Permalink to this headline">¶</a></h2>
 <dl class="global">
 <dt id="global:RCS">
-<code class="descname">RCS</code><a class="headerlink" href="systems.html#global:RCS" title="Permalink to this definition">¶</a></dt>
+<code class="descname">RCS</code><a class="headerlink" href="#global:RCS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -212,7 +212,7 @@ method.  You may retrieve the current control part using the
 
 <dl class="global">
 <dt id="global:SAS">
-<code class="descname">SAS</code><a class="headerlink" href="systems.html#global:SAS" title="Permalink to this definition">¶</a></dt>
+<code class="descname">SAS</code><a class="headerlink" href="#global:SAS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -301,10 +301,10 @@ For further information see the
 
 </div>
 <div class="section" id="stock-action-groups">
-<span id="stock-boolean-flags"></span><h2>STOCK ACTION GROUPS<a class="headerlink" href="systems.html#stock-action-groups" title="Permalink to this headline">¶</a></h2>
+<span id="stock-boolean-flags"></span><h2>STOCK ACTION GROUPS<a class="headerlink" href="#stock-action-groups" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><p>These action groups (including abovementioned <a class="reference internal" href="systems.html#global:SAS" title="SAS global"><code class="xref ks ks-global docutils literal"><span class="pre">SAS</span></code></a> and
-<a class="reference internal" href="systems.html#global:RCS" title="RCS global"><code class="xref ks ks-global docutils literal"><span class="pre">RCS</span></code></a>) are stored as <a class="reference internal" href="../../structures/misc/boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a> values which can be read to
+<div><p>These action groups (including abovementioned <a class="reference internal" href="#global:SAS" title="SAS global"><code class="xref ks ks-global docutils literal"><span class="pre">SAS</span></code></a> and
+<a class="reference internal" href="#global:RCS" title="RCS global"><code class="xref ks ks-global docutils literal"><span class="pre">RCS</span></code></a>) are stored as <a class="reference internal" href="../../structures/misc/boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a> values which can be read to
 determine their current state.  Reading their value can be used by kOS as
 a form of user input:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">IF</span> <span class="nv">RCS</span> <span class="k">PRINT</span> <span class="s">&quot;RCS is on&quot;</span><span class="p">.</span>
@@ -362,7 +362,7 @@ on the engine.</p>
 </div></blockquote>
 <dl class="global">
 <dt id="global:LIGHTS">
-<code class="descname">LIGHTS</code><a class="headerlink" href="systems.html#global:LIGHTS" title="Permalink to this definition">¶</a></dt>
+<code class="descname">LIGHTS</code><a class="headerlink" href="#global:LIGHTS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -381,7 +381,7 @@ on the engine.</p>
 
 <dl class="global">
 <dt id="global:BRAKES">
-<code class="descname">BRAKES</code><a class="headerlink" href="systems.html#global:BRAKES" title="Permalink to this definition">¶</a></dt>
+<code class="descname">BRAKES</code><a class="headerlink" href="#global:BRAKES" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -400,7 +400,7 @@ on the engine.</p>
 
 <dl class="global">
 <dt id="global:GEAR">
-<code class="descname">GEAR</code><a class="headerlink" href="systems.html#global:GEAR" title="Permalink to this definition">¶</a></dt>
+<code class="descname">GEAR</code><a class="headerlink" href="#global:GEAR" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -419,7 +419,7 @@ on the engine.</p>
 
 <dl class="global">
 <dt id="global:ABORT">
-<code class="descname">ABORT</code><a class="headerlink" href="systems.html#global:ABORT" title="Permalink to this definition">¶</a></dt>
+<code class="descname">ABORT</code><a class="headerlink" href="#global:ABORT" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -438,7 +438,7 @@ on the engine.</p>
 
 <dl class="global">
 <dt id="global:AG1 ... AG10">
-<code class="descname">AG1 ... AG10</code><a class="headerlink" href="systems.html#global:AG1 ... AG10" title="Permalink to this definition">¶</a></dt>
+<code class="descname">AG1 ... AG10</code><a class="headerlink" href="#global:AG1 ... AG10" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -459,7 +459,7 @@ on the engine.</p>
 
 </div>
 <div class="section" id="kos-pseudo-action-groups">
-<span id="kos-boolean-flags"></span><h2>kOS PSEUDO ACTION GROUPS<a class="headerlink" href="systems.html#kos-pseudo-action-groups" title="Permalink to this headline">¶</a></h2>
+<span id="kos-boolean-flags"></span><h2>kOS PSEUDO ACTION GROUPS<a class="headerlink" href="#kos-pseudo-action-groups" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><p>kOS adds several <a class="reference internal" href="../../structures/misc/boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a> flags (bound variable fields) that can be used by scripts in the
 same way the stock action groups are used:</p>
@@ -488,7 +488,7 @@ to perform the selected action at this time.</p>
 </div></blockquote>
 <dl class="global">
 <dt id="global:LEGS">
-<code class="descname">LEGS</code><a class="headerlink" href="systems.html#global:LEGS" title="Permalink to this definition">¶</a></dt>
+<code class="descname">LEGS</code><a class="headerlink" href="#global:LEGS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -508,7 +508,7 @@ to perform the selected action at this time.</p>
 
 <dl class="global">
 <dt id="global:CHUTES">
-<code class="descname">CHUTES</code><a class="headerlink" href="systems.html#global:CHUTES" title="Permalink to this definition">¶</a></dt>
+<code class="descname">CHUTES</code><a class="headerlink" href="#global:CHUTES" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -528,7 +528,7 @@ to perform the selected action at this time.</p>
 
 <dl class="global">
 <dt id="global:CHUTESSAFE">
-<code class="descname">CHUTESSAFE</code><a class="headerlink" href="systems.html#global:CHUTESSAFE" title="Permalink to this definition">¶</a></dt>
+<code class="descname">CHUTESSAFE</code><a class="headerlink" href="#global:CHUTESSAFE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -557,7 +557,7 @@ any time where there are no safe parachutes.</p>
 
 <dl class="global">
 <dt id="global:PANELS">
-<code class="descname">PANELS</code><a class="headerlink" href="systems.html#global:PANELS" title="Permalink to this definition">¶</a></dt>
+<code class="descname">PANELS</code><a class="headerlink" href="#global:PANELS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -583,7 +583,7 @@ description for details.</p>
 
 <dl class="global">
 <dt id="global:RADIATORS">
-<code class="descname">RADIATORS</code><a class="headerlink" href="systems.html#global:RADIATORS" title="Permalink to this definition">¶</a></dt>
+<code class="descname">RADIATORS</code><a class="headerlink" href="#global:RADIATORS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -603,7 +603,7 @@ description for details.</p>
 
 <dl class="global">
 <dt id="global:LADDERS">
-<code class="descname">LADDERS</code><a class="headerlink" href="systems.html#global:LADDERS" title="Permalink to this definition">¶</a></dt>
+<code class="descname">LADDERS</code><a class="headerlink" href="#global:LADDERS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -623,7 +623,7 @@ description for details.</p>
 
 <dl class="global">
 <dt id="global:BAYS">
-<code class="descname">BAYS</code><a class="headerlink" href="systems.html#global:BAYS" title="Permalink to this definition">¶</a></dt>
+<code class="descname">BAYS</code><a class="headerlink" href="#global:BAYS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -643,7 +643,7 @@ description for details.</p>
 
 <dl class="global">
 <dt id="global:DEPLOYDRILLS">
-<code class="descname">DEPLOYDRILLS</code><a class="headerlink" href="systems.html#global:DEPLOYDRILLS" title="Permalink to this definition">¶</a></dt>
+<code class="descname">DEPLOYDRILLS</code><a class="headerlink" href="#global:DEPLOYDRILLS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -663,7 +663,7 @@ description for details.</p>
 
 <dl class="global">
 <dt id="global:DRILLS">
-<code class="descname">DRILLS</code><a class="headerlink" href="systems.html#global:DRILLS" title="Permalink to this definition">¶</a></dt>
+<code class="descname">DRILLS</code><a class="headerlink" href="#global:DRILLS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -683,7 +683,7 @@ description for details.</p>
 
 <dl class="global">
 <dt id="global:FUELCELLS">
-<code class="descname">FUELCELLS</code><a class="headerlink" href="systems.html#global:FUELCELLS" title="Permalink to this definition">¶</a></dt>
+<code class="descname">FUELCELLS</code><a class="headerlink" href="#global:FUELCELLS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -703,7 +703,7 @@ description for details.</p>
 
 <dl class="global">
 <dt id="global:ISRU">
-<code class="descname">ISRU</code><a class="headerlink" href="systems.html#global:ISRU" title="Permalink to this definition">¶</a></dt>
+<code class="descname">ISRU</code><a class="headerlink" href="#global:ISRU" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -723,7 +723,7 @@ description for details.</p>
 
 <dl class="global">
 <dt id="global:INTAKES">
-<code class="descname">INTAKES</code><a class="headerlink" href="systems.html#global:INTAKES" title="Permalink to this definition">¶</a></dt>
+<code class="descname">INTAKES</code><a class="headerlink" href="#global:INTAKES" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -743,10 +743,10 @@ description for details.</p>
 
 </div>
 <div class="section" id="target">
-<h2>TARGET<a class="headerlink" href="systems.html#target" title="Permalink to this headline">¶</a></h2>
+<h2>TARGET<a class="headerlink" href="#target" title="Permalink to this headline">¶</a></h2>
 <dl class="global">
 <dt id="global:TARGET">
-<code class="descname">TARGET</code><a class="headerlink" href="systems.html#global:TARGET" title="Permalink to this definition">¶</a></dt>
+<code class="descname">TARGET</code><a class="headerlink" href="#global:TARGET" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

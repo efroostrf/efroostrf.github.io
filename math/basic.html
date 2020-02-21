@@ -99,14 +99,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../general.html">General</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../language.html">Language</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../math.html">Mathematics</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="basic.html">Basic Math Functions</a><ul class="simple">
+<li class="toctree-l2 current"><a class="current reference internal" href="">Basic Math Functions</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="scalar.html">Scalar</a></li>
 <li class="toctree-l2"><a class="reference internal" href="vector.html">Vectors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="direction.html">Directions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="geocoordinates.html">Geographic Coordinates</a></li>
-<li class="toctree-l2"><a class="reference internal" href="https://ksp-kos.github.io/KOS/math/ref_frame.html">Reference Frames</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ref_frame.html">Reference Frames</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../commands.html">Commands</a></li>
@@ -162,10 +162,10 @@
            <div itemprop="articleBody">
             
   <div class="section" id="basic-math-functions">
-<span id="basic-math"></span><h1>Basic Math Functions<a class="headerlink" href="basic.html#basic-math-functions" title="Permalink to this headline">¶</a></h1>
+<span id="basic-math"></span><h1>Basic Math Functions<a class="headerlink" href="#basic-math-functions" title="Permalink to this headline">¶</a></h1>
 <p>These functions are built-in for performing basic math operations in kOS.</p>
 <span class="target" id="constants"></span><div class="section" id="fundamental-constants">
-<span id="index-0"></span><h2>Fundamental Constants<a class="headerlink" href="basic.html#fundamental-constants" title="Permalink to this headline">¶</a></h2>
+<span id="index-0"></span><h2>Fundamental Constants<a class="headerlink" href="#fundamental-constants" title="Permalink to this headline">¶</a></h2>
 <p>There is a bound variable called <cite>CONSTANT</cite> which contains some basic fundamental
 constants about the universe that you may find handy in your math operations.  Prior to kOS version 0.18, <cite>CONSTANT</cite> was implemented as a function call, so values were accessed as <cite>CONSTANT():PI</cite> and the like.  This functionality has been retained for backward compatibility, but new code should instead call <cite>CONSTANT:PI</cite>.</p>
 <table border="1" class="docutils">
@@ -219,7 +219,7 @@ constants about the universe that you may find handy in your math operations.  P
 </table>
 <dl class="global">
 <dt id="global:CONSTANT:G">
-<code class="descname">Constant:G</code><a class="headerlink" href="basic.html#global:CONSTANT:G" title="Permalink to this definition">¶</a></dt>
+<code class="descname">Constant:G</code><a class="headerlink" href="#global:CONSTANT:G" title="Permalink to this definition">¶</a></dt>
 <dd><p>Newton&#8217;s Gravitational Constant that the game&#8217;s planetary
 bodies are implying in their configuration data.
 (6.67384E-11 as of the last update to these documents).</p>
@@ -250,7 +250,7 @@ explicitly doing mass*G to derive it.</p>
 
 <dl class="global">
 <dt id="global:CONSTANT:G0">
-<code class="descname">Constant:g0</code><a class="headerlink" href="basic.html#global:CONSTANT:G0" title="Permalink to this definition">¶</a></dt>
+<code class="descname">Constant:g0</code><a class="headerlink" href="#global:CONSTANT:G0" title="Permalink to this definition">¶</a></dt>
 <dd><p>Standard value the game uses for acceleration due to
 gravity at sea level on Earth.  (9.80655 m/s^2 as
 of the last update to these documents).</p>
@@ -280,7 +280,7 @@ by much.)</p>
 
 <dl class="global">
 <dt id="global:CONSTANT:E">
-<code class="descname">Constant:E</code><a class="headerlink" href="basic.html#global:CONSTANT:E" title="Permalink to this definition">¶</a></dt>
+<code class="descname">Constant:E</code><a class="headerlink" href="#global:CONSTANT:E" title="Permalink to this definition">¶</a></dt>
 <dd><p>Natural Log base &#8220;e&#8221;:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">PRINT</span> <span class="s">&quot;e^2 is:&quot;</span><span class="p">.</span>
 <span class="k">PRINT</span> <span class="nv">constant</span><span class="p">:</span><span class="nv">e</span> <span class="o">^</span> <span class="mf">2</span><span class="p">.</span>
@@ -290,7 +290,7 @@ by much.)</p>
 
 <dl class="global">
 <dt id="global:CONSTANT:PI">
-<code class="descname">Constant:PI</code><a class="headerlink" href="basic.html#global:CONSTANT:PI" title="Permalink to this definition">¶</a></dt>
+<code class="descname">Constant:PI</code><a class="headerlink" href="#global:CONSTANT:PI" title="Permalink to this definition">¶</a></dt>
 <dd><p>Ratio of circumference of a circle to its diameter, 3.14159265...</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">SET</span> <span class="nv">diameter</span> <span class="ow">to</span> <span class="mf">10</span><span class="p">.</span>
 <span class="k">PRINT</span> <span class="s">&quot;circumference is:&quot;</span><span class="p">.</span>
@@ -301,7 +301,7 @@ by much.)</p>
 
 <dl class="global">
 <dt id="global:CONSTANT:C">
-<code class="descname">Constant:C</code><a class="headerlink" href="basic.html#global:CONSTANT:C" title="Permalink to this definition">¶</a></dt>
+<code class="descname">Constant:C</code><a class="headerlink" href="#global:CONSTANT:C" title="Permalink to this definition">¶</a></dt>
 <dd><p>Speed of light in a vacuum, in meters per second.</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">SET</span> <span class="nv">speed</span> <span class="ow">to</span> <span class="nv">SHIP</span><span class="p">:</span><span class="nv">VELOCITY</span><span class="p">:</span><span class="nv">ORBIT</span><span class="p">:</span><span class="nv">MAG</span><span class="p">.</span>
 <span class="k">SET</span> <span class="nv">percentOfLight</span> <span class="ow">to</span> <span class="p">(</span><span class="nv">speed</span> <span class="o">/</span> <span class="nv">constant</span><span class="p">:</span><span class="nv">c</span><span class="p">)</span> <span class="o">*</span> <span class="mf">100</span><span class="p">.</span>
@@ -324,7 +324,7 @@ if the probe already has a connection, you can
 
 <dl class="global">
 <dt id="global:CONSTANT:ATMTOKPA">
-<code class="descname">Constant:AtmToKPa</code><a class="headerlink" href="basic.html#global:CONSTANT:ATMTOKPA" title="Permalink to this definition">¶</a></dt>
+<code class="descname">Constant:AtmToKPa</code><a class="headerlink" href="#global:CONSTANT:ATMTOKPA" title="Permalink to this definition">¶</a></dt>
 <dd><p>A conversion constant.</p>
 <p>If you have a pressure measurement expressed in atmospheres of pressure,
 you can multiply it by this to get the equivalent in kiloPascals
@@ -337,7 +337,7 @@ you can multiply it by this to get the equivalent in kiloPascals
 
 <dl class="global">
 <dt id="global:CONSTANT:KPATOATM">
-<code class="descname">Constant:KPaToATM</code><a class="headerlink" href="basic.html#global:CONSTANT:KPATOATM" title="Permalink to this definition">¶</a></dt>
+<code class="descname">Constant:KPaToATM</code><a class="headerlink" href="#global:CONSTANT:KPATOATM" title="Permalink to this definition">¶</a></dt>
 <dd><p>A conversion constant.</p>
 <p>If you have a pressure measurement expressed in kiloPascals (kiloNewtons
 per square meter), you can multiply it by this to get the equivalent
@@ -350,7 +350,7 @@ in atmospheres.</p>
 
 <dl class="global">
 <dt id="global:CONSTANT:DEGTORAD">
-<code class="descname">Constant:DegToRad</code><a class="headerlink" href="basic.html#global:CONSTANT:DEGTORAD" title="Permalink to this definition">¶</a></dt>
+<code class="descname">Constant:DegToRad</code><a class="headerlink" href="#global:CONSTANT:DEGTORAD" title="Permalink to this definition">¶</a></dt>
 <dd><p>A conversion constant.</p>
 <p>If you have an angle measured in degrees, you can multiply it by
 this to get the equivalent measure in radians.  It is exactly
@@ -365,7 +365,7 @@ at runtime.</p>
 
 <dl class="global">
 <dt id="global:CONSTANT:RADTODEG">
-<code class="descname">Constant:RadToDeg</code><a class="headerlink" href="basic.html#global:CONSTANT:RADTODEG" title="Permalink to this definition">¶</a></dt>
+<code class="descname">Constant:RadToDeg</code><a class="headerlink" href="#global:CONSTANT:RADTODEG" title="Permalink to this definition">¶</a></dt>
 <dd><p>A conversion constant.</p>
 <p>If you have an angle measured in radians, you can multiply it by
 this to get the equivalent measure in degrees.  It is exactly
@@ -380,7 +380,7 @@ at runtime.</p>
 
 <dl class="global">
 <dt id="global:CONSTANT:AVOGADRO">
-<code class="descname">Constant:Avogadro</code><a class="headerlink" href="basic.html#global:CONSTANT:AVOGADRO" title="Permalink to this definition">¶</a></dt>
+<code class="descname">Constant:Avogadro</code><a class="headerlink" href="#global:CONSTANT:AVOGADRO" title="Permalink to this definition">¶</a></dt>
 <dd><p>Avogadro&#8217;s Constant.</p>
 <p>This value can be used in calculating atmospheric properties for drag purposes,
 which can be a rather advanced topic.
@@ -389,7 +389,7 @@ which can be a rather advanced topic.
 
 <dl class="global">
 <dt id="global:CONSTANT:BOLTZMANN">
-<code class="descname">Constant:Boltzmann</code><a class="headerlink" href="basic.html#global:CONSTANT:BOLTZMANN" title="Permalink to this definition">¶</a></dt>
+<code class="descname">Constant:Boltzmann</code><a class="headerlink" href="#global:CONSTANT:BOLTZMANN" title="Permalink to this definition">¶</a></dt>
 <dd><p>Boltzmann Constant.</p>
 <p>This value can be used in calculating atmospheric properties for drag purposes,
 which can be a rather advanced topic.
@@ -398,7 +398,7 @@ which can be a rather advanced topic.
 
 <dl class="global">
 <dt id="global:CONSTANT:IDEALGAS">
-<code class="descname">Constant:IdealGas</code><a class="headerlink" href="basic.html#global:CONSTANT:IDEALGAS" title="Permalink to this definition">¶</a></dt>
+<code class="descname">Constant:IdealGas</code><a class="headerlink" href="#global:CONSTANT:IDEALGAS" title="Permalink to this definition">¶</a></dt>
 <dd><p>Ideal Gas Constant.</p>
 <p>This value can be used in calculating atmospheric properties for drag purposes,
 which can be a rather advanced topic.
@@ -407,7 +407,7 @@ which can be a rather advanced topic.
 
 <span class="target" id="math-functions"></span></div>
 <div class="section" id="mathematical-functions">
-<span id="index-1"></span><h2>Mathematical Functions<a class="headerlink" href="basic.html#mathematical-functions" title="Permalink to this headline">¶</a></h2>
+<span id="index-1"></span><h2>Mathematical Functions<a class="headerlink" href="#mathematical-functions" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="docutils">
 <colgroup>
 <col width="28%" />
@@ -419,59 +419,59 @@ which can be a rather advanced topic.
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="basic.html#function:ABS" title="ABS function"><code class="xref ks ks-func docutils literal"><span class="pre">ABS(a)</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#function:ABS" title="ABS function"><code class="xref ks ks-func docutils literal"><span class="pre">ABS(a)</span></code></a></td>
 <td>absolute value</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic.html#function:CEILING" title="CEILING function"><code class="xref ks ks-func docutils literal"><span class="pre">CEILING(a)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#function:CEILING" title="CEILING function"><code class="xref ks ks-func docutils literal"><span class="pre">CEILING(a)</span></code></a></td>
 <td>round up</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic.html#function:CEILING" title="CEILING function"><code class="xref ks ks-func docutils literal"><span class="pre">CEILING(a,b)</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#function:CEILING" title="CEILING function"><code class="xref ks ks-func docutils literal"><span class="pre">CEILING(a,b)</span></code></a></td>
 <td>round up to nearest place</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic.html#function:FLOOR" title="FLOOR function"><code class="xref ks ks-func docutils literal"><span class="pre">FLOOR(a)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#function:FLOOR" title="FLOOR function"><code class="xref ks ks-func docutils literal"><span class="pre">FLOOR(a)</span></code></a></td>
 <td>round down</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic.html#function:FLOOR" title="FLOOR function"><code class="xref ks ks-func docutils literal"><span class="pre">FLOOR(a,b)</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#function:FLOOR" title="FLOOR function"><code class="xref ks ks-func docutils literal"><span class="pre">FLOOR(a,b)</span></code></a></td>
 <td>round down to nearest place</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic.html#function:LN" title="LN function"><code class="xref ks ks-func docutils literal"><span class="pre">LN(a)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#function:LN" title="LN function"><code class="xref ks ks-func docutils literal"><span class="pre">LN(a)</span></code></a></td>
 <td>natural log</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic.html#function:LOG10" title="LOG10 function"><code class="xref ks ks-func docutils literal"><span class="pre">LOG10(a)</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#function:LOG10" title="LOG10 function"><code class="xref ks ks-func docutils literal"><span class="pre">LOG10(a)</span></code></a></td>
 <td>log base 10</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic.html#function:MOD" title="MOD function"><code class="xref ks ks-func docutils literal"><span class="pre">MOD(a,b)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#function:MOD" title="MOD function"><code class="xref ks ks-func docutils literal"><span class="pre">MOD(a,b)</span></code></a></td>
 <td>modulus</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic.html#function:MIN" title="MIN function"><code class="xref ks ks-func docutils literal"><span class="pre">MIN(a,b)</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#function:MIN" title="MIN function"><code class="xref ks ks-func docutils literal"><span class="pre">MIN(a,b)</span></code></a></td>
 <td>return a or b, whichever is lesser.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic.html#function:MAX" title="MAX function"><code class="xref ks ks-func docutils literal"><span class="pre">MAX(a,b)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#function:MAX" title="MAX function"><code class="xref ks ks-func docutils literal"><span class="pre">MAX(a,b)</span></code></a></td>
 <td>return a or b, whichever is greater.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic.html#function:RANDOM" title="RANDOM function"><code class="xref ks ks-func docutils literal"><span class="pre">RANDOM()</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#function:RANDOM" title="RANDOM function"><code class="xref ks ks-func docutils literal"><span class="pre">RANDOM()</span></code></a></td>
 <td>random fractional number between 0 and 1.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic.html#function:ROUND" title="ROUND function"><code class="xref ks ks-func docutils literal"><span class="pre">ROUND(a)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#function:ROUND" title="ROUND function"><code class="xref ks ks-func docutils literal"><span class="pre">ROUND(a)</span></code></a></td>
 <td>round to whole number</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic.html#function:ROUND" title="ROUND function"><code class="xref ks ks-func docutils literal"><span class="pre">ROUND(a,b)</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#function:ROUND" title="ROUND function"><code class="xref ks ks-func docutils literal"><span class="pre">ROUND(a,b)</span></code></a></td>
 <td>round to nearest place</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic.html#function:SQRT" title="SQRT function"><code class="xref ks ks-func docutils literal"><span class="pre">SQRT(a)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#function:SQRT" title="SQRT function"><code class="xref ks ks-func docutils literal"><span class="pre">SQRT(a)</span></code></a></td>
 <td>square root</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic.html#function:CHAR" title="CHAR function"><code class="xref ks ks-func docutils literal"><span class="pre">CHAR(a)</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#function:CHAR" title="CHAR function"><code class="xref ks ks-func docutils literal"><span class="pre">CHAR(a)</span></code></a></td>
 <td>character from unicode</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic.html#function:UNCHAR" title="UNCHAR function"><code class="xref ks ks-func docutils literal"><span class="pre">UNCHAR(a)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#function:UNCHAR" title="UNCHAR function"><code class="xref ks ks-func docutils literal"><span class="pre">UNCHAR(a)</span></code></a></td>
 <td>unicode from character</td>
 </tr>
 </tbody>
 </table>
 <dl class="function">
 <dt id="function:ABS">
-<code class="descname">ABS</code><span class="sig-paren">(</span>a<span class="sig-paren">)</span><a class="headerlink" href="basic.html#function:ABS" title="Permalink to this definition">¶</a></dt>
+<code class="descname">ABS</code><span class="sig-paren">(</span>a<span class="sig-paren">)</span><a class="headerlink" href="#function:ABS" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns absolute value of input:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">PRINT</span> <span class="nv">ABS</span><span class="p">(</span><span class="o">-</span><span class="mf">1</span><span class="p">).</span> <span class="c1">// prints 1</span>
 </pre></div>
@@ -480,7 +480,7 @@ which can be a rather advanced topic.
 
 <dl class="function">
 <dt id="function:CEILING">
-<code class="descname">CEILING</code><span class="sig-paren">(</span>a<span class="sig-paren">)</span><a class="headerlink" href="basic.html#function:CEILING" title="Permalink to this definition">¶</a></dt>
+<code class="descname">CEILING</code><span class="sig-paren">(</span>a<span class="sig-paren">)</span><a class="headerlink" href="#function:CEILING" title="Permalink to this definition">¶</a></dt>
 <dd><p>Rounds up to the nearest whole number:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">PRINT</span> <span class="nv">CEILING</span><span class="p">(</span><span class="mf">1</span><span class="p">.</span><span class="mf">887</span><span class="p">).</span> <span class="c1">// prints 2</span>
 </pre></div>
@@ -498,7 +498,7 @@ which can be a rather advanced topic.
 
 <dl class="function">
 <dt id="function:FLOOR">
-<code class="descname">FLOOR</code><span class="sig-paren">(</span>a<span class="sig-paren">)</span><a class="headerlink" href="basic.html#function:FLOOR" title="Permalink to this definition">¶</a></dt>
+<code class="descname">FLOOR</code><span class="sig-paren">(</span>a<span class="sig-paren">)</span><a class="headerlink" href="#function:FLOOR" title="Permalink to this definition">¶</a></dt>
 <dd><p>Rounds down to the nearest whole number:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">PRINT</span> <span class="nv">FLOOR</span><span class="p">(</span><span class="mf">1</span><span class="p">.</span><span class="mf">887</span><span class="p">).</span> <span class="c1">// prints 1</span>
 </pre></div>
@@ -516,7 +516,7 @@ which can be a rather advanced topic.
 
 <dl class="function">
 <dt id="function:LN">
-<code class="descname">LN</code><span class="sig-paren">(</span>a<span class="sig-paren">)</span><a class="headerlink" href="basic.html#function:LN" title="Permalink to this definition">¶</a></dt>
+<code class="descname">LN</code><span class="sig-paren">(</span>a<span class="sig-paren">)</span><a class="headerlink" href="#function:LN" title="Permalink to this definition">¶</a></dt>
 <dd><p>Gives the natural log of the provided number:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">PRINT</span> <span class="nv">LN</span><span class="p">(</span><span class="mf">2</span><span class="p">).</span> <span class="c1">// prints 0.6931471805599453</span>
 </pre></div>
@@ -525,7 +525,7 @@ which can be a rather advanced topic.
 
 <dl class="function">
 <dt id="function:LOG10">
-<code class="descname">LOG10</code><span class="sig-paren">(</span>a<span class="sig-paren">)</span><a class="headerlink" href="basic.html#function:LOG10" title="Permalink to this definition">¶</a></dt>
+<code class="descname">LOG10</code><span class="sig-paren">(</span>a<span class="sig-paren">)</span><a class="headerlink" href="#function:LOG10" title="Permalink to this definition">¶</a></dt>
 <dd><p>Gives the log base 10 of the provided number:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">PRINT</span> <span class="nv">LOG10</span><span class="p">(</span><span class="mf">2</span><span class="p">).</span> <span class="c1">// prints 0.30102999566398114</span>
 </pre></div>
@@ -534,7 +534,7 @@ which can be a rather advanced topic.
 
 <dl class="function">
 <dt id="function:MOD">
-<code class="descname">MOD</code><span class="sig-paren">(</span>a,b<span class="sig-paren">)</span><a class="headerlink" href="basic.html#function:MOD" title="Permalink to this definition">¶</a></dt>
+<code class="descname">MOD</code><span class="sig-paren">(</span>a,b<span class="sig-paren">)</span><a class="headerlink" href="#function:MOD" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns remainder from integer division.
 Keep in mind that it&#8217;s not a traditional mathematical Euclidean division where the result is always positive. The result has the same absolute value as mathematical modulo operation but the sign is the same as the sign of dividend:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">PRINT</span> <span class="nv">MOD</span><span class="p">(</span><span class="mf">21</span><span class="p">,</span><span class="mf">6</span><span class="p">).</span> <span class="c1">// prints 3</span>
@@ -545,7 +545,7 @@ Keep in mind that it&#8217;s not a traditional mathematical Euclidean division w
 
 <dl class="function">
 <dt id="function:MIN">
-<code class="descname">MIN</code><span class="sig-paren">(</span>a,b<span class="sig-paren">)</span><a class="headerlink" href="basic.html#function:MIN" title="Permalink to this definition">¶</a></dt>
+<code class="descname">MIN</code><span class="sig-paren">(</span>a,b<span class="sig-paren">)</span><a class="headerlink" href="#function:MIN" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns The lower of the two values:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">PRINT</span> <span class="nv">MIN</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="mf">100</span><span class="p">).</span> <span class="c1">// prints 0</span>
 </pre></div>
@@ -554,7 +554,7 @@ Keep in mind that it&#8217;s not a traditional mathematical Euclidean division w
 
 <dl class="function">
 <dt id="function:MAX">
-<code class="descname">MAX</code><span class="sig-paren">(</span>a,b<span class="sig-paren">)</span><a class="headerlink" href="basic.html#function:MAX" title="Permalink to this definition">¶</a></dt>
+<code class="descname">MAX</code><span class="sig-paren">(</span>a,b<span class="sig-paren">)</span><a class="headerlink" href="#function:MAX" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns The higher of the two values:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">PRINT</span> <span class="nv">MAX</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="mf">100</span><span class="p">).</span> <span class="c1">// prints 100</span>
 </pre></div>
@@ -563,7 +563,7 @@ Keep in mind that it&#8217;s not a traditional mathematical Euclidean division w
 
 <dl class="function">
 <dt id="function:RANDOM">
-<code class="descname">RANDOM</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="basic.html#function:RANDOM" title="Permalink to this definition">¶</a></dt>
+<code class="descname">RANDOM</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#function:RANDOM" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns a random floating point number in the range [0..1]:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">PRINT</span> <span class="nv">RANDOM</span><span class="p">().</span> <span class="c1">//prints a random number</span>
 <span class="k">PRINT</span> <span class="s">&quot;Let&#39;s roll a 6-sided die 10 times:&quot;</span><span class="p">.</span>
@@ -581,7 +581,7 @@ Keep in mind that it&#8217;s not a traditional mathematical Euclidean division w
 
 <dl class="function">
 <dt id="function:ROUND">
-<code class="descname">ROUND</code><span class="sig-paren">(</span>a<span class="sig-paren">)</span><a class="headerlink" href="basic.html#function:ROUND" title="Permalink to this definition">¶</a></dt>
+<code class="descname">ROUND</code><span class="sig-paren">(</span>a<span class="sig-paren">)</span><a class="headerlink" href="#function:ROUND" title="Permalink to this definition">¶</a></dt>
 <dd><p>Rounds to the nearest whole number:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">PRINT</span> <span class="nv">ROUND</span><span class="p">(</span><span class="mf">1</span><span class="p">.</span><span class="mf">887</span><span class="p">).</span> <span class="c1">// prints 2</span>
 </pre></div>
@@ -599,7 +599,7 @@ Keep in mind that it&#8217;s not a traditional mathematical Euclidean division w
 
 <dl class="function">
 <dt id="function:SQRT">
-<code class="descname">SQRT</code><span class="sig-paren">(</span>a<span class="sig-paren">)</span><a class="headerlink" href="basic.html#function:SQRT" title="Permalink to this definition">¶</a></dt>
+<code class="descname">SQRT</code><span class="sig-paren">(</span>a<span class="sig-paren">)</span><a class="headerlink" href="#function:SQRT" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns square root:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">PRINT</span> <span class="nv">SQRT</span><span class="p">(</span><span class="mf">7</span><span class="p">.</span><span class="mf">89</span><span class="p">).</span> <span class="c1">// prints 2.80891438103763</span>
 </pre></div>
@@ -608,7 +608,7 @@ Keep in mind that it&#8217;s not a traditional mathematical Euclidean division w
 
 <dl class="function">
 <dt id="function:CHAR">
-<code class="descname">CHAR</code><span class="sig-paren">(</span>a<span class="sig-paren">)</span><a class="headerlink" href="basic.html#function:CHAR" title="Permalink to this definition">¶</a></dt>
+<code class="descname">CHAR</code><span class="sig-paren">(</span>a<span class="sig-paren">)</span><a class="headerlink" href="#function:CHAR" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -630,7 +630,7 @@ Keep in mind that it&#8217;s not a traditional mathematical Euclidean division w
 
 <dl class="function">
 <dt id="function:UNCHAR">
-<code class="descname">UNCHAR</code><span class="sig-paren">(</span>a<span class="sig-paren">)</span><a class="headerlink" href="basic.html#function:UNCHAR" title="Permalink to this definition">¶</a></dt>
+<code class="descname">UNCHAR</code><span class="sig-paren">(</span>a<span class="sig-paren">)</span><a class="headerlink" href="#function:UNCHAR" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -651,7 +651,7 @@ Keep in mind that it&#8217;s not a traditional mathematical Euclidean division w
 </dd></dl>
 
 <span class="target" id="trig"></span><div class="section" id="trigonometric-functions">
-<span id="index-2"></span><h3>Trigonometric Functions<a class="headerlink" href="basic.html#trigonometric-functions" title="Permalink to this headline">¶</a></h3>
+<span id="index-2"></span><h3>Trigonometric Functions<a class="headerlink" href="#trigonometric-functions" title="Permalink to this headline">¶</a></h3>
 <table border="1" class="docutils">
 <colgroup>
 <col width="100%" />
@@ -661,25 +661,25 @@ Keep in mind that it&#8217;s not a traditional mathematical Euclidean division w
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="basic.html#function:SIN" title="SIN function"><code class="xref ks ks-func docutils literal"><span class="pre">SIN(a)</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#function:SIN" title="SIN function"><code class="xref ks ks-func docutils literal"><span class="pre">SIN(a)</span></code></a></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic.html#function:COS" title="COS function"><code class="xref ks ks-func docutils literal"><span class="pre">COS(a)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#function:COS" title="COS function"><code class="xref ks ks-func docutils literal"><span class="pre">COS(a)</span></code></a></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic.html#function:TAN" title="TAN function"><code class="xref ks ks-func docutils literal"><span class="pre">TAN(a)</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#function:TAN" title="TAN function"><code class="xref ks ks-func docutils literal"><span class="pre">TAN(a)</span></code></a></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic.html#function:ARCSIN" title="ARCSIN function"><code class="xref ks ks-func docutils literal"><span class="pre">ARCSIN(x)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#function:ARCSIN" title="ARCSIN function"><code class="xref ks ks-func docutils literal"><span class="pre">ARCSIN(x)</span></code></a></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic.html#function:ARCCOS" title="ARCCOS function"><code class="xref ks ks-func docutils literal"><span class="pre">ARCCOS(x)</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#function:ARCCOS" title="ARCCOS function"><code class="xref ks ks-func docutils literal"><span class="pre">ARCCOS(x)</span></code></a></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic.html#function:ARCTAN" title="ARCTAN function"><code class="xref ks ks-func docutils literal"><span class="pre">ARCTAN(x)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#function:ARCTAN" title="ARCTAN function"><code class="xref ks ks-func docutils literal"><span class="pre">ARCTAN(x)</span></code></a></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic.html#function:ARCTAN2" title="ARCTAN2 function"><code class="xref ks ks-func docutils literal"><span class="pre">ARCTAN2(y,x)</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#function:ARCTAN2" title="ARCTAN2 function"><code class="xref ks ks-func docutils literal"><span class="pre">ARCTAN2(y,x)</span></code></a></td>
 </tr>
 </tbody>
 </table>
 <dl class="function">
 <dt id="function:SIN">
-<code class="descname">SIN</code><span class="sig-paren">(</span>a<span class="sig-paren">)</span><a class="headerlink" href="basic.html#function:SIN" title="Permalink to this definition">¶</a></dt>
+<code class="descname">SIN</code><span class="sig-paren">(</span>a<span class="sig-paren">)</span><a class="headerlink" href="#function:SIN" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -701,7 +701,7 @@ Keep in mind that it&#8217;s not a traditional mathematical Euclidean division w
 
 <dl class="function">
 <dt id="function:COS">
-<code class="descname">COS</code><span class="sig-paren">(</span>a<span class="sig-paren">)</span><a class="headerlink" href="basic.html#function:COS" title="Permalink to this definition">¶</a></dt>
+<code class="descname">COS</code><span class="sig-paren">(</span>a<span class="sig-paren">)</span><a class="headerlink" href="#function:COS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -723,7 +723,7 @@ Keep in mind that it&#8217;s not a traditional mathematical Euclidean division w
 
 <dl class="function">
 <dt id="function:TAN">
-<code class="descname">TAN</code><span class="sig-paren">(</span>a<span class="sig-paren">)</span><a class="headerlink" href="basic.html#function:TAN" title="Permalink to this definition">¶</a></dt>
+<code class="descname">TAN</code><span class="sig-paren">(</span>a<span class="sig-paren">)</span><a class="headerlink" href="#function:TAN" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -745,7 +745,7 @@ Keep in mind that it&#8217;s not a traditional mathematical Euclidean division w
 
 <dl class="function">
 <dt id="function:ARCSIN">
-<code class="descname">ARCSIN</code><span class="sig-paren">(</span>x<span class="sig-paren">)</span><a class="headerlink" href="basic.html#function:ARCSIN" title="Permalink to this definition">¶</a></dt>
+<code class="descname">ARCSIN</code><span class="sig-paren">(</span>x<span class="sig-paren">)</span><a class="headerlink" href="#function:ARCSIN" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -767,7 +767,7 @@ Keep in mind that it&#8217;s not a traditional mathematical Euclidean division w
 
 <dl class="function">
 <dt id="function:ARCCOS">
-<code class="descname">ARCCOS</code><span class="sig-paren">(</span>x<span class="sig-paren">)</span><a class="headerlink" href="basic.html#function:ARCCOS" title="Permalink to this definition">¶</a></dt>
+<code class="descname">ARCCOS</code><span class="sig-paren">(</span>x<span class="sig-paren">)</span><a class="headerlink" href="#function:ARCCOS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -789,7 +789,7 @@ Keep in mind that it&#8217;s not a traditional mathematical Euclidean division w
 
 <dl class="function">
 <dt id="function:ARCTAN">
-<code class="descname">ARCTAN</code><span class="sig-paren">(</span>x<span class="sig-paren">)</span><a class="headerlink" href="basic.html#function:ARCTAN" title="Permalink to this definition">¶</a></dt>
+<code class="descname">ARCTAN</code><span class="sig-paren">(</span>x<span class="sig-paren">)</span><a class="headerlink" href="#function:ARCTAN" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -811,7 +811,7 @@ Keep in mind that it&#8217;s not a traditional mathematical Euclidean division w
 
 <dl class="function">
 <dt id="function:ARCTAN2">
-<code class="descname">ARCTAN2</code><span class="sig-paren">(</span>y,x<span class="sig-paren">)</span><a class="headerlink" href="basic.html#function:ARCTAN2" title="Permalink to this definition">¶</a></dt>
+<code class="descname">ARCTAN2</code><span class="sig-paren">(</span>y,x<span class="sig-paren">)</span><a class="headerlink" href="#function:ARCTAN2" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

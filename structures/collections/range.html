@@ -108,7 +108,7 @@
 <li class="toctree-l3"><a class="reference internal" href="lexicon.html">Lexicon</a></li>
 <li class="toctree-l3"><a class="reference internal" href="list.html">List</a></li>
 <li class="toctree-l3"><a class="reference internal" href="queue.html">Queue</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="range.html">Range</a><ul class="simple">
+<li class="toctree-l3 current"><a class="current reference internal" href="">Range</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="stack.html">Stack</a></li>
@@ -178,8 +178,8 @@
            <div itemprop="articleBody">
             
   <div class="section" id="range">
-<span id="id1"></span><h1>Range<a class="headerlink" href="range.html#range" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference internal" href="range.html#structure:RANGE" title="RANGE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Range</span></code></a> is a type that represents a sequence of scalar whole numbers. The sequence can start and finish at any whole number, can be either descending or ascending and can skip numbers.</p>
+<span id="id1"></span><h1>Range<a class="headerlink" href="#range" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference internal" href="#structure:RANGE" title="RANGE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Range</span></code></a> is a type that represents a sequence of scalar whole numbers. The sequence can start and finish at any whole number, can be either descending or ascending and can skip numbers.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">This is one of the few places in kOS where there is a distinction between
@@ -187,7 +187,7 @@ decimal (floating point, or fractional) scalar numbers and whole (integer,
 or round) scalar numbers.  Using a decimal scalar will not throw an error,
 however it may give unexpected results due to rounding.</p>
 </div>
-<p>There are 3 ways of constructing a <a class="reference internal" href="range.html#structure:RANGE" title="RANGE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Range</span></code></a>:</p>
+<p>There are 3 ways of constructing a <a class="reference internal" href="#structure:RANGE" title="RANGE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Range</span></code></a>:</p>
 <ul>
 <li><p class="first"><code class="code docutils literal"><span class="pre">RANGE(START,</span> <span class="pre">STOP,</span> <span class="pre">STEP)</span></code></p>
 <p>Will create a sequence of numbers that starts counting with <cite>START</cite>,
@@ -210,7 +210,7 @@ be 0.</p>
 </li>
 </ul>
 <div class="section" id="code-examples">
-<h2>Code examples<a class="headerlink" href="range.html#code-examples" title="Permalink to this headline">¶</a></h2>
+<h2>Code examples<a class="headerlink" href="#code-examples" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">FOR</span> <span class="nv">I</span> <span class="nv">IN</span> <span class="nv">RANGE</span><span class="p">(</span><span class="mf">5</span><span class="p">)</span> <span class="p">{</span>
   <span class="k">PRINT</span> <span class="nv">I</span><span class="p">.</span>
 <span class="p">}</span>
@@ -224,12 +224,12 @@ be 0.</p>
 </div>
 </div>
 <div class="section" id="structure">
-<h2>Structure<a class="headerlink" href="range.html#structure" title="Permalink to this headline">¶</a></h2>
+<h2>Structure<a class="headerlink" href="#structure" title="Permalink to this headline">¶</a></h2>
 <dl class="structure">
 <dt id="structure:RANGE">
-<em class="property">structure </em><code class="descname">Range</code><a class="headerlink" href="range.html#structure:RANGE" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">Range</code><a class="headerlink" href="#structure:RANGE" title="Permalink to this definition">¶</a></dt>
 <dd><table border="1" class="docutils" id="id2">
-<caption><span class="caption-text">Members</span><a class="headerlink" href="range.html#id2" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-text">Members</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="29%" />
 <col width="14%" />
@@ -244,17 +244,17 @@ be 0.</p>
 <tbody valign="top">
 <tr class="row-even"><td>All suffixes of <a class="reference internal" href="enumerable.html#structure:ENUMERABLE" title="ENUMERABLE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Enumerable</span></code></a></td>
 <td>&nbsp;</td>
-<td><a class="reference internal" href="range.html#structure:RANGE" title="RANGE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Range</span></code></a> objects are a type of <a class="reference internal" href="enumerable.html#structure:ENUMERABLE" title="ENUMERABLE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Enumerable</span></code></a></td>
+<td><a class="reference internal" href="#structure:RANGE" title="RANGE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Range</span></code></a> objects are a type of <a class="reference internal" href="enumerable.html#structure:ENUMERABLE" title="ENUMERABLE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Enumerable</span></code></a></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="range.html#attribute:RANGE:START" title="RANGE:START attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">START</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:RANGE:START" title="RANGE:START attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">START</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#scalar"><span>scalar</span></a></td>
 <td>initial element of the range</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="range.html#attribute:RANGE:STOP" title="RANGE:STOP attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">STOP</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:RANGE:STOP" title="RANGE:STOP attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">STOP</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#scalar"><span>scalar</span></a></td>
 <td>range limit</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="range.html#attribute:RANGE:STEP" title="RANGE:STEP attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">STEP</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:RANGE:STEP" title="RANGE:STEP attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">STEP</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#scalar"><span>scalar</span></a></td>
 <td>step size</td>
 </tr>
@@ -268,7 +268,7 @@ be 0.</p>
 </div>
 <dl class="attribute">
 <dt id="attribute:RANGE:START">
-Range:<code class="descname">START</code><a class="headerlink" href="range.html#attribute:RANGE:START" title="Permalink to this definition">¶</a></dt>
+Range:<code class="descname">START</code><a class="headerlink" href="#attribute:RANGE:START" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -284,7 +284,7 @@ Range:<code class="descname">START</code><a class="headerlink" href="range.html#
 
 <dl class="attribute">
 <dt id="attribute:RANGE:STOP">
-Range:<code class="descname">STOP</code><a class="headerlink" href="range.html#attribute:RANGE:STOP" title="Permalink to this definition">¶</a></dt>
+Range:<code class="descname">STOP</code><a class="headerlink" href="#attribute:RANGE:STOP" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -300,7 +300,7 @@ Range:<code class="descname">STOP</code><a class="headerlink" href="range.html#a
 
 <dl class="attribute">
 <dt id="attribute:RANGE:STEP">
-Range:<code class="descname">STEP</code><a class="headerlink" href="range.html#attribute:RANGE:STEP" title="Permalink to this definition">¶</a></dt>
+Range:<code class="descname">STEP</code><a class="headerlink" href="#attribute:RANGE:STEP" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

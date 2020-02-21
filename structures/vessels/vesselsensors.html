@@ -128,7 +128,7 @@
 <li class="toctree-l3"><a class="reference internal" href="sensor.html">Sensor</a></li>
 <li class="toctree-l3"><a class="reference internal" href="stage.html">Stage</a></li>
 <li class="toctree-l3"><a class="reference internal" href="vessel.html">Vessel</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="vesselsensors.html">VesselSensors</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">VesselSensors</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../communication.html">Communication</a></li>
@@ -192,7 +192,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="vesselsensors">
-<h1>VesselSensors<a class="headerlink" href="vesselsensors.html#vesselsensors" title="Permalink to this headline">¶</a></h1>
+<h1>VesselSensors<a class="headerlink" href="#vesselsensors" title="Permalink to this headline">¶</a></h1>
 <p>When you ask a Vessel to tell you its <a class="reference internal" href="vessel.html#attribute:VESSEL:SENSORS" title="VESSEL:SENSORS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">Vessel:SENSORS</span></code></a> suffix, it returns an object of this type. It is a snapshot of sensor data taken at the moment the sensor reading was requested.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
@@ -201,9 +201,9 @@
 <p>If you store this in a variable and wait, the numbers are frozen in time and won&#8217;t change as the vessel&#8217;s condition changes.</p>
 <dl class="structure">
 <dt id="structure:VESSELSENSORS">
-<em class="property">structure </em><code class="descname">VesselSensors</code><a class="headerlink" href="vesselsensors.html#structure:VESSELSENSORS" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">VesselSensors</code><a class="headerlink" href="#structure:VESSELSENSORS" title="Permalink to this definition">¶</a></dt>
 <dd><table border="1" class="docutils" id="id1">
-<caption><span class="caption-text">Members</span><a class="headerlink" href="vesselsensors.html#id1" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-text">Members</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="20%" />
 <col width="20%" />
@@ -216,23 +216,23 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="vesselsensors.html#attribute:VESSELSENSORS:ACC" title="VESSELSENSORS:ACC attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ACC</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:VESSELSENSORS:ACC" title="VESSELSENSORS:ACC attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ACC</span></code></a></td>
 <td><a class="reference internal" href="../../math/vector.html#structure:VECTOR" title="VECTOR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Vector</span></code></a></td>
 <td>Acceleration experienced by the <a class="reference internal" href="vessel.html#structure:VESSEL" title="VESSEL structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Vessel</span></code></a></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="vesselsensors.html#attribute:VESSELSENSORS:PRES" title="VESSELSENSORS:PRES attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PRES</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:VESSELSENSORS:PRES" title="VESSELSENSORS:PRES attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PRES</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#scalar"><span>scalar</span></a></td>
 <td>Atmospheric Pressure outside this <a class="reference internal" href="vessel.html#structure:VESSEL" title="VESSEL structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Vessel</span></code></a></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="vesselsensors.html#attribute:VESSELSENSORS:TEMP" title="VESSELSENSORS:TEMP attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TEMP</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:VESSELSENSORS:TEMP" title="VESSELSENSORS:TEMP attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TEMP</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#scalar"><span>scalar</span></a></td>
 <td>Temperature outside this <a class="reference internal" href="vessel.html#structure:VESSEL" title="VESSEL structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Vessel</span></code></a></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="vesselsensors.html#attribute:VESSELSENSORS:GRAV" title="VESSELSENSORS:GRAV attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">GRAV</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:VESSELSENSORS:GRAV" title="VESSELSENSORS:GRAV attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">GRAV</span></code></a></td>
 <td><a class="reference internal" href="../../math/vector.html#structure:VECTOR" title="VECTOR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Vector</span></code></a> (g&#8217;s)</td>
 <td>Gravitational acceleration</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="vesselsensors.html#attribute:VESSELSENSORS:LIGHT" title="VESSELSENSORS:LIGHT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">LIGHT</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:VESSELSENSORS:LIGHT" title="VESSELSENSORS:LIGHT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">LIGHT</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#scalar"><span>scalar</span></a></td>
 <td>Sun exposure on the solar panels of this <a class="reference internal" href="vessel.html#structure:VESSEL" title="VESSEL structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Vessel</span></code></a></td>
 </tr>
@@ -242,7 +242,7 @@
 
 <dl class="attribute">
 <dt id="attribute:VESSELSENSORS:ACC">
-VesselSensors:<code class="descname">ACC</code><a class="headerlink" href="vesselsensors.html#attribute:VESSELSENSORS:ACC" title="Permalink to this definition">¶</a></dt>
+VesselSensors:<code class="descname">ACC</code><a class="headerlink" href="#attribute:VESSELSENSORS:ACC" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -258,7 +258,7 @@ VesselSensors:<code class="descname">ACC</code><a class="headerlink" href="vesse
 
 <dl class="attribute">
 <dt id="attribute:VESSELSENSORS:PRES">
-VesselSensors:<code class="descname">PRES</code><a class="headerlink" href="vesselsensors.html#attribute:VESSELSENSORS:PRES" title="Permalink to this definition">¶</a></dt>
+VesselSensors:<code class="descname">PRES</code><a class="headerlink" href="#attribute:VESSELSENSORS:PRES" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -274,7 +274,7 @@ VesselSensors:<code class="descname">PRES</code><a class="headerlink" href="vess
 
 <dl class="attribute">
 <dt id="attribute:VESSELSENSORS:TEMP">
-VesselSensors:<code class="descname">TEMP</code><a class="headerlink" href="vesselsensors.html#attribute:VESSELSENSORS:TEMP" title="Permalink to this definition">¶</a></dt>
+VesselSensors:<code class="descname">TEMP</code><a class="headerlink" href="#attribute:VESSELSENSORS:TEMP" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -290,7 +290,7 @@ VesselSensors:<code class="descname">TEMP</code><a class="headerlink" href="vess
 
 <dl class="attribute">
 <dt id="attribute:VESSELSENSORS:GRAV">
-VesselSensors:<code class="descname">GRAV</code><a class="headerlink" href="vesselsensors.html#attribute:VESSELSENSORS:GRAV" title="Permalink to this definition">¶</a></dt>
+VesselSensors:<code class="descname">GRAV</code><a class="headerlink" href="#attribute:VESSELSENSORS:GRAV" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -306,7 +306,7 @@ VesselSensors:<code class="descname">GRAV</code><a class="headerlink" href="vess
 
 <dl class="attribute">
 <dt id="attribute:VESSELSENSORS:LIGHT">
-VesselSensors:<code class="descname">LIGHT</code><a class="headerlink" href="vesselsensors.html#attribute:VESSELSENSORS:LIGHT" title="Permalink to this definition">¶</a></dt>
+VesselSensors:<code class="descname">LIGHT</code><a class="headerlink" href="#attribute:VESSELSENSORS:LIGHT" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

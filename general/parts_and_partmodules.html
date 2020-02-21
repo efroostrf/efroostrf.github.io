@@ -108,7 +108,7 @@
 <li class="toctree-l2"><a class="reference internal" href="compiling.html">Machine Code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="skid.html">Sound Chip (SKID)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="nametag.html">Name Tags</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="parts_and_partmodules.html">Parts &amp; PartModules</a><ul class="simple">
+<li class="toctree-l2 current"><a class="current reference internal" href="">Parts &amp; PartModules</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="career_limits.html">Respecting Career Limits</a></li>
@@ -169,11 +169,11 @@
            <div itemprop="articleBody">
             
   <div class="section" id="ship-parts-and-partmodules">
-<span id="parts-and-partmodules"></span><h1>Ship Parts and PartModules<a class="headerlink" href="parts_and_partmodules.html#ship-parts-and-partmodules" title="Permalink to this headline">¶</a></h1>
+<span id="parts-and-partmodules"></span><h1>Ship Parts and PartModules<a class="headerlink" href="#ship-parts-and-partmodules" title="Permalink to this headline">¶</a></h1>
 <p>kOS has the ability to access the functionality of Parts&#8217; actions, and right-click context menus. However, to understand how to use them it is necessary to first understand a little bit about the structure of parts in a vessel in Kerbal Space Program.</p>
 <p>In Kerbal Space Program, a Vessel is a collection of Parts arranged in a tree Structure. In kOS, you can access the parts one of two ways:</p>
 <div class="section" id="tutorial">
-<h2>Tutorial<a class="headerlink" href="parts_and_partmodules.html#tutorial" title="Permalink to this headline">¶</a></h2>
+<h2>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h2>
 <p>If you prefer the tutorial approach to learning, the following links will walk you through a specific pair of tasks to introduce you to this system. If you prefer a methodical reference approach, skip the tutorials and read on, then come back to the tutorials afterward.</p>
 <p>TODO: PUT LINKS POINTING TO A TUTORIAL WALKING THROUGH WHAT THIS IS TEACHING.</p>
 <p>THERE NEEDS TO BE TWO TUTORIALS MINIMUM:</p>
@@ -183,14 +183,14 @@
 </ol>
 </div>
 <div class="section" id="parts">
-<h2>Parts<a class="headerlink" href="parts_and_partmodules.html#parts" title="Permalink to this headline">¶</a></h2>
+<h2>Parts<a class="headerlink" href="#parts" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p><strong>The short and quick thing to remember</strong></p>
 <p class="last">If you only remember one technique, it should be using the <code class="xref ks ks-meth docutils literal"><span class="pre">Part:PARTSDUBBED</span></code> method described down below. It&#8217;s the most useful one that covers all the other cases.</p>
 </div>
 <div class="section" id="accessing-the-parts-by-various-naming-systems">
-<h3>Accessing the parts by various naming systems<a class="headerlink" href="parts_and_partmodules.html#accessing-the-parts-by-various-naming-systems" title="Permalink to this headline">¶</a></h3>
+<h3>Accessing the parts by various naming systems<a class="headerlink" href="#accessing-the-parts-by-various-naming-systems" title="Permalink to this headline">¶</a></h3>
 <p>Any time you have a vessel variable, you can use these suffixes to get lists of parts on it by their names using several different naming schemes:</p>
 <p><strong>Part Tag</strong>: A part&#8217;s <em>tag</em> is whatever custom name you have given it using the <a class="reference external" href="nametag.html">nametag system described here</a>. This is probably the best naming convention to use because it lets you make up whatever name you like for the part and use it to pick the parts you want to deal with in your script.</p>
 <p><strong>Part Title</strong>: A part&#8217;s <em>title</em> is the name it has inside the GUI interface on the screen that you see as the user.</p>
@@ -224,7 +224,7 @@
 </div>
 <p>In all cases the checks are performed case-insensitively.</p>
 <p>These are different styles of naming parts, all slightly different, and you can use any of them you like to get access to the part or parts you&#8217;re interested in.</p>
-<p>They all return a <a class="reference external" href="https://ksp-kos.github.io/KOS/structures/misc/list.html">List</a> of <a class="reference external" href="../structures/vessels/part.html">Parts</a> rather than just one single part. This is because any name could have more than one hit. If you expect to get just one single hit, you can just look at the zero-th value of the list, like so:</p>
+<p>They all return a <a class="reference external" href="../structures/misc/list.html">List</a> of <a class="reference external" href="../structures/vessels/part.html">Parts</a> rather than just one single part. This is because any name could have more than one hit. If you expect to get just one single hit, you can just look at the zero-th value of the list, like so:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">SET</span> <span class="nv">onePart</span> <span class="ow">TO</span> <span class="nv">somevessel</span><span class="p">:</span><span class="nv">PARTSDUBBED</span><span class="p">(</span><span class="s">&quot;my favorite engine&quot;</span><span class="p">)[</span><span class="mf">0</span><span class="p">].</span>
 </pre></div>
 </div>
@@ -243,7 +243,7 @@ has a length of zero:</p>
 </pre></div>
 </div>
 <div class="section" id="pattern-matching">
-<h4>Pattern matching<a class="headerlink" href="parts_and_partmodules.html#pattern-matching" title="Permalink to this headline">¶</a></h4>
+<h4>Pattern matching<a class="headerlink" href="#pattern-matching" title="Permalink to this headline">¶</a></h4>
 <p>For even more advanced part selection you can use the <code class="docutils literal"><span class="pre">*PATTERN</span></code> variants of the suffixes mentioned above (see <a class="reference internal" href="../structures/vessels/vessel.html#method:VESSEL:PARTSTAGGEDPATTERN" title="VESSEL:PARTSTAGGEDPATTERN method"><code class="xref ks ks-meth docutils literal"><span class="pre">Vessel:PARTSTAGGEDPATTERN</span></code></a>, <a class="reference internal" href="../structures/vessels/vessel.html#method:VESSEL:PARTSTITLEDPATTERN" title="VESSEL:PARTSTITLEDPATTERN method"><code class="xref ks ks-meth docutils literal"><span class="pre">Vessel:PARTSTITLEDPATTERN</span></code></a>, <a class="reference internal" href="../structures/vessels/vessel.html#method:VESSEL:PARTSNAMEDPATTERN" title="VESSEL:PARTSNAMEDPATTERN method"><code class="xref ks ks-meth docutils literal"><span class="pre">Vessel:PARTSNAMEDPATTERN</span></code></a> and <a class="reference internal" href="../structures/vessels/vessel.html#method:VESSEL:PARTSDUBBEDPATTERN" title="VESSEL:PARTSDUBBEDPATTERN method"><code class="xref ks ks-meth docutils literal"><span class="pre">Vessel:PARTSDUBBEDPATTERN</span></code></a>). They enable you to select parts based on regular expression matching, giving you ultimate power over your parts.</p>
 <div class="figure align-right">
 <img alt="../_images/ship_parts_tree.png" src="../_images/ship_parts_tree.png" />
@@ -251,16 +251,16 @@ has a length of zero:</p>
 </div>
 </div>
 <div class="section" id="accessing-the-parts-list-as-a-tree">
-<h3>Accessing the parts list as a tree<a class="headerlink" href="parts_and_partmodules.html#accessing-the-parts-list-as-a-tree" title="Permalink to this headline">¶</a></h3>
+<h3>Accessing the parts list as a tree<a class="headerlink" href="#accessing-the-parts-list-as-a-tree" title="Permalink to this headline">¶</a></h3>
 <p>Starting from the root part, Vessel:ROOTPART (SHIP:ROOTPART, TARGET:ROOTPART, or Vessel(&#8220;some ship name&#8221;):ROOTPART). You can get all its children parts with the Part:CHILDREN suffix. Given any Part, you can access its Parent part with Part:PARENT, and detect if it doesn&#8217;t have a parent with Part:HASPARENT. By walking this tree you can see how the parts are connected together.</p>
 <p>The diagram here shows an example of a small vessel and how it might get represented as a tree of parts in KSP.</p>
 </div>
 <div class="section" id="accessing-the-parts-list-as-a-list">
-<h3>Accessing the parts list as a list<a class="headerlink" href="parts_and_partmodules.html#accessing-the-parts-list-as-a-list" title="Permalink to this headline">¶</a></h3>
+<h3>Accessing the parts list as a list<a class="headerlink" href="#accessing-the-parts-list-as-a-list" title="Permalink to this headline">¶</a></h3>
 <p>You can get a list of all the parts on a vessel using the suffix :PARTS, or by using the LIST PARTS IN command. When you do this, the resulting list is a &#8220;flattening&#8221; of the tree of parts, created by use of a depth-first search starting from the root part. In the diagram shown here, the red numbers indicate one possible way the parts might be represented in LIST indeces if you used SHIP:PARTS on such a vessel. Note there is no guarantee it would look exactly like this, as it depends on exactly what order the parts were attached in the VAB.</p>
 </div>
 <div class="section" id="shortcuts-to-smaller-lists-of-parts">
-<h3>Shortcuts to smaller lists of parts<a class="headerlink" href="parts_and_partmodules.html#shortcuts-to-smaller-lists-of-parts" title="Permalink to this headline">¶</a></h3>
+<h3>Shortcuts to smaller lists of parts<a class="headerlink" href="#shortcuts-to-smaller-lists-of-parts" title="Permalink to this headline">¶</a></h3>
 <p>If you know some of the properties of the parts you&#8217;re interested in, you can ask kOS to give you a shorter list of parts that just includes those parts, using the following suffixes:</p>
 <p>Return a List of just the parts who&#8217;s name is &#8220;someNameHere&#8221;:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">SET</span> <span class="nv">ves</span> <span class="ow">TO</span> <span class="nv">SHIP</span><span class="p">.</span> <span class="c1">// or Target or Vessel(&quot;ship name&quot;).</span>
@@ -275,25 +275,25 @@ has a length of zero:</p>
 </div>
 </div>
 <div class="section" id="partmodules-and-the-right-click-menu">
-<h2>PartModules and the right-click menu:<a class="headerlink" href="parts_and_partmodules.html#partmodules-and-the-right-click-menu" title="Permalink to this headline">¶</a></h2>
+<h2>PartModules and the right-click menu:<a class="headerlink" href="#partmodules-and-the-right-click-menu" title="Permalink to this headline">¶</a></h2>
 <p>Each Part, in turn has a list of what are called <a class="reference external" href="../structures/vessels/partmodule.html">PartModules</a> on it. A PartModule is a collection of variables and executable program hooks that gives the part some of its behaviors and properties. Without a PartModule, a part is really nothing more than a passive bit of structure that has nothing more than a shape, a look, and a strength to it. Some of the parts in the &#8220;structure&#8221; tab of the parts bin, like pure I-beams and girders, are like this - they have no PartModules on them. But all of the <em>interesting</em> parts you might want to do something with will have a PartModule on them. Through PartModules, **kOS will now allow you to manipulate or query anything that any KSP programmer, stock or mod, has added to the rightclick menu**, or action group actions, for a part.</p>
 <div class="section" id="partmodules-stock-vs-mods">
-<h3>PartModules, Stock vs Mods:<a class="headerlink" href="parts_and_partmodules.html#partmodules-stock-vs-mods" title="Permalink to this headline">¶</a></h3>
+<h3>PartModules, Stock vs Mods:<a class="headerlink" href="#partmodules-stock-vs-mods" title="Permalink to this headline">¶</a></h3>
 <p>It should be noted that even if you play an entirely stock installation of KSP (well, stock other than for kOS, obviously, otherwise you wouldn&#8217;t be reading this), you will still have PartModules on your Parts. Some people have muddied the terminology difference between &#8220;Mod&#8221; meaning &#8220;modification&#8221; and &#8220;Mod&#8221; meaning &#8220;module&#8221;. It should be made absolutely clear that PartModules are a feature of stock KSP, and BOTH stock KSP parts and Modded KSP Parts use them. Even if all you want to do is affect the stock behavior of stock parts in a completely unmodded way, you&#8217;ll still want to know about PartModules in order to do so.</p>
 </div>
 <div class="section" id="partmodules-and-modulemanager-like-behavior">
-<h3>PartModules and ModuleManager-like behavior:<a class="headerlink" href="parts_and_partmodules.html#partmodules-and-modulemanager-like-behavior" title="Permalink to this headline">¶</a></h3>
+<h3>PartModules and ModuleManager-like behavior:<a class="headerlink" href="#partmodules-and-modulemanager-like-behavior" title="Permalink to this headline">¶</a></h3>
 <p>Some Mods (meaning &#8220;modifications&#8221; here) operate by adding a new PartModule to every single part in the game. One example of such a mod is the Deadly Reentry mod. In order to track how fragile each part is and how well it withstands re-entry heat, the Deadly Re-entry mod adds a small module to each part in the game, even the stock parts that would normally have no mods at all on them.</p>
 <p>Other Mods allow the user to add PartModule&#8217;s to any part they feel like, through the use of the ModuleManager mod.</p>
 <p>Because of these, it&#8217;s impossible in this explanatory document to make blanket statements about which PartModules will exist on which Parts. Everything that is said here needs to be taken with a grain of salt, as depending on the mods you&#8217;ve installed on your game, you may find PartModules on your parts that are not normally on those parts for most other players.</p>
 </div>
 </div>
 <div class="section" id="what-a-partmodule-means-to-a-kos-script">
-<h2>What a PartModule means to a kOS script<a class="headerlink" href="parts_and_partmodules.html#what-a-partmodule-means-to-a-kos-script" title="Permalink to this headline">¶</a></h2>
+<h2>What a PartModule means to a kOS script<a class="headerlink" href="#what-a-partmodule-means-to-a-kos-script" title="Permalink to this headline">¶</a></h2>
 <p>There are 3 ways that a kOS script may interface with a PartModule.</p>
 <p>TODO - TAKE SOME SCREENSHOTS TO PUT ALONGSIDE THIS TEXT, SHOWING EXAMPLES OF THESE THINGS IN THE USER INTERFACE. WE NEED A SCREENSHOT THAT SHOWS BOTH A KSPFIELD AND A KSPEVENT IN A PART&#8217;S RMB CONTEXT MENU, A SCREENSHOT THAT SHOWS FIELDS COMING FROM MULTIPLE PARTMODULES, AND A SCREENSHOT SHOWING THE KSPACTIONS IN THE VAB ACTION EDITOR.</p>
 <div class="section" id="kspfields">
-<h3>KSPFields<a class="headerlink" href="parts_and_partmodules.html#kspfields" title="Permalink to this headline">¶</a></h3>
+<h3>KSPFields<a class="headerlink" href="#kspfields" title="Permalink to this headline">¶</a></h3>
 <p>A KSPField is a single variable that a PartModule attaches to a part. Some of the KSPFields are also displayed in the RMB context menu of a part. It has a current value, and if the field has had a &#8220;tweakable&#8221; GUI interface attached to it, then it&#8217;s also a settable field by the user manipulating the field in the context menu. In kOS, you can only access those KSPFields that are currently visible on the RMB context menu. We, the developers of kOS, instituted this rule out of respect for the developers of other mods and the stock KSP game. If they didn&#8217;t allow the user to see or manipulate the variable directly in the GUI, then we shouldn&#8217;t allow it to be manipulated or seen by a kOS script either.</p>
 <p>KSPFields are read or manipulated by <a class="reference internal" href="../structures/vessels/partmodule.html#method:PARTMODULE:GETFIELD" title="PARTMODULE:GETFIELD method"><code class="xref ks ks-meth docutils literal"><span class="pre">PartModule:GetField</span></code></a> and <a class="reference internal" href="../structures/vessels/partmodule.html#method:PARTMODULE:SETFIELD" title="PARTMODULE:SETFIELD method"><code class="xref ks ks-meth docutils literal"><span class="pre">Partmodule:SetField</span></code></a>.</p>
 <ul class="simple">
@@ -303,7 +303,7 @@ has a length of zero:</p>
 <p>Note, that these are suffixes of the partmodule and NOT suffixes of the Part itself. This is because two different PartModule&#8217;s on the same Part might have used the same field name as each other, and it&#8217;s important to keep them separate.</p>
 </div>
 <div class="section" id="kspevents">
-<h3>KSPEvents<a class="headerlink" href="parts_and_partmodules.html#kspevents" title="Permalink to this headline">¶</a></h3>
+<h3>KSPEvents<a class="headerlink" href="#kspevents" title="Permalink to this headline">¶</a></h3>
 <p>A KSPEvent, just like a KSPField, is a thing that a PartModule can put on the RMB context menu for a part. The difference is that a KSPEvent does not actually HAVE a value. It&#8217;s not a variable. Rather it&#8217;s just a button with a label next to it. When you press the button, it causes some sort of software inside the PartModule to run. An example of this is the &#8220;undock node&#8221; button you see on many of the docking ports.</p>
 <p><strong>Difference between a KSPEvent and a boolean KSPField</strong>: If you see a label next to a button in the RMB context menu, it might be a KSPEvent, OR it might be a boolean KSPField variable which is editable with a tweakable GUI. They look exactly the same in the user interface. To tell the difference, you need to look at what happens when you click the button. If clicking the button causes the button to depress inward and stay pressed in until you click it again, then this is a boolean value KSPField. If clicking the button pops the button in and then it pops out again right away, then this is a KSPEvent instead.</p>
 <p>KSPEvents are manipulated by the following suffix of PartModule, called <a class="reference internal" href="../structures/vessels/partmodule.html#method:PARTMODULE:DOEVENT" title="PARTMODULE:DOEVENT method"><code class="xref ks ks-meth docutils literal"><span class="pre">PartModule:DoEvent</span></code></a>.</p>
@@ -313,7 +313,7 @@ has a length of zero:</p>
 <p>This causes the event to execute once.</p>
 </div>
 <div class="section" id="kspactions">
-<h3>KSPActions:<a class="headerlink" href="parts_and_partmodules.html#kspactions" title="Permalink to this headline">¶</a></h3>
+<h3>KSPActions:<a class="headerlink" href="#kspactions" title="Permalink to this headline">¶</a></h3>
 <p>A KSPAction is a bit different from a KSPField or KSPEvent. A KSPAction is like a KSPEvent in that it causes some software inside the PartModule to be run. But it doesn&#8217;t work via the RMB context menu for the part. Instead KSPAction&#8217;s are those things you see being made avaiable to you as options you can assign into an Action Group in the VAB or SPH. When you have the action group editor tab enabled in the VAB or SPH, and then click on a part, that part asks all of its PartModules if they have any KSPActions they&#8217;d like to provide access to, and gathers all those answers and lists them in the user interface for you to select from and assign to the action group.</p>
 <p>kOS now allows you to access any of those actions without necessarily having had to assign them to any action groups if you didn&#8217;t want to.</p>
 <p>KSPActions are manipulated by the following suffix of PartModule, called <a class="reference internal" href="../structures/vessels/partmodule.html#method:PARTMODULE:DOACTION" title="PARTMODULE:DOACTION method"><code class="xref ks ks-meth docutils literal"><span class="pre">PartModule:DoAction</span></code></a>.</p>
@@ -324,11 +324,11 @@ has a length of zero:</p>
 </div>
 </div>
 <div class="section" id="exploring-what-s-there-to-find-field-event-action-names">
-<h2>Exploring what&#8217;s there to find Field/Event/Action Names:<a class="headerlink" href="parts_and_partmodules.html#exploring-what-s-there-to-find-field-event-action-names" title="Permalink to this headline">¶</a></h2>
+<h2>Exploring what&#8217;s there to find Field/Event/Action Names:<a class="headerlink" href="#exploring-what-s-there-to-find-field-event-action-names" title="Permalink to this headline">¶</a></h2>
 <p>Okay, so you understand all that, but you&#8217;re still thinking &#8220;but how do I KNOW what the names of part modules are, or what the names of the fields on them are? I didn&#8217;t write all that C# source code for all the modules.&#8221;</p>
 <p>There are some additional suffixes that are designed to help you explore what&#8217;s available so you can learn the answers to these questions. Also, some of the questions can be answered by other means:</p>
 <div class="section" id="what-partmodules-are-there-on-a-part">
-<h3>What PartModules are there on a part?<a class="headerlink" href="parts_and_partmodules.html#what-partmodules-are-there-on-a-part" title="Permalink to this headline">¶</a></h3>
+<h3>What PartModules are there on a part?<a class="headerlink" href="#what-partmodules-are-there-on-a-part" title="Permalink to this headline">¶</a></h3>
 <p>To answer this question you can do one of two things:</p>
 <p>A: <strong>Use the part.cfg file</strong> All parts in KSP come with a part.cfg file defining them, both for modded parts and stock parts. If you look at this file, it will contain sections looking something like this:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="c1">// Example snippet from a Part.cfg file:</span>
@@ -348,7 +348,7 @@ has a length of zero:</p>
 <p>Do that, and the file MODLIST should now contain a verbose dump of all the module names of all the parts on your ship. You can get any of the modules now by using Part:GETMODULE(&#8220;module name&#8221;).</p>
 </div>
 <div class="section" id="what-are-the-names-of-the-stuff-that-a-partmodule-can-do">
-<h3>What are the names of the stuff that a PartModule can do?<a class="headerlink" href="parts_and_partmodules.html#what-are-the-names-of-the-stuff-that-a-partmodule-can-do" title="Permalink to this headline">¶</a></h3>
+<h3>What are the names of the stuff that a PartModule can do?<a class="headerlink" href="#what-are-the-names-of-the-stuff-that-a-partmodule-can-do" title="Permalink to this headline">¶</a></h3>
 <p>These three suffixes tell you everything a part module can do:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">SET</span> <span class="nv">MOD</span> <span class="ow">TO</span> <span class="nv">P</span><span class="p">:</span><span class="nv">GETMODULE</span><span class="p">(</span><span class="s">&quot;some name here&quot;</span><span class="p">).</span>
 <span class="k">LOG</span> <span class="p">(</span><span class="s">&quot;These are all the things that I can currently USE GETFIELD AND SETFIELD ON IN &quot;</span> <span class="o">+</span> <span class="nv">MOD</span><span class="p">:</span><span class="nv">NAME</span> <span class="o">+</span> <span class="s">&quot;:&quot;</span><span class="p">)</span> <span class="ow">TO</span> <span class="nv">NAMELIST</span><span class="p">.</span>
@@ -362,7 +362,7 @@ has a length of zero:</p>
 <p>After that, the file NAMELIST would contain a dump of all the fields on this part module that you can use.</p>
 </div>
 <div class="section" id="be-warned-names-are-able-to-dynamically-change">
-<h3>BE WARNED! Names are able to dynamically change!<a class="headerlink" href="parts_and_partmodules.html#be-warned-names-are-able-to-dynamically-change" title="Permalink to this headline">¶</a></h3>
+<h3>BE WARNED! Names are able to dynamically change!<a class="headerlink" href="#be-warned-names-are-able-to-dynamically-change" title="Permalink to this headline">¶</a></h3>
 <p>Some PartModules are written to change the name of a field when something happens in the game. For example, you might find that after you&#8217;ve done this:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="nv">SomeModule</span><span class="p">:</span><span class="nv">DOEVENT</span><span class="p">(</span><span class="s">&quot;Activate&quot;</span><span class="p">).</span>
 </pre></div>

@@ -103,7 +103,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../structures.html">Structures</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../addons.html">Addons</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="AGX.html">Action Groups Extended</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="RemoteTech.html">RemoteTech</a><ul class="simple">
+<li class="toctree-l2 current"><a class="current reference internal" href="">RemoteTech</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="KAC.html">Kerbal Alarm Clock</a></li>
@@ -162,7 +162,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="remotetech">
-<span id="id1"></span><h1>RemoteTech<a class="headerlink" href="RemoteTech.html#remotetech" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1>RemoteTech<a class="headerlink" href="#remotetech" title="Permalink to this headline">¶</a></h1>
 <p>RemoteTech is a modification for Squad&#8217;s &#8220;Kerbal Space Program&#8221; (KSP) which overhauls the unmanned space program. It does this by requiring unmanned vessels have a connection to Kerbal Space Center (KSC) to be able to be controlled. This adds a new layer of difficulty that compensates for the lack of live crew members.</p>
 <ul class="simple">
 <li>Download: <a class="reference external" href="http://spacedock.info/mod/520/RemoteTech">http://spacedock.info/mod/520/RemoteTech</a></li>
@@ -173,7 +173,7 @@
 current game installation by usng the boolean expression
 <code class="docutils literal"><span class="pre">addons:available(&quot;RT&quot;)</span></code>.</p>
 <div class="section" id="interaction-with-kos">
-<h2>Interaction with kOS<a class="headerlink" href="RemoteTech.html#interaction-with-kos" title="Permalink to this headline">¶</a></h2>
+<h2>Interaction with kOS<a class="headerlink" href="#interaction-with-kos" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <div class="last versionadded">
@@ -186,7 +186,7 @@ remains supported.</p>
 <p>When you have RemoteTech installed you can only interact with the core&#8217;s terminal when you have a connection to KSC on any unmanned craft. Scripts launched when you still had a connection will continue to execute even if your unmanned craft loses connection to KSC. But you should note, that when there is no connection to KSC the archive volume is inaccessible. This will require you to plan ahead and copy necessary scripts for your mission to probe hard disk, if your kerbals and/or other scripts need to use them while not connected.</p>
 <p>If you launch a manned craft while using RemoteTech, you are still able to input commands from the terminal even if you do not have a connection to the KSC.  The archive will still be inaccessible without a connection to the KSC.  Under the current implementation, there is no delay when accessing the archive with a local terminal.  This implementation may change in the future to account for delays in reading and writing data over the connection.</p>
 <div class="section" id="remote-tech-and-the-kos-gui-widgets">
-<h3>Remote Tech and the kOS GUI widgets<a class="headerlink" href="RemoteTech.html#remote-tech-and-the-kos-gui-widgets" title="Permalink to this headline">¶</a></h3>
+<h3>Remote Tech and the kOS GUI widgets<a class="headerlink" href="#remote-tech-and-the-kos-gui-widgets" title="Permalink to this headline">¶</a></h3>
 <div class="versionadded">
 <p><span class="versionmodified">New in version v1.1.0.</span></p>
 </div>
@@ -198,7 +198,7 @@ signal delay rules as the interactive flying controls of the
 ship.</p>
 </div>
 <div class="section" id="antennas">
-<h3>Antennas<a class="headerlink" href="RemoteTech.html#antennas" title="Permalink to this headline">¶</a></h3>
+<h3>Antennas<a class="headerlink" href="#antennas" title="Permalink to this headline">¶</a></h3>
 <p>It is possible to activate/deactivate RT antennas, as well as set their targets using kOS:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">SET</span> <span class="nv">P</span> <span class="ow">TO</span> <span class="nv">SHIP</span><span class="p">:</span><span class="nv">PARTSNAMED</span><span class="p">(</span><span class="s">&quot;mediumDishAntenna&quot;</span><span class="p">)[</span><span class="mf">0</span><span class="p">].</span>
 <span class="k">SET</span> <span class="nv">M</span> <span class="ow">to</span> <span class="nv">p</span><span class="p">:</span><span class="nv">GETMODULE</span><span class="p">(</span><span class="s">&quot;ModuleRTAntenna&quot;</span><span class="p">).</span>
@@ -218,19 +218,19 @@ ship.</p>
 <li>a string containing the name of a body or vessel</li>
 <li>a string containing the name of a ground station (case-sensitive)</li>
 </ul>
-<p>You can use <a class="reference internal" href="RemoteTech.html#method:RTADDON:GROUNDSTATIONS" title="RTADDON:GROUNDSTATIONS method"><code class="xref ks ks-meth docutils literal"><span class="pre">RTADDON:GROUNDSTATIONS</span></code></a> to get a list of all ground stations. The default ground station is called <cite>&#8220;Mission Control&#8221;</cite>.</p>
+<p>You can use <a class="reference internal" href="#method:RTADDON:GROUNDSTATIONS" title="RTADDON:GROUNDSTATIONS method"><code class="xref ks ks-meth docutils literal"><span class="pre">RTADDON:GROUNDSTATIONS</span></code></a> to get a list of all ground stations. The default ground station is called <cite>&#8220;Mission Control&#8221;</cite>.</p>
 </div>
 <div class="section" id="communication">
-<h3>Communication<a class="headerlink" href="RemoteTech.html#communication" title="Permalink to this headline">¶</a></h3>
+<h3>Communication<a class="headerlink" href="#communication" title="Permalink to this headline">¶</a></h3>
 <p>When installed RemoteTech will influence <a class="reference internal" href="../commands/communication.html#communication"><span>communication</span></a> between vessels. In order to send a message to another vessel a valid RemoteTech connection will have to exist between them
 and of course messages will arrive to their destination with a proper delay. Documentation of <a class="reference internal" href="../structures/communication/connection.html#structure:CONNECTION" title="CONNECTION structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Connection</span></code></a> class contains further information on how RemoteTech will change the behaviour
 of some of its suffixes.</p>
 </div>
 <div class="section" id="rtaddon">
-<h3>RTAddon<a class="headerlink" href="RemoteTech.html#rtaddon" title="Permalink to this headline">¶</a></h3>
+<h3>RTAddon<a class="headerlink" href="#rtaddon" title="Permalink to this headline">¶</a></h3>
 <dl class="structure">
 <dt id="structure:RTADDON">
-<em class="property">structure </em><code class="descname">RTAddon</code><a class="headerlink" href="RemoteTech.html#structure:RTADDON" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">RTAddon</code><a class="headerlink" href="#structure:RTADDON" title="Permalink to this definition">¶</a></dt>
 <dd><table border="1" class="docutils">
 <colgroup>
 <col width="20%" />
@@ -244,35 +244,35 @@ of some of its suffixes.</p>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="RemoteTech.html#attribute:RTADDON:AVAILABLE" title="RTADDON:AVAILABLE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">AVAILABLE</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:RTADDON:AVAILABLE" title="RTADDON:AVAILABLE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">AVAILABLE</span></code></a></td>
 <td><a class="reference internal" href="../structures/misc/boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a> (readonly)</td>
 <td>True if RT is installed and RT integration enabled. It is better to use <code class="docutils literal"><span class="pre">addons:available(&quot;IR&quot;)</span></code> for this.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="RemoteTech.html#method:RTADDON:DELAY" title="RTADDON:DELAY method"><code class="xref ks ks-meth docutils literal"><span class="pre">DELAY(vessel)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#method:RTADDON:DELAY" title="RTADDON:DELAY method"><code class="xref ks ks-meth docutils literal"><span class="pre">DELAY(vessel)</span></code></a></td>
 <td><a class="reference internal" href="../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Scalar</span></code></a></td>
 <td>Get shortest possible delay to given <a class="reference internal" href="../structures/vessels/vessel.html#structure:VESSEL" title="VESSEL structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Vessel</span></code></a></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="RemoteTech.html#method:RTADDON:KSCDELAY" title="RTADDON:KSCDELAY method"><code class="xref ks ks-meth docutils literal"><span class="pre">KSCDELAY(vessel)</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#method:RTADDON:KSCDELAY" title="RTADDON:KSCDELAY method"><code class="xref ks ks-meth docutils literal"><span class="pre">KSCDELAY(vessel)</span></code></a></td>
 <td><a class="reference internal" href="../structures/misc/boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>Get delay from KSC to given <a class="reference internal" href="../structures/vessels/vessel.html#structure:VESSEL" title="VESSEL structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Vessel</span></code></a></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="RemoteTech.html#method:RTADDON:ANTENNAHASCONNECTION" title="RTADDON:ANTENNAHASCONNECTION method"><code class="xref ks ks-meth docutils literal"><span class="pre">ANTENNAHASCONNECTION(part)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#method:RTADDON:ANTENNAHASCONNECTION" title="RTADDON:ANTENNAHASCONNECTION method"><code class="xref ks ks-meth docutils literal"><span class="pre">ANTENNAHASCONNECTION(part)</span></code></a></td>
 <td><a class="reference internal" href="../structures/misc/boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>True if given <a class="reference internal" href="../structures/vessels/part.html#structure:PART" title="PART structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Part</span></code></a> has any connection</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="RemoteTech.html#method:RTADDON:HASCONNECTION" title="RTADDON:HASCONNECTION method"><code class="xref ks ks-meth docutils literal"><span class="pre">HASCONNECTION(vessel)</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#method:RTADDON:HASCONNECTION" title="RTADDON:HASCONNECTION method"><code class="xref ks ks-meth docutils literal"><span class="pre">HASCONNECTION(vessel)</span></code></a></td>
 <td><a class="reference internal" href="../structures/misc/boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>True if given <a class="reference internal" href="../structures/vessels/vessel.html#structure:VESSEL" title="VESSEL structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Vessel</span></code></a> has any connection</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="RemoteTech.html#method:RTADDON:HASKSCCONNECTION" title="RTADDON:HASKSCCONNECTION method"><code class="xref ks ks-meth docutils literal"><span class="pre">HASKSCCONNECTION(vessel)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#method:RTADDON:HASKSCCONNECTION" title="RTADDON:HASKSCCONNECTION method"><code class="xref ks ks-meth docutils literal"><span class="pre">HASKSCCONNECTION(vessel)</span></code></a></td>
 <td><a class="reference internal" href="../structures/misc/boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>True if given <a class="reference internal" href="../structures/vessels/vessel.html#structure:VESSEL" title="VESSEL structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Vessel</span></code></a> has connection to KSC</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="RemoteTech.html#method:RTADDON:HASLOCALCONTROL" title="RTADDON:HASLOCALCONTROL method"><code class="xref ks ks-meth docutils literal"><span class="pre">HASLOCALCONTROL(vessel)</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#method:RTADDON:HASLOCALCONTROL" title="RTADDON:HASLOCALCONTROL method"><code class="xref ks ks-meth docutils literal"><span class="pre">HASLOCALCONTROL(vessel)</span></code></a></td>
 <td><a class="reference internal" href="../structures/misc/boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>True if given <a class="reference internal" href="../structures/vessels/vessel.html#structure:VESSEL" title="VESSEL structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Vessel</span></code></a> has local control</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="RemoteTech.html#method:RTADDON:GROUNDSTATIONS" title="RTADDON:GROUNDSTATIONS method"><code class="xref ks ks-meth docutils literal"><span class="pre">GROUNDSTATIONS()</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#method:RTADDON:GROUNDSTATIONS" title="RTADDON:GROUNDSTATIONS method"><code class="xref ks ks-meth docutils literal"><span class="pre">GROUNDSTATIONS()</span></code></a></td>
 <td><a class="reference internal" href="../structures/collections/list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a> of <a class="reference internal" href="../structures/misc/string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">String</span></code></a></td>
 <td>Get names of all ground stations</td>
 </tr>
@@ -282,7 +282,7 @@ of some of its suffixes.</p>
 
 <dl class="attribute">
 <dt id="attribute:RTADDON:AVAILABLE">
-RTADDON:<code class="descname">AVAILABLE</code><a class="headerlink" href="RemoteTech.html#attribute:RTADDON:AVAILABLE" title="Permalink to this definition">¶</a></dt>
+RTADDON:<code class="descname">AVAILABLE</code><a class="headerlink" href="#attribute:RTADDON:AVAILABLE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -300,7 +300,7 @@ RemoteTech is installed.</p>
 
 <dl class="method">
 <dt id="method:RTADDON:DELAY">
-RTAddon:<code class="descname">DELAY</code><span class="sig-paren">(</span>vessel<span class="sig-paren">)</span><a class="headerlink" href="RemoteTech.html#method:RTADDON:DELAY" title="Permalink to this definition">¶</a></dt>
+RTAddon:<code class="descname">DELAY</code><span class="sig-paren">(</span>vessel<span class="sig-paren">)</span><a class="headerlink" href="#method:RTADDON:DELAY" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -320,7 +320,7 @@ RTAddon:<code class="descname">DELAY</code><span class="sig-paren">(</span>vesse
 
 <dl class="method">
 <dt id="method:RTADDON:KSCDELAY">
-RTAddon:<code class="descname">KSCDELAY</code><span class="sig-paren">(</span>vessel<span class="sig-paren">)</span><a class="headerlink" href="RemoteTech.html#method:RTADDON:KSCDELAY" title="Permalink to this definition">¶</a></dt>
+RTAddon:<code class="descname">KSCDELAY</code><span class="sig-paren">(</span>vessel<span class="sig-paren">)</span><a class="headerlink" href="#method:RTADDON:KSCDELAY" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -340,7 +340,7 @@ RTAddon:<code class="descname">KSCDELAY</code><span class="sig-paren">(</span>ve
 
 <dl class="method">
 <dt id="method:RTADDON:ANTENNAHASCONNECTION">
-RTAddon:<code class="descname">ANTENNAHASCONNECTION</code><span class="sig-paren">(</span>part<span class="sig-paren">)</span><a class="headerlink" href="RemoteTech.html#method:RTADDON:ANTENNAHASCONNECTION" title="Permalink to this definition">¶</a></dt>
+RTAddon:<code class="descname">ANTENNAHASCONNECTION</code><span class="sig-paren">(</span>part<span class="sig-paren">)</span><a class="headerlink" href="#method:RTADDON:ANTENNAHASCONNECTION" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -360,7 +360,7 @@ RTAddon:<code class="descname">ANTENNAHASCONNECTION</code><span class="sig-paren
 
 <dl class="method">
 <dt id="method:RTADDON:HASCONNECTION">
-RTAddon:<code class="descname">HASCONNECTION</code><span class="sig-paren">(</span>vessel<span class="sig-paren">)</span><a class="headerlink" href="RemoteTech.html#method:RTADDON:HASCONNECTION" title="Permalink to this definition">¶</a></dt>
+RTAddon:<code class="descname">HASCONNECTION</code><span class="sig-paren">(</span>vessel<span class="sig-paren">)</span><a class="headerlink" href="#method:RTADDON:HASCONNECTION" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -380,7 +380,7 @@ RTAddon:<code class="descname">HASCONNECTION</code><span class="sig-paren">(</sp
 
 <dl class="method">
 <dt id="method:RTADDON:HASKSCCONNECTION">
-RTAddon:<code class="descname">HASKSCCONNECTION</code><span class="sig-paren">(</span>vessel<span class="sig-paren">)</span><a class="headerlink" href="RemoteTech.html#method:RTADDON:HASKSCCONNECTION" title="Permalink to this definition">¶</a></dt>
+RTAddon:<code class="descname">HASKSCCONNECTION</code><span class="sig-paren">(</span>vessel<span class="sig-paren">)</span><a class="headerlink" href="#method:RTADDON:HASKSCCONNECTION" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -400,7 +400,7 @@ RTAddon:<code class="descname">HASKSCCONNECTION</code><span class="sig-paren">(<
 
 <dl class="method">
 <dt id="method:RTADDON:HASLOCALCONTROL">
-RTAddon:<code class="descname">HASLOCALCONTROL</code><span class="sig-paren">(</span>vessel<span class="sig-paren">)</span><a class="headerlink" href="RemoteTech.html#method:RTADDON:HASLOCALCONTROL" title="Permalink to this definition">¶</a></dt>
+RTAddon:<code class="descname">HASLOCALCONTROL</code><span class="sig-paren">(</span>vessel<span class="sig-paren">)</span><a class="headerlink" href="#method:RTADDON:HASLOCALCONTROL" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -420,7 +420,7 @@ RTAddon:<code class="descname">HASLOCALCONTROL</code><span class="sig-paren">(</
 
 <dl class="method">
 <dt id="method:RTADDON:GROUNDSTATIONS">
-RTAddon:<code class="descname">GROUNDSTATIONS</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="RemoteTech.html#method:RTADDON:GROUNDSTATIONS" title="Permalink to this definition">¶</a></dt>
+RTAddon:<code class="descname">GROUNDSTATIONS</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:RTADDON:GROUNDSTATIONS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

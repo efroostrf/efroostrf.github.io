@@ -115,7 +115,7 @@
 <li class="toctree-l3"><a class="reference internal" href="gui.html">GUI structure</a></li>
 <li class="toctree-l3"><a class="reference internal" href="label.html">Label</a></li>
 <li class="toctree-l3"><a class="reference internal" href="label.html#rich-text">Rich Text</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="popupmenu.html">PopupMenu</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">PopupMenu</a></li>
 <li class="toctree-l3"><a class="reference internal" href="scrollbox.html">Scrollbox</a></li>
 <li class="toctree-l3"><a class="reference internal" href="skin.html">Skin</a></li>
 <li class="toctree-l3"><a class="reference internal" href="slider.html">Slider</a></li>
@@ -185,10 +185,10 @@
            <div itemprop="articleBody">
             
   <div class="section" id="popupmenu">
-<span id="gui-popupmenu"></span><h1>PopupMenu<a class="headerlink" href="popupmenu.html#popupmenu" title="Permalink to this headline">¶</a></h1>
+<span id="gui-popupmenu"></span><h1>PopupMenu<a class="headerlink" href="#popupmenu" title="Permalink to this headline">¶</a></h1>
 <dl class="structure">
 <dt id="structure:POPUPMENU">
-<em class="property">structure </em><code class="descname">PopupMenu</code><a class="headerlink" href="popupmenu.html#structure:POPUPMENU" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">PopupMenu</code><a class="headerlink" href="#structure:POPUPMENU" title="Permalink to this definition">¶</a></dt>
 <dd><p><code class="docutils literal"><span class="pre">PopupMenu</span></code> objects are created by calling <a class="reference internal" href="box.html#method:BOX:ADDPOPUPMENU" title="BOX:ADDPOPUPMENU method"><code class="xref ks ks-meth docutils literal"><span class="pre">BOX:ADDPOPUPMENU</span></code></a>.</p>
 <p>A <code class="docutils literal"><span class="pre">PopupMenu</span></code> is a special kind of button for choosing from a list of things.
 It looks like a button who&#8217;s face displays the currently selected thing.  When a user
@@ -197,7 +197,7 @@ from, and when one is selected the popup goes away and the new choice is
 displayed on the button.</p>
 <p>The menu displays the string values in the OPTIONS property. If OPTIONS contains items that are not strings,
 then by default their <a class="reference internal" href="../reflection/structure.html#attribute:STRUCTURE:TOSTRING" title="STRUCTURE:TOSTRING attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TOSTRING</span></code></a> suffixes will be used to display them as strings.
-You can change this default behaviour by setting the popupmenu&#8217;s <a class="reference internal" href="popupmenu.html#attribute:POPUPMENU:OPTIONSUFFIX" title="POPUPMENU:OPTIONSUFFIX attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">OPTIONSUFFIX</span></code></a>.</p>
+You can change this default behaviour by setting the popupmenu&#8217;s <a class="reference internal" href="#attribute:POPUPMENU:OPTIONSUFFIX" title="POPUPMENU:OPTIONSUFFIX attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">OPTIONSUFFIX</span></code></a>.</p>
 <p>Example:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">local</span> <span class="nv">popup</span> <span class="ow">is</span> <span class="nv">gui</span><span class="p">:</span><span class="nv">addpopupmenu</span><span class="p">().</span>
 
@@ -228,39 +228,39 @@ You can change this default behaviour by setting the popupmenu&#8217;s <a class=
 <tbody valign="top">
 <tr class="row-even"><td colspan="3">Every suffix of <a class="reference internal" href="button.html#structure:BUTTON" title="BUTTON structure"><code class="xref ks ks-struct docutils literal"><span class="pre">BUTTON</span></code></a></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="popupmenu.html#attribute:POPUPMENU:OPTIONS" title="POPUPMENU:OPTIONS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">OPTIONS</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:POPUPMENU:OPTIONS" title="POPUPMENU:OPTIONS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">OPTIONS</span></code></a></td>
 <td><a class="reference internal" href="../collections/list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a></td>
 <td>List of options to display.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="popupmenu.html#attribute:POPUPMENU:OPTIONSUFFIX" title="POPUPMENU:OPTIONSUFFIX attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">OPTIONSUFFIX</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:POPUPMENU:OPTIONSUFFIX" title="POPUPMENU:OPTIONSUFFIX attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">OPTIONSUFFIX</span></code></a></td>
 <td><a class="reference internal" href="../misc/string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">string</span></code></a></td>
 <td>Name of the suffix used for display names. Default = TOSTRING.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="popupmenu.html#method:POPUPMENU:ADDOPTION" title="POPUPMENU:ADDOPTION method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADDOPTION(value)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#method:POPUPMENU:ADDOPTION" title="POPUPMENU:ADDOPTION method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADDOPTION(value)</span></code></a></td>
 <td>&nbsp;</td>
 <td>Add a value to the end of the list of options.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="popupmenu.html#attribute:POPUPMENU:VALUE" title="POPUPMENU:VALUE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">VALUE</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:POPUPMENU:VALUE" title="POPUPMENU:VALUE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">VALUE</span></code></a></td>
 <td>Any</td>
 <td>Returns the current selected value.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="popupmenu.html#attribute:POPUPMENU:INDEX" title="POPUPMENU:INDEX attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">INDEX</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:POPUPMENU:INDEX" title="POPUPMENU:INDEX attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">INDEX</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Scalar</span></code></a></td>
 <td>Returns the index of the current selected value.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="popupmenu.html#attribute:POPUPMENU:CHANGED" title="POPUPMENU:CHANGED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">CHANGED</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:POPUPMENU:CHANGED" title="POPUPMENU:CHANGED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">CHANGED</span></code></a></td>
 <td><a class="reference internal" href="../misc/boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>Has the user chosen something?</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="popupmenu.html#attribute:POPUPMENU:ONCHANGE" title="POPUPMENU:ONCHANGE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ONCHANGE</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:POPUPMENU:ONCHANGE" title="POPUPMENU:ONCHANGE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ONCHANGE</span></code></a></td>
 <td><a class="reference internal" href="../misc/kosdelegate.html#structure:KOSDELEGATE" title="KOSDELEGATE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">KOSDelegate</span></code></a> (<a class="reference internal" href="../misc/string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">String</span></code></a>)</td>
-<td>Your function called whenever the <a class="reference internal" href="popupmenu.html#attribute:POPUPMENU:CHANGED" title="POPUPMENU:CHANGED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">CHANGED</span></code></a> state changes.</td>
+<td>Your function called whenever the <a class="reference internal" href="#attribute:POPUPMENU:CHANGED" title="POPUPMENU:CHANGED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">CHANGED</span></code></a> state changes.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="popupmenu.html#method:POPUPMENU:CLEAR" title="POPUPMENU:CLEAR method"><code class="xref ks ks-meth docutils literal"><span class="pre">CLEAR</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#method:POPUPMENU:CLEAR" title="POPUPMENU:CLEAR method"><code class="xref ks ks-meth docutils literal"><span class="pre">CLEAR</span></code></a></td>
 <td>&nbsp;</td>
 <td>Removes all options.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="popupmenu.html#attribute:POPUPMENU:MAXVISIBLE" title="POPUPMENU:MAXVISIBLE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MAXVISIBLE</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:POPUPMENU:MAXVISIBLE" title="POPUPMENU:MAXVISIBLE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MAXVISIBLE</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Scalar</span></code></a> (integer)</td>
 <td>How many choices to show at once in the list (if more exist, it makes it scrollable).</td>
 </tr>
@@ -268,7 +268,7 @@ You can change this default behaviour by setting the popupmenu&#8217;s <a class=
 </table>
 <dl class="attribute">
 <dt id="attribute:POPUPMENU:OPTIONS">
-PopupMenu:<code class="descname">OPTIONS</code><a class="headerlink" href="popupmenu.html#attribute:POPUPMENU:OPTIONS" title="Permalink to this definition">¶</a></dt>
+PopupMenu:<code class="descname">OPTIONS</code><a class="headerlink" href="#attribute:POPUPMENU:OPTIONS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -286,7 +286,7 @@ them for display on the list, by use of the :attr&#8221;<cite>OPTIONSSUFFIX</cit
 
 <dl class="attribute">
 <dt id="attribute:POPUPMENU:OPTIONSUFFIX">
-PopupMenu:<code class="descname">OPTIONSUFFIX</code><a class="headerlink" href="popupmenu.html#attribute:POPUPMENU:OPTIONSUFFIX" title="Permalink to this definition">¶</a></dt>
+PopupMenu:<code class="descname">OPTIONSUFFIX</code><a class="headerlink" href="#attribute:POPUPMENU:OPTIONSUFFIX" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -297,10 +297,10 @@ PopupMenu:<code class="descname">OPTIONSUFFIX</code><a class="headerlink" href="
 </tr>
 </tbody>
 </table>
-<p>This decides how you get strings from the list of items in <a class="reference internal" href="popupmenu.html#attribute:POPUPMENU:OPTIONS" title="POPUPMENU:OPTIONS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">OPTIONS</span></code></a>.
+<p>This decides how you get strings from the list of items in <a class="reference internal" href="#attribute:POPUPMENU:OPTIONS" title="POPUPMENU:OPTIONS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">OPTIONS</span></code></a>.
 The usual way to use a <code class="docutils literal"><span class="pre">PopupMenu</span></code> would be to have it select from a list
 of strings.  But you can use any other kind of object you want in the
-<a class="reference internal" href="popupmenu.html#attribute:POPUPMENU:OPTIONS" title="POPUPMENU:OPTIONS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">OPTIONS</span></code></a> list, provided all of them share a common suffix name
+<a class="reference internal" href="#attribute:POPUPMENU:OPTIONS" title="POPUPMENU:OPTIONS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">OPTIONS</span></code></a> list, provided all of them share a common suffix name
 that builds a string from them.  The default value for this is
 <code class="docutils literal"><span class="pre">&quot;TOSTRING:</span></code>, which is a suffix that all things in kOS have.  If you
 wish to use something other than <a class="reference internal" href="../reflection/structure.html#attribute:STRUCTURE:TOSTRING" title="STRUCTURE:TOSTRING attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">Structure:TOSTRING</span></code></a>, you
@@ -310,7 +310,7 @@ can set this to that suffix&#8217;s string name.</p>
 
 <dl class="method">
 <dt id="method:POPUPMENU:ADDOPTION">
-PopupMenu:<code class="descname">ADDOPTION</code><span class="sig-paren">(</span>value<span class="sig-paren">)</span><a class="headerlink" href="popupmenu.html#method:POPUPMENU:ADDOPTION" title="Permalink to this definition">¶</a></dt>
+PopupMenu:<code class="descname">ADDOPTION</code><span class="sig-paren">(</span>value<span class="sig-paren">)</span><a class="headerlink" href="#method:POPUPMENU:ADDOPTION" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -331,12 +331,12 @@ PopupMenu:<code class="descname">ADDOPTION</code><span class="sig-paren">(</span
 </tr>
 </tbody>
 </table>
-<p>This appends another choice to the <a class="reference internal" href="popupmenu.html#attribute:POPUPMENU:OPTIONS" title="POPUPMENU:OPTIONS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">OPTIONS</span></code></a> list.</p>
+<p>This appends another choice to the <a class="reference internal" href="#attribute:POPUPMENU:OPTIONS" title="POPUPMENU:OPTIONS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">OPTIONS</span></code></a> list.</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="attribute:POPUPMENU:VALUE">
-PopupMenu:<code class="descname">VALUE</code><a class="headerlink" href="popupmenu.html#attribute:POPUPMENU:VALUE" title="Permalink to this definition">¶</a></dt>
+PopupMenu:<code class="descname">VALUE</code><a class="headerlink" href="#attribute:POPUPMENU:VALUE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -356,7 +356,7 @@ rejected and instead the choice will become de-selected.</p>
 
 <dl class="attribute">
 <dt id="attribute:POPUPMENU:INDEX">
-PopupMenu:<code class="descname">INDEX</code><a class="headerlink" href="popupmenu.html#attribute:POPUPMENU:INDEX" title="Permalink to this definition">¶</a></dt>
+PopupMenu:<code class="descname">INDEX</code><a class="headerlink" href="#attribute:POPUPMENU:INDEX" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -367,7 +367,7 @@ PopupMenu:<code class="descname">INDEX</code><a class="headerlink" href="popupme
 </tr>
 </tbody>
 </table>
-<p>Returns the number index into the <a class="reference internal" href="popupmenu.html#attribute:POPUPMENU:OPTIONS" title="POPUPMENU:OPTIONS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">OPTIONS</span></code></a> list that goes with the
+<p>Returns the number index into the <a class="reference internal" href="#attribute:POPUPMENU:OPTIONS" title="POPUPMENU:OPTIONS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">OPTIONS</span></code></a> list that goes with the
 current choice.  If this is set to -1, that means nothing has been
 selected.</p>
 <p>Setting this value causes the selected choice to change.  Setting it
@@ -376,7 +376,7 @@ to -1 will de-select the choice.</p>
 
 <dl class="attribute">
 <dt id="attribute:POPUPMENU:CHANGED">
-PopupMenu:<code class="descname">CHANGED</code><a class="headerlink" href="popupmenu.html#attribute:POPUPMENU:CHANGED" title="Permalink to this definition">¶</a></dt>
+PopupMenu:<code class="descname">CHANGED</code><a class="headerlink" href="#attribute:POPUPMENU:CHANGED" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -400,7 +400,7 @@ know to go have a look at the current value to see what it is.</p>
 
 <dl class="attribute">
 <dt id="attribute:POPUPMENU:ONCHANGE">
-PopupMenu:<code class="descname">ONCHANGE</code><a class="headerlink" href="popupmenu.html#attribute:POPUPMENU:ONCHANGE" title="Permalink to this definition">¶</a></dt>
+PopupMenu:<code class="descname">ONCHANGE</code><a class="headerlink" href="#attribute:POPUPMENU:ONCHANGE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -416,7 +416,7 @@ PopupMenu:<code class="descname">ONCHANGE</code><a class="headerlink" href="popu
 been made.  This is for use with the
 <a class="reference internal" href="../gui.html#gui-callback-technique"><span>callback technique</span></a> of reading the widget.</p>
 <p>The function you specify must be designed to take one parameter,
-which is the new value (same as reading the <a class="reference internal" href="popupmenu.html#attribute:POPUPMENU:VALUE" title="POPUPMENU:VALUE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">VALUE</span></code></a> suffix) of
+which is the new value (same as reading the <a class="reference internal" href="#attribute:POPUPMENU:VALUE" title="POPUPMENU:VALUE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">VALUE</span></code></a> suffix) of
 this widget, and return nothing.</p>
 <p>Example:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">set</span> <span class="nv">myPopupMenu</span><span class="p">:</span><span class="nv">ONCHANGE</span> <span class="ow">to</span> <span class="p">{</span> <span class="kd">parameter</span> <span class="nv">choice</span><span class="p">.</span> <span class="k">print</span> <span class="s">&quot;You have selected: &quot;</span> <span class="o">+</span> <span class="nv">choice</span><span class="p">:</span><span class="nv">TOSTRING</span><span class="p">.</span> <span class="p">}.</span>
@@ -426,7 +426,7 @@ this widget, and return nothing.</p>
 
 <dl class="method">
 <dt id="method:POPUPMENU:CLEAR">
-PopupMenu:<code class="descname">CLEAR</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="popupmenu.html#method:POPUPMENU:CLEAR" title="Permalink to this definition">¶</a></dt>
+PopupMenu:<code class="descname">CLEAR</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:POPUPMENU:CLEAR" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -435,13 +435,13 @@ PopupMenu:<code class="descname">CLEAR</code><span class="sig-paren">(</span><sp
 </tr>
 </tbody>
 </table>
-<p>Calling this causes the <code class="docutils literal"><span class="pre">PopupMenu</span></code> to wipe out all the contents of its <a class="reference internal" href="popupmenu.html#attribute:POPUPMENU:OPTIONS" title="POPUPMENU:OPTIONS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">OPTIONS</span></code></a>
+<p>Calling this causes the <code class="docutils literal"><span class="pre">PopupMenu</span></code> to wipe out all the contents of its <a class="reference internal" href="#attribute:POPUPMENU:OPTIONS" title="POPUPMENU:OPTIONS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">OPTIONS</span></code></a>
 list.</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="attribute:POPUPMENU:MAXVISIBLE">
-PopupMenu:<code class="descname">MAXVISIBLE</code><a class="headerlink" href="popupmenu.html#attribute:POPUPMENU:MAXVISIBLE" title="Permalink to this definition">¶</a></dt>
+PopupMenu:<code class="descname">MAXVISIBLE</code><a class="headerlink" href="#attribute:POPUPMENU:MAXVISIBLE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

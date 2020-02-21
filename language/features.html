@@ -98,7 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../library.html">Community Example Library</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../general.html">General</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../language.html">Language</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="features.html">General Features</a><ul class="simple">
+<li class="toctree-l2 current"><a class="current reference internal" href="">General Features</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="syntax.html">Language Syntax</a></li>
@@ -165,36 +165,36 @@
            <div itemprop="articleBody">
             
   <div class="section" id="general-features-of-the-kerboscript-language">
-<span id="features"></span><h1>General Features of the <strong>KerboScript</strong> Language<a class="headerlink" href="features.html#general-features-of-the-kerboscript-language" title="Permalink to this headline">¶</a></h1>
+<span id="features"></span><h1>General Features of the <strong>KerboScript</strong> Language<a class="headerlink" href="#general-features-of-the-kerboscript-language" title="Permalink to this headline">¶</a></h1>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><a class="reference internal" href="features.html#case-insensitivity" id="id2">Case Insensitivity</a></li>
-<li><a class="reference internal" href="features.html#expressions" id="id3">Expressions</a><ul>
-<li><a class="reference internal" href="features.html#numbers-scalars" id="id4">Numbers (Scalars)</a></li>
-<li><a class="reference internal" href="features.html#strings" id="id5">Strings</a></li>
-<li><a class="reference internal" href="features.html#booleans" id="id6">Booleans</a></li>
-<li><a class="reference internal" href="features.html#structures" id="id7">Structures</a></li>
-<li><a class="reference internal" href="features.html#structure-methods" id="id8">Structure Methods</a></li>
+<li><a class="reference internal" href="#case-insensitivity" id="id2">Case Insensitivity</a></li>
+<li><a class="reference internal" href="#expressions" id="id3">Expressions</a><ul>
+<li><a class="reference internal" href="#numbers-scalars" id="id4">Numbers (Scalars)</a></li>
+<li><a class="reference internal" href="#strings" id="id5">Strings</a></li>
+<li><a class="reference internal" href="#booleans" id="id6">Booleans</a></li>
+<li><a class="reference internal" href="#structures" id="id7">Structures</a></li>
+<li><a class="reference internal" href="#structure-methods" id="id8">Structure Methods</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="features.html#short-circuiting-booleans" id="id9">Short-circuiting booleans</a></li>
-<li><a class="reference internal" href="features.html#late-typing" id="id10">Late Typing</a></li>
-<li><a class="reference internal" href="features.html#lazy-globals-variable-declarations-optional" id="id11">Lazy Globals (variable declarations optional)</a></li>
-<li><a class="reference internal" href="features.html#user-functions" id="id12">User Functions</a></li>
-<li><a class="reference internal" href="features.html#language-structures" id="id13">Structures</a></li>
-<li><a class="reference internal" href="features.html#triggers" id="id14">Triggers</a></li>
+<li><a class="reference internal" href="#short-circuiting-booleans" id="id9">Short-circuiting booleans</a></li>
+<li><a class="reference internal" href="#late-typing" id="id10">Late Typing</a></li>
+<li><a class="reference internal" href="#lazy-globals-variable-declarations-optional" id="id11">Lazy Globals (variable declarations optional)</a></li>
+<li><a class="reference internal" href="#user-functions" id="id12">User Functions</a></li>
+<li><a class="reference internal" href="#language-structures" id="id13">Structures</a></li>
+<li><a class="reference internal" href="#triggers" id="id14">Triggers</a></li>
 </ul>
 </div>
 <div class="section" id="case-insensitivity">
-<h2><a class="toc-backref" href="features.html#id2">Case Insensitivity</a><a class="headerlink" href="features.html#case-insensitivity" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id2">Case Insensitivity</a><a class="headerlink" href="#case-insensitivity" title="Permalink to this headline">¶</a></h2>
 <p>Everything in <strong>KerboScript</strong> is case-insensitive, including your own variable names and filenames.
 This extends to string comparison as well. (<code class="docutils literal"><span class="pre">&quot;Hello&quot;=&quot;HELLO&quot;</span></code> will return true.)</p>
 </div>
 <div class="section" id="expressions">
-<h2><a class="toc-backref" href="features.html#id3">Expressions</a><a class="headerlink" href="features.html#expressions" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id3">Expressions</a><a class="headerlink" href="#expressions" title="Permalink to this headline">¶</a></h2>
 <p>KerboScript uses an expression evaluation system that allows you to perform math operations on variables. Some variables are defined by you. Others are defined by the system. There are four basic types:</p>
 <div class="section" id="numbers-scalars">
-<h3><a class="toc-backref" href="features.html#id4">Numbers (Scalars)</a><a class="headerlink" href="features.html#numbers-scalars" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id4">Numbers (Scalars)</a><a class="headerlink" href="#numbers-scalars" title="Permalink to this headline">¶</a></h3>
 <p>You can use mathematical operations on numbers, like this:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">SET</span> <span class="nv">X</span> <span class="ow">TO</span> <span class="mf">4</span> <span class="o">+</span> <span class="mf">2</span><span class="p">.</span><span class="mf">5</span><span class="p">.</span>
 <span class="k">PRINT</span> <span class="nv">X</span><span class="p">.</span>             <span class="c1">// Outputs 6.5</span>
@@ -207,7 +207,7 @@ places where the mod works with <a class="reference internal" href="../math/vect
 instead.</p>
 </div>
 <div class="section" id="strings">
-<h3><a class="toc-backref" href="features.html#id5">Strings</a><a class="headerlink" href="features.html#strings" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id5">Strings</a><a class="headerlink" href="#strings" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference internal" href="../structures/misc/string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Strings</span></code></a> are pieces of text that are generally
 meant to be printed to the screen. For example:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">PRINT</span> <span class="s">&quot;Hello World!&quot;</span><span class="p">.</span>
@@ -219,7 +219,7 @@ meant to be printed to the screen. For example:</p>
 </div>
 </div>
 <div class="section" id="booleans">
-<h3><a class="toc-backref" href="features.html#id6">Booleans</a><a class="headerlink" href="features.html#booleans" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id6">Booleans</a><a class="headerlink" href="#booleans" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference internal" href="../structures/misc/boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Booleans</span></code></a> are values that can either be <code class="docutils literal"><span class="pre">True</span></code>
 or <code class="docutils literal"><span class="pre">False</span></code> and can be used to store the result of conditional checks:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">set</span> <span class="nv">myValue</span> <span class="ow">to</span> <span class="p">(</span><span class="nv">x</span> <span class="o">&gt;=</span> <span class="mf">10</span> <span class="ow">and</span> <span class="nv">x</span> <span class="o">&lt;=</span> <span class="mf">99</span><span class="p">).</span>
@@ -230,7 +230,7 @@ or <code class="docutils literal"><span class="pre">False</span></code> and can 
 </div>
 </div>
 <div class="section" id="structures">
-<span id="features-structures"></span><h3><a class="toc-backref" href="features.html#id7">Structures</a><a class="headerlink" href="features.html#structures" title="Permalink to this headline">¶</a></h3>
+<span id="features-structures"></span><h3><a class="toc-backref" href="#id7">Structures</a><a class="headerlink" href="#structures" title="Permalink to this headline">¶</a></h3>
 <p>Structures are variables that contain more than one piece of information. For example, a Vector has an X, a Y, and a Z component. Structures can be used with SET.. TO just like any other variable. To access the sub-elements of a structure, you use the colon operator (&#8221;:&#8221;). Here are some examples:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">PRINT</span> <span class="s">&quot;The Mun&#39;s periapsis altitude is: &quot;</span> <span class="o">+</span> <span class="nv">MUN</span><span class="p">:</span><span class="nv">PERIAPSIS</span><span class="p">.</span>
 <span class="k">PRINT</span> <span class="s">&quot;The ship&#39;s surface velocity is: &quot;</span> <span class="o">+</span> <span class="nv">SHIP</span><span class="p">:</span><span class="nv">VELOCITY</span><span class="p">:</span><span class="nv">SURFACE</span><span class="p">.</span>
@@ -245,7 +245,7 @@ or <code class="docutils literal"><span class="pre">False</span></code> and can 
 </div>
 </div>
 <div class="section" id="structure-methods">
-<span id="features-methods"></span><h3><a class="toc-backref" href="features.html#id8">Structure Methods</a><a class="headerlink" href="features.html#structure-methods" title="Permalink to this headline">¶</a></h3>
+<span id="features-methods"></span><h3><a class="toc-backref" href="#id8">Structure Methods</a><a class="headerlink" href="#structure-methods" title="Permalink to this headline">¶</a></h3>
 <p>Structures also often contain methods. A method is a suffix of a structure that actually performs an activity when you mention it, and can sometimes take parameters. The following are examples of calling methods of a structure:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">SET</span> <span class="nv">PLIST</span> <span class="ow">TO</span> <span class="nv">SHIP</span><span class="p">:</span><span class="nv">PARTSDUBBED</span><span class="p">(</span><span class="s">&quot;my engines&quot;</span><span class="p">).</span> <span class="c1">// calling a suffix</span>
                                              <span class="c1">// method with one</span>
@@ -257,11 +257,11 @@ or <code class="docutils literal"><span class="pre">False</span></code> and can 
                           <span class="c1">// arguments that returns a list.</span>
 </pre></div>
 </div>
-<p>For more information, see the <a class="reference internal" href="features.html#language-structures"><span>Structures Section</span></a>. A full list of structure types can be found on the <a class="reference internal" href="../structures.html#structures"><span>Structures</span></a> page. For a more detailed breakdown of the language, see the <a class="reference internal" href="syntax.html#syntax"><span>Language Syntax Constructs</span></a> page.</p>
+<p>For more information, see the <a class="reference internal" href="#language-structures"><span>Structures Section</span></a>. A full list of structure types can be found on the <a class="reference internal" href="../structures.html#structures"><span>Structures</span></a> page. For a more detailed breakdown of the language, see the <a class="reference internal" href="syntax.html#syntax"><span>Language Syntax Constructs</span></a> page.</p>
 </div>
 </div>
 <div class="section" id="short-circuiting-booleans">
-<span id="short-circuit"></span><h2><a class="toc-backref" href="features.html#id9">Short-circuiting booleans</a><a class="headerlink" href="features.html#short-circuiting-booleans" title="Permalink to this headline">¶</a></h2>
+<span id="short-circuit"></span><h2><a class="toc-backref" href="#id9">Short-circuiting booleans</a><a class="headerlink" href="#short-circuiting-booleans" title="Permalink to this headline">¶</a></h2>
 <p>Further reading: <a class="reference external" href="https://en.wikipedia.org/wiki/Short-circuit_evaluation">https://en.wikipedia.org/wiki/Short-circuit_evaluation</a></p>
 <p>When performing any boolean operation involving the use of the AND or the OR
 operator, kerboscript will short-circuit the boolean check.  What this means
@@ -291,7 +291,7 @@ doesn&#8217;t bother calculating the righthand side once the lefthand side is fa
 <p>Read the link above for implications of why this matters in programming.</p>
 </div>
 <div class="section" id="late-typing">
-<h2><a class="toc-backref" href="features.html#id10">Late Typing</a><a class="headerlink" href="features.html#late-typing" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id10">Late Typing</a><a class="headerlink" href="#late-typing" title="Permalink to this headline">¶</a></h2>
 <p>Kerboscript is a language in which there is only one type of variable
 and it just generically holds any sort of object of any kind.  If
 you attempt to assign, for example, a string into a variable that is
@@ -302,7 +302,7 @@ integer, becoming a string now.</p>
 runtime depending on what you assign into it.</p>
 </div>
 <div class="section" id="lazy-globals-variable-declarations-optional">
-<h2><a class="toc-backref" href="features.html#id11">Lazy Globals (variable declarations optional)</a><a class="headerlink" href="features.html#lazy-globals-variable-declarations-optional" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id11">Lazy Globals (variable declarations optional)</a><a class="headerlink" href="#lazy-globals-variable-declarations-optional" title="Permalink to this headline">¶</a></h2>
 <p>Kerboscript is a language in which variables need not be declared ahead
 of time.  If you simply set a variable to a value, that just &#8220;magically&#8221;
 makes the variable exist if it didn&#8217;t already.  When you do this,
@@ -316,7 +316,7 @@ disable it.  If you wish to do so, a syntax exists to do so called
 <a class="reference internal" href="variables.html#lazyglobal"><span>&#64;LAZYGLOBAL OFF</span></a>.</p>
 </div>
 <div class="section" id="user-functions">
-<span id="feature-functions"></span><h2><a class="toc-backref" href="features.html#id12">User Functions</a><a class="headerlink" href="features.html#user-functions" title="Permalink to this headline">¶</a></h2>
+<span id="feature-functions"></span><h2><a class="toc-backref" href="#id12">User Functions</a><a class="headerlink" href="#user-functions" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <div class="last versionadded">
@@ -324,7 +324,7 @@ disable it.  If you wish to do so, a syntax exists to do so called
 </div>
 </div>
 <p>Kerboscript supports user functions which you can write yourself
-and call from your own scripts.  <em>These are not</em> <a class="reference internal" href="features.html#features-methods"><span>structure
+and call from your own scripts.  <em>These are not</em> <a class="reference internal" href="#features-methods"><span>structure
 methods</span></a> <em>(which as of this writing are a feature which
 only works for the built-in kOS types, and are not yet supported
 by the kerboscript language for user functions you write yourself).</em></p>
@@ -344,8 +344,8 @@ see the <a class="reference internal" href="syntax.html#syntax-functions"><span>
 section.</p>
 </div>
 <div class="section" id="language-structures">
-<span id="id1"></span><h2><a class="toc-backref" href="features.html#id13">Structures</a><a class="headerlink" href="features.html#language-structures" title="Permalink to this headline">¶</a></h2>
-<p>Structures, <a class="reference internal" href="features.html#features-structures"><span>introduced above</span></a>, are variable <em>types</em> that contain more than one piece of information. All structures contain sub-values or <a class="reference internal" href="features.html#features-methods"><span>methods</span></a> that can be accessed with a colon (<code class="docutils literal"><span class="pre">:</span></code>) operator. Multiple structures can be chained together with more than one colon (<code class="docutils literal"><span class="pre">:</span></code>) operator:</p>
+<span id="id1"></span><h2><a class="toc-backref" href="#id13">Structures</a><a class="headerlink" href="#language-structures" title="Permalink to this headline">¶</a></h2>
+<p>Structures, <a class="reference internal" href="#features-structures"><span>introduced above</span></a>, are variable <em>types</em> that contain more than one piece of information. All structures contain sub-values or <a class="reference internal" href="#features-methods"><span>methods</span></a> that can be accessed with a colon (<code class="docutils literal"><span class="pre">:</span></code>) operator. Multiple structures can be chained together with more than one colon (<code class="docutils literal"><span class="pre">:</span></code>) operator:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">SET</span> <span class="nv">myCraft</span> <span class="ow">TO</span> <span class="nv">SHIP</span><span class="p">.</span>
 <span class="k">SET</span> <span class="nv">myMass</span> <span class="ow">TO</span> <span class="nv">myCraft</span><span class="p">:</span><span class="nv">MASS</span><span class="p">.</span>
 <span class="k">SET</span> <span class="nv">myVel</span> <span class="ow">TO</span> <span class="nv">myCraft</span><span class="p">:</span><span class="nv">VELOCITY</span><span class="p">:</span><span class="nv">ORBIT</span><span class="p">.</span>
@@ -359,7 +359,7 @@ section.</p>
 <p>The full list of available suffixes for each type <a class="reference internal" href="../structures.html#structures"><span>can be found here</span></a>.</p>
 </div>
 <div class="section" id="triggers">
-<span id="feature-triggers"></span><h2><a class="toc-backref" href="features.html#id14">Triggers</a><a class="headerlink" href="features.html#triggers" title="Permalink to this headline">¶</a></h2>
+<span id="feature-triggers"></span><h2><a class="toc-backref" href="#id14">Triggers</a><a class="headerlink" href="#triggers" title="Permalink to this headline">¶</a></h2>
 <p>One useful feature of kerboscript (but a potentialy confusing one for
 people new to the language, so we don&#8217;t recommend you use it at
 first) is the &#8220;trigger&#8221;. Triggers are small sections of your program

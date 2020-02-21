@@ -112,7 +112,7 @@
 <li class="toctree-l2 current"><a class="reference internal" href="../misc.html">Miscellaneous</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="boolean.html">Boolean</a></li>
 <li class="toctree-l3"><a class="reference internal" href="colors.html">Colors</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="config.html">Configuration of kOS</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Configuration of kOS</a></li>
 <li class="toctree-l3"><a class="reference internal" href="highlight.html">Part Highlighting</a></li>
 <li class="toctree-l3"><a class="reference internal" href="kosdelegate.html">KOSDelegate</a></li>
 <li class="toctree-l3"><a class="reference internal" href="kuniverse.html">KUniverse 4th wall methods</a></li>
@@ -188,11 +188,11 @@
            <div itemprop="articleBody">
             
   <div class="section" id="configuration-of-kos">
-<span id="config"></span><h1>Configuration of kOS<a class="headerlink" href="config.html#configuration-of-kos" title="Permalink to this headline">¶</a></h1>
+<span id="config"></span><h1>Configuration of kOS<a class="headerlink" href="#configuration-of-kos" title="Permalink to this headline">¶</a></h1>
 <dl class="structure">
 <dt id="structure:CONFIG">
-<em class="property">structure </em><code class="descname">Config</code><a class="headerlink" href="config.html#structure:CONFIG" title="Permalink to this definition">¶</a></dt>
-<dd><p><a class="reference internal" href="config.html#structure:CONFIG" title="CONFIG structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Config</span></code></a> is a special structure that allows your kerboscript
+<em class="property">structure </em><code class="descname">Config</code><a class="headerlink" href="#structure:CONFIG" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="#structure:CONFIG" title="CONFIG structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Config</span></code></a> is a special structure that allows your kerboscript
 programs to set or get the values stored in the kOS plugin&#8217;s configuration.
 Some of the global values are stored in an external file, while save game
 specific values are stored in that save file.</p>
@@ -225,7 +225,7 @@ values are noted as <strong>global</strong> below, but all other values may be p
 to be local to the current save file.</p>
 <p>The config file may be found at <code class="file docutils literal"><em><span class="pre">[KSP</span> <span class="pre">Directory]</span></em><span class="pre">/GameData/kOS/Plugins/PluginData/kOS/</span></code></p>
 <table border="1" class="docutils" id="id1">
-<caption><span class="caption-text">Members (all Gettable and Settable)</span><a class="headerlink" href="config.html#id1" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-text">Members (all Gettable and Settable)</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="25%" />
 <col width="13%" />
@@ -240,87 +240,87 @@ to be local to the current save file.</p>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="config.html#attribute:CONFIG:IPU" title="CONFIG:IPU attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">IPU</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:CONFIG:IPU" title="CONFIG:IPU attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">IPU</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Scalar</span></code></a> (integer)</td>
 <td>150</td>
 <td>Instructions per update</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="config.html#attribute:CONFIG:UCP" title="CONFIG:UCP attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">UCP</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:CONFIG:UCP" title="CONFIG:UCP attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">UCP</span></code></a></td>
 <td><a class="reference internal" href="boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>False</td>
 <td>Use compressed persistence</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="config.html#attribute:CONFIG:STAT" title="CONFIG:STAT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">STAT</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:CONFIG:STAT" title="CONFIG:STAT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">STAT</span></code></a></td>
 <td><a class="reference internal" href="boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>False</td>
 <td>Print statistics to screen</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="config.html#attribute:CONFIG:RT" title="CONFIG:RT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">RT</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:CONFIG:RT" title="CONFIG:RT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">RT</span></code></a></td>
 <td><a class="reference internal" href="boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>False</td>
 <td>Enable RemoteTech2 integration</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="config.html#attribute:CONFIG:ARCH" title="CONFIG:ARCH attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ARCH</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:CONFIG:ARCH" title="CONFIG:ARCH attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ARCH</span></code></a></td>
 <td><a class="reference internal" href="boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>False</td>
 <td>Start on archive (instead of volume 1)</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="config.html#attribute:CONFIG:OBEYHIDEUI" title="CONFIG:OBEYHIDEUI attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">OBEYHIDEUI</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:CONFIG:OBEYHIDEUI" title="CONFIG:OBEYHIDEUI attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">OBEYHIDEUI</span></code></a></td>
 <td><a class="reference internal" href="boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>True</td>
 <td>Obey the KSP Hide user interface key (usually mapped to F2).</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="config.html#attribute:CONFIG:SAFE" title="CONFIG:SAFE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SAFE</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:CONFIG:SAFE" title="CONFIG:SAFE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SAFE</span></code></a></td>
 <td><a class="reference internal" href="boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>False</td>
 <td>Enable safe mode</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="config.html#attribute:CONFIG:AUDIOERR" title="CONFIG:AUDIOERR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">AUDIOERR</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:CONFIG:AUDIOERR" title="CONFIG:AUDIOERR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">AUDIOERR</span></code></a></td>
 <td><a class="reference internal" href="boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>False</td>
 <td>Enable sound effect on kOS error</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="config.html#attribute:CONFIG:VERBOSE" title="CONFIG:VERBOSE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">VERBOSE</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:CONFIG:VERBOSE" title="CONFIG:VERBOSE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">VERBOSE</span></code></a></td>
 <td><a class="reference internal" href="boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>False</td>
 <td>Enable verbose exceptions</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="config.html#attribute:CONFIG:TELNET" title="CONFIG:TELNET attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TELNET</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:CONFIG:TELNET" title="CONFIG:TELNET attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TELNET</span></code></a></td>
 <td><a class="reference internal" href="boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>False</td>
 <td>activate the telnet server</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="config.html#attribute:CONFIG:TPORT" title="CONFIG:TPORT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TPORT</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:CONFIG:TPORT" title="CONFIG:TPORT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TPORT</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Scalar</span></code></a> (integer)</td>
 <td>5410</td>
 <td>set the port the telnet server will run on</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="config.html#attribute:CONFIG:IPADDRESS" title="CONFIG:IPADDRESS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">IPADDRESS</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:CONFIG:IPADDRESS" title="CONFIG:IPADDRESS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">IPADDRESS</span></code></a></td>
 <td><a class="reference internal" href="string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">String</span></code></a></td>
 <td>&#8220;127.0.0.1&#8221;</td>
 <td>The IP address the telnet server will try to use.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="config.html#attribute:CONFIG:BRIGHTNESS" title="CONFIG:BRIGHTNESS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">BRIGHTNESS</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:CONFIG:BRIGHTNESS" title="CONFIG:BRIGHTNESS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">BRIGHTNESS</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Scalar</span></code></a></td>
 <td>0.7 (from range [0.0 .. 1.0])</td>
 <td>Default brightness setting of new instances of the in-game terminal</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="config.html#attribute:CONFIG:DEFAULTFONTSIZE" title="CONFIG:DEFAULTFONTSIZE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">DEFAULTFONTSIZE</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:CONFIG:DEFAULTFONTSIZE" title="CONFIG:DEFAULTFONTSIZE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">DEFAULTFONTSIZE</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Scalar</span></code></a></td>
 <td>12 (from range [6 .. 20], integers only)</td>
 <td>Default font size in pixel height for new instances of the in-game terminal</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="config.html#attribute:CONFIG:DEFAULTWIDTH" title="CONFIG:DEFAULTWIDTH attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">DEFAULTWIDTH</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:CONFIG:DEFAULTWIDTH" title="CONFIG:DEFAULTWIDTH attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">DEFAULTWIDTH</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Scalar</span></code></a></td>
 <td>50 (from range [15 .. 255], integers only)</td>
 <td>Default width (in characters, not pixels) for  new instances of the in-game terminal.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="config.html#attribute:CONFIG:DEFAULTHEIGHT" title="CONFIG:DEFAULTHEIGHT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">DEFAULTHEIGHT</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:CONFIG:DEFAULTHEIGHT" title="CONFIG:DEFAULTHEIGHT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">DEFAULTHEIGHT</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Scalar</span></code></a></td>
 <td>36 (from range [3 .. 160], integers only)</td>
 <td>Default height (in characters, not pixels) for  new instances of the in-game terminal.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="config.html#attribute:CONFIG:DEBUGEACHOPCODE" title="CONFIG:DEBUGEACHOPCODE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">DEBUGEACHOPCODE</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:CONFIG:DEBUGEACHOPCODE" title="CONFIG:DEBUGEACHOPCODE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">DEBUGEACHOPCODE</span></code></a></td>
 <td><a class="reference internal" href="boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>false</td>
 <td>Unholy debug spam used by the kOS developers</td>
@@ -331,7 +331,7 @@ to be local to the current save file.</p>
 
 <dl class="attribute">
 <dt id="attribute:CONFIG:IPU">
-Config:<code class="descname">IPU</code><a class="headerlink" href="config.html#attribute:CONFIG:IPU" title="Permalink to this definition">¶</a></dt>
+Config:<code class="descname">IPU</code><a class="headerlink" href="#attribute:CONFIG:IPU" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -349,7 +349,7 @@ Config:<code class="descname">IPU</code><a class="headerlink" href="config.html#
 
 <dl class="attribute">
 <dt id="attribute:CONFIG:UCP">
-Config:<code class="descname">UCP</code><a class="headerlink" href="config.html#attribute:CONFIG:UCP" title="Permalink to this definition">¶</a></dt>
+Config:<code class="descname">UCP</code><a class="headerlink" href="#attribute:CONFIG:UCP" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -366,7 +366,7 @@ Config:<code class="descname">UCP</code><a class="headerlink" href="config.html#
 
 <dl class="attribute">
 <dt id="attribute:CONFIG:STAT">
-Config:<code class="descname">STAT</code><a class="headerlink" href="config.html#attribute:CONFIG:STAT" title="Permalink to this definition">¶</a></dt>
+Config:<code class="descname">STAT</code><a class="headerlink" href="#attribute:CONFIG:STAT" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -386,7 +386,7 @@ deep analysis of your program run, if you are so inclined.</p>
 
 <dl class="attribute">
 <dt id="attribute:CONFIG:RT">
-Config:<code class="descname">RT</code><a class="headerlink" href="config.html#attribute:CONFIG:RT" title="Permalink to this definition">¶</a></dt>
+Config:<code class="descname">RT</code><a class="headerlink" href="#attribute:CONFIG:RT" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -404,7 +404,7 @@ Config:<code class="descname">RT</code><a class="headerlink" href="config.html#a
 
 <dl class="attribute">
 <dt id="attribute:CONFIG:ARCH">
-Config:<code class="descname">ARCH</code><a class="headerlink" href="config.html#attribute:CONFIG:ARCH" title="Permalink to this definition">¶</a></dt>
+Config:<code class="descname">ARCH</code><a class="headerlink" href="#attribute:CONFIG:ARCH" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -421,7 +421,7 @@ Config:<code class="descname">ARCH</code><a class="headerlink" href="config.html
 
 <dl class="attribute">
 <dt id="attribute:CONFIG:OBEYHIDEUI">
-Config:<code class="descname">OBEYHIDEUI</code><a class="headerlink" href="config.html#attribute:CONFIG:OBEYHIDEUI" title="Permalink to this definition">¶</a></dt>
+Config:<code class="descname">OBEYHIDEUI</code><a class="headerlink" href="#attribute:CONFIG:OBEYHIDEUI" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -440,7 +440,7 @@ set to F2 by default key bindings).</p>
 
 <dl class="attribute">
 <dt id="attribute:CONFIG:SAFE">
-Config:<code class="descname">SAFE</code><a class="headerlink" href="config.html#attribute:CONFIG:SAFE" title="Permalink to this definition">¶</a></dt>
+Config:<code class="descname">SAFE</code><a class="headerlink" href="#attribute:CONFIG:SAFE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -463,7 +463,7 @@ Tried to push Infinity into the stack.
 
 <dl class="attribute">
 <dt id="attribute:CONFIG:AUDIOERR">
-Config:<code class="descname">AUDIOERR</code><a class="headerlink" href="config.html#attribute:CONFIG:AUDIOERR" title="Permalink to this definition">¶</a></dt>
+Config:<code class="descname">AUDIOERR</code><a class="headerlink" href="#attribute:CONFIG:AUDIOERR" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -484,7 +484,7 @@ you can take over.</p>
 
 <dl class="attribute">
 <dt id="attribute:CONFIG:VERBOSE">
-Config:<code class="descname">VERBOSE</code><a class="headerlink" href="config.html#attribute:CONFIG:VERBOSE" title="Permalink to this definition">¶</a></dt>
+Config:<code class="descname">VERBOSE</code><a class="headerlink" href="#attribute:CONFIG:VERBOSE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -501,7 +501,7 @@ Config:<code class="descname">VERBOSE</code><a class="headerlink" href="config.h
 
 <dl class="attribute">
 <dt id="attribute:CONFIG:TELNET">
-Config:<code class="descname">TELNET</code><a class="headerlink" href="config.html#attribute:CONFIG:TELNET" title="Permalink to this definition">¶</a></dt>
+Config:<code class="descname">TELNET</code><a class="headerlink" href="#attribute:CONFIG:TELNET" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -534,7 +534,7 @@ clicking the button off then clicking it on.</p>
 
 <dl class="attribute">
 <dt id="attribute:CONFIG:TPORT">
-Config:<code class="descname">TPORT</code><a class="headerlink" href="config.html#attribute:CONFIG:TPORT" title="Permalink to this definition">¶</a></dt>
+Config:<code class="descname">TPORT</code><a class="headerlink" href="#attribute:CONFIG:TPORT" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -556,7 +556,7 @@ stop, then restart the telnet server, as described above.</p>
 
 <dl class="attribute">
 <dt id="attribute:CONFIG:IPADDRESS">
-Config:<code class="descname">IPADDRESS</code><a class="headerlink" href="config.html#attribute:CONFIG:IPADDRESS" title="Permalink to this definition">¶</a></dt>
+Config:<code class="descname">IPADDRESS</code><a class="headerlink" href="#attribute:CONFIG:IPADDRESS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -582,7 +582,7 @@ stop, then restart the telnet server, as described above.</p>
 
 <dl class="attribute">
 <dt id="attribute:CONFIG:BRIGHTNESS">
-Config:<code class="descname">BRIGHTNESS</code><a class="headerlink" href="config.html#attribute:CONFIG:BRIGHTNESS" title="Permalink to this definition">¶</a></dt>
+Config:<code class="descname">BRIGHTNESS</code><a class="headerlink" href="#attribute:CONFIG:BRIGHTNESS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -605,7 +605,7 @@ brightness slider widget on that terminal.</p>
 
 <dl class="attribute">
 <dt id="attribute:CONFIG:DEFAULTFONTSIZE">
-Config:<code class="descname">DEFAULTFONTSIZE</code><a class="headerlink" href="config.html#attribute:CONFIG:DEFAULTFONTSIZE" title="Permalink to this definition">¶</a></dt>
+Config:<code class="descname">DEFAULTFONTSIZE</code><a class="headerlink" href="#attribute:CONFIG:DEFAULTFONTSIZE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -630,7 +630,7 @@ nearest integer when setting the value.</p>
 
 <dl class="attribute">
 <dt id="attribute:CONFIG:DEFAULTWIDTH">
-Config:<code class="descname">DEFAULTWIDTH</code><a class="headerlink" href="config.html#attribute:CONFIG:DEFAULTWIDTH" title="Permalink to this definition">¶</a></dt>
+Config:<code class="descname">DEFAULTWIDTH</code><a class="headerlink" href="#attribute:CONFIG:DEFAULTWIDTH" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -652,7 +652,7 @@ resize corner of the terminal with the mouse.</p>
 
 <dl class="attribute">
 <dt id="attribute:CONFIG:DEFAULTHEIGHT">
-Config:<code class="descname">DEFAULTHEIGHT</code><a class="headerlink" href="config.html#attribute:CONFIG:DEFAULTHEIGHT" title="Permalink to this definition">¶</a></dt>
+Config:<code class="descname">DEFAULTHEIGHT</code><a class="headerlink" href="#attribute:CONFIG:DEFAULTHEIGHT" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -674,7 +674,7 @@ resize corner of the terminal with the mouse.</p>
 
 <dl class="attribute">
 <dt id="attribute:CONFIG:DEBUGEACHOPCODE">
-Config:<code class="descname">DEBUGEACHOPCODE</code><a class="headerlink" href="config.html#attribute:CONFIG:DEBUGEACHOPCODE" title="Permalink to this definition">¶</a></dt>
+Config:<code class="descname">DEBUGEACHOPCODE</code><a class="headerlink" href="#attribute:CONFIG:DEBUGEACHOPCODE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

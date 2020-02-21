@@ -107,7 +107,7 @@
 <li class="toctree-l3"><a class="reference internal" href="filecontent.html">FileContent</a></li>
 <li class="toctree-l3"><a class="reference internal" href="path.html">Path</a></li>
 <li class="toctree-l3"><a class="reference internal" href="volume.html">Volume</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="volumedirectory.html">VolumeDirectory</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">VolumeDirectory</a></li>
 <li class="toctree-l3"><a class="reference internal" href="volumefile.html">VolumeFile</a></li>
 <li class="toctree-l3"><a class="reference internal" href="volumeitem.html">VolumeItem</a></li>
 </ul>
@@ -174,14 +174,14 @@
            <div itemprop="articleBody">
             
   <div class="section" id="volumedirectory">
-<span id="id1"></span><h1>VolumeDirectory<a class="headerlink" href="volumedirectory.html#volumedirectory" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1>VolumeDirectory<a class="headerlink" href="#volumedirectory" title="Permalink to this headline">¶</a></h1>
 <p>Represents a directory on a kOS file system.</p>
-<p>Instances of this class are enumerable, every step of iteration will provide a <a class="reference internal" href="volumefile.html#structure:VOLUMEFILE" title="VOLUMEFILE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">VolumeFile</span></code></a> or a <a class="reference internal" href="volumedirectory.html#structure:VOLUMEDIRECTORY" title="VOLUMEDIRECTORY structure"><code class="xref ks ks-struct docutils literal"><span class="pre">VolumeDirectory</span></code></a> contained in this directory.</p>
+<p>Instances of this class are enumerable, every step of iteration will provide a <a class="reference internal" href="volumefile.html#structure:VOLUMEFILE" title="VOLUMEFILE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">VolumeFile</span></code></a> or a <a class="reference internal" href="#structure:VOLUMEDIRECTORY" title="VOLUMEDIRECTORY structure"><code class="xref ks ks-struct docutils literal"><span class="pre">VolumeDirectory</span></code></a> contained in this directory.</p>
 <dl class="structure">
 <dt id="structure:VOLUMEDIRECTORY">
-<em class="property">structure </em><code class="descname">VolumeDirectory</code><a class="headerlink" href="volumedirectory.html#structure:VOLUMEDIRECTORY" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">VolumeDirectory</code><a class="headerlink" href="#structure:VOLUMEDIRECTORY" title="Permalink to this definition">¶</a></dt>
 <dd><table border="1" class="docutils" id="id2">
-<caption><span class="caption-text">Members</span><a class="headerlink" href="volumedirectory.html#id2" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-text">Members</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="17%" />
 <col width="17%" />
@@ -196,10 +196,10 @@
 <tbody valign="top">
 <tr class="row-even"><td>All suffixes of <a class="reference internal" href="volumeitem.html#structure:VOLUMEITEM" title="VOLUMEITEM structure"><code class="xref ks ks-struct docutils literal"><span class="pre">VolumeItem</span></code></a></td>
 <td>&nbsp;</td>
-<td><a class="reference internal" href="volumedirectory.html#structure:VOLUMEDIRECTORY" title="VOLUMEDIRECTORY structure"><code class="xref ks ks-struct docutils literal"><span class="pre">VolumeDirectory</span></code></a> objects are a type of <a class="reference internal" href="volumeitem.html#structure:VOLUMEITEM" title="VOLUMEITEM structure"><code class="xref ks ks-struct docutils literal"><span class="pre">VolumeItem</span></code></a></td>
+<td><a class="reference internal" href="#structure:VOLUMEDIRECTORY" title="VOLUMEDIRECTORY structure"><code class="xref ks ks-struct docutils literal"><span class="pre">VolumeDirectory</span></code></a> objects are a type of <a class="reference internal" href="volumeitem.html#structure:VOLUMEITEM" title="VOLUMEITEM structure"><code class="xref ks ks-struct docutils literal"><span class="pre">VolumeItem</span></code></a></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="volumedirectory.html#method:VOLUMEDIRECTORY:LIST" title="VOLUMEDIRECTORY:LIST method"><code class="xref ks ks-meth docutils literal"><span class="pre">LIST</span></code></a></td>
-<td><a class="reference internal" href="../collections/list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a> of <a class="reference internal" href="volumefile.html#structure:VOLUMEFILE" title="VOLUMEFILE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">VolumeFile</span></code></a> or <a class="reference internal" href="volumedirectory.html#structure:VOLUMEDIRECTORY" title="VOLUMEDIRECTORY structure"><code class="xref ks ks-struct docutils literal"><span class="pre">VolumeDirectory</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#method:VOLUMEDIRECTORY:LIST" title="VOLUMEDIRECTORY:LIST method"><code class="xref ks ks-meth docutils literal"><span class="pre">LIST</span></code></a></td>
+<td><a class="reference internal" href="../collections/list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a> of <a class="reference internal" href="volumefile.html#structure:VOLUMEFILE" title="VOLUMEFILE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">VolumeFile</span></code></a> or <a class="reference internal" href="#structure:VOLUMEDIRECTORY" title="VOLUMEDIRECTORY structure"><code class="xref ks ks-struct docutils literal"><span class="pre">VolumeDirectory</span></code></a></td>
 <td>Lists all files and directories</td>
 </tr>
 </tbody>
@@ -208,12 +208,12 @@
 
 <dl class="method">
 <dt id="method:VOLUMEDIRECTORY:LIST">
-VolumeDirectory:<code class="descname">LIST</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="volumedirectory.html#method:VOLUMEDIRECTORY:LIST" title="Permalink to this definition">¶</a></dt>
+VolumeDirectory:<code class="descname">LIST</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:VOLUMEDIRECTORY:LIST" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="../collections/list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a> of <a class="reference internal" href="volumefile.html#structure:VOLUMEFILE" title="VOLUMEFILE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">VolumeFile</span></code></a> or <a class="reference internal" href="volumedirectory.html#structure:VOLUMEDIRECTORY" title="VOLUMEDIRECTORY structure"><code class="xref ks ks-struct docutils literal"><span class="pre">VolumeDirectory</span></code></a></td>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="../collections/list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a> of <a class="reference internal" href="volumefile.html#structure:VOLUMEFILE" title="VOLUMEFILE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">VolumeFile</span></code></a> or <a class="reference internal" href="#structure:VOLUMEDIRECTORY" title="VOLUMEDIRECTORY structure"><code class="xref ks ks-struct docutils literal"><span class="pre">VolumeDirectory</span></code></a></td>
 </tr>
 </tbody>
 </table>

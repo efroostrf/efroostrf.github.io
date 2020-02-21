@@ -119,7 +119,7 @@
 <li class="toctree-l3"><a class="reference internal" href="loaddistance.html">Vessel Load Distance</a></li>
 <li class="toctree-l3"><a class="reference internal" href="loaddistance.html#situation-load-distance">Situation Load Distance</a></li>
 <li class="toctree-l3"><a class="reference internal" href="note.html">Note</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="pidloop.html">PIDLoop</a><ul class="simple">
+<li class="toctree-l3 current"><a class="current reference internal" href="">PIDLoop</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="resource_transfer.html">Resource Transfer</a></li>
@@ -190,7 +190,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="pidloop">
-<span id="id1"></span><h1>PIDLoop<a class="headerlink" href="pidloop.html#pidloop" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1>PIDLoop<a class="headerlink" href="#pidloop" title="Permalink to this headline">¶</a></h1>
 <p>The <cite>PIDLoop</cite> has multiple constructors available.  Valid syntax can be seen here:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="c1">// Create a loop with default parameters</span>
 <span class="c1">// kp = 1, ki = 0, kd = 0</span>
@@ -219,7 +219,7 @@
 <p>Please see the bottom of this page for information on the derivation of the loop&#8217;s output.</p>
 <dl class="structure">
 <dt id="structure:PIDLOOP">
-<em class="property">structure </em><code class="descname">PIDLoop</code><a class="headerlink" href="pidloop.html#structure:PIDLOOP" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">PIDLoop</code><a class="headerlink" href="#structure:PIDLOOP" title="Permalink to this definition">¶</a></dt>
 <dd><table border="1" class="docutils">
 <colgroup>
 <col width="37%" />
@@ -233,71 +233,71 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="pidloop.html#attribute:PIDLOOP:LASTSAMPLETIME" title="PIDLOOP:LASTSAMPLETIME attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">LASTSAMPLETIME</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:PIDLOOP:LASTSAMPLETIME" title="PIDLOOP:LASTSAMPLETIME attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">LASTSAMPLETIME</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a></td>
 <td>decimal value of the last sample time</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pidloop.html#attribute:PIDLOOP:KP" title="PIDLOOP:KP attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">KP</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:PIDLOOP:KP" title="PIDLOOP:KP attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">KP</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a></td>
 <td>The proportional gain factor</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pidloop.html#attribute:PIDLOOP:KI" title="PIDLOOP:KI attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">KI</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:PIDLOOP:KI" title="PIDLOOP:KI attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">KI</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a></td>
 <td>The integral gain factor</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pidloop.html#attribute:PIDLOOP:KD" title="PIDLOOP:KD attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">KD</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:PIDLOOP:KD" title="PIDLOOP:KD attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">KD</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a></td>
 <td>The derivative gain factor</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pidloop.html#attribute:PIDLOOP:INPUT" title="PIDLOOP:INPUT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">INPUT</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:PIDLOOP:INPUT" title="PIDLOOP:INPUT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">INPUT</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a></td>
 <td>The most recent input value</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pidloop.html#attribute:PIDLOOP:SETPOINT" title="PIDLOOP:SETPOINT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SETPOINT</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:PIDLOOP:SETPOINT" title="PIDLOOP:SETPOINT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SETPOINT</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a></td>
 <td>The current setpoint</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pidloop.html#attribute:PIDLOOP:ERROR" title="PIDLOOP:ERROR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ERROR</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:PIDLOOP:ERROR" title="PIDLOOP:ERROR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ERROR</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a></td>
 <td>The most recent error value</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pidloop.html#attribute:PIDLOOP:OUTPUT" title="PIDLOOP:OUTPUT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">OUTPUT</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:PIDLOOP:OUTPUT" title="PIDLOOP:OUTPUT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">OUTPUT</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a></td>
 <td>The most recent output value</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pidloop.html#attribute:PIDLOOP:MAXOUTPUT" title="PIDLOOP:MAXOUTPUT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MAXOUTPUT</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:PIDLOOP:MAXOUTPUT" title="PIDLOOP:MAXOUTPUT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MAXOUTPUT</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a></td>
 <td>The maximum output value</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pidloop.html#attribute:PIDLOOP:MINOUTPUT" title="PIDLOOP:MINOUTPUT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MINOUTPUT</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:PIDLOOP:MINOUTPUT" title="PIDLOOP:MINOUTPUT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MINOUTPUT</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a></td>
 <td>The maximum output value</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pidloop.html#attribute:PIDLOOP:ERRORSUM" title="PIDLOOP:ERRORSUM attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ERRORSUM</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:PIDLOOP:ERRORSUM" title="PIDLOOP:ERRORSUM attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ERRORSUM</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a></td>
 <td>The time weighted sum of error</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pidloop.html#attribute:PIDLOOP:PTERM" title="PIDLOOP:PTERM attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PTERM</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:PIDLOOP:PTERM" title="PIDLOOP:PTERM attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PTERM</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a></td>
 <td>The proportional component of output</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pidloop.html#attribute:PIDLOOP:ITERM" title="PIDLOOP:ITERM attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ITERM</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:PIDLOOP:ITERM" title="PIDLOOP:ITERM attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ITERM</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a></td>
 <td>The integral component of output</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pidloop.html#attribute:PIDLOOP:DTERM" title="PIDLOOP:DTERM attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">DTERM</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:PIDLOOP:DTERM" title="PIDLOOP:DTERM attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">DTERM</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a></td>
 <td>The derivative component of output</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pidloop.html#attribute:PIDLOOP:CHANGERATE" title="PIDLOOP:CHANGERATE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">CHANGERATE</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:PIDLOOP:CHANGERATE" title="PIDLOOP:CHANGERATE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">CHANGERATE</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a> (/s)</td>
 <td>The most recent input rate of change</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pidloop.html#method:PIDLOOP:RESET" title="PIDLOOP:RESET method"><code class="xref ks ks-meth docutils literal"><span class="pre">RESET</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#method:PIDLOOP:RESET" title="PIDLOOP:RESET method"><code class="xref ks ks-meth docutils literal"><span class="pre">RESET</span></code></a></td>
 <td>none</td>
 <td>Reset the integral component</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pidloop.html#method:PIDLOOP:UPDATE" title="PIDLOOP:UPDATE method"><code class="xref ks ks-meth docutils literal"><span class="pre">UPDATE(time,</span> <span class="pre">input)</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#method:PIDLOOP:UPDATE" title="PIDLOOP:UPDATE method"><code class="xref ks ks-meth docutils literal"><span class="pre">UPDATE(time,</span> <span class="pre">input)</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">scalar</span></code></a></td>
 <td>Returns output based on time and input</td>
 </tr>
@@ -307,7 +307,7 @@
 
 <dl class="attribute">
 <dt id="attribute:PIDLOOP:LASTSAMPLETIME">
-PIDLoop:<code class="descname">LASTSAMPLETIME</code><a class="headerlink" href="pidloop.html#attribute:PIDLOOP:LASTSAMPLETIME" title="Permalink to this definition">¶</a></dt>
+PIDLoop:<code class="descname">LASTSAMPLETIME</code><a class="headerlink" href="#attribute:PIDLOOP:LASTSAMPLETIME" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -323,7 +323,7 @@ PIDLoop:<code class="descname">LASTSAMPLETIME</code><a class="headerlink" href="
 
 <dl class="attribute">
 <dt id="attribute:PIDLOOP:KP">
-PIDLoop:<code class="descname">KP</code><a class="headerlink" href="pidloop.html#attribute:PIDLOOP:KP" title="Permalink to this definition">¶</a></dt>
+PIDLoop:<code class="descname">KP</code><a class="headerlink" href="#attribute:PIDLOOP:KP" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -339,7 +339,7 @@ PIDLoop:<code class="descname">KP</code><a class="headerlink" href="pidloop.html
 
 <dl class="attribute">
 <dt id="attribute:PIDLOOP:KI">
-PIDLoop:<code class="descname">KI</code><a class="headerlink" href="pidloop.html#attribute:PIDLOOP:KI" title="Permalink to this definition">¶</a></dt>
+PIDLoop:<code class="descname">KI</code><a class="headerlink" href="#attribute:PIDLOOP:KI" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -355,7 +355,7 @@ PIDLoop:<code class="descname">KI</code><a class="headerlink" href="pidloop.html
 
 <dl class="attribute">
 <dt id="attribute:PIDLOOP:KD">
-PIDLoop:<code class="descname">KD</code><a class="headerlink" href="pidloop.html#attribute:PIDLOOP:KD" title="Permalink to this definition">¶</a></dt>
+PIDLoop:<code class="descname">KD</code><a class="headerlink" href="#attribute:PIDLOOP:KD" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -371,7 +371,7 @@ PIDLoop:<code class="descname">KD</code><a class="headerlink" href="pidloop.html
 
 <dl class="attribute">
 <dt id="attribute:PIDLOOP:INPUT">
-PIDLoop:<code class="descname">INPUT</code><a class="headerlink" href="pidloop.html#attribute:PIDLOOP:INPUT" title="Permalink to this definition">¶</a></dt>
+PIDLoop:<code class="descname">INPUT</code><a class="headerlink" href="#attribute:PIDLOOP:INPUT" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -387,7 +387,7 @@ PIDLoop:<code class="descname">INPUT</code><a class="headerlink" href="pidloop.h
 
 <dl class="attribute">
 <dt id="attribute:PIDLOOP:SETPOINT">
-PIDLoop:<code class="descname">SETPOINT</code><a class="headerlink" href="pidloop.html#attribute:PIDLOOP:SETPOINT" title="Permalink to this definition">¶</a></dt>
+PIDLoop:<code class="descname">SETPOINT</code><a class="headerlink" href="#attribute:PIDLOOP:SETPOINT" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -403,7 +403,7 @@ PIDLoop:<code class="descname">SETPOINT</code><a class="headerlink" href="pidloo
 
 <dl class="attribute">
 <dt id="attribute:PIDLOOP:ERROR">
-PIDLoop:<code class="descname">ERROR</code><a class="headerlink" href="pidloop.html#attribute:PIDLOOP:ERROR" title="Permalink to this definition">¶</a></dt>
+PIDLoop:<code class="descname">ERROR</code><a class="headerlink" href="#attribute:PIDLOOP:ERROR" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -419,7 +419,7 @@ PIDLoop:<code class="descname">ERROR</code><a class="headerlink" href="pidloop.h
 
 <dl class="attribute">
 <dt id="attribute:PIDLOOP:OUTPUT">
-PIDLoop:<code class="descname">OUTPUT</code><a class="headerlink" href="pidloop.html#attribute:PIDLOOP:OUTPUT" title="Permalink to this definition">¶</a></dt>
+PIDLoop:<code class="descname">OUTPUT</code><a class="headerlink" href="#attribute:PIDLOOP:OUTPUT" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -435,7 +435,7 @@ PIDLoop:<code class="descname">OUTPUT</code><a class="headerlink" href="pidloop.
 
 <dl class="attribute">
 <dt id="attribute:PIDLOOP:MAXOUTPUT">
-PIDLoop:<code class="descname">MAXOUTPUT</code><a class="headerlink" href="pidloop.html#attribute:PIDLOOP:MAXOUTPUT" title="Permalink to this definition">¶</a></dt>
+PIDLoop:<code class="descname">MAXOUTPUT</code><a class="headerlink" href="#attribute:PIDLOOP:MAXOUTPUT" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -451,7 +451,7 @@ PIDLoop:<code class="descname">MAXOUTPUT</code><a class="headerlink" href="pidlo
 
 <dl class="attribute">
 <dt id="attribute:PIDLOOP:MINOUTPUT">
-PIDLoop:<code class="descname">MINOUTPUT</code><a class="headerlink" href="pidloop.html#attribute:PIDLOOP:MINOUTPUT" title="Permalink to this definition">¶</a></dt>
+PIDLoop:<code class="descname">MINOUTPUT</code><a class="headerlink" href="#attribute:PIDLOOP:MINOUTPUT" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -467,7 +467,7 @@ PIDLoop:<code class="descname">MINOUTPUT</code><a class="headerlink" href="pidlo
 
 <dl class="attribute">
 <dt id="attribute:PIDLOOP:ERRORSUM">
-PIDLoop:<code class="descname">ERRORSUM</code><a class="headerlink" href="pidloop.html#attribute:PIDLOOP:ERRORSUM" title="Permalink to this definition">¶</a></dt>
+PIDLoop:<code class="descname">ERRORSUM</code><a class="headerlink" href="#attribute:PIDLOOP:ERRORSUM" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -483,7 +483,7 @@ PIDLoop:<code class="descname">ERRORSUM</code><a class="headerlink" href="pidloo
 
 <dl class="attribute">
 <dt id="attribute:PIDLOOP:PTERM">
-PIDLoop:<code class="descname">PTERM</code><a class="headerlink" href="pidloop.html#attribute:PIDLOOP:PTERM" title="Permalink to this definition">¶</a></dt>
+PIDLoop:<code class="descname">PTERM</code><a class="headerlink" href="#attribute:PIDLOOP:PTERM" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -499,7 +499,7 @@ PIDLoop:<code class="descname">PTERM</code><a class="headerlink" href="pidloop.h
 
 <dl class="attribute">
 <dt id="attribute:PIDLOOP:ITERM">
-PIDLoop:<code class="descname">ITERM</code><a class="headerlink" href="pidloop.html#attribute:PIDLOOP:ITERM" title="Permalink to this definition">¶</a></dt>
+PIDLoop:<code class="descname">ITERM</code><a class="headerlink" href="#attribute:PIDLOOP:ITERM" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -515,7 +515,7 @@ PIDLoop:<code class="descname">ITERM</code><a class="headerlink" href="pidloop.h
 
 <dl class="attribute">
 <dt id="attribute:PIDLOOP:DTERM">
-PIDLoop:<code class="descname">DTERM</code><a class="headerlink" href="pidloop.html#attribute:PIDLOOP:DTERM" title="Permalink to this definition">¶</a></dt>
+PIDLoop:<code class="descname">DTERM</code><a class="headerlink" href="#attribute:PIDLOOP:DTERM" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -531,7 +531,7 @@ PIDLoop:<code class="descname">DTERM</code><a class="headerlink" href="pidloop.h
 
 <dl class="attribute">
 <dt id="attribute:PIDLOOP:CHANGERATE">
-PIDLoop:<code class="descname">CHANGERATE</code><a class="headerlink" href="pidloop.html#attribute:PIDLOOP:CHANGERATE" title="Permalink to this definition">¶</a></dt>
+PIDLoop:<code class="descname">CHANGERATE</code><a class="headerlink" href="#attribute:PIDLOOP:CHANGERATE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -547,7 +547,7 @@ PIDLoop:<code class="descname">CHANGERATE</code><a class="headerlink" href="pidl
 
 <dl class="method">
 <dt id="method:PIDLOOP:RESET">
-PIDLoop:<code class="descname">RESET</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="pidloop.html#method:PIDLOOP:RESET" title="Permalink to this definition">¶</a></dt>
+PIDLoop:<code class="descname">RESET</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:PIDLOOP:RESET" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -561,7 +561,7 @@ PIDLoop:<code class="descname">RESET</code><span class="sig-paren">(</span><span
 
 <dl class="method">
 <dt id="method:PIDLOOP:UPDATE">
-PIDLoop:<code class="descname">UPDATE</code><span class="sig-paren">(</span>time, input<span class="sig-paren">)</span><a class="headerlink" href="pidloop.html#method:PIDLOOP:UPDATE" title="Permalink to this definition">¶</a></dt>
+PIDLoop:<code class="descname">UPDATE</code><span class="sig-paren">(</span>time, input<span class="sig-paren">)</span><a class="headerlink" href="#method:PIDLOOP:UPDATE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -581,8 +581,8 @@ PIDLoop:<code class="descname">UPDATE</code><span class="sig-paren">(</span>time
 </dd></dl>
 
 <div class="section" id="pidloop-update-derivation">
-<h2>PIDLoop Update Derivation<a class="headerlink" href="pidloop.html#pidloop-update-derivation" title="Permalink to this headline">¶</a></h2>
-<p>The internal update method of the <a class="reference internal" href="pidloop.html#structure:PIDLOOP" title="PIDLOOP structure"><code class="xref ks ks-struct docutils literal"><span class="pre">PIDLoop</span></code></a> structure is the equivalent of the following in kerboscript</p>
+<h2>PIDLoop Update Derivation<a class="headerlink" href="#pidloop-update-derivation" title="Permalink to this headline">¶</a></h2>
+<p>The internal update method of the <a class="reference internal" href="#structure:PIDLOOP" title="PIDLOOP structure"><code class="xref ks ks-struct docutils literal"><span class="pre">PIDLoop</span></code></a> structure is the equivalent of the following in kerboscript</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="c1">// assume that the terms LastInput, LastSampleTime, ErrorSum, Kp, Ki, Kd, Setpoint, MinOutput, and MaxOutput are previously defined</span>
 <span class="k">declare</span> <span class="kd">function</span> <span class="nv">Update</span> <span class="p">{</span>
     <span class="k">declare</span> <span class="kd">parameter</span> <span class="nv">sampleTime</span><span class="p">,</span> <span class="nv">input</span><span class="p">.</span>

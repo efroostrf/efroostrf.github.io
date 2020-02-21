@@ -107,7 +107,7 @@
 <li class="toctree-l3"><a class="reference internal" href="iterator.html">Iterator</a></li>
 <li class="toctree-l3"><a class="reference internal" href="lexicon.html">Lexicon</a></li>
 <li class="toctree-l3"><a class="reference internal" href="list.html">List</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="queue.html">Queue</a><ul class="simple">
+<li class="toctree-l3 current"><a class="current reference internal" href="">Queue</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="range.html">Range</a></li>
@@ -178,11 +178,11 @@
            <div itemprop="articleBody">
             
   <div class="section" id="queue">
-<span id="id1"></span><h1>Queue<a class="headerlink" href="queue.html#queue" title="Permalink to this headline">¶</a></h1>
-<p>A <a class="reference internal" href="queue.html#structure:QUEUE" title="QUEUE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Queue</span></code></a> is a collection of any type in kOS. Queues work according to <a class="reference external" href="https://en.wikipedia.org/wiki/FIFO_and_LIFO_accounting">First-In first-out</a> principle. It may be useful to contrast
-<a class="reference internal" href="queue.html#structure:QUEUE" title="QUEUE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Queue</span></code></a> with <a class="reference internal" href="stack.html#structure:STACK" title="STACK structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Stack</span></code></a> to better understand how both structures work. You can read more about queues on <a class="reference external" href="https://en.wikipedia.org/wiki/Queue_(abstract_data_type)">Wikipedia</a>.</p>
+<span id="id1"></span><h1>Queue<a class="headerlink" href="#queue" title="Permalink to this headline">¶</a></h1>
+<p>A <a class="reference internal" href="#structure:QUEUE" title="QUEUE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Queue</span></code></a> is a collection of any type in kOS. Queues work according to <a class="reference external" href="https://en.wikipedia.org/wiki/FIFO_and_LIFO_accounting">First-In first-out</a> principle. It may be useful to contrast
+<a class="reference internal" href="#structure:QUEUE" title="QUEUE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Queue</span></code></a> with <a class="reference internal" href="stack.html#structure:STACK" title="STACK structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Stack</span></code></a> to better understand how both structures work. You can read more about queues on <a class="reference external" href="https://en.wikipedia.org/wiki/Queue_(abstract_data_type)">Wikipedia</a>.</p>
 <div class="section" id="using-a-queue">
-<h2>Using a queue<a class="headerlink" href="queue.html#using-a-queue" title="Permalink to this headline">¶</a></h2>
+<h2>Using a queue<a class="headerlink" href="#using-a-queue" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">SET</span> <span class="nv">Q</span> <span class="ow">TO</span> <span class="nv">QUEUE</span><span class="p">().</span>
 <span class="nv">Q</span><span class="p">:</span><span class="nv">PUSH</span><span class="p">(</span><span class="s">&quot;alice&quot;</span><span class="p">).</span>
 <span class="nv">Q</span><span class="p">:</span><span class="nv">PUSH</span><span class="p">(</span><span class="s">&quot;bob&quot;</span><span class="p">).</span>
@@ -193,12 +193,12 @@
 </div>
 </div>
 <div class="section" id="structure">
-<h2>Structure<a class="headerlink" href="queue.html#structure" title="Permalink to this headline">¶</a></h2>
+<h2>Structure<a class="headerlink" href="#structure" title="Permalink to this headline">¶</a></h2>
 <dl class="structure">
 <dt id="structure:QUEUE">
-<em class="property">structure </em><code class="descname">Queue</code><a class="headerlink" href="queue.html#structure:QUEUE" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">Queue</code><a class="headerlink" href="#structure:QUEUE" title="Permalink to this definition">¶</a></dt>
 <dd><table border="1" class="docutils" id="id2">
-<caption><span class="caption-text">Members</span><a class="headerlink" href="queue.html#id2" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-text">Members</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="29%" />
 <col width="14%" />
@@ -213,26 +213,26 @@
 <tbody valign="top">
 <tr class="row-even"><td>All suffixes of <a class="reference internal" href="enumerable.html#structure:ENUMERABLE" title="ENUMERABLE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Enumerable</span></code></a></td>
 <td>&nbsp;</td>
-<td><a class="reference internal" href="queue.html#structure:QUEUE" title="QUEUE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Queue</span></code></a> objects are a type of <a class="reference internal" href="enumerable.html#structure:ENUMERABLE" title="ENUMERABLE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Enumerable</span></code></a></td>
+<td><a class="reference internal" href="#structure:QUEUE" title="QUEUE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Queue</span></code></a> objects are a type of <a class="reference internal" href="enumerable.html#structure:ENUMERABLE" title="ENUMERABLE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Enumerable</span></code></a></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="queue.html#method:QUEUE:PUSH" title="QUEUE:PUSH method"><code class="xref ks ks-meth docutils literal"><span class="pre">PUSH(item)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#method:QUEUE:PUSH" title="QUEUE:PUSH method"><code class="xref ks ks-meth docutils literal"><span class="pre">PUSH(item)</span></code></a></td>
 <td>None</td>
 <td>add item to the end of the queue</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="queue.html#method:QUEUE:POP" title="QUEUE:POP method"><code class="xref ks ks-meth docutils literal"><span class="pre">POP()</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#method:QUEUE:POP" title="QUEUE:POP method"><code class="xref ks ks-meth docutils literal"><span class="pre">POP()</span></code></a></td>
 <td>any type</td>
 <td>returns the first element in the queue and removes it</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="queue.html#method:QUEUE:PEEK" title="QUEUE:PEEK method"><code class="xref ks ks-meth docutils literal"><span class="pre">PEEK()</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#method:QUEUE:PEEK" title="QUEUE:PEEK method"><code class="xref ks ks-meth docutils literal"><span class="pre">PEEK()</span></code></a></td>
 <td>any type</td>
 <td>returns the first element in the queue without removing it</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="queue.html#method:QUEUE:CLEAR" title="QUEUE:CLEAR method"><code class="xref ks ks-meth docutils literal"><span class="pre">CLEAR()</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#method:QUEUE:CLEAR" title="QUEUE:CLEAR method"><code class="xref ks ks-meth docutils literal"><span class="pre">CLEAR()</span></code></a></td>
 <td>None</td>
 <td>remove all elements</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="queue.html#attribute:QUEUE:COPY" title="QUEUE:COPY attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">COPY</span></code></a></td>
-<td><a class="reference internal" href="queue.html#structure:QUEUE" title="QUEUE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Queue</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:QUEUE:COPY" title="QUEUE:COPY attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">COPY</span></code></a></td>
+<td><a class="reference internal" href="#structure:QUEUE" title="QUEUE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Queue</span></code></a></td>
 <td>a new copy of this queue</td>
 </tr>
 </tbody>
@@ -245,7 +245,7 @@
 </div>
 <dl class="method">
 <dt id="method:QUEUE:PUSH">
-Queue:<code class="descname">PUSH</code><span class="sig-paren">(</span>item<span class="sig-paren">)</span><a class="headerlink" href="queue.html#method:QUEUE:PUSH" title="Permalink to this definition">¶</a></dt>
+Queue:<code class="descname">PUSH</code><span class="sig-paren">(</span>item<span class="sig-paren">)</span><a class="headerlink" href="#method:QUEUE:PUSH" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -262,30 +262,30 @@ Queue:<code class="descname">PUSH</code><span class="sig-paren">(</span>item<spa
 
 <dl class="method">
 <dt id="method:QUEUE:POP">
-Queue:<code class="descname">POP</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="queue.html#method:QUEUE:POP" title="Permalink to this definition">¶</a></dt>
+Queue:<code class="descname">POP</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:QUEUE:POP" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the item in the front of the queue and removes it.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="method:QUEUE:PEEK">
-Queue:<code class="descname">PEEK</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="queue.html#method:QUEUE:PEEK" title="Permalink to this definition">¶</a></dt>
+Queue:<code class="descname">PEEK</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:QUEUE:PEEK" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the item in the front of the queue without removing it.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="method:QUEUE:CLEAR">
-Queue:<code class="descname">CLEAR</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="queue.html#method:QUEUE:CLEAR" title="Permalink to this definition">¶</a></dt>
+Queue:<code class="descname">CLEAR</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:QUEUE:CLEAR" title="Permalink to this definition">¶</a></dt>
 <dd><p>Removes all elements from the queue.</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="attribute:QUEUE:COPY">
-Queue:<code class="descname">COPY</code><a class="headerlink" href="queue.html#attribute:QUEUE:COPY" title="Permalink to this definition">¶</a></dt>
+Queue:<code class="descname">COPY</code><a class="headerlink" href="#attribute:QUEUE:COPY" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="queue.html#structure:QUEUE" title="QUEUE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Queue</span></code></a></td>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#structure:QUEUE" title="QUEUE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Queue</span></code></a></td>
 </tr>
 <tr class="field-even field"><th class="field-name">Access:</th><td class="field-body">Get only</td>
 </tr>

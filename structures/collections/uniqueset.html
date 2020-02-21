@@ -110,7 +110,7 @@
 <li class="toctree-l3"><a class="reference internal" href="queue.html">Queue</a></li>
 <li class="toctree-l3"><a class="reference internal" href="range.html">Range</a></li>
 <li class="toctree-l3"><a class="reference internal" href="stack.html">Stack</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="uniqueset.html">UniqueSet</a><ul class="simple">
+<li class="toctree-l3 current"><a class="current reference internal" href="">UniqueSet</a><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -178,8 +178,8 @@
            <div itemprop="articleBody">
             
   <div class="section" id="uniqueset">
-<span id="id1"></span><h1>UniqueSet<a class="headerlink" href="uniqueset.html#uniqueset" title="Permalink to this headline">¶</a></h1>
-<p>A <a class="reference internal" href="uniqueset.html#structure:UNIQUESET" title="UNIQUESET structure"><code class="xref ks ks-struct docutils literal"><span class="pre">UniqueSet</span></code></a> is a collection of any type in kOS. It doesn&#8217;t store items in any particular order and does not allow duplicate items.
+<span id="id1"></span><h1>UniqueSet<a class="headerlink" href="#uniqueset" title="Permalink to this headline">¶</a></h1>
+<p>A <a class="reference internal" href="#structure:UNIQUESET" title="UNIQUESET structure"><code class="xref ks ks-struct docutils literal"><span class="pre">UniqueSet</span></code></a> is a collection of any type in kOS. It doesn&#8217;t store items in any particular order and does not allow duplicate items.
 You can read more about sets on <a class="reference external" href="https://en.wikipedia.org/wiki/Set_(abstract_data_type)">Wikipedia</a>.</p>
 <p>Usage example:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">SET</span> <span class="nv">S</span> <span class="ow">TO</span> <span class="nv">UNIQUESET</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span><span class="mf">2</span><span class="p">,</span><span class="mf">3</span><span class="p">).</span>
@@ -189,10 +189,10 @@ You can read more about sets on <a class="reference external" href="https://en.w
 </pre></div>
 </div>
 <div class="section" id="structure">
-<h2>Structure<a class="headerlink" href="uniqueset.html#structure" title="Permalink to this headline">¶</a></h2>
+<h2>Structure<a class="headerlink" href="#structure" title="Permalink to this headline">¶</a></h2>
 <dl class="structure">
 <dt id="structure:UNIQUESET">
-<em class="property">structure </em><code class="descname">UniqueSet</code><a class="headerlink" href="uniqueset.html#structure:UNIQUESET" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">UniqueSet</code><a class="headerlink" href="#structure:UNIQUESET" title="Permalink to this definition">¶</a></dt>
 <dd><table border="1" class="docutils">
 <colgroup>
 <col width="29%" />
@@ -208,22 +208,22 @@ You can read more about sets on <a class="reference external" href="https://en.w
 <tbody valign="top">
 <tr class="row-even"><td>All suffixes of <a class="reference internal" href="enumerable.html#structure:ENUMERABLE" title="ENUMERABLE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Enumerable</span></code></a></td>
 <td>&nbsp;</td>
-<td><a class="reference internal" href="uniqueset.html#structure:UNIQUESET" title="UNIQUESET structure"><code class="xref ks ks-struct docutils literal"><span class="pre">UniqueSet</span></code></a> objects are a type of <a class="reference internal" href="enumerable.html#structure:ENUMERABLE" title="ENUMERABLE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Enumerable</span></code></a></td>
+<td><a class="reference internal" href="#structure:UNIQUESET" title="UNIQUESET structure"><code class="xref ks ks-struct docutils literal"><span class="pre">UniqueSet</span></code></a> objects are a type of <a class="reference internal" href="enumerable.html#structure:ENUMERABLE" title="ENUMERABLE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Enumerable</span></code></a></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="uniqueset.html#method:UNIQUESET:ADD" title="UNIQUESET:ADD method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADD(item)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#method:UNIQUESET:ADD" title="UNIQUESET:ADD method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADD(item)</span></code></a></td>
 <td>None</td>
 <td>append an item</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="uniqueset.html#method:UNIQUESET:REMOVE" title="UNIQUESET:REMOVE method"><code class="xref ks ks-meth docutils literal"><span class="pre">REMOVE(item)</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#method:UNIQUESET:REMOVE" title="UNIQUESET:REMOVE method"><code class="xref ks ks-meth docutils literal"><span class="pre">REMOVE(item)</span></code></a></td>
 <td>None</td>
 <td>remove item</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="uniqueset.html#method:UNIQUESET:CLEAR" title="UNIQUESET:CLEAR method"><code class="xref ks ks-meth docutils literal"><span class="pre">CLEAR()</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#method:UNIQUESET:CLEAR" title="UNIQUESET:CLEAR method"><code class="xref ks ks-meth docutils literal"><span class="pre">CLEAR()</span></code></a></td>
 <td>None</td>
 <td>remove all elements</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="uniqueset.html#attribute:UNIQUESET:COPY" title="UNIQUESET:COPY attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">COPY</span></code></a></td>
-<td><a class="reference internal" href="uniqueset.html#structure:UNIQUESET" title="UNIQUESET structure"><code class="xref ks ks-struct docutils literal"><span class="pre">UniqueSet</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:UNIQUESET:COPY" title="UNIQUESET:COPY attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">COPY</span></code></a></td>
+<td><a class="reference internal" href="#structure:UNIQUESET" title="UNIQUESET structure"><code class="xref ks ks-struct docutils literal"><span class="pre">UniqueSet</span></code></a></td>
 <td>a new copy of this set</td>
 </tr>
 </tbody>
@@ -236,7 +236,7 @@ You can read more about sets on <a class="reference external" href="https://en.w
 </div>
 <dl class="method">
 <dt id="method:UNIQUESET:ADD">
-UniqueSet:<code class="descname">ADD</code><span class="sig-paren">(</span>item<span class="sig-paren">)</span><a class="headerlink" href="uniqueset.html#method:UNIQUESET:ADD" title="Permalink to this definition">¶</a></dt>
+UniqueSet:<code class="descname">ADD</code><span class="sig-paren">(</span>item<span class="sig-paren">)</span><a class="headerlink" href="#method:UNIQUESET:ADD" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -253,7 +253,7 @@ UniqueSet:<code class="descname">ADD</code><span class="sig-paren">(</span>item<
 
 <dl class="method">
 <dt id="method:UNIQUESET:REMOVE">
-UniqueSet:<code class="descname">REMOVE</code><span class="sig-paren">(</span>item<span class="sig-paren">)</span><a class="headerlink" href="uniqueset.html#method:UNIQUESET:REMOVE" title="Permalink to this definition">¶</a></dt>
+UniqueSet:<code class="descname">REMOVE</code><span class="sig-paren">(</span>item<span class="sig-paren">)</span><a class="headerlink" href="#method:UNIQUESET:REMOVE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -270,7 +270,7 @@ UniqueSet:<code class="descname">REMOVE</code><span class="sig-paren">(</span>it
 
 <dl class="method">
 <dt id="method:UNIQUESET:CLEAR">
-UniqueSet:<code class="descname">CLEAR</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="uniqueset.html#method:UNIQUESET:CLEAR" title="Permalink to this definition">¶</a></dt>
+UniqueSet:<code class="descname">CLEAR</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:UNIQUESET:CLEAR" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -284,12 +284,12 @@ UniqueSet:<code class="descname">CLEAR</code><span class="sig-paren">(</span><sp
 
 <dl class="attribute">
 <dt id="attribute:UNIQUESET:COPY">
-UniqueSet:<code class="descname">COPY</code><a class="headerlink" href="uniqueset.html#attribute:UNIQUESET:COPY" title="Permalink to this definition">¶</a></dt>
+UniqueSet:<code class="descname">COPY</code><a class="headerlink" href="#attribute:UNIQUESET:COPY" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="uniqueset.html#structure:UNIQUESET" title="UNIQUESET structure"><code class="xref ks ks-struct docutils literal"><span class="pre">UniqueSet</span></code></a></td>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#structure:UNIQUESET" title="UNIQUESET structure"><code class="xref ks ks-struct docutils literal"><span class="pre">UniqueSet</span></code></a></td>
 </tr>
 <tr class="field-even field"><th class="field-name">Access:</th><td class="field-body">Get only</td>
 </tr>

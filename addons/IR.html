@@ -105,7 +105,7 @@
 <li class="toctree-l2"><a class="reference internal" href="AGX.html">Action Groups Extended</a></li>
 <li class="toctree-l2"><a class="reference internal" href="RemoteTech.html">RemoteTech</a></li>
 <li class="toctree-l2"><a class="reference internal" href="KAC.html">Kerbal Alarm Clock</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="IR.html">Infernal Robotics</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Infernal Robotics</a></li>
 <li class="toctree-l2"><a class="reference internal" href="OrbitalScience.html">DMagic Orbital Science</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Trajectories.html">Trajectories</a></li>
 </ul>
@@ -160,7 +160,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="infernal-robotics">
-<span id="ir"></span><h1>Infernal Robotics<a class="headerlink" href="IR.html#infernal-robotics" title="Permalink to this headline">¶</a></h1>
+<span id="ir"></span><h1>Infernal Robotics<a class="headerlink" href="#infernal-robotics" title="Permalink to this headline">¶</a></h1>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p class="last">The Infernal Robotics mod has been migrating to Infernal Robotics Next. kOS
@@ -194,7 +194,7 @@ cause this addon to break in unexpected ways.</p>
 <p>Access structure IRAddon via <code class="docutils literal"><span class="pre">ADDONS:IR</span></code>.</p>
 <dl class="structure">
 <dt id="structure:IRADDON">
-<em class="property">structure </em><code class="descname">IRAddon</code><a class="headerlink" href="IR.html#structure:IRADDON" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">IRAddon</code><a class="headerlink" href="#structure:IRADDON" title="Permalink to this definition">¶</a></dt>
 <dd><table border="1" class="docutils">
 <colgroup>
 <col width="17%" />
@@ -208,20 +208,20 @@ cause this addon to break in unexpected ways.</p>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="IR.html#attribute:IRADDON:AVAILABLE" title="IRADDON:AVAILABLE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">AVAILABLE</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:IRADDON:AVAILABLE" title="IRADDON:AVAILABLE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">AVAILABLE</span></code></a></td>
 <td><a class="reference internal" href="../structures/misc/boolean.html#boolean"><span>boolean</span></a> (readonly)</td>
 <td>Returns True if mod Infernal Robotics is installed, available to KOS and applicable to current craft.  It is better to use <code class="docutils literal"><span class="pre">addons:available(&quot;rt&quot;)</span></code>.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="IR.html#attribute:IRADDON:GROUPS" title="IRADDON:GROUPS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">GROUPS</span></code></a></td>
-<td>List of <a class="reference internal" href="IR.html#structure:IRCONTROLGROUP" title="IRCONTROLGROUP structure"><code class="xref ks ks-struct docutils literal"><span class="pre">IRControlGroup</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:IRADDON:GROUPS" title="IRADDON:GROUPS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">GROUPS</span></code></a></td>
+<td>List of <a class="reference internal" href="#structure:IRCONTROLGROUP" title="IRCONTROLGROUP structure"><code class="xref ks ks-struct docutils literal"><span class="pre">IRControlGroup</span></code></a></td>
 <td>Lists all  Servo Groups for the Vessel on which CPU runs this command (see details below).</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="IR.html#attribute:IRADDON:ALLSERVOS" title="IRADDON:ALLSERVOS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ALLSERVOS</span></code></a></td>
-<td>List of <a class="reference internal" href="IR.html#structure:IRSERVO" title="IRSERVO structure"><code class="xref ks ks-struct docutils literal"><span class="pre">IRServo</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:IRADDON:ALLSERVOS" title="IRADDON:ALLSERVOS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ALLSERVOS</span></code></a></td>
+<td>List of <a class="reference internal" href="#structure:IRSERVO" title="IRSERVO structure"><code class="xref ks ks-struct docutils literal"><span class="pre">IRServo</span></code></a></td>
 <td>Lists all  Servos for the Vessel on which CPU runs this command (see details below).</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="IR.html#method:IRADDON:PARTSERVOS" title="IRADDON:PARTSERVOS method"><code class="xref ks ks-meth docutils literal"><span class="pre">PARTSERVOS(Part)</span></code></a></td>
-<td>List of <a class="reference internal" href="IR.html#structure:IRSERVO" title="IRSERVO structure"><code class="xref ks ks-struct docutils literal"><span class="pre">IRServo</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#method:IRADDON:PARTSERVOS" title="IRADDON:PARTSERVOS method"><code class="xref ks ks-meth docutils literal"><span class="pre">PARTSERVOS(Part)</span></code></a></td>
+<td>List of <a class="reference internal" href="#structure:IRSERVO" title="IRSERVO structure"><code class="xref ks ks-struct docutils literal"><span class="pre">IRServo</span></code></a></td>
 <td>Lists all Servos for the provided part</td>
 </tr>
 </tbody>
@@ -230,7 +230,7 @@ cause this addon to break in unexpected ways.</p>
 
 <dl class="attribute">
 <dt id="attribute:IRADDON:AVAILABLE">
-IRAddon:<code class="descname">AVAILABLE</code><a class="headerlink" href="IR.html#attribute:IRADDON:AVAILABLE" title="Permalink to this definition">¶</a></dt>
+IRAddon:<code class="descname">AVAILABLE</code><a class="headerlink" href="#attribute:IRADDON:AVAILABLE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -255,12 +255,12 @@ Example of use:</p>
 
 <dl class="attribute">
 <dt id="attribute:IRADDON:GROUPS">
-IRAddon:<code class="descname">GROUPS</code><a class="headerlink" href="IR.html#attribute:IRADDON:GROUPS" title="Permalink to this definition">¶</a></dt>
+IRAddon:<code class="descname">GROUPS</code><a class="headerlink" href="#attribute:IRADDON:GROUPS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../structures/collections/list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a> of <a class="reference internal" href="IR.html#structure:IRCONTROLGROUP" title="IRCONTROLGROUP structure"><code class="xref ks ks-struct docutils literal"><span class="pre">IRControlGroup</span></code></a> objects</td>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../structures/collections/list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a> of <a class="reference internal" href="#structure:IRCONTROLGROUP" title="IRCONTROLGROUP structure"><code class="xref ks ks-struct docutils literal"><span class="pre">IRControlGroup</span></code></a> objects</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Access:</th><td class="field-body">Get only</td>
 </tr>
@@ -278,12 +278,12 @@ Example of use:</p>
 
 <dl class="attribute">
 <dt id="attribute:IRADDON:ALLSERVOS">
-IRAddon:<code class="descname">ALLSERVOS</code><a class="headerlink" href="IR.html#attribute:IRADDON:ALLSERVOS" title="Permalink to this definition">¶</a></dt>
+IRAddon:<code class="descname">ALLSERVOS</code><a class="headerlink" href="#attribute:IRADDON:ALLSERVOS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../structures/collections/list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a> of <a class="reference internal" href="IR.html#structure:IRSERVO" title="IRSERVO structure"><code class="xref ks ks-struct docutils literal"><span class="pre">IRServo</span></code></a> objects</td>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../structures/collections/list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a> of <a class="reference internal" href="#structure:IRSERVO" title="IRSERVO structure"><code class="xref ks ks-struct docutils literal"><span class="pre">IRServo</span></code></a> objects</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Access:</th><td class="field-body">Get only</td>
 </tr>
@@ -301,7 +301,7 @@ Example of use:</p>
 
 <dl class="method">
 <dt id="method:IRADDON:PARTSERVOS">
-IRAddon:<code class="descname">PARTSERVOS</code><span class="sig-paren">(</span>part<span class="sig-paren">)</span><a class="headerlink" href="IR.html#method:IRADDON:PARTSERVOS" title="Permalink to this definition">¶</a></dt>
+IRAddon:<code class="descname">PARTSERVOS</code><span class="sig-paren">(</span>part<span class="sig-paren">)</span><a class="headerlink" href="#method:IRADDON:PARTSERVOS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -311,7 +311,7 @@ IRAddon:<code class="descname">PARTSERVOS</code><span class="sig-paren">(</span>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../structures/collections/list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a> of <a class="reference internal" href="IR.html#structure:IRSERVO" title="IRSERVO structure"><code class="xref ks ks-struct docutils literal"><span class="pre">IRServo</span></code></a> objects</p>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../structures/collections/list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List</span></code></a> of <a class="reference internal" href="#structure:IRSERVO" title="IRSERVO structure"><code class="xref ks ks-struct docutils literal"><span class="pre">IRServo</span></code></a> objects</p>
 </td>
 </tr>
 </tbody>
@@ -321,7 +321,7 @@ IRAddon:<code class="descname">PARTSERVOS</code><span class="sig-paren">(</span>
 
 <dl class="structure">
 <dt id="structure:IRCONTROLGROUP">
-<em class="property">structure </em><code class="descname">IRControlGroup</code><a class="headerlink" href="IR.html#structure:IRCONTROLGROUP" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">IRControlGroup</code><a class="headerlink" href="#structure:IRCONTROLGROUP" title="Permalink to this definition">¶</a></dt>
 <dd><table border="1" class="docutils">
 <colgroup>
 <col width="31%" />
@@ -335,55 +335,55 @@ IRAddon:<code class="descname">PARTSERVOS</code><span class="sig-paren">(</span>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="IR.html#attribute:IRCONTROLGROUP:NAME" title="IRCONTROLGROUP:NAME attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">NAME</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:IRCONTROLGROUP:NAME" title="IRCONTROLGROUP:NAME attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">NAME</span></code></a></td>
 <td><a class="reference internal" href="../structures/misc/string.html#string"><span>string</span></a></td>
 <td>Name of the Control Group</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="IR.html#attribute:IRCONTROLGROUP:SPEED" title="IRCONTROLGROUP:SPEED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SPEED</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:IRCONTROLGROUP:SPEED" title="IRCONTROLGROUP:SPEED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SPEED</span></code></a></td>
 <td><a class="reference internal" href="../math/scalar.html#scalar"><span>scalar</span></a></td>
 <td>Speed multiplier set in the IR UI</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="IR.html#attribute:IRCONTROLGROUP:EXPANDED" title="IRCONTROLGROUP:EXPANDED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">EXPANDED</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:IRCONTROLGROUP:EXPANDED" title="IRCONTROLGROUP:EXPANDED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">EXPANDED</span></code></a></td>
 <td><a class="reference internal" href="../structures/misc/boolean.html#boolean"><span>Boolean</span></a></td>
 <td>True if Group is expanded in IR UI</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="IR.html#attribute:IRCONTROLGROUP:FORWARDKEY" title="IRCONTROLGROUP:FORWARDKEY attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">FORWARDKEY</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:IRCONTROLGROUP:FORWARDKEY" title="IRCONTROLGROUP:FORWARDKEY attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">FORWARDKEY</span></code></a></td>
 <td><a class="reference internal" href="../structures/misc/string.html#string"><span>string</span></a></td>
 <td>Key assigned to forward movement</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="IR.html#attribute:IRCONTROLGROUP:REVERSEKEY" title="IRCONTROLGROUP:REVERSEKEY attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">REVERSEKEY</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:IRCONTROLGROUP:REVERSEKEY" title="IRCONTROLGROUP:REVERSEKEY attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">REVERSEKEY</span></code></a></td>
 <td><a class="reference internal" href="../structures/misc/string.html#string"><span>string</span></a></td>
 <td>Key assigned to reverse movement</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="IR.html#attribute:IRCONTROLGROUP:SERVOS" title="IRCONTROLGROUP:SERVOS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SERVOS</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:IRCONTROLGROUP:SERVOS" title="IRCONTROLGROUP:SERVOS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SERVOS</span></code></a></td>
 <td>List (readonly)</td>
 <td>List of servos in the group</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="IR.html#attribute:IRCONTROLGROUP:VESSEL" title="IRCONTROLGROUP:VESSEL attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">VESSEL</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:IRCONTROLGROUP:VESSEL" title="IRCONTROLGROUP:VESSEL attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">VESSEL</span></code></a></td>
 <td><a class="reference internal" href="../structures/vessels/vessel.html#structure:VESSEL" title="VESSEL structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Vessel</span></code></a></td>
 <td>Vessel object, owning this servo group. Readonly.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="IR.html#method:IRCONTROLGROUP:MOVERIGHT" title="IRCONTROLGROUP:MOVERIGHT method"><code class="xref ks ks-meth docutils literal"><span class="pre">MOVERIGHT()</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#method:IRCONTROLGROUP:MOVERIGHT" title="IRCONTROLGROUP:MOVERIGHT method"><code class="xref ks ks-meth docutils literal"><span class="pre">MOVERIGHT()</span></code></a></td>
 <td>void</td>
 <td>Commands servos in the group to move in positive direction</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="IR.html#method:IRCONTROLGROUP:MOVELEFT" title="IRCONTROLGROUP:MOVELEFT method"><code class="xref ks ks-meth docutils literal"><span class="pre">MOVELEFT()</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#method:IRCONTROLGROUP:MOVELEFT" title="IRCONTROLGROUP:MOVELEFT method"><code class="xref ks ks-meth docutils literal"><span class="pre">MOVELEFT()</span></code></a></td>
 <td>void</td>
 <td>Commands servos in the group to move in negative direction</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="IR.html#method:IRCONTROLGROUP:MOVECENTER" title="IRCONTROLGROUP:MOVECENTER method"><code class="xref ks ks-meth docutils literal"><span class="pre">MOVECENTER()</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#method:IRCONTROLGROUP:MOVECENTER" title="IRCONTROLGROUP:MOVECENTER method"><code class="xref ks ks-meth docutils literal"><span class="pre">MOVECENTER()</span></code></a></td>
 <td>void</td>
 <td>Commands servos in the group to move to default position</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="IR.html#method:IRCONTROLGROUP:MOVENEXTPRESET" title="IRCONTROLGROUP:MOVENEXTPRESET method"><code class="xref ks ks-meth docutils literal"><span class="pre">MOVENEXTPRESET()</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#method:IRCONTROLGROUP:MOVENEXTPRESET" title="IRCONTROLGROUP:MOVENEXTPRESET method"><code class="xref ks ks-meth docutils literal"><span class="pre">MOVENEXTPRESET()</span></code></a></td>
 <td>void</td>
 <td>Commands servos in the group to move to next preset</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="IR.html#method:IRCONTROLGROUP:MOVEPREVPRESET" title="IRCONTROLGROUP:MOVEPREVPRESET method"><code class="xref ks ks-meth docutils literal"><span class="pre">MOVEPREVPRESET()</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#method:IRCONTROLGROUP:MOVEPREVPRESET" title="IRCONTROLGROUP:MOVEPREVPRESET method"><code class="xref ks ks-meth docutils literal"><span class="pre">MOVEPREVPRESET()</span></code></a></td>
 <td>void</td>
 <td>Commands servos in the group to move to previous preset</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="IR.html#method:IRCONTROLGROUP:STOP" title="IRCONTROLGROUP:STOP method"><code class="xref ks ks-meth docutils literal"><span class="pre">STOP()</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#method:IRCONTROLGROUP:STOP" title="IRCONTROLGROUP:STOP method"><code class="xref ks ks-meth docutils literal"><span class="pre">STOP()</span></code></a></td>
 <td>void</td>
 <td>Commands servos in the group to stop</td>
 </tr>
@@ -393,7 +393,7 @@ IRAddon:<code class="descname">PARTSERVOS</code><span class="sig-paren">(</span>
 
 <dl class="attribute">
 <dt id="attribute:IRCONTROLGROUP:NAME">
-IRControlGroup:<code class="descname">NAME</code><a class="headerlink" href="IR.html#attribute:IRCONTROLGROUP:NAME" title="Permalink to this definition">¶</a></dt>
+IRControlGroup:<code class="descname">NAME</code><a class="headerlink" href="#attribute:IRCONTROLGROUP:NAME" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -409,7 +409,7 @@ IRControlGroup:<code class="descname">NAME</code><a class="headerlink" href="IR.
 
 <dl class="attribute">
 <dt id="attribute:IRCONTROLGROUP:SPEED">
-IRControlGroup:<code class="descname">SPEED</code><a class="headerlink" href="IR.html#attribute:IRCONTROLGROUP:SPEED" title="Permalink to this definition">¶</a></dt>
+IRControlGroup:<code class="descname">SPEED</code><a class="headerlink" href="#attribute:IRCONTROLGROUP:SPEED" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -425,7 +425,7 @@ IRControlGroup:<code class="descname">SPEED</code><a class="headerlink" href="IR
 
 <dl class="attribute">
 <dt id="attribute:IRCONTROLGROUP:EXPANDED">
-IRControlGroup:<code class="descname">EXPANDED</code><a class="headerlink" href="IR.html#attribute:IRCONTROLGROUP:EXPANDED" title="Permalink to this definition">¶</a></dt>
+IRControlGroup:<code class="descname">EXPANDED</code><a class="headerlink" href="#attribute:IRCONTROLGROUP:EXPANDED" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -441,7 +441,7 @@ IRControlGroup:<code class="descname">EXPANDED</code><a class="headerlink" href=
 
 <dl class="attribute">
 <dt id="attribute:IRCONTROLGROUP:FORWARDKEY">
-IRControlGroup:<code class="descname">FORWARDKEY</code><a class="headerlink" href="IR.html#attribute:IRCONTROLGROUP:FORWARDKEY" title="Permalink to this definition">¶</a></dt>
+IRControlGroup:<code class="descname">FORWARDKEY</code><a class="headerlink" href="#attribute:IRCONTROLGROUP:FORWARDKEY" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -457,7 +457,7 @@ IRControlGroup:<code class="descname">FORWARDKEY</code><a class="headerlink" hre
 
 <dl class="attribute">
 <dt id="attribute:IRCONTROLGROUP:REVERSEKEY">
-IRControlGroup:<code class="descname">REVERSEKEY</code><a class="headerlink" href="IR.html#attribute:IRCONTROLGROUP:REVERSEKEY" title="Permalink to this definition">¶</a></dt>
+IRControlGroup:<code class="descname">REVERSEKEY</code><a class="headerlink" href="#attribute:IRCONTROLGROUP:REVERSEKEY" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -473,12 +473,12 @@ IRControlGroup:<code class="descname">REVERSEKEY</code><a class="headerlink" hre
 
 <dl class="attribute">
 <dt id="attribute:IRCONTROLGROUP:SERVOS">
-IRControlGroup:<code class="descname">SERVOS</code><a class="headerlink" href="IR.html#attribute:IRCONTROLGROUP:SERVOS" title="Permalink to this definition">¶</a></dt>
+IRControlGroup:<code class="descname">SERVOS</code><a class="headerlink" href="#attribute:IRCONTROLGROUP:SERVOS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">List of <a class="reference internal" href="IR.html#structure:IRSERVO" title="IRSERVO structure"><code class="xref ks ks-struct docutils literal"><span class="pre">IRServo</span></code></a> objects</td>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">List of <a class="reference internal" href="#structure:IRSERVO" title="IRSERVO structure"><code class="xref ks ks-struct docutils literal"><span class="pre">IRServo</span></code></a> objects</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Access:</th><td class="field-body">Get only</td>
 </tr>
@@ -499,7 +499,7 @@ IRControlGroup:<code class="descname">SERVOS</code><a class="headerlink" href="I
 
 <dl class="attribute">
 <dt id="attribute:IRCONTROLGROUP:VESSEL">
-IRControlGroup:<code class="descname">VESSEL</code><a class="headerlink" href="IR.html#attribute:IRCONTROLGROUP:VESSEL" title="Permalink to this definition">¶</a></dt>
+IRControlGroup:<code class="descname">VESSEL</code><a class="headerlink" href="#attribute:IRCONTROLGROUP:VESSEL" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -515,7 +515,7 @@ IRControlGroup:<code class="descname">VESSEL</code><a class="headerlink" href="I
 
 <dl class="method">
 <dt id="method:IRCONTROLGROUP:MOVERIGHT">
-IRControlGroup:<code class="descname">MOVERIGHT</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="IR.html#method:IRCONTROLGROUP:MOVERIGHT" title="Permalink to this definition">¶</a></dt>
+IRControlGroup:<code class="descname">MOVERIGHT</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:IRCONTROLGROUP:MOVERIGHT" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -529,7 +529,7 @@ IRControlGroup:<code class="descname">MOVERIGHT</code><span class="sig-paren">(<
 
 <dl class="method">
 <dt id="method:IRCONTROLGROUP:MOVELEFT">
-IRControlGroup:<code class="descname">MOVELEFT</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="IR.html#method:IRCONTROLGROUP:MOVELEFT" title="Permalink to this definition">¶</a></dt>
+IRControlGroup:<code class="descname">MOVELEFT</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:IRCONTROLGROUP:MOVELEFT" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -543,7 +543,7 @@ IRControlGroup:<code class="descname">MOVELEFT</code><span class="sig-paren">(</
 
 <dl class="method">
 <dt id="method:IRCONTROLGROUP:MOVECENTER">
-IRControlGroup:<code class="descname">MOVECENTER</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="IR.html#method:IRCONTROLGROUP:MOVECENTER" title="Permalink to this definition">¶</a></dt>
+IRControlGroup:<code class="descname">MOVECENTER</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:IRCONTROLGROUP:MOVECENTER" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -557,7 +557,7 @@ IRControlGroup:<code class="descname">MOVECENTER</code><span class="sig-paren">(
 
 <dl class="method">
 <dt id="method:IRCONTROLGROUP:MOVENEXTPRESET">
-IRControlGroup:<code class="descname">MOVENEXTPRESET</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="IR.html#method:IRCONTROLGROUP:MOVENEXTPRESET" title="Permalink to this definition">¶</a></dt>
+IRControlGroup:<code class="descname">MOVENEXTPRESET</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:IRCONTROLGROUP:MOVENEXTPRESET" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -571,7 +571,7 @@ IRControlGroup:<code class="descname">MOVENEXTPRESET</code><span class="sig-pare
 
 <dl class="method">
 <dt id="method:IRCONTROLGROUP:MOVEPREVPRESET">
-IRControlGroup:<code class="descname">MOVEPREVPRESET</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="IR.html#method:IRCONTROLGROUP:MOVEPREVPRESET" title="Permalink to this definition">¶</a></dt>
+IRControlGroup:<code class="descname">MOVEPREVPRESET</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:IRCONTROLGROUP:MOVEPREVPRESET" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -585,7 +585,7 @@ IRControlGroup:<code class="descname">MOVEPREVPRESET</code><span class="sig-pare
 
 <dl class="method">
 <dt id="method:IRCONTROLGROUP:STOP">
-IRControlGroup:<code class="descname">STOP</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="IR.html#method:IRCONTROLGROUP:STOP" title="Permalink to this definition">¶</a></dt>
+IRControlGroup:<code class="descname">STOP</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:IRCONTROLGROUP:STOP" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -599,7 +599,7 @@ IRControlGroup:<code class="descname">STOP</code><span class="sig-paren">(</span
 
 <dl class="structure">
 <dt id="structure:IRSERVO">
-<em class="property">structure </em><code class="descname">IRServo</code><a class="headerlink" href="IR.html#structure:IRSERVO" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">IRServo</code><a class="headerlink" href="#structure:IRSERVO" title="Permalink to this definition">¶</a></dt>
 <dd><table border="1" class="docutils">
 <colgroup>
 <col width="27%" />
@@ -613,99 +613,99 @@ IRControlGroup:<code class="descname">STOP</code><span class="sig-paren">(</span
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="IR.html#attribute:IRSERVO:NAME" title="IRSERVO:NAME attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">NAME</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:IRSERVO:NAME" title="IRSERVO:NAME attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">NAME</span></code></a></td>
 <td><a class="reference internal" href="../structures/misc/string.html#string"><span>string</span></a></td>
 <td>Name of the Servo</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="IR.html#attribute:IRSERVO:UID" title="IRSERVO:UID attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">UID</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:IRSERVO:UID" title="IRSERVO:UID attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">UID</span></code></a></td>
 <td><a class="reference internal" href="../math/scalar.html#scalar"><span>scalar</span></a> (int)</td>
 <td>Unique ID of the servo part (part.flightID).</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="IR.html#attribute:IRSERVO:HIGHLIGHT" title="IRSERVO:HIGHLIGHT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">HIGHLIGHT</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:IRSERVO:HIGHLIGHT" title="IRSERVO:HIGHLIGHT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">HIGHLIGHT</span></code></a></td>
 <td><a class="reference internal" href="../structures/misc/boolean.html#boolean"><span>Boolean</span></a> (set-only)</td>
 <td>Set Hightlight status of the part.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="IR.html#attribute:IRSERVO:POSITION" title="IRSERVO:POSITION attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">POSITION</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:IRSERVO:POSITION" title="IRSERVO:POSITION attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">POSITION</span></code></a></td>
 <td><a class="reference internal" href="../math/scalar.html#scalar"><span>scalar</span></a> (readonly)</td>
 <td>Current position of the servo.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="IR.html#attribute:IRSERVO:MINCFGPOSITION" title="IRSERVO:MINCFGPOSITION attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MINCFGPOSITION</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:IRSERVO:MINCFGPOSITION" title="IRSERVO:MINCFGPOSITION attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MINCFGPOSITION</span></code></a></td>
 <td><a class="reference internal" href="../math/scalar.html#scalar"><span>scalar</span></a> (readonly)</td>
 <td>Minimum position for servo as defined by part creator in part.cfg</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="IR.html#attribute:IRSERVO:MAXCFGPOSITION" title="IRSERVO:MAXCFGPOSITION attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MAXCFGPOSITION</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:IRSERVO:MAXCFGPOSITION" title="IRSERVO:MAXCFGPOSITION attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MAXCFGPOSITION</span></code></a></td>
 <td><a class="reference internal" href="../math/scalar.html#scalar"><span>scalar</span></a> (readonly)</td>
 <td>Maximum position for servo as defined by part creator in part.cfg</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="IR.html#attribute:IRSERVO:MINPOSITION" title="IRSERVO:MINPOSITION attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MINPOSITION</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:IRSERVO:MINPOSITION" title="IRSERVO:MINPOSITION attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MINPOSITION</span></code></a></td>
 <td><a class="reference internal" href="../math/scalar.html#scalar"><span>scalar</span></a></td>
 <td>Minimum position for servo, from tweakable.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="IR.html#attribute:IRSERVO:MAXPOSITION" title="IRSERVO:MAXPOSITION attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MAXPOSITION</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:IRSERVO:MAXPOSITION" title="IRSERVO:MAXPOSITION attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MAXPOSITION</span></code></a></td>
 <td><a class="reference internal" href="../math/scalar.html#scalar"><span>scalar</span></a></td>
 <td>Maximum position for servo, from tweakable.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="IR.html#attribute:IRSERVO:CONFIGSPEED" title="IRSERVO:CONFIGSPEED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">CONFIGSPEED</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:IRSERVO:CONFIGSPEED" title="IRSERVO:CONFIGSPEED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">CONFIGSPEED</span></code></a></td>
 <td><a class="reference internal" href="../math/scalar.html#scalar"><span>scalar</span></a> (readonly)</td>
 <td>Servo movement speed as defined by part creator in part.cfg</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="IR.html#attribute:IRSERVO:SPEED" title="IRSERVO:SPEED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SPEED</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:IRSERVO:SPEED" title="IRSERVO:SPEED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SPEED</span></code></a></td>
 <td><a class="reference internal" href="../math/scalar.html#scalar"><span>scalar</span></a></td>
 <td>Servo speed multiplier, from tweakable.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="IR.html#attribute:IRSERVO:CURRENTSPEED" title="IRSERVO:CURRENTSPEED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">CURRENTSPEED</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:IRSERVO:CURRENTSPEED" title="IRSERVO:CURRENTSPEED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">CURRENTSPEED</span></code></a></td>
 <td><a class="reference internal" href="../math/scalar.html#scalar"><span>scalar</span></a> (readonly)</td>
 <td>Current Servo speed.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="IR.html#attribute:IRSERVO:ACCELERATION" title="IRSERVO:ACCELERATION attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ACCELERATION</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:IRSERVO:ACCELERATION" title="IRSERVO:ACCELERATION attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ACCELERATION</span></code></a></td>
 <td><a class="reference internal" href="../math/scalar.html#scalar"><span>scalar</span></a></td>
 <td>Servo acceleration multiplier, from tweakable.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="IR.html#attribute:IRSERVO:ISMOVING" title="IRSERVO:ISMOVING attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ISMOVING</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:IRSERVO:ISMOVING" title="IRSERVO:ISMOVING attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ISMOVING</span></code></a></td>
 <td><a class="reference internal" href="../structures/misc/boolean.html#boolean"><span>Boolean</span></a> (readonly)</td>
 <td>True if Servo is moving</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="IR.html#attribute:IRSERVO:ISFREEMOVING" title="IRSERVO:ISFREEMOVING attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ISFREEMOVING</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:IRSERVO:ISFREEMOVING" title="IRSERVO:ISFREEMOVING attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ISFREEMOVING</span></code></a></td>
 <td><a class="reference internal" href="../structures/misc/boolean.html#boolean"><span>Boolean</span></a> (readonly)</td>
 <td>True if Servo is uncontrollable (ex. docking washer)</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="IR.html#attribute:IRSERVO:LOCKED" title="IRSERVO:LOCKED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">LOCKED</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:IRSERVO:LOCKED" title="IRSERVO:LOCKED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">LOCKED</span></code></a></td>
 <td><a class="reference internal" href="../structures/misc/boolean.html#boolean"><span>Boolean</span></a></td>
 <td>Servo&#8217;s locked status, set true to lock servo.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="IR.html#attribute:IRSERVO:INVERTED" title="IRSERVO:INVERTED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">INVERTED</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:IRSERVO:INVERTED" title="IRSERVO:INVERTED attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">INVERTED</span></code></a></td>
 <td><a class="reference internal" href="../structures/misc/boolean.html#boolean"><span>Boolean</span></a></td>
 <td>Servo&#8217;s inverted status, set true to invert servo&#8217;s axis.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="IR.html#attribute:IRSERVO:PART" title="IRSERVO:PART attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PART</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:IRSERVO:PART" title="IRSERVO:PART attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PART</span></code></a></td>
 <td><a class="reference internal" href="../structures/vessels/part.html#structure:PART" title="PART structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Part</span></code></a></td>
 <td>A reference to a Part containing servo module.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="IR.html#method:IRSERVO:MOVERIGHT" title="IRSERVO:MOVERIGHT method"><code class="xref ks ks-meth docutils literal"><span class="pre">MOVERIGHT()</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#method:IRSERVO:MOVERIGHT" title="IRSERVO:MOVERIGHT method"><code class="xref ks ks-meth docutils literal"><span class="pre">MOVERIGHT()</span></code></a></td>
 <td>void</td>
 <td>Commands servo to move in positive direction</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="IR.html#method:IRSERVO:MOVELEFT" title="IRSERVO:MOVELEFT method"><code class="xref ks ks-meth docutils literal"><span class="pre">MOVELEFT()</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#method:IRSERVO:MOVELEFT" title="IRSERVO:MOVELEFT method"><code class="xref ks ks-meth docutils literal"><span class="pre">MOVELEFT()</span></code></a></td>
 <td>void</td>
 <td>Commands servo to move in negative direction</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="IR.html#method:IRSERVO:MOVECENTER" title="IRSERVO:MOVECENTER method"><code class="xref ks ks-meth docutils literal"><span class="pre">MOVECENTER()</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#method:IRSERVO:MOVECENTER" title="IRSERVO:MOVECENTER method"><code class="xref ks ks-meth docutils literal"><span class="pre">MOVECENTER()</span></code></a></td>
 <td>void</td>
 <td>Commands servo to move to default position</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="IR.html#method:IRSERVO:MOVENEXTPRESET" title="IRSERVO:MOVENEXTPRESET method"><code class="xref ks ks-meth docutils literal"><span class="pre">MOVENEXTPRESET()</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#method:IRSERVO:MOVENEXTPRESET" title="IRSERVO:MOVENEXTPRESET method"><code class="xref ks ks-meth docutils literal"><span class="pre">MOVENEXTPRESET()</span></code></a></td>
 <td>void</td>
 <td>Commands servo to move to next preset</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="IR.html#method:IRSERVO:MOVEPREVPRESET" title="IRSERVO:MOVEPREVPRESET method"><code class="xref ks ks-meth docutils literal"><span class="pre">MOVEPREVPRESET()</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#method:IRSERVO:MOVEPREVPRESET" title="IRSERVO:MOVEPREVPRESET method"><code class="xref ks ks-meth docutils literal"><span class="pre">MOVEPREVPRESET()</span></code></a></td>
 <td>void</td>
 <td>Commands servo to move to previous preset</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="IR.html#method:IRSERVO:STOP" title="IRSERVO:STOP method"><code class="xref ks ks-meth docutils literal"><span class="pre">STOP()</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#method:IRSERVO:STOP" title="IRSERVO:STOP method"><code class="xref ks ks-meth docutils literal"><span class="pre">STOP()</span></code></a></td>
 <td>void</td>
 <td>Commands servo to stop</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="IR.html#method:IRSERVO:MOVETO" title="IRSERVO:MOVETO method"><code class="xref ks ks-meth docutils literal"><span class="pre">MOVETO(position,</span> <span class="pre">speedMult)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#method:IRSERVO:MOVETO" title="IRSERVO:MOVETO method"><code class="xref ks ks-meth docutils literal"><span class="pre">MOVETO(position,</span> <span class="pre">speedMult)</span></code></a></td>
 <td>void</td>
 <td>Commands servo to move to <cite>position</cite> with <cite>speedMult</cite> multiplier</td>
 </tr>
@@ -715,7 +715,7 @@ IRControlGroup:<code class="descname">STOP</code><span class="sig-paren">(</span
 
 <dl class="attribute">
 <dt id="attribute:IRSERVO:NAME">
-IRServo:<code class="descname">NAME</code><a class="headerlink" href="IR.html#attribute:IRSERVO:NAME" title="Permalink to this definition">¶</a></dt>
+IRServo:<code class="descname">NAME</code><a class="headerlink" href="#attribute:IRSERVO:NAME" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -731,7 +731,7 @@ IRServo:<code class="descname">NAME</code><a class="headerlink" href="IR.html#at
 
 <dl class="attribute">
 <dt id="attribute:IRSERVO:UID">
-IRServo:<code class="descname">UID</code><a class="headerlink" href="IR.html#attribute:IRSERVO:UID" title="Permalink to this definition">¶</a></dt>
+IRServo:<code class="descname">UID</code><a class="headerlink" href="#attribute:IRSERVO:UID" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -747,7 +747,7 @@ IRServo:<code class="descname">UID</code><a class="headerlink" href="IR.html#att
 
 <dl class="attribute">
 <dt id="attribute:IRSERVO:HIGHLIGHT">
-IRServo:<code class="descname">HIGHLIGHT</code><a class="headerlink" href="IR.html#attribute:IRSERVO:HIGHLIGHT" title="Permalink to this definition">¶</a></dt>
+IRServo:<code class="descname">HIGHLIGHT</code><a class="headerlink" href="#attribute:IRSERVO:HIGHLIGHT" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -763,7 +763,7 @@ IRServo:<code class="descname">HIGHLIGHT</code><a class="headerlink" href="IR.ht
 
 <dl class="attribute">
 <dt id="attribute:IRSERVO:POSITION">
-IRServo:<code class="descname">POSITION</code><a class="headerlink" href="IR.html#attribute:IRSERVO:POSITION" title="Permalink to this definition">¶</a></dt>
+IRServo:<code class="descname">POSITION</code><a class="headerlink" href="#attribute:IRSERVO:POSITION" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -779,7 +779,7 @@ IRServo:<code class="descname">POSITION</code><a class="headerlink" href="IR.htm
 
 <dl class="attribute">
 <dt id="attribute:IRSERVO:MINCFGPOSITION">
-IRServo:<code class="descname">MINCFGPOSITION</code><a class="headerlink" href="IR.html#attribute:IRSERVO:MINCFGPOSITION" title="Permalink to this definition">¶</a></dt>
+IRServo:<code class="descname">MINCFGPOSITION</code><a class="headerlink" href="#attribute:IRSERVO:MINCFGPOSITION" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -795,7 +795,7 @@ IRServo:<code class="descname">MINCFGPOSITION</code><a class="headerlink" href="
 
 <dl class="attribute">
 <dt id="attribute:IRSERVO:MAXCFGPOSITION">
-IRServo:<code class="descname">MAXCFGPOSITION</code><a class="headerlink" href="IR.html#attribute:IRSERVO:MAXCFGPOSITION" title="Permalink to this definition">¶</a></dt>
+IRServo:<code class="descname">MAXCFGPOSITION</code><a class="headerlink" href="#attribute:IRSERVO:MAXCFGPOSITION" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -811,7 +811,7 @@ IRServo:<code class="descname">MAXCFGPOSITION</code><a class="headerlink" href="
 
 <dl class="attribute">
 <dt id="attribute:IRSERVO:MINPOSITION">
-IRServo:<code class="descname">MINPOSITION</code><a class="headerlink" href="IR.html#attribute:IRSERVO:MINPOSITION" title="Permalink to this definition">¶</a></dt>
+IRServo:<code class="descname">MINPOSITION</code><a class="headerlink" href="#attribute:IRSERVO:MINPOSITION" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -827,7 +827,7 @@ IRServo:<code class="descname">MINPOSITION</code><a class="headerlink" href="IR.
 
 <dl class="attribute">
 <dt id="attribute:IRSERVO:MAXPOSITION">
-IRServo:<code class="descname">MAXPOSITION</code><a class="headerlink" href="IR.html#attribute:IRSERVO:MAXPOSITION" title="Permalink to this definition">¶</a></dt>
+IRServo:<code class="descname">MAXPOSITION</code><a class="headerlink" href="#attribute:IRSERVO:MAXPOSITION" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -843,7 +843,7 @@ IRServo:<code class="descname">MAXPOSITION</code><a class="headerlink" href="IR.
 
 <dl class="attribute">
 <dt id="attribute:IRSERVO:CONFIGSPEED">
-IRServo:<code class="descname">CONFIGSPEED</code><a class="headerlink" href="IR.html#attribute:IRSERVO:CONFIGSPEED" title="Permalink to this definition">¶</a></dt>
+IRServo:<code class="descname">CONFIGSPEED</code><a class="headerlink" href="#attribute:IRSERVO:CONFIGSPEED" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -859,7 +859,7 @@ IRServo:<code class="descname">CONFIGSPEED</code><a class="headerlink" href="IR.
 
 <dl class="attribute">
 <dt id="attribute:IRSERVO:SPEED">
-IRServo:<code class="descname">SPEED</code><a class="headerlink" href="IR.html#attribute:IRSERVO:SPEED" title="Permalink to this definition">¶</a></dt>
+IRServo:<code class="descname">SPEED</code><a class="headerlink" href="#attribute:IRSERVO:SPEED" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -875,7 +875,7 @@ IRServo:<code class="descname">SPEED</code><a class="headerlink" href="IR.html#a
 
 <dl class="attribute">
 <dt id="attribute:IRSERVO:CURRENTSPEED">
-IRServo:<code class="descname">CURRENTSPEED</code><a class="headerlink" href="IR.html#attribute:IRSERVO:CURRENTSPEED" title="Permalink to this definition">¶</a></dt>
+IRServo:<code class="descname">CURRENTSPEED</code><a class="headerlink" href="#attribute:IRSERVO:CURRENTSPEED" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -891,7 +891,7 @@ IRServo:<code class="descname">CURRENTSPEED</code><a class="headerlink" href="IR
 
 <dl class="attribute">
 <dt id="attribute:IRSERVO:ACCELERATION">
-IRServo:<code class="descname">ACCELERATION</code><a class="headerlink" href="IR.html#attribute:IRSERVO:ACCELERATION" title="Permalink to this definition">¶</a></dt>
+IRServo:<code class="descname">ACCELERATION</code><a class="headerlink" href="#attribute:IRSERVO:ACCELERATION" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -907,7 +907,7 @@ IRServo:<code class="descname">ACCELERATION</code><a class="headerlink" href="IR
 
 <dl class="attribute">
 <dt id="attribute:IRSERVO:ISMOVING">
-IRServo:<code class="descname">ISMOVING</code><a class="headerlink" href="IR.html#attribute:IRSERVO:ISMOVING" title="Permalink to this definition">¶</a></dt>
+IRServo:<code class="descname">ISMOVING</code><a class="headerlink" href="#attribute:IRSERVO:ISMOVING" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -923,7 +923,7 @@ IRServo:<code class="descname">ISMOVING</code><a class="headerlink" href="IR.htm
 
 <dl class="attribute">
 <dt id="attribute:IRSERVO:ISFREEMOVING">
-IRServo:<code class="descname">ISFREEMOVING</code><a class="headerlink" href="IR.html#attribute:IRSERVO:ISFREEMOVING" title="Permalink to this definition">¶</a></dt>
+IRServo:<code class="descname">ISFREEMOVING</code><a class="headerlink" href="#attribute:IRSERVO:ISFREEMOVING" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -939,7 +939,7 @@ IRServo:<code class="descname">ISFREEMOVING</code><a class="headerlink" href="IR
 
 <dl class="attribute">
 <dt id="attribute:IRSERVO:LOCKED">
-IRServo:<code class="descname">LOCKED</code><a class="headerlink" href="IR.html#attribute:IRSERVO:LOCKED" title="Permalink to this definition">¶</a></dt>
+IRServo:<code class="descname">LOCKED</code><a class="headerlink" href="#attribute:IRSERVO:LOCKED" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -955,7 +955,7 @@ IRServo:<code class="descname">LOCKED</code><a class="headerlink" href="IR.html#
 
 <dl class="attribute">
 <dt id="attribute:IRSERVO:INVERTED">
-IRServo:<code class="descname">INVERTED</code><a class="headerlink" href="IR.html#attribute:IRSERVO:INVERTED" title="Permalink to this definition">¶</a></dt>
+IRServo:<code class="descname">INVERTED</code><a class="headerlink" href="#attribute:IRSERVO:INVERTED" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -971,7 +971,7 @@ IRServo:<code class="descname">INVERTED</code><a class="headerlink" href="IR.htm
 
 <dl class="attribute">
 <dt id="attribute:IRSERVO:PART">
-IRServo:<code class="descname">PART</code><a class="headerlink" href="IR.html#attribute:IRSERVO:PART" title="Permalink to this definition">¶</a></dt>
+IRServo:<code class="descname">PART</code><a class="headerlink" href="#attribute:IRSERVO:PART" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -987,7 +987,7 @@ IRServo:<code class="descname">PART</code><a class="headerlink" href="IR.html#at
 
 <dl class="method">
 <dt id="method:IRSERVO:MOVERIGHT">
-IRServo:<code class="descname">MOVERIGHT</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="IR.html#method:IRSERVO:MOVERIGHT" title="Permalink to this definition">¶</a></dt>
+IRServo:<code class="descname">MOVERIGHT</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:IRSERVO:MOVERIGHT" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1001,7 +1001,7 @@ IRServo:<code class="descname">MOVERIGHT</code><span class="sig-paren">(</span><
 
 <dl class="method">
 <dt id="method:IRSERVO:MOVELEFT">
-IRServo:<code class="descname">MOVELEFT</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="IR.html#method:IRSERVO:MOVELEFT" title="Permalink to this definition">¶</a></dt>
+IRServo:<code class="descname">MOVELEFT</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:IRSERVO:MOVELEFT" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1015,7 +1015,7 @@ IRServo:<code class="descname">MOVELEFT</code><span class="sig-paren">(</span><s
 
 <dl class="method">
 <dt id="method:IRSERVO:MOVECENTER">
-IRServo:<code class="descname">MOVECENTER</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="IR.html#method:IRSERVO:MOVECENTER" title="Permalink to this definition">¶</a></dt>
+IRServo:<code class="descname">MOVECENTER</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:IRSERVO:MOVECENTER" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1029,7 +1029,7 @@ IRServo:<code class="descname">MOVECENTER</code><span class="sig-paren">(</span>
 
 <dl class="method">
 <dt id="method:IRSERVO:MOVENEXTPRESET">
-IRServo:<code class="descname">MOVENEXTPRESET</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="IR.html#method:IRSERVO:MOVENEXTPRESET" title="Permalink to this definition">¶</a></dt>
+IRServo:<code class="descname">MOVENEXTPRESET</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:IRSERVO:MOVENEXTPRESET" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1043,7 +1043,7 @@ IRServo:<code class="descname">MOVENEXTPRESET</code><span class="sig-paren">(</s
 
 <dl class="method">
 <dt id="method:IRSERVO:MOVEPREVPRESET">
-IRServo:<code class="descname">MOVEPREVPRESET</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="IR.html#method:IRSERVO:MOVEPREVPRESET" title="Permalink to this definition">¶</a></dt>
+IRServo:<code class="descname">MOVEPREVPRESET</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:IRSERVO:MOVEPREVPRESET" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1057,7 +1057,7 @@ IRServo:<code class="descname">MOVEPREVPRESET</code><span class="sig-paren">(</s
 
 <dl class="method">
 <dt id="method:IRSERVO:STOP">
-IRServo:<code class="descname">STOP</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="IR.html#method:IRSERVO:STOP" title="Permalink to this definition">¶</a></dt>
+IRServo:<code class="descname">STOP</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:IRSERVO:STOP" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1071,7 +1071,7 @@ IRServo:<code class="descname">STOP</code><span class="sig-paren">(</span><span 
 
 <dl class="method">
 <dt id="method:IRSERVO:MOVETO">
-IRServo:<code class="descname">MOVETO</code><span class="sig-paren">(</span>position, speedMult<span class="sig-paren">)</span><a class="headerlink" href="IR.html#method:IRSERVO:MOVETO" title="Permalink to this definition">¶</a></dt>
+IRServo:<code class="descname">MOVETO</code><span class="sig-paren">(</span>position, speedMult<span class="sig-paren">)</span><a class="headerlink" href="#method:IRSERVO:MOVETO" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

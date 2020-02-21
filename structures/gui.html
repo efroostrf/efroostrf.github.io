@@ -108,7 +108,7 @@
 <li class="toctree-l2"><a class="reference internal" href="communication.html">Communication</a></li>
 <li class="toctree-l2"><a class="reference internal" href="orbits.html">Orbits</a></li>
 <li class="toctree-l2"><a class="reference internal" href="celestial_bodies.html">Celestial Bodies</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="gui.html">GUI Widgets</a><ul>
+<li class="toctree-l2 current"><a class="current reference internal" href="">GUI Widgets</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="gui_widgets/box.html">Box</a></li>
 <li class="toctree-l3"><a class="reference internal" href="gui_widgets/button.html">Button</a></li>
 <li class="toctree-l3"><a class="reference internal" href="gui_widgets/button.html#example">Example</a></li>
@@ -183,7 +183,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="creating-guis">
-<span id="gui"></span><h1>Creating GUIs<a class="headerlink" href="gui.html#creating-guis" title="Permalink to this headline">¶</a></h1>
+<span id="gui"></span><h1>Creating GUIs<a class="headerlink" href="#creating-guis" title="Permalink to this headline">¶</a></h1>
 <p>You can create an object that represents a GUI drawn on the
 user&#8217;s screen (not in the terminal window). It can have buttons,
 labels, and the usual GUI elements. In combination with a <a class="reference internal" href="../general/volumes.html#boot"><span>boot file</span></a>,
@@ -192,7 +192,7 @@ entirely GUI-driven vessel controls can be developed.</p>
 <a class="reference internal image-reference" href="../_images/gui-HelloWorld.png"><img alt="../_images/gui-HelloWorld.png" src="../_images/gui-HelloWorld.png" style="width: 100%;" /></a>
 </div>
 <div class="section" id="gui-callbacks-versus-polling">
-<h2>GUI Callbacks versus Polling<a class="headerlink" href="gui.html#gui-callbacks-versus-polling" title="Permalink to this headline">¶</a></h2>
+<h2>GUI Callbacks versus Polling<a class="headerlink" href="#gui-callbacks-versus-polling" title="Permalink to this headline">¶</a></h2>
 <p>There are two general styles of interacting with GUI widgets,
 called &#8220;callbacks&#8221; and &#8220;polling&#8221;.</p>
 <p id="gui-callback-technique">The <strong>callback technique</strong> is when you create <a class="reference internal" href="misc/kosdelegate.html#structure:KOSDELEGATE" title="KOSDELEGATE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">KOSDelegate</span></code></a> objects
@@ -293,10 +293,10 @@ examples will be explained in detail later.</p>
 </div>
 </div>
 <div class="section" id="creating-a-window">
-<h2>Creating a Window<a class="headerlink" href="gui.html#creating-a-window" title="Permalink to this headline">¶</a></h2>
+<h2>Creating a Window<a class="headerlink" href="#creating-a-window" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt id="function:GUI">
-<code class="descname">GUI</code><span class="sig-paren">(</span>width [, height]<span class="sig-paren">)</span><a class="headerlink" href="gui.html#function:GUI" title="Permalink to this definition">¶</a></dt>
+<code class="descname">GUI</code><span class="sig-paren">(</span>width [, height]<span class="sig-paren">)</span><a class="headerlink" href="#function:GUI" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>This is the first place any GUI control panel starts.</p>
@@ -319,10 +319,10 @@ You may find that to have some control over the layout you will need to
 specify one of the two dimensions and only let it resize the other.</p>
 </div>
 <div class="section" id="removing-all-windows">
-<h2>Removing all Windows<a class="headerlink" href="gui.html#removing-all-windows" title="Permalink to this headline">¶</a></h2>
+<h2>Removing all Windows<a class="headerlink" href="#removing-all-windows" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt id="function:CLEARGUIS">
-<code class="descname">CLEARGUIS</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="gui.html#function:CLEARGUIS" title="Permalink to this definition">¶</a></dt>
+<code class="descname">CLEARGUIS</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#function:CLEARGUIS" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <p>If you want to conveniently clear away all GUI windows that you
@@ -340,7 +340,7 @@ the program isn&#8217;t running anymore.</p>
 </div>
 </div>
 <div class="section" id="communication-delay">
-<span id="gui-delay"></span><h2>Communication Delay<a class="headerlink" href="gui.html#communication-delay" title="Permalink to this headline">¶</a></h2>
+<span id="gui-delay"></span><h2>Communication Delay<a class="headerlink" href="#communication-delay" title="Permalink to this headline">¶</a></h2>
 <p>If communication delay is enabled (eg. using RemoteTech), you will still be
 able to interact with a GUI, but changes to values and messages will incur
 the same sort of signal delay that interactive control over the vessel would
@@ -357,7 +357,7 @@ can simulate the effect by setting the <a class="reference internal" href="gui_w
 of the GUI window.</p>
 </div>
 <div class="section" id="structure-reference">
-<h2>Structure Reference<a class="headerlink" href="gui.html#structure-reference" title="Permalink to this headline">¶</a></h2>
+<h2>Structure Reference<a class="headerlink" href="#structure-reference" title="Permalink to this headline">¶</a></h2>
 <p>The GUI elements, including the GUI type itself are in the
 following hierarchy:</p>
 <ul>

@@ -124,7 +124,7 @@
 <li class="toctree-l3"><a class="reference internal" href="steeringmanager.html">SteeringManager</a></li>
 <li class="toctree-l3"><a class="reference internal" href="string.html">String</a></li>
 <li class="toctree-l3"><a class="reference internal" href="terminal.html">Terminal</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="terminalinput.html">Terminal Input</a><ul class="simple">
+<li class="toctree-l3 current"><a class="current reference internal" href="">Terminal Input</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="time.html">Time Span</a></li>
@@ -190,23 +190,23 @@
            <div itemprop="articleBody">
             
   <div class="section" id="terminal-input">
-<span id="terminalinput"></span><h1>Terminal Input<a class="headerlink" href="terminalinput.html#terminal-input" title="Permalink to this headline">¶</a></h1>
+<span id="terminalinput"></span><h1>Terminal Input<a class="headerlink" href="#terminal-input" title="Permalink to this headline">¶</a></h1>
 <p>You can read the user&#8217;s keyboard input into the kOS terminal
 using this structure.  You obtain this structure by calling
 <a class="reference internal" href="terminal.html#attribute:TERMINAL:INPUT" title="TERMINAL:INPUT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">Terminal:INPUT</span></code></a>.</p>
 <div class="contents local topic" id="contents">
 <p class="topic-title first">CONTENTS</p>
 <ul class="simple">
-<li><a class="reference internal" href="terminalinput.html#input-is-buffered" id="id2">Input is buffered</a></li>
-<li><a class="reference internal" href="terminalinput.html#input-is-blocking" id="id3">Input is blocking</a></li>
-<li><a class="reference internal" href="terminalinput.html#detecting-special-keys" id="id4">Detecting special keys</a></li>
-<li><a class="reference internal" href="terminalinput.html#cannot-read-control-c" id="id5">Cannot read control-C</a></li>
-<li><a class="reference internal" href="terminalinput.html#cannot-read-shift-or-alt" id="id6">Cannot read &#8220;shift&#8221; or &#8220;alt&#8221;</a></li>
-<li><a class="reference internal" href="terminalinput.html#structure" id="id7">Structure</a></li>
+<li><a class="reference internal" href="#input-is-buffered" id="id2">Input is buffered</a></li>
+<li><a class="reference internal" href="#input-is-blocking" id="id3">Input is blocking</a></li>
+<li><a class="reference internal" href="#detecting-special-keys" id="id4">Detecting special keys</a></li>
+<li><a class="reference internal" href="#cannot-read-control-c" id="id5">Cannot read control-C</a></li>
+<li><a class="reference internal" href="#cannot-read-shift-or-alt" id="id6">Cannot read &#8220;shift&#8221; or &#8220;alt&#8221;</a></li>
+<li><a class="reference internal" href="#structure" id="id7">Structure</a></li>
 </ul>
 </div>
 <div class="section" id="input-is-buffered">
-<h2><a class="toc-backref" href="terminalinput.html#id2">Input is buffered</a><a class="headerlink" href="terminalinput.html#input-is-buffered" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id2">Input is buffered</a><a class="headerlink" href="#input-is-buffered" title="Permalink to this headline">¶</a></h2>
 <p>Input is buffered if the user types faster than you process
 the input.  (For example, if you have code that reads 1
 character per second, and the user types faster than 1
@@ -215,21 +215,21 @@ your reads are not lost.  It just takes time for your
 program to catch up to the backlog and finish processing them
 all.)  This buffer is active for the entire duration of the
 program, which means that you must clear the buffer using
-<a class="reference internal" href="terminalinput.html#method:TERMINALINPUT:CLEAR" title="TERMINALINPUT:CLEAR method"><code class="xref ks ks-meth docutils literal"><span class="pre">TerminalInput:CLEAR</span></code></a> if you need to ensure that the
+<a class="reference internal" href="#method:TERMINALINPUT:CLEAR" title="TERMINALINPUT:CLEAR method"><code class="xref ks ks-meth docutils literal"><span class="pre">TerminalInput:CLEAR</span></code></a> if you need to ensure that the
 contents are in response to a prompt.</p>
 </div>
 <div class="section" id="input-is-blocking">
-<h2><a class="toc-backref" href="terminalinput.html#id3">Input is blocking</a><a class="headerlink" href="terminalinput.html#input-is-blocking" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id3">Input is blocking</a><a class="headerlink" href="#input-is-blocking" title="Permalink to this headline">¶</a></h2>
 <p>If you attempt to read a character of input and there are
 none available (because the user hasn&#8217;t typed anything
 yet for you to read), then your program will pause and
 get stuck there until the user presses a key.  If you want
 to check first to find out if a key is available before
-you read it, use the <a class="reference internal" href="terminalinput.html#attribute:TERMINALINPUT:HASCHAR" title="TERMINALINPUT:HASCHAR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">HASCHAR</span></code></a>
+you read it, use the <a class="reference internal" href="#attribute:TERMINALINPUT:HASCHAR" title="TERMINALINPUT:HASCHAR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">HASCHAR</span></code></a>
 suffix described below.</p>
 </div>
 <div class="section" id="detecting-special-keys">
-<h2><a class="toc-backref" href="terminalinput.html#id4">Detecting special keys</a><a class="headerlink" href="terminalinput.html#detecting-special-keys" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id4">Detecting special keys</a><a class="headerlink" href="#detecting-special-keys" title="Permalink to this headline">¶</a></h2>
 <p>You can detect some special keys that don&#8217;t form normal
 ASCII codes, such as the Left arrow, Page Up, and so on.</p>
 <p>Internally KOS uses its own mapping of these characters to
@@ -237,7 +237,7 @@ its own Unicode codes.  (This is part of the system it uses
 to support a few different types of terminal in the telnet
 module).  You can see some of these code names and use them
 to test against your input characters.  Some of the
-suffixes to <a class="reference internal" href="terminalinput.html#structure:TERMINALINPUT" title="TERMINALINPUT structure"><code class="xref ks ks-struct docutils literal"><span class="pre">TerminalInput</span></code></a> are for this purpose.</p>
+suffixes to <a class="reference internal" href="#structure:TERMINALINPUT" title="TERMINALINPUT structure"><code class="xref ks ks-struct docutils literal"><span class="pre">TerminalInput</span></code></a> are for this purpose.</p>
 <p>Example:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">set</span> <span class="nv">ch</span> <span class="ow">to</span> <span class="nv">terminal</span><span class="p">:</span><span class="nv">input</span><span class="p">:</span><span class="nv">getchar</span><span class="p">().</span>
 
@@ -251,12 +251,12 @@ suffixes to <a class="reference internal" href="terminalinput.html#structure:TER
 </div>
 </div>
 <div class="section" id="cannot-read-control-c">
-<h2><a class="toc-backref" href="terminalinput.html#id5">Cannot read control-C</a><a class="headerlink" href="terminalinput.html#cannot-read-control-c" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id5">Cannot read control-C</a><a class="headerlink" href="#cannot-read-control-c" title="Permalink to this headline">¶</a></h2>
 <p>You cannot read the control-C character in your program, because it
 causes your program to break.</p>
 </div>
 <div class="section" id="cannot-read-shift-or-alt">
-<h2><a class="toc-backref" href="terminalinput.html#id6">Cannot read &#8220;shift&#8221; or &#8220;alt&#8221;</a><a class="headerlink" href="terminalinput.html#cannot-read-shift-or-alt" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id6">Cannot read &#8220;shift&#8221; or &#8220;alt&#8221;</a><a class="headerlink" href="#cannot-read-shift-or-alt" title="Permalink to this headline">¶</a></h2>
 <p>You cannot read the &#8220;shift&#8221; or &#8220;alt&#8221; keypresses pressed by themselves
 because they send no characters to the terminal until combined with
 other characters.  (For example &#8220;shift A&#8221; sends an &#8220;A&#8221; character, while
@@ -267,12 +267,12 @@ window, and you can&#8217;t &#8220;send&#8221; these sorts of keypresses as char
 down a stream.</p>
 </div>
 <div class="section" id="structure">
-<h2><a class="toc-backref" href="terminalinput.html#id7">Structure</a><a class="headerlink" href="terminalinput.html#structure" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id7">Structure</a><a class="headerlink" href="#structure" title="Permalink to this headline">¶</a></h2>
 <dl class="structure">
 <dt id="structure:TERMINALINPUT">
-<em class="property">structure </em><code class="descname">TerminalInput</code><a class="headerlink" href="terminalinput.html#structure:TERMINALINPUT" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">TerminalInput</code><a class="headerlink" href="#structure:TERMINALINPUT" title="Permalink to this definition">¶</a></dt>
 <dd><table border="1" class="docutils" id="id1">
-<caption><span class="caption-text">Members</span><a class="headerlink" href="terminalinput.html#id1" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-text">Members</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="25%" />
 <col width="13%" />
@@ -287,77 +287,77 @@ down a stream.</p>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="terminalinput.html#method:TERMINALINPUT:GETCHAR" title="TERMINALINPUT:GETCHAR method"><code class="xref ks ks-meth docutils literal"><span class="pre">GETCHAR</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#method:TERMINALINPUT:GETCHAR" title="TERMINALINPUT:GETCHAR method"><code class="xref ks ks-meth docutils literal"><span class="pre">GETCHAR</span></code></a></td>
 <td><a class="reference internal" href="string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">String</span></code></a></td>
 <td>Get</td>
 <td>(Blocking) I/O to read the next character of terminal input.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="terminalinput.html#attribute:TERMINALINPUT:HASCHAR" title="TERMINALINPUT:HASCHAR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">HASCHAR</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:TERMINALINPUT:HASCHAR" title="TERMINALINPUT:HASCHAR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">HASCHAR</span></code></a></td>
 <td><a class="reference internal" href="boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>Get</td>
 <td>True if there is at least 1 character of input waiting.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="terminalinput.html#method:TERMINALINPUT:CLEAR" title="TERMINALINPUT:CLEAR method"><code class="xref ks ks-meth docutils literal"><span class="pre">CLEAR</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#method:TERMINALINPUT:CLEAR" title="TERMINALINPUT:CLEAR method"><code class="xref ks ks-meth docutils literal"><span class="pre">CLEAR</span></code></a></td>
 <td>None</td>
 <td>Method Call</td>
 <td>Call this method to throw away all waiting input characters, flushing the input queue.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="terminalinput.html#attribute:TERMINALINPUT:BACKSPACE" title="TERMINALINPUT:BACKSPACE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">BACKSPACE</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:TERMINALINPUT:BACKSPACE" title="TERMINALINPUT:BACKSPACE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">BACKSPACE</span></code></a></td>
 <td><a class="reference internal" href="string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">String</span></code></a></td>
 <td>Get</td>
 <td>A string for testing if the character read is a backspace.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="terminalinput.html#attribute:TERMINALINPUT:DELETERIGHT" title="TERMINALINPUT:DELETERIGHT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">DELETERIGHT</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:TERMINALINPUT:DELETERIGHT" title="TERMINALINPUT:DELETERIGHT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">DELETERIGHT</span></code></a></td>
 <td><a class="reference internal" href="string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">String</span></code></a></td>
 <td>Get</td>
 <td>A string for testing if the character read is the delete (to the right) key.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="terminalinput.html#attribute:TERMINALINPUT:RETURN" title="TERMINALINPUT:RETURN attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">RETURN</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:TERMINALINPUT:RETURN" title="TERMINALINPUT:RETURN attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">RETURN</span></code></a></td>
 <td><a class="reference internal" href="string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">String</span></code></a></td>
 <td>Get</td>
 <td>A string for testing if the character read is the return key.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="terminalinput.html#attribute:TERMINALINPUT:ENTER" title="TERMINALINPUT:ENTER attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ENTER</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:TERMINALINPUT:ENTER" title="TERMINALINPUT:ENTER attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ENTER</span></code></a></td>
 <td><a class="reference internal" href="string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">String</span></code></a></td>
 <td>Get</td>
-<td>An alias for <a class="reference internal" href="terminalinput.html#attribute:TERMINALINPUT:RETURN" title="TERMINALINPUT:RETURN attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">RETURN</span></code></a></td>
+<td>An alias for <a class="reference internal" href="#attribute:TERMINALINPUT:RETURN" title="TERMINALINPUT:RETURN attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">RETURN</span></code></a></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="terminalinput.html#attribute:TERMINALINPUT:UPCURSORONE" title="TERMINALINPUT:UPCURSORONE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">UPCURSORONE</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:TERMINALINPUT:UPCURSORONE" title="TERMINALINPUT:UPCURSORONE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">UPCURSORONE</span></code></a></td>
 <td><a class="reference internal" href="string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">String</span></code></a></td>
 <td>Get</td>
 <td>A string for testing if the character read is the up-arrow key.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="terminalinput.html#attribute:TERMINALINPUT:DOWNCURSORONE" title="TERMINALINPUT:DOWNCURSORONE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">DOWNCURSORONE</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:TERMINALINPUT:DOWNCURSORONE" title="TERMINALINPUT:DOWNCURSORONE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">DOWNCURSORONE</span></code></a></td>
 <td><a class="reference internal" href="string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">String</span></code></a></td>
 <td>Get</td>
 <td>A string for testing if the character read is the down-arrow key.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="terminalinput.html#attribute:TERMINALINPUT:LEFTCURSORONE" title="TERMINALINPUT:LEFTCURSORONE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">LEFTCURSORONE</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:TERMINALINPUT:LEFTCURSORONE" title="TERMINALINPUT:LEFTCURSORONE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">LEFTCURSORONE</span></code></a></td>
 <td><a class="reference internal" href="string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">String</span></code></a></td>
 <td>Get</td>
 <td>A string for testing if the character read is the left-arrow key.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="terminalinput.html#attribute:TERMINALINPUT:RIGHTCURSORONE" title="TERMINALINPUT:RIGHTCURSORONE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">RIGHTCURSORONE</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:TERMINALINPUT:RIGHTCURSORONE" title="TERMINALINPUT:RIGHTCURSORONE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">RIGHTCURSORONE</span></code></a></td>
 <td><a class="reference internal" href="string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">String</span></code></a></td>
 <td>Get</td>
 <td>A string for testing if the character read is the right-arrow key.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="terminalinput.html#attribute:TERMINALINPUT:HOMECURSOR" title="TERMINALINPUT:HOMECURSOR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">HOMECURSOR</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:TERMINALINPUT:HOMECURSOR" title="TERMINALINPUT:HOMECURSOR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">HOMECURSOR</span></code></a></td>
 <td><a class="reference internal" href="string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">String</span></code></a></td>
 <td>Get</td>
 <td>A string for testing if the character read is the HOME key.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="terminalinput.html#attribute:TERMINALINPUT:ENDCURSOR" title="TERMINALINPUT:ENDCURSOR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ENDCURSOR</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:TERMINALINPUT:ENDCURSOR" title="TERMINALINPUT:ENDCURSOR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ENDCURSOR</span></code></a></td>
 <td><a class="reference internal" href="string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">String</span></code></a></td>
 <td>Get</td>
 <td>A string for testing if the character read is the END key.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="terminalinput.html#attribute:TERMINALINPUT:PAGEUPCURSOR" title="TERMINALINPUT:PAGEUPCURSOR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PAGEUPCURSOR</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:TERMINALINPUT:PAGEUPCURSOR" title="TERMINALINPUT:PAGEUPCURSOR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PAGEUPCURSOR</span></code></a></td>
 <td><a class="reference internal" href="string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">String</span></code></a></td>
 <td>Get</td>
 <td>A string for testing if the character read is the PageUp key.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="terminalinput.html#attribute:TERMINALINPUT:PAGEDOWNCURSOR" title="TERMINALINPUT:PAGEDOWNCURSOR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PAGEDOWNCURSOR</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:TERMINALINPUT:PAGEDOWNCURSOR" title="TERMINALINPUT:PAGEDOWNCURSOR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">PAGEDOWNCURSOR</span></code></a></td>
 <td><a class="reference internal" href="string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">String</span></code></a></td>
 <td>Get</td>
 <td>A string for testing if the character read is the PageDown key.</td>
@@ -368,7 +368,7 @@ down a stream.</p>
 
 <dl class="method">
 <dt id="method:TERMINALINPUT:GETCHAR">
-TerminalInput:<code class="descname">GETCHAR</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="terminalinput.html#method:TERMINALINPUT:GETCHAR" title="Permalink to this definition">¶</a></dt>
+TerminalInput:<code class="descname">GETCHAR</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:TERMINALINPUT:GETCHAR" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -392,7 +392,7 @@ in this structure.</p>
 
 <dl class="attribute">
 <dt id="attribute:TERMINALINPUT:HASCHAR">
-TerminalInput:<code class="descname">HASCHAR</code><a class="headerlink" href="terminalinput.html#attribute:TERMINALINPUT:HASCHAR" title="Permalink to this definition">¶</a></dt>
+TerminalInput:<code class="descname">HASCHAR</code><a class="headerlink" href="#attribute:TERMINALINPUT:HASCHAR" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -404,9 +404,9 @@ TerminalInput:<code class="descname">HASCHAR</code><a class="headerlink" href="t
 </tbody>
 </table>
 <p>True if there is at least 1 character of input waiting.  If this is
-false then that would mean that an attempt to call <a class="reference internal" href="terminalinput.html#method:TERMINALINPUT:GETCHAR" title="TERMINALINPUT:GETCHAR method"><code class="xref ks ks-meth docutils literal"><span class="pre">GETCHAR</span></code></a>
+false then that would mean that an attempt to call <a class="reference internal" href="#method:TERMINALINPUT:GETCHAR" title="TERMINALINPUT:GETCHAR method"><code class="xref ks ks-meth docutils literal"><span class="pre">GETCHAR</span></code></a>
 would block and wait for user input.  If this is true then an attempt
-to call <a class="reference internal" href="terminalinput.html#method:TERMINALINPUT:GETCHAR" title="TERMINALINPUT:GETCHAR method"><code class="xref ks ks-meth docutils literal"><span class="pre">GETCHAR</span></code></a> would return immediately with an answer.</p>
+to call <a class="reference internal" href="#method:TERMINALINPUT:GETCHAR" title="TERMINALINPUT:GETCHAR method"><code class="xref ks ks-meth docutils literal"><span class="pre">GETCHAR</span></code></a> would return immediately with an answer.</p>
 <p>You can simulate non-blocking I/O like so:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="c1">// Read a char if it exists, else just keep going:</span>
 <span class="k">if</span> <span class="nv">terminal</span><span class="p">:</span><span class="nv">input</span><span class="p">:</span><span class="nv">haschar</span> <span class="p">{</span>
@@ -418,7 +418,7 @@ to call <a class="reference internal" href="terminalinput.html#method:TERMINALIN
 
 <dl class="method">
 <dt id="method:TERMINALINPUT:CLEAR">
-TerminalInput:<code class="descname">CLEAR</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="terminalinput.html#method:TERMINALINPUT:CLEAR" title="Permalink to this definition">¶</a></dt>
+TerminalInput:<code class="descname">CLEAR</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:TERMINALINPUT:CLEAR" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -435,7 +435,7 @@ the input queue.</p>
 
 <dl class="attribute">
 <dt id="attribute:TERMINALINPUT:BACKSPACE">
-TerminalInput:<code class="descname">BACKSPACE</code><a class="headerlink" href="terminalinput.html#attribute:TERMINALINPUT:BACKSPACE" title="Permalink to this definition">¶</a></dt>
+TerminalInput:<code class="descname">BACKSPACE</code><a class="headerlink" href="#attribute:TERMINALINPUT:BACKSPACE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -451,7 +451,7 @@ TerminalInput:<code class="descname">BACKSPACE</code><a class="headerlink" href=
 
 <dl class="attribute">
 <dt id="attribute:TERMINALINPUT:DELETERIGHT">
-TerminalInput:<code class="descname">DELETERIGHT</code><a class="headerlink" href="terminalinput.html#attribute:TERMINALINPUT:DELETERIGHT" title="Permalink to this definition">¶</a></dt>
+TerminalInput:<code class="descname">DELETERIGHT</code><a class="headerlink" href="#attribute:TERMINALINPUT:DELETERIGHT" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -467,7 +467,7 @@ TerminalInput:<code class="descname">DELETERIGHT</code><a class="headerlink" hre
 
 <dl class="attribute">
 <dt id="attribute:TERMINALINPUT:RETURN">
-TerminalInput:<code class="descname">RETURN</code><a class="headerlink" href="terminalinput.html#attribute:TERMINALINPUT:RETURN" title="Permalink to this definition">¶</a></dt>
+TerminalInput:<code class="descname">RETURN</code><a class="headerlink" href="#attribute:TERMINALINPUT:RETURN" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -483,7 +483,7 @@ TerminalInput:<code class="descname">RETURN</code><a class="headerlink" href="te
 
 <dl class="attribute">
 <dt id="attribute:TERMINALINPUT:ENTER">
-TerminalInput:<code class="descname">ENTER</code><a class="headerlink" href="terminalinput.html#attribute:TERMINALINPUT:ENTER" title="Permalink to this definition">¶</a></dt>
+TerminalInput:<code class="descname">ENTER</code><a class="headerlink" href="#attribute:TERMINALINPUT:ENTER" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -498,7 +498,7 @@ TerminalInput:<code class="descname">ENTER</code><a class="headerlink" href="ter
 
 <dl class="attribute">
 <dt id="attribute:TERMINALINPUT:UPCURSORONE">
-TerminalInput:<code class="descname">UPCURSORONE</code><a class="headerlink" href="terminalinput.html#attribute:TERMINALINPUT:UPCURSORONE" title="Permalink to this definition">¶</a></dt>
+TerminalInput:<code class="descname">UPCURSORONE</code><a class="headerlink" href="#attribute:TERMINALINPUT:UPCURSORONE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -514,7 +514,7 @@ TerminalInput:<code class="descname">UPCURSORONE</code><a class="headerlink" hre
 
 <dl class="attribute">
 <dt id="attribute:TERMINALINPUT:DOWNCURSORONE">
-TerminalInput:<code class="descname">DOWNCURSORONE</code><a class="headerlink" href="terminalinput.html#attribute:TERMINALINPUT:DOWNCURSORONE" title="Permalink to this definition">¶</a></dt>
+TerminalInput:<code class="descname">DOWNCURSORONE</code><a class="headerlink" href="#attribute:TERMINALINPUT:DOWNCURSORONE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -530,7 +530,7 @@ TerminalInput:<code class="descname">DOWNCURSORONE</code><a class="headerlink" h
 
 <dl class="attribute">
 <dt id="attribute:TERMINALINPUT:LEFTCURSORONE">
-TerminalInput:<code class="descname">LEFTCURSORONE</code><a class="headerlink" href="terminalinput.html#attribute:TERMINALINPUT:LEFTCURSORONE" title="Permalink to this definition">¶</a></dt>
+TerminalInput:<code class="descname">LEFTCURSORONE</code><a class="headerlink" href="#attribute:TERMINALINPUT:LEFTCURSORONE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -546,7 +546,7 @@ TerminalInput:<code class="descname">LEFTCURSORONE</code><a class="headerlink" h
 
 <dl class="attribute">
 <dt id="attribute:TERMINALINPUT:RIGHTCURSORONE">
-TerminalInput:<code class="descname">RIGHTCURSORONE</code><a class="headerlink" href="terminalinput.html#attribute:TERMINALINPUT:RIGHTCURSORONE" title="Permalink to this definition">¶</a></dt>
+TerminalInput:<code class="descname">RIGHTCURSORONE</code><a class="headerlink" href="#attribute:TERMINALINPUT:RIGHTCURSORONE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -562,7 +562,7 @@ TerminalInput:<code class="descname">RIGHTCURSORONE</code><a class="headerlink" 
 
 <dl class="attribute">
 <dt id="attribute:TERMINALINPUT:HOMECURSOR">
-TerminalInput:<code class="descname">HOMECURSOR</code><a class="headerlink" href="terminalinput.html#attribute:TERMINALINPUT:HOMECURSOR" title="Permalink to this definition">¶</a></dt>
+TerminalInput:<code class="descname">HOMECURSOR</code><a class="headerlink" href="#attribute:TERMINALINPUT:HOMECURSOR" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -578,7 +578,7 @@ TerminalInput:<code class="descname">HOMECURSOR</code><a class="headerlink" href
 
 <dl class="attribute">
 <dt id="attribute:TERMINALINPUT:ENDCURSOR">
-TerminalInput:<code class="descname">ENDCURSOR</code><a class="headerlink" href="terminalinput.html#attribute:TERMINALINPUT:ENDCURSOR" title="Permalink to this definition">¶</a></dt>
+TerminalInput:<code class="descname">ENDCURSOR</code><a class="headerlink" href="#attribute:TERMINALINPUT:ENDCURSOR" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -594,7 +594,7 @@ TerminalInput:<code class="descname">ENDCURSOR</code><a class="headerlink" href=
 
 <dl class="attribute">
 <dt id="attribute:TERMINALINPUT:PAGEUPCURSOR">
-TerminalInput:<code class="descname">PAGEUPCURSOR</code><a class="headerlink" href="terminalinput.html#attribute:TERMINALINPUT:PAGEUPCURSOR" title="Permalink to this definition">¶</a></dt>
+TerminalInput:<code class="descname">PAGEUPCURSOR</code><a class="headerlink" href="#attribute:TERMINALINPUT:PAGEUPCURSOR" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -610,7 +610,7 @@ TerminalInput:<code class="descname">PAGEUPCURSOR</code><a class="headerlink" hr
 
 <dl class="attribute">
 <dt id="attribute:TERMINALINPUT:PAGEDOWNCURSOR">
-TerminalInput:<code class="descname">PAGEDOWNCURSOR</code><a class="headerlink" href="terminalinput.html#attribute:TERMINALINPUT:PAGEDOWNCURSOR" title="Permalink to this definition">¶</a></dt>
+TerminalInput:<code class="descname">PAGEDOWNCURSOR</code><a class="headerlink" href="#attribute:TERMINALINPUT:PAGEDOWNCURSOR" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

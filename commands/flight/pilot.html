@@ -104,7 +104,7 @@
 <li class="toctree-l2 current"><a class="reference internal" href="../flight.html">Flight Control</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="cooked.html">Cooked Control</a></li>
 <li class="toctree-l3"><a class="reference internal" href="raw.html">Raw Control</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="pilot.html">Pilot Input</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Pilot Input</a></li>
 <li class="toctree-l3"><a class="reference internal" href="systems.html">Ship Systems</a></li>
 </ul>
 </li>
@@ -172,7 +172,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="pilot-input">
-<span id="pilot"></span><h1>Pilot Input<a class="headerlink" href="pilot.html#pilot-input" title="Permalink to this headline">¶</a></h1>
+<span id="pilot"></span><h1>Pilot Input<a class="headerlink" href="#pilot-input" title="Permalink to this headline">¶</a></h1>
 <p>This is not, strictly speaking, a method of controlling the craft. &#8220;Pilot&#8221; controls are a way to read the input from the pilot. Most of these controls share the same name as their flight control, prefixed with <code class="docutils literal"><span class="pre">PILOT</span></code> (eg <code class="docutils literal"><span class="pre">YAW</span></code> and <code class="docutils literal"><span class="pre">PILOTYAW</span></code>)  the one exception to this is the <code class="docutils literal"><span class="pre">PILOTMAINTHROTTLE</span></code>. This suffix has a setter and allows you to change the behavior of the throttle that persists even after the current program ends:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">SET</span> <span class="nv">SHIP</span><span class="p">:</span><span class="nv">CONTROL</span><span class="p">:</span><span class="nv">PILOTMAINTHROTTLE</span> <span class="ow">TO</span> <span class="mf">0</span><span class="p">.</span>
 </pre></div>
@@ -180,7 +180,7 @@
 <p>Will ensure that the throttle will be 0 when execution stops. These suffixes allow you to read the input given to the system by the user.</p>
 <dl class="structure">
 <dt id="structure:CONTROL">
-<em class="property">structure </em><code class="descname">Control</code><a class="headerlink" href="pilot.html#structure:CONTROL" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">Control</code><a class="headerlink" href="#structure:CONTROL" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <table border="1" class="docutils">
@@ -196,71 +196,71 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="pilot.html#ship-control-pilotmainthrottle"><span>PILOTMAINTHROTTLE</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#ship-control-pilotmainthrottle"><span>PILOTMAINTHROTTLE</span></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#scalar"><span>scalar</span></a> [0,1]</td>
 <td><code class="docutils literal"><span class="pre">LEFT-CTRL</span></code>, <code class="docutils literal"><span class="pre">LEFT-SHIFT</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pilot.html#ship-control-pilotyaw"><span>PILOTYAW</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#ship-control-pilotyaw"><span>PILOTYAW</span></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#scalar"><span>scalar</span></a> [-1,1]</td>
 <td><code class="docutils literal"><span class="pre">D</span></code>, <code class="docutils literal"><span class="pre">A</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pilot.html#ship-control-pilotpitch"><span>PILOTPITCH</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#ship-control-pilotpitch"><span>PILOTPITCH</span></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#scalar"><span>scalar</span></a> [-1,1]</td>
 <td><code class="docutils literal"><span class="pre">W</span></code>, <code class="docutils literal"><span class="pre">S</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pilot.html#ship-control-pilotroll"><span>PILOTROLL</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#ship-control-pilotroll"><span>PILOTROLL</span></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#scalar"><span>scalar</span></a> [-1,1]</td>
 <td><code class="docutils literal"><span class="pre">Q</span></code>, <code class="docutils literal"><span class="pre">E</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pilot.html#ship-control-pilotrotation"><span>PILOTROTATION</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#ship-control-pilotrotation"><span>PILOTROTATION</span></a></td>
 <td><a class="reference internal" href="../../math/vector.html#structure:VECTOR" title="VECTOR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Vector</span></code></a></td>
 <td><code class="docutils literal"><span class="pre">(YAW,PITCH,ROLL)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pilot.html#ship-control-pilotyawtrim"><span>PILOTYAWTRIM</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#ship-control-pilotyawtrim"><span>PILOTYAWTRIM</span></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#scalar"><span>scalar</span></a> [-1,1]</td>
 <td><code class="docutils literal"><span class="pre">ALT+D</span></code>, <code class="docutils literal"><span class="pre">ALT+A</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pilot.html#ship-control-pilotpitchtrim"><span>PILOTPITCHTRIM</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#ship-control-pilotpitchtrim"><span>PILOTPITCHTRIM</span></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#scalar"><span>scalar</span></a> [-1,1]</td>
 <td><code class="docutils literal"><span class="pre">ALT+W</span></code>, <code class="docutils literal"><span class="pre">ALT+S</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pilot.html#ship-control-pilotrolltrim"><span>PILOTROLLTRIM</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#ship-control-pilotrolltrim"><span>PILOTROLLTRIM</span></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#scalar"><span>scalar</span></a> [-1,1]</td>
 <td><code class="docutils literal"><span class="pre">ALT+Q</span></code>, <code class="docutils literal"><span class="pre">ALT+E</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pilot.html#ship-control-pilotfore"><span>PILOTFORE</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#ship-control-pilotfore"><span>PILOTFORE</span></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#scalar"><span>scalar</span></a> [-1,1]</td>
 <td><code class="docutils literal"><span class="pre">N</span></code>, <code class="docutils literal"><span class="pre">H</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pilot.html#ship-control-pilotstarboard"><span>PILOTSTARBOARD</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#ship-control-pilotstarboard"><span>PILOTSTARBOARD</span></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#scalar"><span>scalar</span></a> [-1,1]</td>
 <td><code class="docutils literal"><span class="pre">L</span></code>, <code class="docutils literal"><span class="pre">J</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pilot.html#ship-control-pilottop"><span>PILOTTOP</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#ship-control-pilottop"><span>PILOTTOP</span></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#scalar"><span>scalar</span></a> [-1,1]</td>
 <td><code class="docutils literal"><span class="pre">I</span></code>, <code class="docutils literal"><span class="pre">K</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pilot.html#ship-control-pilottranslation"><span>PILOTTRANSLATION</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#ship-control-pilottranslation"><span>PILOTTRANSLATION</span></a></td>
 <td><a class="reference internal" href="../../math/vector.html#structure:VECTOR" title="VECTOR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Vector</span></code></a></td>
 <td><code class="docutils literal"><span class="pre">(STARBOARD,TOP,FORE)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pilot.html#ship-control-pilotwheelsteer"><span>PILOTWHEELSTEER</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#ship-control-pilotwheelsteer"><span>PILOTWHEELSTEER</span></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#scalar"><span>scalar</span></a> [-1,1]</td>
 <td><code class="docutils literal"><span class="pre">A</span></code>, <code class="docutils literal"><span class="pre">D</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pilot.html#ship-control-pilotwheelthrottle"><span>PILOTWHEELTHROTTLE</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#ship-control-pilotwheelthrottle"><span>PILOTWHEELTHROTTLE</span></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#scalar"><span>scalar</span></a> [-1,1]</td>
 <td><code class="docutils literal"><span class="pre">W</span></code>, <code class="docutils literal"><span class="pre">S</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pilot.html#ship-control-pilotwheelsteertrim"><span>PILOTWHEELSTEERTRIM</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#ship-control-pilotwheelsteertrim"><span>PILOTWHEELSTEERTRIM</span></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#scalar"><span>scalar</span></a> [-1,1]</td>
 <td><code class="docutils literal"><span class="pre">ALT+A</span></code>, <code class="docutils literal"><span class="pre">ALT+D</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pilot.html#ship-control-pilotwheelthrottletrim"><span>PILOTWHEELTHROTTLETRIM</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#ship-control-pilotwheelthrottletrim"><span>PILOTWHEELTHROTTLETRIM</span></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#scalar"><span>scalar</span></a> [-1,1]</td>
 <td><code class="docutils literal"><span class="pre">ALT+W</span></code>, <code class="docutils literal"><span class="pre">ALT+S</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pilot.html#ship-control-pilotneutral"><span>PILOTNEUTRAL</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#ship-control-pilotneutral"><span>PILOTNEUTRAL</span></a></td>
 <td><a class="reference internal" href="../../structures/misc/boolean.html#boolean"><span>Boolean</span></a></td>
 <td>Is <strong>kOS</strong> Controlling?</td>
 </tr>

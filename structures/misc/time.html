@@ -125,7 +125,7 @@
 <li class="toctree-l3"><a class="reference internal" href="string.html">String</a></li>
 <li class="toctree-l3"><a class="reference internal" href="terminal.html">Terminal</a></li>
 <li class="toctree-l3"><a class="reference internal" href="terminalinput.html">Terminal Input</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="time.html">Time Span</a><ul class="simple">
+<li class="toctree-l3 current"><a class="current reference internal" href="">Time Span</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="timewarp.html">WARP</a></li>
@@ -194,26 +194,26 @@ please see the <a class="reference internal" href="timewarp.html#structure:TIMEW
 documentation on the structure that holds an individual
 timestamp representing some universal moment in time.)</p>
 <div class="section" id="time-span">
-<h1>Time Span<a class="headerlink" href="time.html#time-span" title="Permalink to this headline">¶</a></h1>
-<p>In several places the game uses a <a class="reference internal" href="time.html#structure:TIMESPAN" title="TIMESPAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">TimeSpan</span></code></a> format. This is a structure that gives the time in various formats. It also allows you to perform arithmetic on the time.</p>
+<h1>Time Span<a class="headerlink" href="#time-span" title="Permalink to this headline">¶</a></h1>
+<p>In several places the game uses a <a class="reference internal" href="#structure:TIMESPAN" title="TIMESPAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">TimeSpan</span></code></a> format. This is a structure that gives the time in various formats. It also allows you to perform arithmetic on the time.</p>
 <div class="section" id="timespan-represents-simulated-time">
-<h2>TimeSpan represents <em>SIMULATED</em> time<a class="headerlink" href="time.html#timespan-represents-simulated-time" title="Permalink to this headline">¶</a></h2>
-<p>When you are examining a <a class="reference internal" href="time.html#structure:TIMESPAN" title="TIMESPAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">TimeSpan</span></code></a> you are looking at the
+<h2>TimeSpan represents <em>SIMULATED</em> time<a class="headerlink" href="#timespan-represents-simulated-time" title="Permalink to this headline">¶</a></h2>
+<p>When you are examining a <a class="reference internal" href="#structure:TIMESPAN" title="TIMESPAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">TimeSpan</span></code></a> you are looking at the
 &#8220;in character&#8221; <strong>simulated</strong> time, not the &#8220;out of character&#8221; real
 world time. This is a very important distinction to remember, as
 the following points illustrate:</p>
 <ul class="simple">
-<li>A <a class="reference internal" href="time.html#structure:TIMESPAN" title="TIMESPAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">TimeSpan</span></code></a> does not count the time that was passing while the game was paused.</li>
-<li>If you turn off your computer and don&#8217;t play the game for several days, the <a class="reference internal" href="time.html#structure:TIMESPAN" title="TIMESPAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">TimeSpan</span></code></a> does not count this time.</li>
-<li>If your game lags and stutters such that the simulation is taking 2 seconds of real time to calculate 1 second of game time, then the number of seconds that have passed according to a <a class="reference internal" href="time.html#structure:TIMESPAN" title="TIMESPAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">TimeSpan</span></code></a> will be fewer than the number of seconds that have passed in the real world.</li>
+<li>A <a class="reference internal" href="#structure:TIMESPAN" title="TIMESPAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">TimeSpan</span></code></a> does not count the time that was passing while the game was paused.</li>
+<li>If you turn off your computer and don&#8217;t play the game for several days, the <a class="reference internal" href="#structure:TIMESPAN" title="TIMESPAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">TimeSpan</span></code></a> does not count this time.</li>
+<li>If your game lags and stutters such that the simulation is taking 2 seconds of real time to calculate 1 second of game time, then the number of seconds that have passed according to a <a class="reference internal" href="#structure:TIMESPAN" title="TIMESPAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">TimeSpan</span></code></a> will be fewer than the number of seconds that have passed in the real world.</li>
 </ul>
-<p>This allows you to use a <a class="reference internal" href="time.html#structure:TIMESPAN" title="TIMESPAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">TimeSpan</span></code></a> such as is returned by the <a class="reference internal" href="time.html#global:TIME" title="TIME global"><code class="xref ks ks-global docutils literal"><span class="pre">TIME</span></code></a> special variable to make correct physics calculations.</p>
+<p>This allows you to use a <a class="reference internal" href="#structure:TIMESPAN" title="TIMESPAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">TimeSpan</span></code></a> such as is returned by the <a class="reference internal" href="#global:TIME" title="TIME global"><code class="xref ks ks-global docutils literal"><span class="pre">TIME</span></code></a> special variable to make correct physics calculations.</p>
 </div>
 <div class="section" id="built-in-function-time">
-<h2>Built-in function TIME<a class="headerlink" href="time.html#built-in-function-time" title="Permalink to this headline">¶</a></h2>
+<h2>Built-in function TIME<a class="headerlink" href="#built-in-function-time" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt id="function:TIME">
-<code class="descname">TIME</code><span class="sig-paren">(</span>universal_time<span class="sig-paren">)</span><a class="headerlink" href="time.html#function:TIME" title="Permalink to this definition">¶</a></dt>
+<code class="descname">TIME</code><span class="sig-paren">(</span>universal_time<span class="sig-paren">)</span><a class="headerlink" href="#function:TIME" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -226,49 +226,49 @@ the following points illustrate:</p>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A :struct`TimeSpan` of the time represented by the seconds timestamp passed in.</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="time.html#structure:TIMESPAN" title="TIMESPAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">TimeSpan</span></code></a></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#structure:TIMESPAN" title="TIMESPAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">TimeSpan</span></code></a></p>
 </td>
 </tr>
 </tbody>
 </table>
-<p>This creates a <a class="reference internal" href="time.html#structure:TIMESPAN" title="TIMESPAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">TimeSpan</span></code></a> given a &#8220;universal time&#8221;,
+<p>This creates a <a class="reference internal" href="#structure:TIMESPAN" title="TIMESPAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">TimeSpan</span></code></a> given a &#8220;universal time&#8221;,
 which is a number of seconds since the current game began,
 IN GAMETIME.  example: <code class="docutils literal"><span class="pre">TIME(3600)</span></code> will give you a
-<a class="reference internal" href="time.html#structure:TIMESPAN" title="TIMESPAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">TimeSpan</span></code></a> representing the moment exactly 1 hour
+<a class="reference internal" href="#structure:TIMESPAN" title="TIMESPAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">TimeSpan</span></code></a> representing the moment exactly 1 hour
 (3600 seconds) since the current game first began.</p>
 <p>The parameter is OPTIONAL.  If you leave it off,
 and just call <code class="docutils literal"><span class="pre">TIME()</span></code>, then you end up getting
-the current time, which is the same thing that <a class="reference internal" href="time.html#global:TIME" title="TIME global"><code class="xref ks ks-global docutils literal"><span class="pre">TIME</span></code></a>
+the current time, which is the same thing that <a class="reference internal" href="#global:TIME" title="TIME global"><code class="xref ks ks-global docutils literal"><span class="pre">TIME</span></code></a>
 gives you (without the parentheses).</p>
 </dd></dl>
 
 </div>
 <div class="section" id="special-variable-time">
-<h2>Special variable TIME<a class="headerlink" href="time.html#special-variable-time" title="Permalink to this headline">¶</a></h2>
+<h2>Special variable TIME<a class="headerlink" href="#special-variable-time" title="Permalink to this headline">¶</a></h2>
 <dl class="global">
 <dt id="global:TIME">
-<code class="descname">TIME</code><a class="headerlink" href="time.html#global:TIME" title="Permalink to this definition">¶</a></dt>
+<code class="descname">TIME</code><a class="headerlink" href="#global:TIME" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Access:</th><td class="field-body">Get only</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="time.html#structure:TIMESPAN" title="TIMESPAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">TimeSpan</span></code></a></td>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#structure:TIMESPAN" title="TIMESPAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">TimeSpan</span></code></a></td>
 </tr>
 </tbody>
 </table>
-<p>The special variable <a class="reference internal" href="time.html#global:TIME" title="TIME global"><code class="xref ks ks-global docutils literal"><span class="pre">TIME</span></code></a> is used to get the current time
+<p>The special variable <a class="reference internal" href="#global:TIME" title="TIME global"><code class="xref ks ks-global docutils literal"><span class="pre">TIME</span></code></a> is used to get the current time
 in the gameworld (not the real world where you&#8217;re sitting in a chair
 playing Kerbal Space Program.)  It is the same thing as calling
-<a class="reference internal" href="time.html#function:TIME" title="TIME function"><code class="xref ks ks-func docutils literal"><span class="pre">TIME</span></code></a> with empty parentheses.</p>
+<a class="reference internal" href="#function:TIME" title="TIME function"><code class="xref ks ks-func docutils literal"><span class="pre">TIME</span></code></a> with empty parentheses.</p>
 </dd></dl>
 
 </div>
 <div class="section" id="using-a-timespan">
-<h2>Using a TimeSpan<a class="headerlink" href="time.html#using-a-timespan" title="Permalink to this headline">¶</a></h2>
+<h2>Using a TimeSpan<a class="headerlink" href="#using-a-timespan" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><p>Any time you perform arithmetic on a <code class="xref ks ks-global docutils literal"><span class="pre">TIMESPAN</span></code> you get a result back that is also a <a class="reference internal" href="time.html#structure:TIMESPAN" title="TIMESPAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">TimeSpan</span></code></a>. In other words, <a class="reference internal" href="time.html#global:TIME" title="TIME global"><code class="xref ks ks-global docutils literal"><span class="pre">TIME</span></code></a> is a <a class="reference internal" href="time.html#structure:TIMESPAN" title="TIMESPAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">TimeSpan</span></code></a>, but <code class="docutils literal"><span class="pre">TIME</span> <span class="pre">+</span> <span class="pre">100</span></code> is also a <a class="reference internal" href="time.html#structure:TIMESPAN" title="TIMESPAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">TimeSpan</span></code></a>.</p>
+<div><p>Any time you perform arithmetic on a <code class="xref ks ks-global docutils literal"><span class="pre">TIMESPAN</span></code> you get a result back that is also a <a class="reference internal" href="#structure:TIMESPAN" title="TIMESPAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">TimeSpan</span></code></a>. In other words, <a class="reference internal" href="#global:TIME" title="TIME global"><code class="xref ks ks-global docutils literal"><span class="pre">TIME</span></code></a> is a <a class="reference internal" href="#structure:TIMESPAN" title="TIMESPAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">TimeSpan</span></code></a>, but <code class="docutils literal"><span class="pre">TIME</span> <span class="pre">+</span> <span class="pre">100</span></code> is also a <a class="reference internal" href="#structure:TIMESPAN" title="TIMESPAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">TimeSpan</span></code></a>.</p>
 <p>Note that Kerbals do not have the concept of &#8220;months&#8221;:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="nv">TIME</span>                <span class="c1">// Gets the current universal time</span>
 <span class="nv">TIME</span><span class="p">:</span><span class="nv">CLOCK</span>          <span class="c1">// Universal time in H:M:S format(1:50:26)</span>
@@ -291,23 +291,23 @@ if they inject changes into KSP&#8217;s main game, will cause these values to
 change too.</p>
 </div></blockquote>
 <div class="section" id="using-time-or-time-to-detect-when-the-physics-have-been-updated-one-tick">
-<h3>Using TIME or TIME() to detect when the physics have been updated &#8216;one tick&#8217;<a class="headerlink" href="time.html#using-time-or-time-to-detect-when-the-physics-have-been-updated-one-tick" title="Permalink to this headline">¶</a></h3>
+<h3>Using TIME or TIME() to detect when the physics have been updated &#8216;one tick&#8217;<a class="headerlink" href="#using-time-or-time-to-detect-when-the-physics-have-been-updated-one-tick" title="Permalink to this headline">¶</a></h3>
 <p>The game will make an effort to maintain regular physics updates at a fixed rate (defaulting to 25 updates per second), sacrificing animation rate as necessary.  When the game is unable to maintain regular updates at this rate, the clock time (in the upper left of the screen) will turn yellow or red instead of green.</p>
-<p>You can use the time reported by <a class="reference internal" href="time.html#global:TIME" title="TIME global"><code class="xref ks ks-global docutils literal"><span class="pre">TIME</span></code></a> to detect whether or not a real physics &#8216;tic&#8217; has occurred yet, which can be important for scripts that need to take measurements from the simulated universe. If no physics tic has occurred, then <a class="reference internal" href="time.html#global:TIME" title="TIME global"><code class="xref ks ks-global docutils literal"><span class="pre">TIME</span></code></a> will still be exactly the same value.</p>
+<p>You can use the time reported by <a class="reference internal" href="#global:TIME" title="TIME global"><code class="xref ks ks-global docutils literal"><span class="pre">TIME</span></code></a> to detect whether or not a real physics &#8216;tic&#8217; has occurred yet, which can be important for scripts that need to take measurements from the simulated universe. If no physics tic has occurred, then <a class="reference internal" href="#global:TIME" title="TIME global"><code class="xref ks ks-global docutils literal"><span class="pre">TIME</span></code></a> will still be exactly the same value.</p>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p>Please be aware that the kind of calendar <a class="reference internal" href="time.html#structure:TIMESPAN" title="TIMESPAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">TimeSpan</span></code></a>&#8216;s use will depend on your KSP settings. The main KSP game supports both Kerbin time and Earth time and changing that setting will affect how <a class="reference internal" href="time.html#structure:TIMESPAN" title="TIMESPAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">TimeSpan</span></code></a> works in kOS.</p>
+<p>Please be aware that the kind of calendar <a class="reference internal" href="#structure:TIMESPAN" title="TIMESPAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">TimeSpan</span></code></a>&#8216;s use will depend on your KSP settings. The main KSP game supports both Kerbin time and Earth time and changing that setting will affect how <a class="reference internal" href="#structure:TIMESPAN" title="TIMESPAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">TimeSpan</span></code></a> works in kOS.</p>
 <p>The difference is whether 1 day = 6 hours or 1 day = 24 hours.</p>
 <p class="last">You can access this setting from your script by using
 <a class="reference internal" href="kuniverse.html#attribute:KUNIVERSE:HOURSPERDAY" title="KUNIVERSE:HOURSPERDAY attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">Kuniverse:HOURSPERDAY</span></code></a>.</p>
 </div>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p>Beware the pitfall of confusing the <a class="reference internal" href="time.html#attribute:TIMESPAN:SECOND" title="TIMESPAN:SECOND attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TimeSpan:SECOND</span></code></a> (singular) suffix with the <a class="reference internal" href="time.html#attribute:TIMESPAN:SECONDS" title="TIMESPAN:SECONDS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TimeSpan:SECONDS</span></code></a> (plural) suffix.</p>
-<p><a class="reference internal" href="time.html#attribute:TIMESPAN:SECOND" title="TIMESPAN:SECOND attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TimeSpan:SECOND</span></code></a></p>
+<p>Beware the pitfall of confusing the <a class="reference internal" href="#attribute:TIMESPAN:SECOND" title="TIMESPAN:SECOND attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TimeSpan:SECOND</span></code></a> (singular) suffix with the <a class="reference internal" href="#attribute:TIMESPAN:SECONDS" title="TIMESPAN:SECONDS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TimeSpan:SECONDS</span></code></a> (plural) suffix.</p>
+<p><a class="reference internal" href="#attribute:TIMESPAN:SECOND" title="TIMESPAN:SECOND attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TimeSpan:SECOND</span></code></a></p>
 <blockquote>
 <div>This is the <strong>whole</strong> number of <strong>remainder</strong> seconds leftover after all whole-number minutes, hours, days, and years have been subtracted out, and it&#8217;s never outside the range [0..60). It&#8217;s essentially the &#8216;seconds hand&#8217; on a clock.</div></blockquote>
-<p><a class="reference internal" href="time.html#attribute:TIMESPAN:SECONDS" title="TIMESPAN:SECONDS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TimeSpan:SECONDS</span></code></a></p>
+<p><a class="reference internal" href="#attribute:TIMESPAN:SECONDS" title="TIMESPAN:SECONDS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TimeSpan:SECONDS</span></code></a></p>
 <blockquote class="last">
 <div><p>This is the number of seconds total if you want to represent time as just a simple flat number without all the components. It&#8217;s the total count of the number of seconds since the beginning of time (Epoch). Because it&#8217;s a floating point number, it can store times less than 1 second. Note this is a measure of how much simulated Kerbal time has passed since the game began. People experienced at programming will be familiar with this concept. It&#8217;s the Kerbal&#8217;s version of &#8220;unix time&#8221;.</p>
 <p>The epoch (time zero) in the KSP game is the time at which you first started the new campaign. All campaign games begin with the planets in precisely the same position and the clock set to zero years, zero days, zero hours, and so on.</p>
@@ -315,7 +315,7 @@ change too.</p>
 </div>
 <dl class="structure">
 <dt id="structure:TIMESPAN">
-<em class="property">structure </em><code class="descname">TimeSpan</code><a class="headerlink" href="time.html#structure:TIMESPAN" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">TimeSpan</code><a class="headerlink" href="#structure:TIMESPAN" title="Permalink to this definition">¶</a></dt>
 <dd><table border="1" class="docutils">
 <colgroup>
 <col width="17%" />
@@ -329,35 +329,35 @@ change too.</p>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="time.html#attribute:TIMESPAN:CLOCK" title="TIMESPAN:CLOCK attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">CLOCK</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:TIMESPAN:CLOCK" title="TIMESPAN:CLOCK attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">CLOCK</span></code></a></td>
 <td><a class="reference internal" href="string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">String</span></code></a></td>
 <td>&#8220;HH:MM:SS&#8221;</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="time.html#attribute:TIMESPAN:CALENDAR" title="TIMESPAN:CALENDAR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">CALENDAR</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:TIMESPAN:CALENDAR" title="TIMESPAN:CALENDAR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">CALENDAR</span></code></a></td>
 <td><a class="reference internal" href="string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">String</span></code></a></td>
 <td>&#8220;Year YYYY, day DDD&#8221;</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="time.html#attribute:TIMESPAN:SECOND" title="TIMESPAN:SECOND attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SECOND</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:TIMESPAN:SECOND" title="TIMESPAN:SECOND attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SECOND</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Scalar</span></code></a> (0-59)</td>
 <td>Second-hand number</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="time.html#attribute:TIMESPAN:MINUTE" title="TIMESPAN:MINUTE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MINUTE</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:TIMESPAN:MINUTE" title="TIMESPAN:MINUTE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">MINUTE</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Scalar</span></code></a> (0-59)</td>
 <td>Minute-hand number</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="time.html#attribute:TIMESPAN:HOUR" title="TIMESPAN:HOUR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">HOUR</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:TIMESPAN:HOUR" title="TIMESPAN:HOUR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">HOUR</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Scalar</span></code></a> (0-5)</td>
 <td>Hour-hand number</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="time.html#attribute:TIMESPAN:DAY" title="TIMESPAN:DAY attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">DAY</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:TIMESPAN:DAY" title="TIMESPAN:DAY attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">DAY</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Scalar</span></code></a> (1-426)</td>
 <td>Day-hand number</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="time.html#attribute:TIMESPAN:YEAR" title="TIMESPAN:YEAR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">YEAR</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:TIMESPAN:YEAR" title="TIMESPAN:YEAR attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">YEAR</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Scalar</span></code></a></td>
 <td>Year-hand number</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="time.html#attribute:TIMESPAN:SECONDS" title="TIMESPAN:SECONDS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SECONDS</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:TIMESPAN:SECONDS" title="TIMESPAN:SECONDS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">SECONDS</span></code></a></td>
 <td><a class="reference internal" href="../../math/scalar.html#structure:SCALAR" title="SCALAR structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Scalar</span></code></a> (fractional)</td>
 <td>Total Seconds since Epoch (includes fractional partial seconds)</td>
 </tr>
@@ -371,7 +371,7 @@ change too.</p>
 </div>
 <dl class="attribute">
 <dt id="attribute:TIMESPAN:CLOCK">
-TimeSpan:<code class="descname">CLOCK</code><a class="headerlink" href="time.html#attribute:TIMESPAN:CLOCK" title="Permalink to this definition">¶</a></dt>
+TimeSpan:<code class="descname">CLOCK</code><a class="headerlink" href="#attribute:TIMESPAN:CLOCK" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -387,7 +387,7 @@ TimeSpan:<code class="descname">CLOCK</code><a class="headerlink" href="time.htm
 
 <dl class="attribute">
 <dt id="attribute:TIMESPAN:CALENDAR">
-TimeSpan:<code class="descname">CALENDAR</code><a class="headerlink" href="time.html#attribute:TIMESPAN:CALENDAR" title="Permalink to this definition">¶</a></dt>
+TimeSpan:<code class="descname">CALENDAR</code><a class="headerlink" href="#attribute:TIMESPAN:CALENDAR" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -403,7 +403,7 @@ TimeSpan:<code class="descname">CALENDAR</code><a class="headerlink" href="time.
 
 <dl class="attribute">
 <dt id="attribute:TIMESPAN:SECOND">
-TimeSpan:<code class="descname">SECOND</code><a class="headerlink" href="time.html#attribute:TIMESPAN:SECOND" title="Permalink to this definition">¶</a></dt>
+TimeSpan:<code class="descname">SECOND</code><a class="headerlink" href="#attribute:TIMESPAN:SECOND" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -419,7 +419,7 @@ TimeSpan:<code class="descname">SECOND</code><a class="headerlink" href="time.ht
 
 <dl class="attribute">
 <dt id="attribute:TIMESPAN:MINUTE">
-TimeSpan:<code class="descname">MINUTE</code><a class="headerlink" href="time.html#attribute:TIMESPAN:MINUTE" title="Permalink to this definition">¶</a></dt>
+TimeSpan:<code class="descname">MINUTE</code><a class="headerlink" href="#attribute:TIMESPAN:MINUTE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -435,7 +435,7 @@ TimeSpan:<code class="descname">MINUTE</code><a class="headerlink" href="time.ht
 
 <dl class="attribute">
 <dt id="attribute:TIMESPAN:HOUR">
-TimeSpan:<code class="descname">HOUR</code><a class="headerlink" href="time.html#attribute:TIMESPAN:HOUR" title="Permalink to this definition">¶</a></dt>
+TimeSpan:<code class="descname">HOUR</code><a class="headerlink" href="#attribute:TIMESPAN:HOUR" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -451,7 +451,7 @@ TimeSpan:<code class="descname">HOUR</code><a class="headerlink" href="time.html
 
 <dl class="attribute">
 <dt id="attribute:TIMESPAN:DAY">
-TimeSpan:<code class="descname">DAY</code><a class="headerlink" href="time.html#attribute:TIMESPAN:DAY" title="Permalink to this definition">¶</a></dt>
+TimeSpan:<code class="descname">DAY</code><a class="headerlink" href="#attribute:TIMESPAN:DAY" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -467,7 +467,7 @@ TimeSpan:<code class="descname">DAY</code><a class="headerlink" href="time.html#
 
 <dl class="attribute">
 <dt id="attribute:TIMESPAN:YEAR">
-TimeSpan:<code class="descname">YEAR</code><a class="headerlink" href="time.html#attribute:TIMESPAN:YEAR" title="Permalink to this definition">¶</a></dt>
+TimeSpan:<code class="descname">YEAR</code><a class="headerlink" href="#attribute:TIMESPAN:YEAR" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -483,7 +483,7 @@ TimeSpan:<code class="descname">YEAR</code><a class="headerlink" href="time.html
 
 <dl class="attribute">
 <dt id="attribute:TIMESPAN:SECONDS">
-TimeSpan:<code class="descname">SECONDS</code><a class="headerlink" href="time.html#attribute:TIMESPAN:SECONDS" title="Permalink to this definition">¶</a></dt>
+TimeSpan:<code class="descname">SECONDS</code><a class="headerlink" href="#attribute:TIMESPAN:SECONDS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

@@ -99,7 +99,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../general.html">General</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../bindings.html">Bound Variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="cpu_vessel.html">CPU Vessel (SHIP)</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="cpu_hardware.html">CPU Hardware</a><ul class="simple">
+<li class="toctree-l2 current"><a class="current reference internal" href="">CPU Hardware</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="kospartmodule.html">Game Part</a></li>
@@ -169,7 +169,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="the-kos-cpu-hardware">
-<span id="cpu-hardware"></span><h1>The kOS CPU hardware<a class="headerlink" href="cpu_hardware.html#the-kos-cpu-hardware" title="Permalink to this headline">¶</a></h1>
+<span id="cpu-hardware"></span><h1>The kOS CPU hardware<a class="headerlink" href="#the-kos-cpu-hardware" title="Permalink to this headline">¶</a></h1>
 <p>While it&#8217;s possible to write some software without knowing anything
 about the underlying computer hardware, and there are good design
 principles that state one should never make assumptions about the
@@ -181,31 +181,31 @@ about how the simulated kOS CPU operates in order to be able to write
 more advanced scripts. This page contains that type of information.</p>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><a class="reference internal" href="cpu_hardware.html#update-ticks-and-physics-ticks" id="id3">Update Ticks and Physics Ticks</a></li>
-<li><a class="reference internal" href="cpu_hardware.html#electric-drain" id="id4">Electric Drain</a></li>
-<li><a class="reference internal" href="cpu_hardware.html#triggers" id="id5">Triggers</a><ul>
-<li><a class="reference internal" href="cpu_hardware.html#triggers-for-cooked-steering" id="id6">Triggers for Cooked Steering</a></li>
-<li><a class="reference internal" href="cpu_hardware.html#triggers-for-when-and-on-statements" id="id7">Triggers for WHEN and ON statements</a></li>
-<li><a class="reference internal" href="cpu_hardware.html#triggers-for-gui-callbacks" id="id8">Triggers for GUI callbacks</a></li>
-<li><a class="reference internal" href="cpu_hardware.html#wait-in-a-trigger" id="id9">Wait in a Trigger</a></li>
-<li><a class="reference internal" href="cpu_hardware.html#do-not-loop-a-long-time-in-a-trigger-body" id="id10">Do Not Loop a Long Time in a Trigger Body!</a></li>
-<li><a class="reference internal" href="cpu_hardware.html#but-i-want-a-loop" id="id11">But I Want a Loop!!</a></li>
+<li><a class="reference internal" href="#update-ticks-and-physics-ticks" id="id3">Update Ticks and Physics Ticks</a></li>
+<li><a class="reference internal" href="#electric-drain" id="id4">Electric Drain</a></li>
+<li><a class="reference internal" href="#triggers" id="id5">Triggers</a><ul>
+<li><a class="reference internal" href="#triggers-for-cooked-steering" id="id6">Triggers for Cooked Steering</a></li>
+<li><a class="reference internal" href="#triggers-for-when-and-on-statements" id="id7">Triggers for WHEN and ON statements</a></li>
+<li><a class="reference internal" href="#triggers-for-gui-callbacks" id="id8">Triggers for GUI callbacks</a></li>
+<li><a class="reference internal" href="#wait-in-a-trigger" id="id9">Wait in a Trigger</a></li>
+<li><a class="reference internal" href="#do-not-loop-a-long-time-in-a-trigger-body" id="id10">Do Not Loop a Long Time in a Trigger Body!</a></li>
+<li><a class="reference internal" href="#but-i-want-a-loop" id="id11">But I Want a Loop!!</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="cpu_hardware.html#trigger-interrupt-priority" id="id12">Trigger Interrupt Priority</a><ul>
-<li><a class="reference internal" href="cpu_hardware.html#deliberately-reducing-your-priority-in-long-running-triggers" id="id13">Deliberately reducing your priority in long running triggers</a></li>
+<li><a class="reference internal" href="#trigger-interrupt-priority" id="id12">Trigger Interrupt Priority</a><ul>
+<li><a class="reference internal" href="#deliberately-reducing-your-priority-in-long-running-triggers" id="id13">Deliberately reducing your priority in long running triggers</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="cpu_hardware.html#wait" id="id14">Wait!!!</a></li>
-<li><a class="reference internal" href="cpu_hardware.html#cpu-update-loop" id="id15">CPU Update Loop</a><ul>
-<li><a class="reference internal" href="cpu_hardware.html#how-an-interrupt-works" id="id16">How an interrupt works</a></li>
+<li><a class="reference internal" href="#wait" id="id14">Wait!!!</a></li>
+<li><a class="reference internal" href="#cpu-update-loop" id="id15">CPU Update Loop</a><ul>
+<li><a class="reference internal" href="#how-an-interrupt-works" id="id16">How an interrupt works</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="cpu_hardware.html#the-frozen-universe" id="id17">The Frozen Universe</a></li>
+<li><a class="reference internal" href="#the-frozen-universe" id="id17">The Frozen Universe</a></li>
 </ul>
 </div>
 <div class="section" id="update-ticks-and-physics-ticks">
-<span id="physics-tick"></span><h2><a class="toc-backref" href="cpu_hardware.html#id3">Update Ticks and Physics Ticks</a><a class="headerlink" href="cpu_hardware.html#update-ticks-and-physics-ticks" title="Permalink to this headline">¶</a></h2>
+<span id="physics-tick"></span><h2><a class="toc-backref" href="#id3">Update Ticks and Physics Ticks</a><a class="headerlink" href="#update-ticks-and-physics-ticks" title="Permalink to this headline">¶</a></h2>
 <p>Kerbal Space Program simulates the universe by running the universe in
 small incremental time intervals that for the purpose of this
 document, we will call &#8220;<strong>physics ticks</strong>&#8221;. The exact length of time
@@ -251,7 +251,7 @@ other way around.</p>
 <p>It is important to note that versions of kOS prior to 0.17 executed program code during update ticks.  After that point, program code was executed during the physics ticks.</p>
 </div>
 <div class="section" id="electric-drain">
-<span id="electricdrain"></span><h2><a class="toc-backref" href="cpu_hardware.html#id4">Electric Drain</a><a class="headerlink" href="cpu_hardware.html#electric-drain" title="Permalink to this headline">¶</a></h2>
+<span id="electricdrain"></span><h2><a class="toc-backref" href="#id4">Electric Drain</a><a class="headerlink" href="#electric-drain" title="Permalink to this headline">¶</a></h2>
 <p>Real world CPUs often have low power modes, and sleep modes, and these are
 vital to long distance probes.  In these modes the computer deliberately
 runs slowly in order to use less power, and then the program can tell it to
@@ -278,7 +278,7 @@ mere fact that it yields the remaining instructions still allowed
 that update can make a big difference.</p>
 </div>
 <div class="section" id="triggers">
-<span id="id1"></span><h2><a class="toc-backref" href="cpu_hardware.html#id5">Triggers</a><a class="headerlink" href="cpu_hardware.html#triggers" title="Permalink to this headline">¶</a></h2>
+<span id="id1"></span><h2><a class="toc-backref" href="#id5">Triggers</a><a class="headerlink" href="#triggers" title="Permalink to this headline">¶</a></h2>
 <p>There are multiple things within kerboscript that run &#8220;in the background&#8221;
 always updating, while the main script continues on. The way these work is
 a bit like a real computer&#8217;s interrupt handling system, but not <em>quite</em>.</p>
@@ -310,12 +310,12 @@ performs GUI events (for example a button&#8217;s ONCLICK).</li>
 <p>These two types of trigger don&#8217;t have the same priority level.
 It is possible for a recurring trigger to interrupt a callback-once
 trigger, but not the other way around.  Further information about
-this is described in the <a class="reference internal" href="cpu_hardware.html#interrupt-priority"><span>interrupt priority</span></a>
+this is described in the <a class="reference internal" href="#interrupt-priority"><span>interrupt priority</span></a>
 documentation below.</p>
 <p>All triggers work essentially like this:</p>
 <p>The kOS CPU decides it&#8217;s time to cause a call to the trigger.  (How it
 does this is explained below in
-<a class="reference internal" href="cpu_hardware.html#interrupt-priority"><span>interrupt priority</span></a>.)  Once it decides its
+<a class="reference internal" href="#interrupt-priority"><span>interrupt priority</span></a>.)  Once it decides its
 time to call the trigger, it does so by inserting a subroutine call
 at the current moment that interrupts the normal program flow and
 jumps to the trigger&#8217;s subroutine <em>as if</em> the program itself had chosen
@@ -329,8 +329,8 @@ before the interruption so the program can continue as if nothing
 had happened.</p>
 <p>Prior to kOS 0.19.3, this section was quite different but large changes to how triggers work required a re-write of this whole page. Any old kOS scripts you find that were written prior to kOS 0.19.3 that used triggers might have different behaviour because of this.</p>
 <div class="section" id="triggers-for-cooked-steering">
-<span id="trigger-steering"></span><h3><a class="toc-backref" href="cpu_hardware.html#id6">Triggers for Cooked Steering</a><a class="headerlink" href="cpu_hardware.html#triggers-for-cooked-steering" title="Permalink to this headline">¶</a></h3>
-<p><em>This is a kind of</em> <a class="reference internal" href="cpu_hardware.html#recurring-trigger"><span>recurring trigger</span></a>.</p>
+<span id="trigger-steering"></span><h3><a class="toc-backref" href="#id6">Triggers for Cooked Steering</a><a class="headerlink" href="#triggers-for-cooked-steering" title="Permalink to this headline">¶</a></h3>
+<p><em>This is a kind of</em> <a class="reference internal" href="#recurring-trigger"><span>recurring trigger</span></a>.</p>
 <p>The <code class="docutils literal"><span class="pre">lock</span></code> expressions associated with <a class="reference internal" href="../commands/flight/cooked.html#cooked"><span>Cooked Control</span></a>,
 meaning <code class="docutils literal"><span class="pre">STEERING</span></code>, <code class="docutils literal"><span class="pre">THROTTLE</span></code>, <code class="docutils literal"><span class="pre">WHEELSTEERING</span></code>, and
 <code class="docutils literal"><span class="pre">WHEELTHROTTLE</span></code>, have triggers associated with them.
@@ -349,8 +349,8 @@ time to perform this expression and it uses the trigger interrupt
 system to do so.</p>
 </div>
 <div class="section" id="triggers-for-when-and-on-statements">
-<span id="when-on-trigger"></span><h3><a class="toc-backref" href="cpu_hardware.html#id7">Triggers for WHEN and ON statements</a><a class="headerlink" href="cpu_hardware.html#triggers-for-when-and-on-statements" title="Permalink to this headline">¶</a></h3>
-<p><em>This is a kind of</em> <a class="reference internal" href="cpu_hardware.html#recurring-trigger"><span>recurring trigger</span></a>.</p>
+<span id="when-on-trigger"></span><h3><a class="toc-backref" href="#id7">Triggers for WHEN and ON statements</a><a class="headerlink" href="#triggers-for-when-and-on-statements" title="Permalink to this headline">¶</a></h3>
+<p><em>This is a kind of</em> <a class="reference internal" href="#recurring-trigger"><span>recurring trigger</span></a>.</p>
 <p>Each of the <code class="docutils literal"><span class="pre">ON</span></code> and <code class="docutils literal"><span class="pre">WHEN</span></code> triggers also behave
 much like a function, with a body like this:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="ow">not</span> <span class="nv">conditional_expression</span><span class="p">)</span>
@@ -377,7 +377,7 @@ to take advantage of</em> <a class="reference internal" href="../language/featur
 <em>logic by putting the fastest part of the check first.</em></p>
 </div>
 <div class="section" id="triggers-for-gui-callbacks">
-<h3><a class="toc-backref" href="cpu_hardware.html#id8">Triggers for GUI callbacks</a><a class="headerlink" href="cpu_hardware.html#triggers-for-gui-callbacks" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id8">Triggers for GUI callbacks</a><a class="headerlink" href="#triggers-for-gui-callbacks" title="Permalink to this headline">¶</a></h3>
 <p>Another type of trigger is the callback delegates that you can
 write for the <a class="reference internal" href="../structures/gui.html#gui"><span>GUI system</span></a> when using the
 <a class="reference internal" href="../structures/gui.html#gui-callback-technique"><span>Callback technique</span></a>.  (For example,
@@ -389,7 +389,7 @@ opportunity (usually the start of the next IPU&#8217;s worth of instructions),
 to call your callback delegate.</p>
 </div>
 <div class="section" id="wait-in-a-trigger">
-<span id="wait-in-trigger"></span><h3><a class="toc-backref" href="cpu_hardware.html#id9">Wait in a Trigger</a><a class="headerlink" href="cpu_hardware.html#wait-in-a-trigger" title="Permalink to this headline">¶</a></h3>
+<span id="wait-in-trigger"></span><h3><a class="toc-backref" href="#id9">Wait in a Trigger</a><a class="headerlink" href="#wait-in-a-trigger" title="Permalink to this headline">¶</a></h3>
 <p>While <code class="docutils literal"><span class="pre">WAIT</span></code> is possible from inside a trigger and it won&#8217;t crash
 the script to use it, it&#8217;s probably not a good design choice to use
 <code class="docutils literal"><span class="pre">WAIT</span></code> inside a trigger.  Triggers should be designed to execute
@@ -399,12 +399,12 @@ can call that will have your trigger willingly relinquish its priority
 increase, reducing it back down to whatever the priority was before
 it rudely interrupted things. Doing that can allow other triggers of
 equal priority to itself to interrupt it again.  To see how this works,
-look at <a class="reference internal" href="cpu_hardware.html#function:DROPPRIORITY" title="DROPPRIORITY function"><code class="xref ks ks-func docutils literal"><span class="pre">DROPPRIORITY()</span></code></a>, explained below on this page.  In general,
+look at <a class="reference internal" href="#function:DROPPRIORITY" title="DROPPRIORITY function"><code class="xref ks ks-func docutils literal"><span class="pre">DROPPRIORITY()</span></code></a>, explained below on this page.  In general,
 however, it&#8217;s a better idea not to use this unless you fully understand
 how the prioriy system here works.</p>
 </div>
 <div class="section" id="do-not-loop-a-long-time-in-a-trigger-body">
-<h3><a class="toc-backref" href="cpu_hardware.html#id10">Do Not Loop a Long Time in a Trigger Body!</a><a class="headerlink" href="cpu_hardware.html#do-not-loop-a-long-time-in-a-trigger-body" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id10">Do Not Loop a Long Time in a Trigger Body!</a><a class="headerlink" href="#do-not-loop-a-long-time-in-a-trigger-body" title="Permalink to this headline">¶</a></h3>
 <p>For similar reasons to the explanation above about the <code class="docutils literal"><span class="pre">WAIT</span></code> command
 used inside triggers, it&#8217;s not really a good idea for a trigger to
 have a long loop inside it that just keeps going and going.</p>
@@ -424,12 +424,12 @@ can call that will have your trigger willingly relinquish its priority
 increase, reducing it back down to whatever the priority was before
 it rudely interrupted things. Doing that can allow other triggers of
 equal priority to itself to interrupt it again.  To see how this works,
-look at <a class="reference internal" href="cpu_hardware.html#function:DROPPRIORITY" title="DROPPRIORITY function"><code class="xref ks ks-func docutils literal"><span class="pre">DROPPRIORITY()</span></code></a>, explained below on this page.  In general,
+look at <a class="reference internal" href="#function:DROPPRIORITY" title="DROPPRIORITY function"><code class="xref ks ks-func docutils literal"><span class="pre">DROPPRIORITY()</span></code></a>, explained below on this page.  In general,
 however, it&#8217;s a better idea not to use this unless you fully understand
 how the prioriy system here works.</p>
 </div>
 <div class="section" id="but-i-want-a-loop">
-<h3><a class="toc-backref" href="cpu_hardware.html#id11">But I Want a Loop!!</a><a class="headerlink" href="cpu_hardware.html#but-i-want-a-loop" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id11">But I Want a Loop!!</a><a class="headerlink" href="#but-i-want-a-loop" title="Permalink to this headline">¶</a></h3>
 <p>If you want a trigger body that is meant to loop a long time, the only
 workable way to do it is to design it to execute just once, but
 then make it return true (or use the <code class="docutils literal"><span class="pre">preserve</span></code> keyword, which is
@@ -439,7 +439,7 @@ executes one iteration per <strong>physics tick</strong>.</p>
 </div>
 </div>
 <div class="section" id="trigger-interrupt-priority">
-<span id="interrupt-priority"></span><h2><a class="toc-backref" href="cpu_hardware.html#id12">Trigger Interrupt Priority</a><a class="headerlink" href="cpu_hardware.html#trigger-interrupt-priority" title="Permalink to this headline">¶</a></h2>
+<span id="interrupt-priority"></span><h2><a class="toc-backref" href="#id12">Trigger Interrupt Priority</a><a class="headerlink" href="#trigger-interrupt-priority" title="Permalink to this headline">¶</a></h2>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 1.1.6.0: </span>The multiple priorities of interruption described below (GUI callbacks
 being lower priority than recurring callbacks) were introduced in
@@ -451,9 +451,9 @@ is allowed to interrupt the program flow depending on what the program
 is doing right now.  This is accomplished by having a few priority
 levels, shown in this list:</p>
 <ul class="simple">
-<li>Priority 30: <a class="reference internal" href="cpu_hardware.html#trigger-steering"><span>Cooked control Interrupts</span></a> (i.e. LOCK STEERING)</li>
-<li>Priority 20: <a class="reference internal" href="cpu_hardware.html#recurring-trigger"><span>Recurring Interrupts</span></a> (i.e. WHEN or ON)</li>
-<li>Priority 10: <a class="reference internal" href="cpu_hardware.html#callback-once-trigger"><span>Callback-Once Interrupts</span></a> (i.e. GUI callbacks)</li>
+<li>Priority 30: <a class="reference internal" href="#trigger-steering"><span>Cooked control Interrupts</span></a> (i.e. LOCK STEERING)</li>
+<li>Priority 20: <a class="reference internal" href="#recurring-trigger"><span>Recurring Interrupts</span></a> (i.e. WHEN or ON)</li>
+<li>Priority 10: <a class="reference internal" href="#callback-once-trigger"><span>Callback-Once Interrupts</span></a> (i.e. GUI callbacks)</li>
 <li>Priority 0: Normal (non-interrupting) code.</li>
 </ul>
 <p><strong>A Trigger will only interrupt something of lower priority than itself</strong>.</p>
@@ -486,7 +486,7 @@ is too dependant on the priorities being exactly this way.  (This is
 why these numbers aren&#8217;t even exposed to the script at the moment,
 to avoid that design pattern.)</p>
 <div class="section" id="deliberately-reducing-your-priority-in-long-running-triggers">
-<span id="drop-priority"></span><h3><a class="toc-backref" href="cpu_hardware.html#id13">Deliberately reducing your priority in long running triggers</a><a class="headerlink" href="cpu_hardware.html#deliberately-reducing-your-priority-in-long-running-triggers" title="Permalink to this headline">¶</a></h3>
+<span id="drop-priority"></span><h3><a class="toc-backref" href="#id13">Deliberately reducing your priority in long running triggers</a><a class="headerlink" href="#deliberately-reducing-your-priority-in-long-running-triggers" title="Permalink to this headline">¶</a></h3>
 <p>Normally if you did something like this:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">local</span> <span class="nv">done</span> <span class="ow">is</span> <span class="nb">false</span><span class="p">.</span>
 
@@ -526,7 +526,7 @@ back down a step to whatever it was prior to being incresed by the
 interrrupt, which is what this special built-in function does:</p>
 <dl class="function">
 <dt id="function:DROPPRIORITY">
-<code class="descname">DROPPRIORITY</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="cpu_hardware.html#function:DROPPRIORITY" title="Permalink to this definition">¶</a></dt>
+<code class="descname">DROPPRIORITY</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#function:DROPPRIORITY" title="Permalink to this definition">¶</a></dt>
 <dd><p>After this built-in function is executed by a trigger&#8217;s body,
 the current interrupt priority is dropped back down to whatever the
 priority of the code you interrupted was.  This is your trigger&#8217;s
@@ -628,7 +628,7 @@ quickly like they should.)</p>
 </div>
 </div>
 <div class="section" id="wait">
-<h2><a class="toc-backref" href="cpu_hardware.html#id14">Wait!!!</a><a class="headerlink" href="cpu_hardware.html#wait" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id14">Wait!!!</a><a class="headerlink" href="#wait" title="Permalink to this headline">¶</a></h2>
 <p>Any WAIT statement causes the kerboscript program to immediately stop executing the main program where it is, even if far fewer than <a class="reference internal" href="../structures/misc/config.html#attribute:CONFIG:IPU" title="CONFIG:IPU attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">Config:IPU</span></code></a> instructions have been executed in this <strong>physics tick</strong>. It will not continue the execution until at least the next <strong>physics tick</strong>, when it will check to see if the WAIT condition is satisfied and it&#8217;s time to wake up and continue.</p>
 <p>Therefore ANY WAIT of any kind will guarantee that your program will allow at least one <strong>physics tick</strong> to have happened before continuing. If you attempt to:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">WAIT</span> <span class="mf">0</span><span class="p">.</span><span class="mf">001</span><span class="p">.</span>
@@ -651,7 +651,7 @@ full <strong>physics tick</strong>.</p>
 <p>Then even though the condition is immediately true, it will still wait one physics tick to discover this fact and continue.</p>
 </div>
 <div class="section" id="cpu-update-loop">
-<span id="id2"></span><h2><a class="toc-backref" href="cpu_hardware.html#id15">CPU Update Loop</a><a class="headerlink" href="cpu_hardware.html#cpu-update-loop" title="Permalink to this headline">¶</a></h2>
+<span id="id2"></span><h2><a class="toc-backref" href="#id15">CPU Update Loop</a><a class="headerlink" href="#cpu-update-loop" title="Permalink to this headline">¶</a></h2>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 1.1.6.0: </span>As of version 1.1.6.0, the entire layout of the CPU update loop
 was re-written to handle the new trigger priority system.</p>
@@ -702,7 +702,7 @@ the &#8220;active&#8221; queue so it will get executed next time on step 3.3 abo
 </li>
 </ul>
 <div class="section" id="how-an-interrupt-works">
-<h3><a class="toc-backref" href="cpu_hardware.html#id16">How an interrupt works</a><a class="headerlink" href="cpu_hardware.html#how-an-interrupt-works" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id16">How an interrupt works</a><a class="headerlink" href="#how-an-interrupt-works" title="Permalink to this headline">¶</a></h3>
 <p>Whenever the CPU decides to cause an interrupt in step 3.3 above, it does
 so by simulating how a subroutine call normally works in the system.  It
 does the following:</p>
@@ -727,7 +727,7 @@ scopes stored on the stack, this ensures everything will be just like
 it was before the interruption, and the main code can continue on,
 unaware that it was even interrupted.</p>
 <div class="section" id="interrupts-that-happen-at-the-same-time">
-<h4>Interrupts that happen at the same time<a class="headerlink" href="cpu_hardware.html#interrupts-that-happen-at-the-same-time" title="Permalink to this headline">¶</a></h4>
+<h4>Interrupts that happen at the same time<a class="headerlink" href="#interrupts-that-happen-at-the-same-time" title="Permalink to this headline">¶</a></h4>
 <p>When more than one trigger of the same priority are in the queue and both
 try to interrupt at the same time before either one has started running,
 then what happens is this:  The first trigger gets its interrupt to occur,
@@ -745,7 +745,7 @@ main code can continue.</p>
 </div>
 </div>
 <div class="section" id="the-frozen-universe">
-<span id="frozen"></span><h2><a class="toc-backref" href="cpu_hardware.html#id17">The Frozen Universe</a><a class="headerlink" href="cpu_hardware.html#the-frozen-universe" title="Permalink to this headline">¶</a></h2>
+<span id="frozen"></span><h2><a class="toc-backref" href="#id17">The Frozen Universe</a><a class="headerlink" href="#the-frozen-universe" title="Permalink to this headline">¶</a></h2>
 <p>Each <strong>physics</strong> <em>tick</em>, the kOS mod wakes up and runs through all the currently loaded CPU parts that are in &#8220;physics range&#8221; (i.e. 2.5 km), and executes a batch of instructions from your script code that&#8217;s on them. It is important to note that during the running of this batch of instructions, because no <strong>physics ticks</strong> are happening during it, none of the values that you might query from the KSP system will change. The clock time returned from the TIME variable will keep the same value throughout. The amount of fuel left will remain fixed throughout. The position and velocity of the vessel will remaining fixed throughout. It&#8217;s not until the next physics tick occurs that those values will change to new numbers. It&#8217;s typical that several lines of your kerboscript code will run during a single physics tick.</p>
 <p>Effectively, as far as the <em>simulated</em> universe can tell, it&#8217;s as if your script runs several instructions in literally zero amount of time, and then pauses for a fraction of a second, and then runs more instructions in literally zero amount of time, then pauses for a fraction of a second, and so on, rather than running the program in a smoothed out continuous way.</p>
 <p>This is a vital difference between how a kOS CPU behaves versus how a real world computer behaves. In a real world computer, you would know for certain that time will pass, even if it&#8217;s just a few picoseconds, between the execution of one statement and the next.</p>

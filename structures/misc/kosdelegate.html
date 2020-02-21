@@ -114,7 +114,7 @@
 <li class="toctree-l3"><a class="reference internal" href="colors.html">Colors</a></li>
 <li class="toctree-l3"><a class="reference internal" href="config.html">Configuration of kOS</a></li>
 <li class="toctree-l3"><a class="reference internal" href="highlight.html">Part Highlighting</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="kosdelegate.html">KOSDelegate</a><ul class="simple">
+<li class="toctree-l3 current"><a class="current reference internal" href="">KOSDelegate</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="kuniverse.html">KUniverse 4th wall methods</a></li>
@@ -190,7 +190,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="kosdelegate">
-<span id="id1"></span><h1>KOSDelegate<a class="headerlink" href="kosdelegate.html#kosdelegate" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1>KOSDelegate<a class="headerlink" href="#kosdelegate" title="Permalink to this headline">¶</a></h1>
 <p>The structure <cite>KOSDelegate</cite> is what you get when you use the
 <a class="reference internal" href="../../language/delegates.html#kosdelegate-atsign"><span>Delegate at-sign syntax</span></a>, as in
 this example:</p>
@@ -217,12 +217,12 @@ documents the members of the KOSDelegate structure for completeness.
 The full explanation of how this structure works and what it&#8217;s
 for can be found on the <a class="reference internal" href="../../language/delegates.html#delegates"><span>delegate page</span></a>.</p>
 <div class="section" id="structure">
-<h2>Structure<a class="headerlink" href="kosdelegate.html#structure" title="Permalink to this headline">¶</a></h2>
+<h2>Structure<a class="headerlink" href="#structure" title="Permalink to this headline">¶</a></h2>
 <dl class="structure">
 <dt id="structure:KOSDELEGATE">
-<em class="property">structure </em><code class="descname">KOSDelegate</code><a class="headerlink" href="kosdelegate.html#structure:KOSDELEGATE" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">KOSDelegate</code><a class="headerlink" href="#structure:KOSDELEGATE" title="Permalink to this definition">¶</a></dt>
 <dd><table border="1" class="docutils" id="id2">
-<caption><span class="caption-text">Members</span><a class="headerlink" href="kosdelegate.html#id2" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-text">Members</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="29%" />
 <col width="14%" />
@@ -235,15 +235,15 @@ for can be found on the <a class="reference internal" href="../../language/deleg
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="kosdelegate.html#method:KOSDELEGATE:CALL" title="KOSDELEGATE:CALL method"><code class="xref ks ks-meth docutils literal"><span class="pre">CALL(varying</span> <span class="pre">arguments)</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#method:KOSDELEGATE:CALL" title="KOSDELEGATE:CALL method"><code class="xref ks ks-meth docutils literal"><span class="pre">CALL(varying</span> <span class="pre">arguments)</span></code></a></td>
 <td>same as the function this is a delegate for.</td>
 <td>calls the function this delegate wraps.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="kosdelegate.html#method:KOSDELEGATE:BIND" title="KOSDELEGATE:BIND method"><code class="xref ks ks-meth docutils literal"><span class="pre">BIND(varying</span> <span class="pre">arguments)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#method:KOSDELEGATE:BIND" title="KOSDELEGATE:BIND method"><code class="xref ks ks-meth docutils literal"><span class="pre">BIND(varying</span> <span class="pre">arguments)</span></code></a></td>
 <td>another KOSDelegate</td>
 <td>creates a new KOSDelegate with some arguments predefined.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="kosdelegate.html#attribute:KOSDELEGATE:ISDEAD" title="KOSDELEGATE:ISDEAD attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ISDEAD</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:KOSDELEGATE:ISDEAD" title="KOSDELEGATE:ISDEAD attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ISDEAD</span></code></a></td>
 <td><a class="reference internal" href="boolean.html#structure:BOOLEAN" title="BOOLEAN structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Boolean</span></code></a></td>
 <td>True if the delegate refers to a program that&#8217;s gone.</td>
 </tr>
@@ -253,7 +253,7 @@ for can be found on the <a class="reference internal" href="../../language/deleg
 
 <dl class="method">
 <dt id="method:KOSDELEGATE:CALL">
-KOSDelegate:<code class="descname">CALL</code><span class="sig-paren">(</span>varying arguments<span class="sig-paren">)</span><a class="headerlink" href="kosdelegate.html#method:KOSDELEGATE:CALL" title="Permalink to this definition">¶</a></dt>
+KOSDelegate:<code class="descname">CALL</code><span class="sig-paren">(</span>varying arguments<span class="sig-paren">)</span><a class="headerlink" href="#method:KOSDELEGATE:CALL" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calls the function this KOSDelegate is set up to call.</p>
 <p>The varying arguments you pass in to this are passed on to the
 function this KOSDelegate is calling.  The exact number of
@@ -268,7 +268,7 @@ function.</p>
 
 <dl class="method">
 <dt id="method:KOSDELEGATE:BIND">
-KOSDelegate:<code class="descname">BIND</code><span class="sig-paren">(</span>varying arguments<span class="sig-paren">)</span><a class="headerlink" href="kosdelegate.html#method:KOSDELEGATE:BIND" title="Permalink to this definition">¶</a></dt>
+KOSDelegate:<code class="descname">BIND</code><span class="sig-paren">(</span>varying arguments<span class="sig-paren">)</span><a class="headerlink" href="#method:KOSDELEGATE:BIND" title="Permalink to this definition">¶</a></dt>
 <dd><p>Creates a new KOSDelegate from the current one, which will call the
 same function, but in which some or all of the parameters
 the function will be passed are pre-set.  The arguments you
@@ -281,7 +281,7 @@ call to <code class="docutils literal"><span class="pre">:BIND</span></code>.</p
 
 <dl class="attribute">
 <dt id="attribute:KOSDELEGATE:ISDEAD">
-KOSDelegate:<code class="descname">ISDEAD</code><a class="headerlink" href="kosdelegate.html#attribute:KOSDELEGATE:ISDEAD" title="Permalink to this definition">¶</a></dt>
+KOSDelegate:<code class="descname">ISDEAD</code><a class="headerlink" href="#attribute:KOSDELEGATE:ISDEAD" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -319,10 +319,10 @@ there.</p>
 
 </div>
 <div class="section" id="donothing-nodelegate">
-<span id="donothing"></span><h2>DONOTHING (NODELEGATE)<a class="headerlink" href="kosdelegate.html#donothing-nodelegate" title="Permalink to this headline">¶</a></h2>
+<span id="donothing"></span><h2>DONOTHING (NODELEGATE)<a class="headerlink" href="#donothing-nodelegate" title="Permalink to this headline">¶</a></h2>
 <dl class="structure">
 <dt id="structure:NODELEGATE">
-<em class="property">structure </em><code class="descname">NoDelegate</code><a class="headerlink" href="kosdelegate.html#structure:NODELEGATE" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">NoDelegate</code><a class="headerlink" href="#structure:NODELEGATE" title="Permalink to this definition">¶</a></dt>
 <dd><table border="1" class="docutils">
 <colgroup>
 <col width="23%" />
@@ -336,7 +336,7 @@ there.</p>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td colspan="3">Every suffix of <a class="reference internal" href="kosdelegate.html#structure:KOSDELEGATE" title="KOSDELEGATE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">KOSDelegate</span></code></a></td>
+<tr class="row-even"><td colspan="3">Every suffix of <a class="reference internal" href="#structure:KOSDELEGATE" title="KOSDELEGATE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">KOSDelegate</span></code></a></td>
 </tr>
 <tr class="row-odd"><td>&nbsp;</td>
 <td>&nbsp;</td>
@@ -348,20 +348,20 @@ there.</p>
 
 <dl class="global">
 <dt id="global:DONOTHING">
-<code class="descname">DONOTHING</code><a class="headerlink" href="kosdelegate.html#global:DONOTHING" title="Permalink to this definition">¶</a></dt>
+<code class="descname">DONOTHING</code><a class="headerlink" href="#global:DONOTHING" title="Permalink to this definition">¶</a></dt>
 <dd><p>There is a special keyword <code class="docutils literal"><span class="pre">DONOTHING</span></code> that refers to a special
-kind of <a class="reference internal" href="kosdelegate.html#structure:KOSDELEGATE" title="KOSDELEGATE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">KosDelegate</span></code></a> called a <a class="reference internal" href="kosdelegate.html#structure:NODELEGATE" title="NODELEGATE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">NoDelegate</span></code></a>.</p>
+kind of <a class="reference internal" href="#structure:KOSDELEGATE" title="KOSDELEGATE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">KosDelegate</span></code></a> called a <a class="reference internal" href="#structure:NODELEGATE" title="NODELEGATE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">NoDelegate</span></code></a>.</p>
 <p>The type string returned by <code class="docutils literal"><span class="pre">DONOTHING:TYPENAME</span></code> is <code class="docutils literal"><span class="pre">&quot;NoDelegate&quot;</span></code>.
-Otherwise an instance of <a class="reference internal" href="kosdelegate.html#structure:NODELEGATE" title="NODELEGATE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">NoDelegate</span></code></a> has the same suffixes as one
-of <a class="reference internal" href="kosdelegate.html#structure:KOSDELEGATE" title="KOSDELEGATE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">KOSDelegate</span></code></a>, although you&#8217;re not usually
+Otherwise an instance of <a class="reference internal" href="#structure:NODELEGATE" title="NODELEGATE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">NoDelegate</span></code></a> has the same suffixes as one
+of <a class="reference internal" href="#structure:KOSDELEGATE" title="KOSDELEGATE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">KOSDelegate</span></code></a>, although you&#8217;re not usually
 expected to ever use them, except maybe <code class="docutils literal"><span class="pre">TYPENAME</span></code> to discover
-that it is a <a class="reference internal" href="kosdelegate.html#structure:NODELEGATE" title="NODELEGATE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">NoDelegate</span></code></a>.</p>
+that it is a <a class="reference internal" href="#structure:NODELEGATE" title="NODELEGATE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">NoDelegate</span></code></a>.</p>
 <p><code class="docutils literal"><span class="pre">DONOTHING</span></code> is used when you&#8217;re in a situation where you had
-previously assigned a <a class="reference internal" href="kosdelegate.html#structure:KOSDELEGATE" title="KOSDELEGATE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">KosDelegate</span></code></a> to some callback hook
+previously assigned a <a class="reference internal" href="#structure:KOSDELEGATE" title="KOSDELEGATE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">KosDelegate</span></code></a> to some callback hook
 the kOS system provides, but now you want the kOS system to stop
 calling it.  To do so, you assign that callback hook to the value
 <code class="docutils literal"><span class="pre">DONOTHING</span></code>.</p>
-<p><code class="docutils literal"><span class="pre">DONOTHING</span></code> is similar to making a <a class="reference internal" href="kosdelegate.html#structure:KOSDELEGATE" title="KOSDELEGATE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">KosDelegate</span></code></a> that
+<p><code class="docutils literal"><span class="pre">DONOTHING</span></code> is similar to making a <a class="reference internal" href="#structure:KOSDELEGATE" title="KOSDELEGATE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">KosDelegate</span></code></a> that
 consists of just <code class="docutils literal"><span class="pre">{return.}</span></code>.  If you attempt to call it from
 your own code, that&#8217;s how it will behave.  But the one extra
 feature it has is that it allows kOS to understand your intent

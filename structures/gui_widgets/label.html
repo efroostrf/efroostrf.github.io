@@ -113,8 +113,8 @@
 <li class="toctree-l3"><a class="reference internal" href="button.html">Button</a></li>
 <li class="toctree-l3"><a class="reference internal" href="button.html#example">Example</a></li>
 <li class="toctree-l3"><a class="reference internal" href="gui.html">GUI structure</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="label.html">Label</a></li>
-<li class="toctree-l3"><a class="reference internal" href="label.html#rich-text">Rich Text</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Label</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rich-text">Rich Text</a></li>
 <li class="toctree-l3"><a class="reference internal" href="popupmenu.html">PopupMenu</a></li>
 <li class="toctree-l3"><a class="reference internal" href="scrollbox.html">Scrollbox</a></li>
 <li class="toctree-l3"><a class="reference internal" href="skin.html">Skin</a></li>
@@ -185,10 +185,10 @@
            <div itemprop="articleBody">
             
   <div class="section" id="label">
-<span id="gui-label"></span><h1>Label<a class="headerlink" href="label.html#label" title="Permalink to this headline">¶</a></h1>
+<span id="gui-label"></span><h1>Label<a class="headerlink" href="#label" title="Permalink to this headline">¶</a></h1>
 <dl class="structure">
 <dt id="structure:LABEL">
-<em class="property">structure </em><code class="descname">Label</code><a class="headerlink" href="label.html#structure:LABEL" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">Label</code><a class="headerlink" href="#structure:LABEL" title="Permalink to this definition">¶</a></dt>
 <dd><p><code class="docutils literal"><span class="pre">Label</span></code> widgets are created inside Box objects via <a class="reference internal" href="box.html#method:BOX:ADDLABEL" title="BOX:ADDLABEL method"><code class="xref ks ks-meth docutils literal"><span class="pre">BOX:ADDLABEL</span></code></a>.</p>
 <p>A <code class="docutils literal"><span class="pre">Label</span></code> is a widget that just shows a bit of text or an image.  The base
 type of Label is just used for passive content that can&#8217;t be edited or
@@ -210,15 +210,15 @@ such as <a class="reference internal" href="button.html#structure:BUTTON" title=
 <tbody valign="top">
 <tr class="row-even"><td colspan="3">Every suffix of <a class="reference internal" href="widget.html#structure:WIDGET" title="WIDGET structure"><code class="xref ks ks-struct docutils literal"><span class="pre">WIDGET</span></code></a></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="label.html#attribute:LABEL:TEXT" title="LABEL:TEXT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TEXT</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:LABEL:TEXT" title="LABEL:TEXT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TEXT</span></code></a></td>
 <td><a class="reference internal" href="../misc/string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">string</span></code></a></td>
 <td>The text on the label.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="label.html#attribute:LABEL:IMAGE" title="LABEL:IMAGE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">IMAGE</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:LABEL:IMAGE" title="LABEL:IMAGE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">IMAGE</span></code></a></td>
 <td><a class="reference internal" href="../misc/string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">string</span></code></a></td>
 <td>Filename of an image for the label.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="label.html#attribute:LABEL:TOOLTIP" title="LABEL:TOOLTIP attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TOOLTIP</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:LABEL:TOOLTIP" title="LABEL:TOOLTIP attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">TOOLTIP</span></code></a></td>
 <td><a class="reference internal" href="../misc/string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">string</span></code></a></td>
 <td>A tooltip for the label.</td>
 </tr>
@@ -226,7 +226,7 @@ such as <a class="reference internal" href="button.html#structure:BUTTON" title=
 </table>
 <dl class="attribute">
 <dt id="attribute:LABEL:TEXT">
-Label:<code class="descname">TEXT</code><a class="headerlink" href="label.html#attribute:LABEL:TEXT" title="Permalink to this definition">¶</a></dt>
+Label:<code class="descname">TEXT</code><a class="headerlink" href="#attribute:LABEL:TEXT" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -239,7 +239,7 @@ Label:<code class="descname">TEXT</code><a class="headerlink" href="label.html#a
 </table>
 <p>The text which is shown the label.</p>
 <p>This text can contain some limited richtext markup,
-<a class="reference internal" href="label.html#richtext"><span>described below</span></a>, unless you have
+<a class="reference internal" href="#richtext"><span>described below</span></a>, unless you have
 suppressed it using <a class="reference internal" href="style.html#attribute:STYLE:RICHTEXT" title="STYLE:RICHTEXT attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">Style:RICHTEXT</span></code></a> as follows:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">set</span> <span class="nv">thislabel</span><span class="p">:</span><span class="nv">RICHTEXT</span> <span class="ow">to</span> <span class="nb">false</span><span class="p">.</span> <span class="c1">// prevent richtext markup in the label</span>
 </pre></div>
@@ -248,7 +248,7 @@ suppressed it using <a class="reference internal" href="style.html#attribute:STY
 
 <dl class="attribute">
 <dt id="attribute:LABEL:IMAGE">
-Label:<code class="descname">IMAGE</code><a class="headerlink" href="label.html#attribute:LABEL:IMAGE" title="Permalink to this definition">¶</a></dt>
+Label:<code class="descname">IMAGE</code><a class="headerlink" href="#attribute:LABEL:IMAGE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -276,7 +276,7 @@ will need to give its filename extension explicitly.</p>
 
 <dl class="attribute">
 <dt id="attribute:LABEL:TOOLTIP">
-Label:<code class="descname">TOOLTIP</code><a class="headerlink" href="label.html#attribute:LABEL:TOOLTIP" title="Permalink to this definition">¶</a></dt>
+Label:<code class="descname">TOOLTIP</code><a class="headerlink" href="#attribute:LABEL:TOOLTIP" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -307,7 +307,7 @@ the text field when the field is an empty string.</p>
 
 </div>
 <div class="section" id="rich-text">
-<span id="richtext"></span><h1>Rich Text<a class="headerlink" href="label.html#rich-text" title="Permalink to this headline">¶</a></h1>
+<span id="richtext"></span><h1>Rich Text<a class="headerlink" href="#rich-text" title="Permalink to this headline">¶</a></h1>
 <p>Labels (and several other widgets that take text strings) can use a limited
 markup system called Rich Text.  (This comes from Unity itself).</p>
 <p>It looks slightly like HTML, but with only a very small number of tags

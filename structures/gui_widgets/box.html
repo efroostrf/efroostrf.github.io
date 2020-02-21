@@ -109,7 +109,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../orbits.html">Orbits</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../celestial_bodies.html">Celestial Bodies</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../gui.html">GUI Widgets</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="box.html">Box</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Box</a></li>
 <li class="toctree-l3"><a class="reference internal" href="button.html">Button</a></li>
 <li class="toctree-l3"><a class="reference internal" href="button.html#example">Example</a></li>
 <li class="toctree-l3"><a class="reference internal" href="gui.html">GUI structure</a></li>
@@ -185,10 +185,10 @@
            <div itemprop="articleBody">
             
   <div class="section" id="box">
-<span id="gui-box"></span><h1>Box<a class="headerlink" href="box.html#box" title="Permalink to this headline">¶</a></h1>
+<span id="gui-box"></span><h1>Box<a class="headerlink" href="#box" title="Permalink to this headline">¶</a></h1>
 <dl class="structure">
 <dt id="structure:BOX">
-<em class="property">structure </em><code class="descname">Box</code><a class="headerlink" href="box.html#structure:BOX" title="Permalink to this definition">¶</a></dt>
+<em class="property">structure </em><code class="descname">Box</code><a class="headerlink" href="#structure:BOX" title="Permalink to this definition">¶</a></dt>
 <dd><p><code class="docutils literal"><span class="pre">Box</span></code> objects are a type of <a class="reference internal" href="widget.html#structure:WIDGET" title="WIDGET structure"><code class="xref ks ks-struct docutils literal"><span class="pre">WIDGET</span></code></a>.</p>
 <p>A <code class="docutils literal"><span class="pre">Box</span></code> is a rectangular widget that holds other widgets inside it.</p>
 <p>A GUI window is a kind of <code class="docutils literal"><span class="pre">Box</span></code>, and is created from the <a class="reference internal" href="../gui.html#function:GUI" title="GUI function"><code class="xref ks ks-func docutils literal"><span class="pre">GUI</span></code></a>
@@ -197,7 +197,7 @@ in order to have any GUI at all show up, and then you add the widgets you
 want to that <code class="docutils literal"><span class="pre">Box</span></code>.</p>
 <p>Since a <code class="docutils literal"><span class="pre">Box</span></code> is a <a class="reference internal" href="widget.html#structure:WIDGET" title="WIDGET structure"><code class="xref ks ks-struct docutils literal"><span class="pre">WIDGET</span></code></a>, and a <code class="docutils literal"><span class="pre">Box</span></code> is a rectangle that
 contains widgets, that means you can also put a <code class="docutils literal"><span class="pre">Box`</span> <span class="pre">inside</span> <span class="pre">of</span> <span class="pre">another</span>
-<span class="pre">``Box</span></code>.  You do so by using the <a class="reference internal" href="box.html#method:BOX:ADDHBOX" title="BOX:ADDHBOX method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADDHBOX</span></code></a> or <a class="reference internal" href="box.html#method:BOX:ADDVBOX" title="BOX:ADDVBOX method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADDVBOX</span></code></a> suffixes
+<span class="pre">``Box</span></code>.  You do so by using the <a class="reference internal" href="#method:BOX:ADDHBOX" title="BOX:ADDHBOX method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADDHBOX</span></code></a> or <a class="reference internal" href="#method:BOX:ADDVBOX" title="BOX:ADDVBOX method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADDVBOX</span></code></a> suffixes
 of a box.  Usually the reason to do this is to define exactly how you want
 a set of widgets laid out.</p>
 <table border="1" class="docutils">
@@ -215,83 +215,83 @@ a set of widgets laid out.</p>
 <tbody valign="top">
 <tr class="row-even"><td colspan="3">Every suffix of <a class="reference internal" href="widget.html#structure:WIDGET" title="WIDGET structure"><code class="xref ks ks-struct docutils literal"><span class="pre">WIDGET</span></code></a></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="box.html#method:BOX:ADDLABEL" title="BOX:ADDLABEL method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADDLABEL(text)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#method:BOX:ADDLABEL" title="BOX:ADDLABEL method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADDLABEL(text)</span></code></a></td>
 <td><a class="reference internal" href="label.html#structure:LABEL" title="LABEL structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Label</span></code></a></td>
 <td>Creates a label in the Box.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="box.html#method:BOX:ADDBUTTON" title="BOX:ADDBUTTON method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADDBUTTON(text)</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#method:BOX:ADDBUTTON" title="BOX:ADDBUTTON method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADDBUTTON(text)</span></code></a></td>
 <td><a class="reference internal" href="button.html#structure:BUTTON" title="BUTTON structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Button</span></code></a></td>
 <td>Creates a clickable button in the Box.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="box.html#method:BOX:ADDCHECKBOX" title="BOX:ADDCHECKBOX method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADDCHECKBOX(text,on)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#method:BOX:ADDCHECKBOX" title="BOX:ADDCHECKBOX method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADDCHECKBOX(text,on)</span></code></a></td>
 <td><a class="reference internal" href="button.html#structure:BUTTON" title="BUTTON structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Button</span></code></a></td>
 <td>Creates a toggleable button in the Box.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="box.html#method:BOX:ADDRADIOBUTTON" title="BOX:ADDRADIOBUTTON method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADDRADIOBUTTON(text,on)</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#method:BOX:ADDRADIOBUTTON" title="BOX:ADDRADIOBUTTON method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADDRADIOBUTTON(text,on)</span></code></a></td>
 <td><a class="reference internal" href="button.html#structure:BUTTON" title="BUTTON structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Button</span></code></a></td>
 <td>Creates an exclusive toggleable button in the Box.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="box.html#method:BOX:ADDTEXTFIELD" title="BOX:ADDTEXTFIELD method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADDTEXTFIELD(text)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#method:BOX:ADDTEXTFIELD" title="BOX:ADDTEXTFIELD method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADDTEXTFIELD(text)</span></code></a></td>
 <td><a class="reference internal" href="textfield.html#structure:TEXTFIELD" title="TEXTFIELD structure"><code class="xref ks ks-struct docutils literal"><span class="pre">TextField</span></code></a></td>
 <td>Creates an editable text field in the Box.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="box.html#method:BOX:ADDPOPUPMENU" title="BOX:ADDPOPUPMENU method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADDPOPUPMENU</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#method:BOX:ADDPOPUPMENU" title="BOX:ADDPOPUPMENU method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADDPOPUPMENU</span></code></a></td>
 <td><a class="reference internal" href="popupmenu.html#structure:POPUPMENU" title="POPUPMENU structure"><code class="xref ks ks-struct docutils literal"><span class="pre">PopupMenu</span></code></a></td>
 <td>Creates a popup menu.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="box.html#method:BOX:ADDHSLIDER" title="BOX:ADDHSLIDER method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADDHSLIDER(init,min,max)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#method:BOX:ADDHSLIDER" title="BOX:ADDHSLIDER method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADDHSLIDER(init,min,max)</span></code></a></td>
 <td><a class="reference internal" href="slider.html#structure:SLIDER" title="SLIDER structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Slider</span></code></a></td>
 <td>Creates a horizontal slider in the Box.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="box.html#method:BOX:ADDVSLIDER" title="BOX:ADDVSLIDER method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADDVSLIDER(init,min,max)</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#method:BOX:ADDVSLIDER" title="BOX:ADDVSLIDER method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADDVSLIDER(init,min,max)</span></code></a></td>
 <td><a class="reference internal" href="slider.html#structure:SLIDER" title="SLIDER structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Slider</span></code></a></td>
 <td>Creates a vertical slider in the Box.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="box.html#method:BOX:ADDHLAYOUT" title="BOX:ADDHLAYOUT method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADDHLAYOUT</span></code></a></td>
-<td><a class="reference internal" href="box.html#structure:BOX" title="BOX structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Box</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#method:BOX:ADDHLAYOUT" title="BOX:ADDHLAYOUT method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADDHLAYOUT</span></code></a></td>
+<td><a class="reference internal" href="#structure:BOX" title="BOX structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Box</span></code></a></td>
 <td>Creates an undecorated invisible Box in the Box, with horizontal flow.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="box.html#method:BOX:ADDVLAYOUT" title="BOX:ADDVLAYOUT method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADDVLAYOUT</span></code></a></td>
-<td><a class="reference internal" href="box.html#structure:BOX" title="BOX structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Box</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#method:BOX:ADDVLAYOUT" title="BOX:ADDVLAYOUT method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADDVLAYOUT</span></code></a></td>
+<td><a class="reference internal" href="#structure:BOX" title="BOX structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Box</span></code></a></td>
 <td>Creates an undecorated invisible Box in the Box, with vertical flow.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="box.html#method:BOX:ADDHBOX" title="BOX:ADDHBOX method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADDHBOX</span></code></a></td>
-<td><a class="reference internal" href="box.html#structure:BOX" title="BOX structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Box</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#method:BOX:ADDHBOX" title="BOX:ADDHBOX method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADDHBOX</span></code></a></td>
+<td><a class="reference internal" href="#structure:BOX" title="BOX structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Box</span></code></a></td>
 <td>Creates a visible Box in the Box, with horizontal flow.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="box.html#method:BOX:ADDVBOX" title="BOX:ADDVBOX method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADDVBOX</span></code></a></td>
-<td><a class="reference internal" href="box.html#structure:BOX" title="BOX structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Box</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#method:BOX:ADDVBOX" title="BOX:ADDVBOX method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADDVBOX</span></code></a></td>
+<td><a class="reference internal" href="#structure:BOX" title="BOX structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Box</span></code></a></td>
 <td>Creates a visible Box in the Box, with vertical flow.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="box.html#method:BOX:ADDSTACK" title="BOX:ADDSTACK method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADDSTACK</span></code></a></td>
-<td><a class="reference internal" href="box.html#structure:BOX" title="BOX structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Box</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#method:BOX:ADDSTACK" title="BOX:ADDSTACK method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADDSTACK</span></code></a></td>
+<td><a class="reference internal" href="#structure:BOX" title="BOX structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Box</span></code></a></td>
 <td>Creates a nested stacked Box in the Box.  Only one such box is shown at a time.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="box.html#method:BOX:ADDSCROLLBOX" title="BOX:ADDSCROLLBOX method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADDSCROLLBOX</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#method:BOX:ADDSCROLLBOX" title="BOX:ADDSCROLLBOX method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADDSCROLLBOX</span></code></a></td>
 <td><a class="reference internal" href="scrollbox.html#structure:SCROLLBOX" title="SCROLLBOX structure"><code class="xref ks ks-struct docutils literal"><span class="pre">ScrollBox</span></code></a></td>
 <td>Creates a nested scrollable Box of widgets.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="box.html#method:BOX:ADDSPACING" title="BOX:ADDSPACING method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADDSPACING(size)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#method:BOX:ADDSPACING" title="BOX:ADDSPACING method"><code class="xref ks ks-meth docutils literal"><span class="pre">ADDSPACING(size)</span></code></a></td>
 <td><a class="reference internal" href="spacing.html#structure:SPACING" title="SPACING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Spacing</span></code></a></td>
 <td>Creates a blank space of the given size (flexible if -1).</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="box.html#attribute:BOX:WIDGETS" title="BOX:WIDGETS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">WIDGETS</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:BOX:WIDGETS" title="BOX:WIDGETS attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">WIDGETS</span></code></a></td>
 <td><a class="reference internal" href="../collections/list.html#structure:LIST" title="LIST structure"><code class="xref ks ks-struct docutils literal"><span class="pre">List(Widget)</span></code></a></td>
 <td>Returns a LIST of the widgets that have been added to the Box.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="box.html#attribute:BOX:RADIOVALUE" title="BOX:RADIOVALUE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">RADIOVALUE</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#attribute:BOX:RADIOVALUE" title="BOX:RADIOVALUE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">RADIOVALUE</span></code></a></td>
 <td><a class="reference internal" href="../misc/string.html#structure:STRING" title="STRING structure"><code class="xref ks ks-struct docutils literal"><span class="pre">String</span></code></a></td>
 <td>The string name of the currently selected radio button.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="box.html#attribute:BOX:ONRADIOCHANGE" title="BOX:ONRADIOCHANGE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ONRADIOCHANGE</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#attribute:BOX:ONRADIOCHANGE" title="BOX:ONRADIOCHANGE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">ONRADIOCHANGE</span></code></a></td>
 <td><a class="reference internal" href="../misc/kosdelegate.html#structure:KOSDELEGATE" title="KOSDELEGATE structure"><code class="xref ks ks-struct docutils literal"><span class="pre">KOSDelegate</span></code></a> (button)</td>
 <td>A callback you want kOS to call whenever the radio button selection changes.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="box.html#method:BOX:SHOWONLY" title="BOX:SHOWONLY method"><code class="xref ks ks-meth docutils literal"><span class="pre">SHOWONLY(widget)</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#method:BOX:SHOWONLY" title="BOX:SHOWONLY method"><code class="xref ks ks-meth docutils literal"><span class="pre">SHOWONLY(widget)</span></code></a></td>
 <td>&nbsp;</td>
 <td>Hide all but the given widget.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="box.html#method:BOX:CLEAR" title="BOX:CLEAR method"><code class="xref ks ks-meth docutils literal"><span class="pre">CLEAR</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#method:BOX:CLEAR" title="BOX:CLEAR method"><code class="xref ks ks-meth docutils literal"><span class="pre">CLEAR</span></code></a></td>
 <td>&nbsp;</td>
 <td>Dispose all child widgets.</td>
 </tr>
@@ -299,7 +299,7 @@ a set of widgets laid out.</p>
 </table>
 <dl class="method">
 <dt id="method:BOX:ADDLABEL">
-Box:<code class="descname">ADDLABEL</code><span class="sig-paren">(</span>text<span class="sig-paren">)</span><a class="headerlink" href="box.html#method:BOX:ADDLABEL" title="Permalink to this definition">¶</a></dt>
+Box:<code class="descname">ADDLABEL</code><span class="sig-paren">(</span>text<span class="sig-paren">)</span><a class="headerlink" href="#method:BOX:ADDLABEL" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -320,7 +320,7 @@ display the text message given in the parameter.</p>
 
 <dl class="method">
 <dt id="method:BOX:ADDBUTTON">
-Box:<code class="descname">ADDBUTTON</code><span class="sig-paren">(</span>text<span class="sig-paren">)</span><a class="headerlink" href="box.html#method:BOX:ADDBUTTON" title="Permalink to this definition">¶</a></dt>
+Box:<code class="descname">ADDBUTTON</code><span class="sig-paren">(</span>text<span class="sig-paren">)</span><a class="headerlink" href="#method:BOX:ADDBUTTON" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -340,7 +340,7 @@ Box:<code class="descname">ADDBUTTON</code><span class="sig-paren">(</span>text<
 
 <dl class="method">
 <dt id="method:BOX:ADDCHECKBOX">
-Box:<code class="descname">ADDCHECKBOX</code><span class="sig-paren">(</span>text, on<span class="sig-paren">)</span><a class="headerlink" href="box.html#method:BOX:ADDCHECKBOX" title="Permalink to this definition">¶</a></dt>
+Box:<code class="descname">ADDCHECKBOX</code><span class="sig-paren">(</span>text, on<span class="sig-paren">)</span><a class="headerlink" href="#method:BOX:ADDCHECKBOX" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -364,7 +364,7 @@ depending on the state of the <code class="docutils literal"><span class="pre">o
 
 <dl class="method">
 <dt id="method:BOX:ADDRADIOBUTTON">
-Box:<code class="descname">ADDRADIOBUTTON</code><span class="sig-paren">(</span>text, on<span class="sig-paren">)</span><a class="headerlink" href="box.html#method:BOX:ADDRADIOBUTTON" title="Permalink to this definition">¶</a></dt>
+Box:<code class="descname">ADDRADIOBUTTON</code><span class="sig-paren">(</span>text, on<span class="sig-paren">)</span><a class="headerlink" href="#method:BOX:ADDRADIOBUTTON" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -385,20 +385,20 @@ The Button will display the text message given in the parameter.
 The Button will initially start off turned on or turned off depending
 on the state of the <code class="docutils literal"><span class="pre">on</span></code> parameter.</p>
 <p>This button will be set to be exclusive, which means all other
-buttons in this <a class="reference internal" href="box.html#structure:BOX" title="BOX structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Box</span></code></a> which are also exclusive will be
+buttons in this <a class="reference internal" href="#structure:BOX" title="BOX structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Box</span></code></a> which are also exclusive will be
 turned off when this button is turned on.  All these &#8220;radio&#8221;
 buttons within this same box are considered to be in the same
 group for the sake of this check.  In order to make two
 different radio button groups, you would need to create a box
-for each with <a class="reference internal" href="box.html#method:BOX:ADDHBOX" title="BOX:ADDHBOX method"><code class="xref ks ks-meth docutils literal"><span class="pre">BOX:ADDHBOX</span></code></a> or <a class="reference internal" href="box.html#method:BOX:ADDVBOX" title="BOX:ADDVBOX method"><code class="xref ks ks-meth docutils literal"><span class="pre">BOX:ADDVBOX</span></code></a>, and
+for each with <a class="reference internal" href="#method:BOX:ADDHBOX" title="BOX:ADDHBOX method"><code class="xref ks ks-meth docutils literal"><span class="pre">BOX:ADDHBOX</span></code></a> or <a class="reference internal" href="#method:BOX:ADDVBOX" title="BOX:ADDVBOX method"><code class="xref ks ks-meth docutils literal"><span class="pre">BOX:ADDVBOX</span></code></a>, and
 then add radio buttons to each of those boxes.</p>
 <p>To read which radio button value is the one that is currently on,
-among the whole set of buttons, you can use <a class="reference internal" href="box.html#attribute:BOX:RADIOVALUE" title="BOX:RADIOVALUE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">BOX:RADIOVALUE</span></code></a>.</p>
+among the whole set of buttons, you can use <a class="reference internal" href="#attribute:BOX:RADIOVALUE" title="BOX:RADIOVALUE attribute"><code class="xref ks ks-attr docutils literal"><span class="pre">BOX:RADIOVALUE</span></code></a>.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="method:BOX:ADDTEXTFIELD">
-Box:<code class="descname">ADDTEXTFIELD</code><span class="sig-paren">(</span>text<span class="sig-paren">)</span><a class="headerlink" href="box.html#method:BOX:ADDTEXTFIELD" title="Permalink to this definition">¶</a></dt>
+Box:<code class="descname">ADDTEXTFIELD</code><span class="sig-paren">(</span>text<span class="sig-paren">)</span><a class="headerlink" href="#method:BOX:ADDTEXTFIELD" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -421,7 +421,7 @@ The field will be a one-line string input.</p>
 
 <dl class="method">
 <dt id="method:BOX:ADDPOPUPMENU">
-Box:<code class="descname">ADDPOPUPMENU</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="box.html#method:BOX:ADDPOPUPMENU" title="Permalink to this definition">¶</a></dt>
+Box:<code class="descname">ADDPOPUPMENU</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:BOX:ADDPOPUPMENU" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -453,7 +453,7 @@ having called <code class="docutils literal"><span class="pre">ADDPOPUPMENU</spa
 
 <dl class="method">
 <dt id="method:BOX:ADDHSLIDER">
-Box:<code class="descname">ADDHSLIDER</code><span class="sig-paren">(</span>init, min, max<span class="sig-paren">)</span><a class="headerlink" href="box.html#method:BOX:ADDHSLIDER" title="Permalink to this definition">¶</a></dt>
+Box:<code class="descname">ADDHSLIDER</code><span class="sig-paren">(</span>init, min, max<span class="sig-paren">)</span><a class="headerlink" href="#method:BOX:ADDHSLIDER" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -481,7 +481,7 @@ at the right.</p>
 
 <dl class="method">
 <dt id="method:BOX:ADDVSLIDER">
-Box:<code class="descname">ADDVSLIDER</code><span class="sig-paren">(</span>init, min, max<span class="sig-paren">)</span><a class="headerlink" href="box.html#method:BOX:ADDVSLIDER" title="Permalink to this definition">¶</a></dt>
+Box:<code class="descname">ADDVSLIDER</code><span class="sig-paren">(</span>init, min, max<span class="sig-paren">)</span><a class="headerlink" href="#method:BOX:ADDVSLIDER" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -509,17 +509,17 @@ at the top.</p>
 
 <dl class="method">
 <dt id="method:BOX:ADDHLAYOUT">
-Box:<code class="descname">ADDHLAYOUT</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="box.html#method:BOX:ADDHLAYOUT" title="Permalink to this definition">¶</a></dt>
+Box:<code class="descname">ADDHLAYOUT</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:BOX:ADDHLAYOUT" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="box.html#structure:BOX" title="BOX structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Box</span></code></a></td>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="#structure:BOX" title="BOX structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Box</span></code></a></td>
 </tr>
 </tbody>
 </table>
-<p>Creates a nested transparent horizontally-arranged <a class="reference internal" href="box.html#structure:BOX" title="BOX structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Box</span></code></a> in
-this <a class="reference internal" href="box.html#structure:BOX" title="BOX structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Box</span></code></a>.  You can&#8217;t see any visual evidence of this
+<p>Creates a nested transparent horizontally-arranged <a class="reference internal" href="#structure:BOX" title="BOX structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Box</span></code></a> in
+this <a class="reference internal" href="#structure:BOX" title="BOX structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Box</span></code></a>.  You can&#8217;t see any visual evidence of this
 box other than how it forces the widgets inside it to get arranged.
 (The box has no borders showing, no background color, etc).</p>
 <p>All the widgets added to such a box will arrange themselves
@@ -536,22 +536,22 @@ as a single rectangular chunk that gets arranged together as a unit.</li>
 
 <dl class="method">
 <dt id="method:BOX:ADDVLAYOUT">
-Box:<code class="descname">ADDVLAYOUT</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="box.html#method:BOX:ADDVLAYOUT" title="Permalink to this definition">¶</a></dt>
+Box:<code class="descname">ADDVLAYOUT</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:BOX:ADDVLAYOUT" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="box.html#structure:BOX" title="BOX structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Box</span></code></a></td>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="#structure:BOX" title="BOX structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Box</span></code></a></td>
 </tr>
 </tbody>
 </table>
-<p>Creates a nested transparent vertically-arranged <a class="reference internal" href="box.html#structure:BOX" title="BOX structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Box</span></code></a> in
-this <a class="reference internal" href="box.html#structure:BOX" title="BOX structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Box</span></code></a>.  You can&#8217;t see any visual evidence of this
+<p>Creates a nested transparent vertically-arranged <a class="reference internal" href="#structure:BOX" title="BOX structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Box</span></code></a> in
+this <a class="reference internal" href="#structure:BOX" title="BOX structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Box</span></code></a>.  You can&#8217;t see any visual evidence of this
 box other than how it forces the widgets inside it to get arranged.
 (The box has no borders showing, no background color, etc).</p>
 <p>All the widgets added to such a box will arrange themselves
 vertically (the more widgets you add, the taller the box gets).</p>
-<p>(The <a class="reference internal" href="box.html#structure:BOX" title="BOX structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Box</span></code></a> returned by calling the built-in function
+<p>(The <a class="reference internal" href="#structure:BOX" title="BOX structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Box</span></code></a> returned by calling the built-in function
 <a class="reference internal" href="../gui.html#function:GUI" title="GUI function"><code class="xref ks ks-func docutils literal"><span class="pre">Gui</span></code></a> is a &#8220;VLayout&#8221; box which arranges things vertically
 like this.)</p>
 <p>There are three reasons you might want to nest one Box inside another Box:</p>
@@ -566,44 +566,44 @@ as a single rectangular chunk that gets arranged together as a unit.</li>
 
 <dl class="method">
 <dt id="method:BOX:ADDHBOX">
-Box:<code class="descname">ADDHBOX</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="box.html#method:BOX:ADDHBOX" title="Permalink to this definition">¶</a></dt>
+Box:<code class="descname">ADDHBOX</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:BOX:ADDHBOX" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="box.html#structure:BOX" title="BOX structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Box</span></code></a></td>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="#structure:BOX" title="BOX structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Box</span></code></a></td>
 </tr>
 </tbody>
 </table>
-<p>This is identical to <a class="reference internal" href="box.html#method:BOX:ADDHLAYOUT" title="BOX:ADDHLAYOUT method"><code class="xref ks ks-meth docutils literal"><span class="pre">BOX:ADDHLAYOUT</span></code></a>, other than the
+<p>This is identical to <a class="reference internal" href="#method:BOX:ADDHLAYOUT" title="BOX:ADDHLAYOUT method"><code class="xref ks ks-meth docutils literal"><span class="pre">BOX:ADDHLAYOUT</span></code></a>, other than the
 fact that it uses a different graphical style which lets you
 see the box.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="method:BOX:ADDVBOX">
-Box:<code class="descname">ADDVBOX</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="box.html#method:BOX:ADDVBOX" title="Permalink to this definition">¶</a></dt>
+Box:<code class="descname">ADDVBOX</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:BOX:ADDVBOX" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="box.html#structure:BOX" title="BOX structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Box</span></code></a></td>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="#structure:BOX" title="BOX structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Box</span></code></a></td>
 </tr>
 </tbody>
 </table>
-<p>This is identical to <a class="reference internal" href="box.html#method:BOX:ADDVLAYOUT" title="BOX:ADDVLAYOUT method"><code class="xref ks ks-meth docutils literal"><span class="pre">BOX:ADDVLAYOUT</span></code></a>, other than the
+<p>This is identical to <a class="reference internal" href="#method:BOX:ADDVLAYOUT" title="BOX:ADDVLAYOUT method"><code class="xref ks ks-meth docutils literal"><span class="pre">BOX:ADDVLAYOUT</span></code></a>, other than the
 fact that it uses a different graphical style which lets you
 see the box.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="method:BOX:ADDSTACK">
-Box:<code class="descname">ADDSTACK</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="box.html#method:BOX:ADDSTACK" title="Permalink to this definition">¶</a></dt>
+Box:<code class="descname">ADDSTACK</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:BOX:ADDSTACK" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="box.html#structure:BOX" title="BOX structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Box</span></code></a></td>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="#structure:BOX" title="BOX structure"><code class="xref ks ks-struct docutils literal"><span class="pre">Box</span></code></a></td>
 </tr>
 </tbody>
 </table>
@@ -611,7 +611,7 @@ Box:<code class="descname">ADDSTACK</code><span class="sig-paren">(</span><span 
 can be swapped for other similarly created boxes that
 occupy the same space on the screen.)</p>
 <p>When you add several such boxes with multiple calls to
-<a class="reference internal" href="box.html#method:BOX:ADDSTACK" title="BOX:ADDSTACK method"><code class="xref ks ks-meth docutils literal"><span class="pre">BOX:ADDSTACK</span></code></a>, then instead of these boxes
+<a class="reference internal" href="#method:BOX:ADDSTACK" title="BOX:ADDSTACK method"><code class="xref ks ks-meth docutils literal"><span class="pre">BOX:ADDSTACK</span></code></a>, then instead of these boxes
 being laid you horizontally or vertically next to each
 other as widgets would normally be, they all occupy the
 same space of the screen.  However, only one such box
@@ -625,13 +625,13 @@ buttons that change which version of the contents get shown.)</p>
 choose which one is shown, by which one is enabled.  If two
 of them are enabled at the same time, then only the first
 enabled one it finds gets shown.</p>
-<p>See <a class="reference internal" href="box.html#method:BOX:SHOWONLY" title="BOX:SHOWONLY method"><code class="xref ks ks-meth docutils literal"><span class="pre">SHOWONLY</span></code></a> below for more information on how to
+<p>See <a class="reference internal" href="#method:BOX:SHOWONLY" title="BOX:SHOWONLY method"><code class="xref ks ks-meth docutils literal"><span class="pre">SHOWONLY</span></code></a> below for more information on how to
 manipulate these kinds of sub-boxes.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="method:BOX:ADDSCROLLBOX">
-Box:<code class="descname">ADDSCROLLBOX</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="box.html#method:BOX:ADDSCROLLBOX" title="Permalink to this definition">¶</a></dt>
+Box:<code class="descname">ADDSCROLLBOX</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:BOX:ADDSCROLLBOX" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -655,7 +655,7 @@ for <a class="reference internal" href="scrollbox.html#structure:SCROLLBOX" titl
 
 <dl class="method">
 <dt id="method:BOX:ADDSPACING">
-Box:<code class="descname">ADDSPACING</code><span class="sig-paren">(</span>size<span class="sig-paren">)</span><a class="headerlink" href="box.html#method:BOX:ADDSPACING" title="Permalink to this definition">¶</a></dt>
+Box:<code class="descname">ADDSPACING</code><span class="sig-paren">(</span>size<span class="sig-paren">)</span><a class="headerlink" href="#method:BOX:ADDSPACING" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -676,8 +676,8 @@ or pushed further down.</p>
 <p>Whether this is horizontal or vertical space depends on whether it is
 inside a horizontal arrangement box or a vertical arrangement box.
 (<code class="docutils literal"><span class="pre">myBox:ADDSPACING(20).</span></code> is 20 pixels of <em>width</em> if <code class="docutils literal"><span class="pre">myBox</span></code>
-was a <a class="reference internal" href="box.html#method:BOX:ADDHLAYOUT" title="BOX:ADDHLAYOUT method"><code class="xref ks ks-meth docutils literal"><span class="pre">BOX:ADDHLAYOUT</span></code></a>, but it&#8217;s 20 pixels of <em>height</em> if it
-was a <a class="reference internal" href="box.html#method:BOX:ADDVLAYOUT" title="BOX:ADDVLAYOUT method"><code class="xref ks ks-meth docutils literal"><span class="pre">BOX:ADDVLAYOUT</span></code></a>.)</p>
+was a <a class="reference internal" href="#method:BOX:ADDHLAYOUT" title="BOX:ADDHLAYOUT method"><code class="xref ks ks-meth docutils literal"><span class="pre">BOX:ADDHLAYOUT</span></code></a>, but it&#8217;s 20 pixels of <em>height</em> if it
+was a <a class="reference internal" href="#method:BOX:ADDVLAYOUT" title="BOX:ADDVLAYOUT method"><code class="xref ks ks-meth docutils literal"><span class="pre">BOX:ADDVLAYOUT</span></code></a>.)</p>
 <p>Example:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">set</span> <span class="nv">mygui</span> <span class="ow">to</span> <span class="nv">GUI</span><span class="p">(</span><span class="mf">400</span><span class="p">).</span>
 <span class="k">set</span> <span class="nv">mytitle</span> <span class="ow">to</span> <span class="nv">mygui</span><span class="p">:</span><span class="nv">addlabel</span><span class="p">(</span><span class="s">&quot;This is my Panel&quot;</span><span class="p">).</span>
@@ -697,7 +697,7 @@ was a <a class="reference internal" href="box.html#method:BOX:ADDVLAYOUT" title=
 
 <dl class="attribute">
 <dt id="attribute:BOX:WIDGETS">
-Box:<code class="descname">WIDGETS</code><a class="headerlink" href="box.html#attribute:BOX:WIDGETS" title="Permalink to this definition">¶</a></dt>
+Box:<code class="descname">WIDGETS</code><a class="headerlink" href="#attribute:BOX:WIDGETS" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -721,7 +721,7 @@ list the box itself uses internally.)</p>
 
 <dl class="attribute">
 <dt id="attribute:BOX:RADIOVALUE">
-Box:<code class="descname">RADIOVALUE</code><a class="headerlink" href="box.html#attribute:BOX:RADIOVALUE" title="Permalink to this definition">¶</a></dt>
+Box:<code class="descname">RADIOVALUE</code><a class="headerlink" href="#attribute:BOX:RADIOVALUE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -733,7 +733,7 @@ Box:<code class="descname">RADIOVALUE</code><a class="headerlink" href="box.html
 </tbody>
 </table>
 <p>The text label of whichever radiobutton is turned on among all
-the radio buttons you&#8217;ve added with <a class="reference internal" href="box.html#method:BOX:ADDRADIOBUTTON" title="BOX:ADDRADIOBUTTON method"><code class="xref ks ks-meth docutils literal"><span class="pre">BOX:ADDRADIOBUTTON(text,</span> <span class="pre">on)</span></code></a>
+the radio buttons you&#8217;ve added with <a class="reference internal" href="#method:BOX:ADDRADIOBUTTON" title="BOX:ADDRADIOBUTTON method"><code class="xref ks ks-meth docutils literal"><span class="pre">BOX:ADDRADIOBUTTON(text,</span> <span class="pre">on)</span></code></a>
 to this box.</p>
 <p>Because only one of the radio buttons within this box can be on
 at a time, this can be a faster way to see which has been
@@ -746,7 +746,7 @@ will return a value of <code class="docutils literal"><span class="pre">&quot;&q
 
 <dl class="attribute">
 <dt id="attribute:BOX:ONRADIOCHANGE">
-Box:<code class="descname">ONRADIOCHANGE</code><a class="headerlink" href="box.html#attribute:BOX:ONRADIOCHANGE" title="Permalink to this definition">¶</a></dt>
+Box:<code class="descname">ONRADIOCHANGE</code><a class="headerlink" href="#attribute:BOX:ONRADIOCHANGE" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -761,7 +761,7 @@ Box:<code class="descname">ONRADIOCHANGE</code><a class="headerlink" href="box.h
 <p>A callback hook you want kOS to call whenever the radio button
 selection within this box changes.</p>
 <p>Because a radio button set is defined at the level of a <code class="docutils literal"><span class="pre">Box</span></code> (see
-<a class="reference internal" href="box.html#method:BOX:ADDRADIOBUTTON" title="BOX:ADDRADIOBUTTON method"><code class="xref ks ks-meth docutils literal"><span class="pre">BOX:ADDRADIOBUTTON(text,</span> <span class="pre">on)</span></code></a>), the callback hook you would
+<a class="reference internal" href="#method:BOX:ADDRADIOBUTTON" title="BOX:ADDRADIOBUTTON method"><code class="xref ks ks-meth docutils literal"><span class="pre">BOX:ADDRADIOBUTTON(text,</span> <span class="pre">on)</span></code></a>), the callback hook you would
 like to be called whenever that radio button set changes which button
 is the selected one is also here on the <code class="docutils literal"><span class="pre">Box</span></code> widget.</p>
 <p>The KOSDelegate must be a function (or anonymous function) that
@@ -784,7 +784,7 @@ behaves as follows:</p>
 
 <dl class="method">
 <dt id="method:BOX:SHOWONLY">
-Box:<code class="descname">SHOWONLY</code><span class="sig-paren">(</span>widget<span class="sig-paren">)</span><a class="headerlink" href="box.html#method:BOX:SHOWONLY" title="Permalink to this definition">¶</a></dt>
+Box:<code class="descname">SHOWONLY</code><span class="sig-paren">(</span>widget<span class="sig-paren">)</span><a class="headerlink" href="#method:BOX:SHOWONLY" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -804,13 +804,13 @@ this suffix is used to choose just one of them to be the
 one you want being shown at the moment.  All other widgets
 within this box will be immediately hidden.</p>
 <p>This is useful when you have several stacked boxes made with
-calls to <a class="reference internal" href="box.html#method:BOX:ADDSTACK" title="BOX:ADDSTACK method"><code class="xref ks ks-meth docutils literal"><span class="pre">BOX:ADDSTACK</span></code></a>, and want to choose which one
+calls to <a class="reference internal" href="#method:BOX:ADDSTACK" title="BOX:ADDSTACK method"><code class="xref ks ks-meth docutils literal"><span class="pre">BOX:ADDSTACK</span></code></a>, and want to choose which one
 of them you are making visible at the moment.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="method:BOX:CLEAR">
-Box:<code class="descname">CLEAR</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="box.html#method:BOX:CLEAR" title="Permalink to this definition">¶</a></dt>
+Box:<code class="descname">CLEAR</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#method:BOX:CLEAR" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -819,7 +819,7 @@ Box:<code class="descname">CLEAR</code><span class="sig-paren">(</span><span cla
 </tr>
 </tbody>
 </table>
-<p>Calling <a class="reference internal" href="box.html#method:BOX:CLEAR" title="BOX:CLEAR method"><code class="xref ks ks-meth docutils literal"><span class="pre">BOX:CLEAR()</span></code></a> will get rid of all widgets you have
+<p>Calling <a class="reference internal" href="#method:BOX:CLEAR" title="BOX:CLEAR method"><code class="xref ks ks-meth docutils literal"><span class="pre">BOX:CLEAR()</span></code></a> will get rid of all widgets you have
 added to this box by use of any of the above &#8220;ADD.....&#8221; suffixes.
 It will also call <a class="reference internal" href="widget.html#method:WIDGET:DISPOSE" title="WIDGET:DISPOSE method"><code class="xref ks ks-meth docutils literal"><span class="pre">Widget:DISPOSE()</span></code></a> on all of them.</p>
 </dd></dl>
