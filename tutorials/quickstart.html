@@ -179,14 +179,14 @@
 <li><a class="reference internal" href="quickstart.html#step-8-i-don-t-like-the-idea-that-the-program-is-stored-only-on-this-vessel-can-t-i-save-it-somewhere-better-more-permanent" id="id9">Шаг 8: Мне не нравится что данная программа остаётся только на данном судне. Может сохранить ещё где-то можно? На постоянной основе?</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="quickstart.html#second-example-doing-something-real" id="id10">Second Example: Doing something real</a><ul>
-<li><a class="reference internal" href="quickstart.html#step-1-make-a-vessel" id="id11">Step 1: Make a vessel</a></li>
-<li><a class="reference internal" href="quickstart.html#step-2-make-the-start-of-the-script" id="id12">Step 2: Make the start of the script</a></li>
-<li><a class="reference internal" href="quickstart.html#step-3-make-the-script-actually-do-something" id="id13">Step 3: Make the script actually do something</a></li>
-<li><a class="reference internal" href="quickstart.html#step-4-make-the-script-actually-control-steering" id="id14">Step 4: Make the script actually control steering</a></li>
-<li><a class="reference internal" href="quickstart.html#step-5-add-staging-logic" id="id15">Step 5: Add staging logic</a></li>
-<li><a class="reference internal" href="quickstart.html#step-6-now-to-make-it-turn" id="id16">Step 6: Now to make it turn</a></li>
-<li><a class="reference internal" href="quickstart.html#step-7-putting-it-all-together" id="id17">Step 7: Putting it all together</a></li>
+<li><a class="reference internal" href="quickstart.html#second-example-doing-something-real" id="id10">Второй пример: Сделать что-то реальное</a><ul>
+<li><a class="reference internal" href="quickstart.html#step-1-make-a-vessel" id="id11">Шаг 1: Создай судно</a></li>
+<li><a class="reference internal" href="quickstart.html#step-2-make-the-start-of-the-script" id="id12">Шаг 2: Запустите скрипт</a></li>
+<li><a class="reference internal" href="quickstart.html#step-3-make-the-script-actually-do-something" id="id13">Шаг 3: Заставляем скрипт делать что-то настоящее</a></li>
+<li><a class="reference internal" href="quickstart.html#step-4-make-the-script-actually-control-steering" id="id14">Шаг 4: Делаем так, чтобы скрипт управлял ракетой</a></li>
+<li><a class="reference internal" href="quickstart.html#step-5-add-staging-logic" id="id15">Шаг 5: Промежуточная логика</a></li>
+<li><a class="reference internal" href="quickstart.html#step-6-now-to-make-it-turn" id="id16">Шаг 6: Как его включить?</a></li>
+<li><a class="reference internal" href="quickstart.html#step-7-putting-it-all-together" id="id17">Шаг 7: Собираем всё вместе</a></li>
 </ul>
 </li>
 </ul>
@@ -305,99 +305,99 @@
 </div>
 </div>
 <div class="section" id="second-example-doing-something-real">
-<h2><a class="toc-backref" href="quickstart.html#id10">Second Example: Doing something real</a><a class="headerlink" href="quickstart.html#second-example-doing-something-real" title="Permalink to this headline">¶</a></h2>
-<p>Okay that&#8217;s all basic setup stuff but you&#8217;re probably clamoring for a real example that actually does something nifty.</p>
-<p>This example will show the crudest, most basic use of <strong>kOS</strong> just to get started. In this example we&#8217;ll make a program that will launch a vessel using progressively more and more complex checks. <strong>kOS</strong> can be used at any stage of a vessel&#8217;s flight - launching, circularizing, docking, landing,... and in fact launching is one of the simpler piloting tasks that you can do without much need of automation. Where <strong>kOS</strong> really shines is for writing scripts to do touchy sensitive tasks like landing or docking or hovering. These are the areas that can benefit from the faster reaction speed that a computer script can handle.</p>
-<p>But in order to give you an example that you can start with from scratch, that&#8217;s easy to reload and retry from an initial point, we&#8217;ll use an example of launching.</p>
+<h2><a class="toc-backref" href="quickstart.html#id10">Второй пример: Сделать что-то реальное</a><a class="headerlink" href="quickstart.html#second-example-doing-something-real" title="Permalink to this headline">¶</a></h2>
+<p>Хорошо, это был довольно простой пример, но вероятно вы задумались о том как сделать реальный скрипт который будет что-то делать, и чтобы это выглядело довольно восхитительно.</p>
+<p>Пример ниже будет грубым, но он покажет вам самое лёгкое использование <strong>kOS</strong>. Пример покажет вам, как создать программу, которая будет способна запустить ракету и управлять ею до самого выхода в космос. <strong>kOS</strong> можно использовать на любом этапе полёта, например в момент запуска, полёта, стыковки, посадки и так далее. И если вы думаете что запуск это сложно, вы ошибаетесь, это самая простоя вещь для kOS.</p>
+<p>Для понимания начнём с простого, а именно, создания скрипта который запустит ракету за вас.</p>
 <div class="section" id="step-1-make-a-vessel">
-<h3><a class="toc-backref" href="quickstart.html#id11">Step 1: Make a vessel</a><a class="headerlink" href="quickstart.html#step-1-make-a-vessel" title="Permalink to this headline">¶</a></h3>
-<p>This tutorial is designed to work with a very specific rocket design.
-You need to make the vessel you see here:</p>
+<h3><a class="toc-backref" href="quickstart.html#id11">Шаг 1: Создай судно</a><a class="headerlink" href="quickstart.html#step-1-make-a-vessel" title="Permalink to this headline">¶</a></h3>
+<p>Чтобы скрипты далее работали правильно, создай ракету которую видишь на скриншоте ниже.
+</p>
 <div class="figure">
 <a class="reference internal image-reference" href="../_images/example_2_0.png"><img alt="../_images/example_2_0.png" src="../_images/example_2_0.png" style="width: 80%;" /></a>
 </div>
-<p>If you prefer, you can instead download the
-<a class="reference external" href="../_static/tutorials/quickstart/MyFirstRocket.craft">.craft file here</a></p>
+<p>Если вы затрудняетесь построить ракету, скачайте
+<a class="reference external" href="../_static/tutorials/quickstart/MyFirstRocket.craft">.craft файл тут</a></p>
 </div>
 <div class="section" id="step-2-make-the-start-of-the-script">
-<h3><a class="toc-backref" href="quickstart.html#id12">Step 2: Make the start of the script</a><a class="headerlink" href="quickstart.html#step-2-make-the-start-of-the-script" title="Permalink to this headline">¶</a></h3>
-<p>Okay, so type the lines below in an external <em>text editor of your choice</em> (i.e. Notepad on Windows, or TextEdit on Mac, or whatever you fancy):</p>
+<h3><a class="toc-backref" href="quickstart.html#id12">Шаг 2: Запустите скрипт</a><a class="headerlink" href="quickstart.html#step-2-make-the-start-of-the-script" title="Permalink to this headline">¶</a></h3>
+<p>Итак, введите строки ниже во внешнем текстовом редакторе по вашему выбору (например, Блокнот в Windows, или TextEdit на Mac, или как вам нравится):</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="c1">//hellolaunch</span>
 
-<span class="c1">//First, we&#39;ll clear the terminal screen to make it look nice</span>
+<span class="c1">//Сначала очистим экран терминала, чтобы он выглядел красиво</span>
 <span class="k">CLEARSCREEN</span><span class="p">.</span>
 
-<span class="c1">//This is our countdown loop, which cycles from 10 to 0</span>
+<span class="c1">//Это наш цикл обратного отчёта, который начинается с 10 и заканчивается 0</span>
 <span class="k">PRINT</span> <span class="s">&quot;Counting down:&quot;</span><span class="p">.</span>
 <span class="k">FROM</span> <span class="p">{</span><span class="k">local</span> <span class="nv">countdown</span> <span class="ow">is</span> <span class="mf">10</span><span class="p">.}</span> <span class="k">UNTIL</span> <span class="nv">countdown</span> <span class="o">=</span> <span class="mf">0</span> <span class="k">STEP</span> <span class="p">{</span><span class="k">SET</span> <span class="nv">countdown</span> <span class="ow">to</span> <span class="nv">countdown</span> <span class="o">-</span> <span class="mf">1</span><span class="p">.}</span> <span class="k">DO</span> <span class="p">{</span>
     <span class="k">PRINT</span> <span class="s">&quot;...&quot;</span> <span class="o">+</span> <span class="nv">countdown</span><span class="p">.</span>
-    <span class="k">WAIT</span> <span class="mf">1</span><span class="p">.</span> <span class="c1">// pauses the script here for 1 second.</span>
+    <span class="k">WAIT</span> <span class="mf">1</span><span class="p">.</span> <span class="c1">// это позволяет создать паузу в скрипте на 1 секунду.</span>
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>See those things with the two slashes (&#8220;//&#8221;)? Those are comments in the Kerboscript language and they&#8217;re just ways to write things in the program that don&#8217;t do anything - they&#8217;re there for humans like you to read so you understand what&#8217;s going on. In these examples you never actually have to type in the things you see after the slashes. They&#8217;re there for your benefit when reading this document but you can leave them out if you wish.</p>
-<p>Save the file in your <code class="docutils literal"><span class="pre">Ships/Script</span></code> folder of your <strong>KSP</strong> installation under the filename &#8220;hellolaunch.ks&#8221;. DO NOT save it anywhere under <code class="docutils literal"><span class="pre">GameData/kOS/</span></code>. Do NOT. According to the <strong>KSP</strong> standard, normally <strong>KSP</strong> mods should put their files in <code class="docutils literal"><span class="pre">GameData/[mod</span> <span class="pre">name]</span></code>, but <strong>kOS</strong> puts the archive outside the <code class="docutils literal"><span class="pre">GameData</span></code> folder because it represents content owned by you, the player, not content owned by the <strong>kOS</strong> mod.</p>
-<p>By saving the file in <code class="docutils literal"><span class="pre">Ships/Script</span></code>, you have actually put it in your archive volume of <strong>kOS</strong>. <strong>kOS</strong> will see it there immediately without delay. You do not need to restart the game. If you do:</p>
+<p>Заметили странную вещь в виде двух слешов (&#8220;//&#8221;)? Это комментарии на языке Kerboscript. Они созданы помочь именно вам, или же таким людям как и вы, чтобы было понимание того что происходит. Когда вы будете создавать скрипт, не стоит писать всё после 2 слешов. Можете делать это в своих скриптах, а в данном примере это займёт лишь ваше время.</p>
+<p>Сохраните свой файл в папку <code class="docutils literal"><span class="pre">Ships/Script</span></code> где располагается <strong>KSP</strong>, и назовите файл &#8220;hellolaunch.ks&#8221;. НЕ СОХРАНЯЙТЕ его в папку <code class="docutils literal"><span class="pre">GameData/kOS/</span></code>. НЕ СОХРАНЯЙТЕ. Обычно, моды <strong>KSP</strong> должны использовать папку <code class="docutils literal"><span class="pre">GameData/[mod</span> <span class="pre">name]</span></code>, однако <strong>kOS</strong> помещает файлы скриптов вне <code class="docutils literal"><span class="pre">GameData</span></code>, поскольку он создаёт контент который относится к игроку, а не к <strong>kOS</strong>.</p>
+<p>Сохраняя файл в <code class="docutils literal"><span class="pre">Ships/Script</span></code>, вы фактически помещаете свой файл в хранилище <strong>kOS</strong>. <strong>kOS</strong> увидит изменения в файле, вам не нужно перезагружать игру. Вам стоит сделать следующее:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">SWITCH</span> <span class="ow">TO</span> <span class="mf">0</span><span class="p">.</span>
 <span class="k">LIST</span> <span class="nv">FILES</span><span class="p">.</span>
 </pre></div>
 </div>
-<p>after saving the file from your external text editor program, you will see a listing of your file &#8220;hellolaunch&#8221; right away. Okay, now copy it to your local drive and give it a try running it from there:</p>
+<p>плсде сохранения файла, вы можете увидеть список файлов и собственно &#8220;hellolaunch&#8221;. Отлично, теперь осталось скопировать файл на локальное хранилище (НЕ ОБЯЗАТЕЛЬНО) и запустить его:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="k">SWITCH</span> <span class="ow">TO</span> <span class="mf">1</span><span class="p">.</span>
-<span class="nv">COPYPATH</span><span class="p">(</span><span class="s">&quot;0:/HELLOLAUNCH&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">).</span> <span class="c1">// copies from 0 (archive) to current default location (local drive (1)).</span>
+<span class="nv">COPYPATH</span><span class="p">(</span><span class="s">&quot;0:/HELLOLAUNCH&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">).</span> <span class="c1">// это делать не обязательно, ведь программа может запуститься и так.</span>
 <span class="k">RUN</span> <span class="nv">HELLOLAUNCH</span><span class="p">.</span>
 </pre></div>
 </div>
 <div class="figure">
 <a class="reference internal image-reference" href="../_images/example_2_1.png"><img alt="../_images/example_2_1.png" src="../_images/example_2_1.png" style="width: 80%;" /></a>
 </div>
-<p>Okay so the program doesn&#8217;t actually DO anything yet other than just countdown from 10 to 0. A bit of a disappointment, but we haven&#8217;t written the rest of the program yet.</p>
-<p>You&#8217;ll note that what you&#8217;ve done is switch to the local volume (1) and then copy the program from the archive (0) to the local volume (1) and then run it from the local volume. Technically you didn&#8217;t need to do this. You could have just run it directly from the archive. For those looking at the <strong>KSP</strong> game as a bit of a role-play experience, it makes sense to never run programs directly from the archive, and instead live with the limitation that software should be copied to the craft for it to be able to run it.</p>
+<p>Итак, программа на самом деле ничего не делает, кроме обратного отсчета с 10 до 0. Немного разочаровывает, но остальную часть программы мы еще не написали..</p>
+<p>Вы заметите, что вы переключились на локальное хранилище (1), а затем скопировали программу из архива (0) на локальное хранилище (1) и только потом запустили скрипт. Технически вам не нужно было этого делать. Вы могли бы просто запустить его прямо из архива. Для тех, кто считает игру KSP чем-то вроде ролевой игры, имеет смысл никогда не запускать программы непосредственно из архива, а вместо этого соблюдать ограничение, заключающееся в том, что программное обеспечение должно быть скопировано в приложение для его запуска..</p>
 </div>
 <div class="section" id="step-3-make-the-script-actually-do-something">
-<h3><a class="toc-backref" href="quickstart.html#id13">Step 3: Make the script actually do something</a><a class="headerlink" href="quickstart.html#step-3-make-the-script-actually-do-something" title="Permalink to this headline">¶</a></h3>
-<p>Okay now go back into your <em>text editor of choice</em> and append a few more lines to the hellolaunch.ks file so it now looks like this:</p>
+<h3><a class="toc-backref" href="quickstart.html#id13">Шаг 3: Заставляем скрипт делать что-то настоящее</a><a class="headerlink" href="quickstart.html#step-3-make-the-script-actually-do-something" title="Permalink to this headline">¶</a></h3>
+<p>Хорошо, теперь вернитесь в выбранный вами текстовый редактор и добавьте еще несколько строк в файл hellolaunch.ks, чтобы он теперь выглядел так:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="c1">//hellolaunch</span>
 
-<span class="c1">//First, we&#39;ll clear the terminal screen to make it look nice</span>
+<span class="c1">//Сначала очистим экран терминала, чтобы он выглядел красиво</span>
 <span class="k">CLEARSCREEN</span><span class="p">.</span>
 
-<span class="c1">//Next, we&#39;ll lock our throttle to 100%.</span>
-<span class="k">LOCK</span> <span class="nv">THROTTLE</span> <span class="ow">TO</span> <span class="mf">1</span><span class="p">.</span><span class="mf">0</span><span class="p">.</span>   <span class="c1">// 1.0 is the max, 0.0 is idle.</span>
+<span class="c1">//После этого установим тягу двигателя на 100%.</span>
+<span class="k">LOCK</span> <span class="nv">THROTTLE</span> <span class="ow">TO</span> <span class="mf">1</span><span class="p">.</span><span class="mf">0</span><span class="p">.</span>   <span class="c1">// 1.0 это максимум, 0.0 это минимум.</span>
 
-<span class="c1">//This is our countdown loop, which cycles from 10 to 0</span>
+<span class="c1">//Это наш цикл обратного отчёта, который начинается с 10 и заканчивается 0</span>
 <span class="k">PRINT</span> <span class="s">&quot;Counting down:&quot;</span><span class="p">.</span>
 <span class="k">FROM</span> <span class="p">{</span><span class="k">local</span> <span class="nv">countdown</span> <span class="ow">is</span> <span class="mf">10</span><span class="p">.}</span> <span class="k">UNTIL</span> <span class="nv">countdown</span> <span class="o">=</span> <span class="mf">0</span> <span class="k">STEP</span> <span class="p">{</span><span class="k">SET</span> <span class="nv">countdown</span> <span class="ow">to</span> <span class="nv">countdown</span> <span class="o">-</span> <span class="mf">1</span><span class="p">.}</span> <span class="k">DO</span> <span class="p">{</span>
     <span class="k">PRINT</span> <span class="s">&quot;...&quot;</span> <span class="o">+</span> <span class="nv">countdown</span><span class="p">.</span>
-    <span class="k">WAIT</span> <span class="mf">1</span><span class="p">.</span> <span class="c1">// pauses the script here for 1 second.</span>
+    <span class="k">WAIT</span> <span class="mf">1</span><span class="p">.</span> <span class="c1">// это позволяет создать паузу в скрипте на 1 секунду..</span>
 <span class="p">}</span>
 
 <span class="k">UNTIL</span> <span class="nv">SHIP</span><span class="p">:</span><span class="nv">MAXTHRUST</span> <span class="o">&gt;</span> <span class="mf">0</span> <span class="p">{</span>
-    <span class="k">WAIT</span> <span class="mf">0</span><span class="p">.</span><span class="mf">5</span><span class="p">.</span> <span class="c1">// pause half a second between stage attempts.</span>
+    <span class="k">WAIT</span> <span class="mf">0</span><span class="p">.</span><span class="mf">5</span><span class="p">.</span> <span class="c1">// это пауза между каждой попыткой.</span>
     <span class="k">PRINT</span> <span class="s">&quot;Stage activated.&quot;</span><span class="p">.</span>
-    <span class="k">STAGE</span><span class="p">.</span> <span class="c1">// same as hitting the spacebar.</span>
+    <span class="k">STAGE</span><span class="p">.</span> <span class="c1">// данная команда равноценна нажатию пробела на клавиатуре.</span>
 <span class="p">}</span>
 
 <span class="k">WAIT</span> <span class="k">UNTIL</span> <span class="nv">SHIP</span><span class="p">:</span><span class="nv">ALTITUDE</span> <span class="o">&gt;</span> <span class="mf">70000</span><span class="p">.</span>
 
-<span class="c1">// NOTE that it is vital to not just let the script end right away</span>
-<span class="c1">// here.  Once a kOS script just ends, it releases all the controls</span>
-<span class="c1">// back to manual piloting so that you can fly the ship by hand again.</span>
-<span class="c1">// If the program just ended here, then that would cause the throttle</span>
-<span class="c1">// to turn back off again right away and nothing would happen.</span>
+<span class="c1">// ВАЖНО чтобы ваш скрипт не завершился сразу</span>
+<span class="c1">// тут, так как когда скрипт завершается он возвращает вам управление, к так</span>
+<span class="c1">// называемому "ручному пилотированию", чтобы вы управляли кораблем вручную.</span>
+<span class="c1">// Если программа закончится тут, это потянет за собой выключение тяги</span>
+<span class="c1">// всё сразу закончится, и ничего не произойдёт более.</span>
 </pre></div>
 </div>
-<p>Save this file to hellolaunch.ks again, and re-copy it to your vessel that should still be sitting on the launchpad, then run it, like so:</p>
+<p>Снова сохраните файл в hellolaunch.ks и повторно запустите данный скрипт:</p>
 <div class="highlight-kerboscript"><div class="highlight"><pre><span></span><span class="nv">COPYPATH</span><span class="p">(</span><span class="s">&quot;0:/HELLOLAUNCH&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">).</span>
-<span class="k">RUN</span> <span class="nv">HELLOLAUNCH</span><span class="p">.</span> <span class="c1">// You could also say RUNPATH(&quot;hellolaunch&quot;) here.</span>
+<span class="k">RUN</span> <span class="nv">HELLOLAUNCH</span><span class="p">.</span> <span class="c1">// Также можно использовать RUNPATH(&quot;hellolaunch&quot;).</span>
 </pre></div>
 </div>
 <div class="figure">
 <a class="reference internal image-reference" href="../_images/example_2_2.png"><img alt="../_images/example_2_2.png" src="../_images/example_2_2.png" style="width: 80%;" /></a>
 </div>
-<p>Hey! It does something now! It fires the first stage engine and launches!</p>
-<p>But.. but wait... It doesn&#8217;t control the steering and it just lets it go where ever it will.</p>
-<p>Most likely you had a crash with this script because it didn&#8217;t do anything to affect the steering at all, so it probably allowed the rocket to tilt over.</p>
+<p>ЕЙ! Оно что-то делает! Он запускает двигатель первой ступени и ракета летит!</p>
+<p>Но.. но подождите... Он не контролирует ракету, а просто летит вверх, пока не столкнётся с аеродинамикой.</p>
+<p>Скорей всего вы потерпели неудачу, потому что скрипт никак не влияет на управление ракетой, поэтому вероятнее всего ваша ракета перевернулась :(</p>
 </div>
 <div class="section" id="step-4-make-the-script-actually-control-steering">
 <h3><a class="toc-backref" href="quickstart.html#id14">Step 4: Make the script actually control steering</a><a class="headerlink" href="quickstart.html#step-4-make-the-script-actually-control-steering" title="Permalink to this headline">¶</a></h3>
